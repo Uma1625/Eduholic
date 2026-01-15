@@ -1,0 +1,294 @@
+/* ============================================
+   CAREERS PAGE - Premium Animated Styles
+   ============================================ */
+
+/* Hero Section */
+.careers-hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--spacing-4xl) var(--spacing-lg);
+    padding-top: 130px;
+    background: var(--gradient-hero);
+    position: relative;
+    overflow: hidden;
+}
+
+.careers-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(ellipse at 30% 40%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 60%, rgba(0, 204, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.careers-hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.careers-title {
+    font-family: var(--font-family-heading);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.careers-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+}
+
+/* Positions Section */
+.positions-section {
+    padding: var(--spacing-4xl) 0;
+    background: linear-gradient(180deg, var(--color-dark-navy), #0f2847, var(--color-dark-navy));
+    position: relative;
+}
+
+.positions-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 204, 255, 0.3), transparent);
+}
+
+.positions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.position-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.position-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-sky-blue), var(--color-purple-light));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.position-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 204, 255, 0.2);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.position-card:hover::before {
+    transform: scaleX(1);
+}
+
+.position-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.position-icon {
+    font-size: 48px;
+    transition: transform 0.3s ease;
+}
+
+.position-card:hover .position-icon {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.position-category {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--color-sky-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: rgba(0, 204, 255, 0.1);
+    border-radius: var(--radius-sm);
+}
+
+.position-title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.position-description {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-xl);
+}
+
+.position-contact {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+}
+
+.position-contact h4 {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-xs) 0;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--color-sky-blue);
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 18px;
+}
+
+.btn-apply {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-apply::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-apply:hover::after {
+    left: 100%;
+}
+
+/* CTA Section */
+.careers-cta {
+    padding: var(--spacing-4xl) 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-dark-navy), #0a1a3a);
+    position: relative;
+}
+
+.careers-cta::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 204, 255, 0.05), transparent 60%);
+    pointer-events: none;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.careers-cta h2 {
+    font-family: var(--font-family-heading);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.careers-cta p {
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.8;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+    .positions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .careers-hero {
+        min-height: auto;
+        padding: var(--spacing-2xl) var(--spacing-md);
+        padding-top: 100px;
+    }
+
+    .careers-title {
+        font-size: var(--font-size-2xl);
+        letter-spacing: 1px;
+    }
+
+    .positions-section,
+    .careers-cta {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .position-card {
+        padding: var(--spacing-lg);
+    }
+
+    .position-icon {
+        font-size: 36px;
+    }
+
+    .position-title {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .position-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+}

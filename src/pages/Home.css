@@ -1415,3 +1415,212 @@
 .trending-card:hover::before {
   left: 100%;
 }
+/* ============================================
+   ULTRA PREMIUM HOME PAGE EFFECTS
+   ============================================ */
+
+/* Hero Background with Multiple Layers */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Grid Background */
+.hero-section .grid-bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridMove 20s linear infinite;
+  transform: perspective(500px) rotateX(60deg);
+  transform-origin: center top;
+}
+
+@keyframes gridMove {
+  0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
+  100% { transform: perspective(500px) rotateX(60deg) translateY(60px); }
+}
+
+/* Glowing Orbs Background */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: orbPulse 8s ease-in-out infinite;
+}
+
+.glow-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 217, 255, 0.4) 0%, transparent 70%);
+  top: -100px;
+  left: -100px;
+}
+
+.glow-orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, transparent 70%);
+  bottom: -150px;
+  right: -150px;
+  animation-delay: 2s;
+}
+
+.glow-orb-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 153, 255, 0.3) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 4s;
+}
+
+@keyframes orbPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* Premium Category Cards with 3D Effect */
+.category-expanded-card {
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.category-expanded-card:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) translateY(-15px) scale(1.02);
+  box-shadow: 
+    0 30px 60px rgba(0, 217, 255, 0.2),
+    0 0 40px rgba(0, 217, 255, 0.1);
+}
+
+/* Animated Icon Container */
+.category-icon-container {
+  position: relative;
+}
+
+.category-icon-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 217, 255, 0.2) 0%, transparent 70%);
+  animation: iconGlow 3s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+@keyframes iconGlow {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.3); opacity: 0.8; }
+}
+
+/* Premium Stats Section */
+.stats-grid {
+  position: relative;
+}
+
+.stats-grid::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.5), transparent);
+}
+
+.stat-item {
+  position: relative;
+  z-index: 1;
+}
+
+/* Animated Number Counter Effect */
+.stat-number {
+  background: linear-gradient(135deg, var(--color-sky-blue), var(--color-purple-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: numberPulse 3s ease-in-out infinite;
+}
+
+@keyframes numberPulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.3); }
+}
+
+/* Premium Company Cards */
+.company-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.company-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.company-card:hover::before {
+  left: 100%;
+}
+
+.company-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 217, 255, 0.3);
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(124, 58, 237, 0.1));
+}
+
+/* Testimonial Cards Premium */
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  transition: all 0.5s ease;
+}
+
+.testimonial-card:hover {
+  border-color: rgba(0, 217, 255, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 217, 255, 0.15);
+  transform: translateY(-10px);
+}
+
+/* CTA Section Glow */
+.contact-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse at center, rgba(0, 217, 255, 0.05) 0%, transparent 50%);
+  animation: ctaGlow 10s ease-in-out infinite;
+}
+
+@keyframes ctaGlow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(50px, 30px); }
+}
+
+/* Floating Action Button */
+.float-button {
+  animation: floatBounce 3s ease-in-out infinite;
+}
+
+@keyframes floatBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}

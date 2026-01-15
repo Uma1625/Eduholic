@@ -253,9 +253,22 @@ function Header() {
                 {isMobileMenuOpen && (
                     <nav className="nav-mobile">
                         <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+
+                        {/* Programs Section for Mobile */}
+                        <div className="mobile-programs-section">
+                            <span className="mobile-section-title">Programs</span>
+                            <div className="mobile-programs-grid">
+                                <Link to="/programs/machine-learning" onClick={() => setIsMobileMenuOpen(false)}>Machine Learning</Link>
+                                <Link to="/programs/web-development" onClick={() => setIsMobileMenuOpen(false)}>Web Development</Link>
+                                <Link to="/programs/data-analytics" onClick={() => setIsMobileMenuOpen(false)}>Data Analytics</Link>
+                                <Link to="/programs/cyber-security" onClick={() => setIsMobileMenuOpen(false)}>Cyber Security</Link>
+                                <Link to="/programs/digital-marketing" onClick={() => setIsMobileMenuOpen(false)}>Digital Marketing</Link>
+                                <Link to="/placement" onClick={() => setIsMobileMenuOpen(false)}>Placement Programs</Link>
+                            </div>
+                        </div>
+
                         <Link to="/aboutus" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
                         <Link to="/careers" onClick={() => setIsMobileMenuOpen(false)}>Careers</Link>
-                        <a href="https://acmegrade.playablo.com" target="_blank" rel="noopener noreferrer">LMS Login</a>
                         <Link to="/contactus" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
                     </nav>
                 )}

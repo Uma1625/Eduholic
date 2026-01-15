@@ -325,3 +325,146 @@
     filter: drop-shadow(0 0 25px rgba(0, 217, 255, 0.7));
     transform: scale(1.05);
 }
+
+/* ============================================
+   ULTRA COMPACT MOBILE FOOTER - HORIZONTAL LAYOUT
+   ============================================ */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 15px 15px;
+    }
+
+    .footer::before,
+    .footer::after {
+        display: none;
+    }
+
+    .footer-container {
+        padding: 0;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* Logo and description - compact */
+    .footer-about {
+        padding: 0;
+        order: 1;
+    }
+
+    .footer-logo {
+        margin-bottom: 8px;
+    }
+
+    .footer-logo-img {
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .footer-desc {
+        display: none;
+        /* Hide on mobile to save space */
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-link svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* All links in horizontal rows */
+    .footer-col {
+        order: 2;
+    }
+
+    .footer-heading {
+        display: none;
+        /* Hide headings on mobile */
+    }
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .footer-links li {
+        margin: 0;
+    }
+
+    .footer-links a {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-links a::after {
+        content: '|';
+        margin-left: 10px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    .footer-links li:last-child a::after {
+        display: none;
+    }
+
+    /* Hide contact info section on mobile */
+    .footer-col:last-child {
+        display: none;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-bottom p {
+        font-size: 0.65rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px 10px 10px;
+    }
+
+    .footer-grid {
+        gap: 10px;
+    }
+
+    .footer-logo-img {
+        height: 38px;
+    }
+
+    .social-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-links a {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    .footer-links a::after {
+        margin-left: 8px;
+    }
+}

@@ -470,3 +470,58 @@
     height: 45px;
   }
 }
+/* ============================================
+   MOBILE PROGRAMS SECTION STYLING
+   ============================================ */
+
+.mobile-programs-section {
+  margin: 8px 0;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-section-title {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-sky-blue);
+  margin-bottom: 12px;
+  padding: 0 20px;
+}
+
+.mobile-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 8px;
+  padding: 0 16px;
+}
+
+.mobile-programs-grid a {
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.mobile-programs-grid a:hover {
+  background: rgba(0, 217, 255, 0.15);
+  color: var(--color-sky-blue);
+}
+
+/* Improved Mobile Menu */
+@media (max-width: 768px) {
+  .nav-mobile {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .nav-mobile > a {
+    padding: 14px 20px;
+  }
+}

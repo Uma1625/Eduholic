@@ -2025,3 +2025,448 @@
   gap: 24px;
   contain: layout style;
 }
+
+/* ============================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS
+   All breakpoints: 320px, 375px, 414px, 768px
+   ============================================ */
+
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 100px 15px 60px;
+    min-height: auto;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    margin-bottom: 16px;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .hero-cta .btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+  
+  /* Categories */
+  .categories-expanded-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 10px;
+  }
+  
+  .category-expanded-card {
+    padding: 20px 16px;
+  }
+  
+  .category-courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .course-link {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+  
+  /* Stats Section */
+  .stats-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .stat-item {
+    padding: 16px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  /* Trending Cards */
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .trending-card {
+    padding: 16px;
+  }
+  
+  .trending-icon {
+    font-size: 2rem;
+  }
+  
+  .trending-title {
+    font-size: 0.9rem;
+  }
+  
+  /* Testimonials */
+  .testimonial-card {
+    min-width: 280px;
+    padding: 20px;
+  }
+  
+  /* Alumni Companies */
+  .alumni-companies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .company-card {
+    padding: 10px 6px;
+    font-size: 0.65rem;
+  }
+  
+  /* Orbit Section - Smaller on mobile */
+  .orbit-system {
+    transform: scale(0.7);
+    margin: 0 auto;
+  }
+  
+  .about-scroll-section {
+    padding: 40px 15px;
+  }
+  
+  .about-title {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  
+  .about-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
+
+/* Large phone breakpoint */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 80px 12px 40px;
+  }
+  
+  .hero-title {
+    font-size: clamp(1.5rem, 8vw, 2rem);
+  }
+  
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .hero-cta {
+    max-width: 240px;
+  }
+  
+  .hero-cta .btn {
+    font-size: 0.9rem;
+    padding: 12px 16px;
+  }
+  
+  /* Categories */
+  .category-courses {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-name {
+    font-size: 1rem;
+  }
+  
+  /* Trending */
+  .trending-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Alumni */
+  .alumni-companies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Stats */
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  
+  /* Orbit - very small on mobile */
+  .orbit-system {
+    transform: scale(0.55);
+  }
+  
+  .why-choose-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small phone breakpoint */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 1.4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .hero-cta {
+    max-width: 220px;
+  }
+  
+  .hero-cta .btn {
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .trending-card {
+    padding: 14px;
+  }
+  
+  .orbit-system {
+    transform: scale(0.5);
+  }
+}
+
+/* Extra small phone */
+@media (max-width: 320px) {
+  .hero-title {
+    font-size: 1.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.75rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .orbit-system {
+    transform: scale(0.45);
+  }
+  
+  .alumni-companies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   REDUCED SPACING FOR COMPACT MOBILE VIEW
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Global section padding reduction */
+  section {
+    padding: 30px 12px !important;
+  }
+  
+  .section-title {
+    margin-bottom: 15px;
+  }
+  
+  .section-subtitle {
+    margin-bottom: 20px;
+  }
+  
+  /* About section - remove br tags effect */
+  .about-title br,
+  .about-subtitle br {
+    display: none;
+  }
+  
+  .about-scroll-section {
+    padding: 25px 12px !important;
+    min-height: auto !important;
+  }
+  
+  .about-sticky-wrapper {
+    position: relative !important;
+    height: auto !important;
+  }
+  
+  .about-stage {
+    padding: 20px 0;
+  }
+  
+  .about-intro {
+    margin-bottom: 20px;
+  }
+  
+  .about-label {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
+  }
+  
+  .about-title {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  
+  .about-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+  
+  /* Orbit section compact */
+  .why-choose-stage {
+    padding: 15px 0;
+  }
+  
+  .why-choose-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .orbit-system {
+    transform: scale(0.55);
+    margin: -30px auto;
+  }
+  
+  /* Marquee section */
+  .marquee-section {
+    padding: 15px 0 !important;
+  }
+  
+  /* Trending section */
+  .trending-section {
+    padding: 25px 12px !important;
+  }
+  
+  .trending-grid {
+    gap: 10px;
+  }
+  
+  .trending-card {
+    padding: 14px 12px;
+  }
+  
+  /* Categories section compact */
+  .categories-section {
+    padding: 25px 12px !important;
+  }
+  
+  .categories-expanded-grid {
+    gap: 12px;
+  }
+  
+  .category-expanded-card {
+    padding: 15px 12px;
+  }
+  
+  .category-header {
+    margin-bottom: 10px;
+  }
+  
+  .category-icon {
+    font-size: 28px;
+  }
+  
+  .category-name {
+    font-size: 0.95rem;
+  }
+  
+  /* Stats section */
+  .stats-section {
+    padding: 25px 12px !important;
+  }
+  
+  .stats-grid {
+    gap: 12px;
+  }
+  
+  /* Testimonials compact */
+  .testimonials-section {
+    padding: 25px 12px !important;
+  }
+  
+  .testimonials-track-wrapper {
+    padding: 10px 0;
+  }
+  
+  /* Alumni section */
+  .alumni-work-section {
+    padding: 20px 12px !important;
+  }
+  
+  .alumni-description {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .alumni-companies-grid {
+    gap: 8px;
+  }
+  
+  .company-card {
+    padding: 8px 4px;
+    font-size: 0.6rem;
+  }
+  
+  /* Recognition section */
+  .recognition-section {
+    padding: 15px 12px !important;
+  }
+  
+  /* Contact CTA section */
+  .contact-section {
+    padding: 25px 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 20px 10px !important;
+  }
+  
+  .orbit-system {
+    transform: scale(0.45);
+    margin: -40px auto;
+  }
+  
+  .trending-card {
+    padding: 12px 10px;
+  }
+  
+  .category-expanded-card {
+    padding: 12px 10px;
+  }
+  
+  .category-icon {
+    font-size: 24px;
+  }
+  
+  .company-card {
+    font-size: 0.55rem;
+    padding: 6px 3px;
+  }
+}

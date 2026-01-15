@@ -1969,3 +1969,59 @@
     linear-gradient(180deg, rgba(10, 14, 39, 0.98) 0%, rgba(15, 20, 50, 0.96) 100%),
     url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80') center/cover no-repeat;
 }
+
+/* ============================================
+   FIX: CATEGORY CARDS STABLE HOVER (NO FLICKERING)
+   ============================================ */
+
+/* Override any 3D transforms that cause flickering */
+.category-expanded-card {
+  transform: translateY(0) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+  will-change: transform, box-shadow;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.category-expanded-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+  border-color: rgba(0, 217, 255, 0.4);
+}
+
+/* Prevent child elements from triggering hover state changes */
+.category-expanded-card * {
+  pointer-events: auto;
+}
+
+.category-header,
+.category-courses,
+.category-icon,
+.category-name,
+.course-link {
+  transition: none !important;
+  transform: none !important;
+}
+
+/* Stable course link hover */
+.course-link {
+  display: block;
+  padding: 8px 12px;
+  margin: 4px 0;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease !important;
+}
+
+.course-link:hover {
+  background: rgba(0, 217, 255, 0.1);
+  color: var(--color-sky-blue);
+}
+
+/* Categories Grid - Fixed Layout */
+.categories-expanded-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  contain: layout style;
+}

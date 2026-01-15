@@ -5,7 +5,7 @@ function FloatingWidgets() {
     const [isChatOpen, setIsChatOpen] = useState(false)
 
     const handleWhatsAppClick = () => {
-        window.open('https://wa.me/918884080003?text=Hi, I would like to know more about Acmegrade programs.', '_blank')
+        window.open('https://wa.me/918884080003?text=Hi, I would like to know more about Eduholic programs.', '_blank')
     }
 
     return (
@@ -27,7 +27,7 @@ function FloatingWidgets() {
                             <div className="chat-header-info">
                                 <span className="chat-avatar">🎓</span>
                                 <div>
-                                    <h4>Acmegrade Support</h4>
+                                    <h4>Eduholic Support</h4>
                                     <span className="chat-status">Online</span>
                                 </div>
                             </div>

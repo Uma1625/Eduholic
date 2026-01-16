@@ -261,11 +261,22 @@ function Home() {
     return (
         <div className="home">
             {/* Hero Section */}
-            <section className="hero star-bg">
+            <section className="hero-section">
+                {/* Motion Graphics Background Video */}
+                <div className="hero-video-wrapper">
+                    <video
+                        className="hero-video"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+                    >
+                        <source src="https://jitter.video/file/?id=XQNzqQJ4unPDNlMSTdtbuMgg" type="video/mp4" />
+                    </video>
+                    <div className="hero-video-overlay"></div>
+                </div>
                 <div className="hero-content">
-                    <div className="hero-infinity">
-                        <div className="infinity-symbol">∞</div>
-                    </div>
                     <h1 className="hero-title" data-aos="fade-up">
                         DON'T STUDY FOR THE REAL WORLD,<br />
                         <span className="text-gradient">PREPARE FOR THE REAL WORLD</span>

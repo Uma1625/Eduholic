@@ -700,10 +700,11 @@
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 35px;
-    max-width: 1200px;
+    max-width: 750px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .pricing-card {
@@ -715,6 +716,9 @@
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pricing-card::before {
@@ -852,50 +856,51 @@
     color: #0f172a;
     border: 1.5px solid rgba(14, 165, 233, 0.1);
 }
+
 /* ============================================
    PROGRAM PAGE BACKGROUND IMAGES
    ============================================ */
 
 /* Hero Section - Tech/Code Background */
 .program-hero {
-  background: 
-    linear-gradient(135deg, rgba(15, 12, 41, 0.96) 0%, rgba(48, 43, 99, 0.94) 50%, rgba(36, 36, 62, 0.96) 100%),
-    url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80') center/cover no-repeat !important;
+    background:
+        linear-gradient(135deg, rgba(15, 12, 41, 0.96) 0%, rgba(48, 43, 99, 0.94) 50%, rgba(36, 36, 62, 0.96) 100%),
+        url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80') center/cover no-repeat !important;
 }
 
 /* Why Section - Learning/Education Background */
 .why-section {
-  background: 
-    linear-gradient(135deg, rgba(240, 249, 255, 0.97) 0%, rgba(245, 243, 255, 0.95) 100%),
-    url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover no-repeat;
+    background:
+        linear-gradient(135deg, rgba(240, 249, 255, 0.97) 0%, rgba(245, 243, 255, 0.95) 100%),
+        url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover no-repeat;
 }
 
 /* Curriculum Section - Code/Tech Background */
 .curriculum-section {
-  background: 
-    linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.96) 100%),
-    url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920&q=80') center/cover no-repeat !important;
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.96) 100%),
+        url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920&q=80') center/cover no-repeat !important;
 }
 
 /* Projects Section - Innovation Background */
 .projects-section {
-  background: 
-    linear-gradient(135deg, rgba(240, 249, 255, 0.97) 0%, rgba(250, 245, 255, 0.95) 100%),
-    url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1920&q=80') center/cover no-repeat;
+    background:
+        linear-gradient(135deg, rgba(240, 249, 255, 0.97) 0%, rgba(250, 245, 255, 0.95) 100%),
+        url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1920&q=80') center/cover no-repeat;
 }
 
 /* Certifications Section - Achievement Background */
 .certifications-section {
-  background: 
-    linear-gradient(135deg, rgba(15, 23, 42, 0.97) 0%, rgba(30, 41, 59, 0.95) 100%),
-    url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80') center/cover no-repeat !important;
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.97) 0%, rgba(30, 41, 59, 0.95) 100%),
+        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80') center/cover no-repeat !important;
 }
 
 /* Pricing Section - Professional Background */
 .pricing-section {
-  background: 
-    linear-gradient(135deg, rgba(240, 249, 255, 0.98) 0%, rgba(245, 243, 255, 0.96) 100%),
-    url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80') center/cover no-repeat;
+    background:
+        linear-gradient(135deg, rgba(240, 249, 255, 0.98) 0%, rgba(245, 243, 255, 0.96) 100%),
+        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80') center/cover no-repeat;
 }
 
 /* ============================================
@@ -903,144 +908,144 @@
    ============================================ */
 
 @media (max-width: 768px) {
-  .program-hero {
-    padding: 100px 15px 50px;
-  }
-  
-  .program-title {
-    font-size: clamp(1.5rem, 6vw, 2rem);
-  }
-  
-  .program-icon-large {
-    font-size: 60px;
-    margin-bottom: 20px;
-  }
-  
-  .program-stats {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 0 10px;
-  }
-  
-  .stat-card {
-    padding: 16px 10px;
-  }
-  
-  .stat-value {
-    font-size: 1.2rem;
-  }
-  
-  .stat-label {
-    font-size: 0.65rem;
-  }
-  
-  .back-link {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    padding: 10px 18px;
-    font-size: 0.85rem;
-  }
-  
-  .program-page section {
-    padding: 50px 15px;
-  }
-  
-  .why-cards {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  
-  .why-card {
-    padding: 25px 20px;
-  }
-  
-  .curriculum-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 350px;
-    margin: 0 auto;
-  }
-  
-  .pricing-card {
-    padding: 30px 20px;
-  }
-  
-  .pricing-card.recommended {
-    transform: none;
-  }
-  
-  .plan-price {
-    font-size: 2rem;
-  }
-  
-  .section-title {
-    font-size: clamp(1.3rem, 5vw, 1.8rem);
-  }
+    .program-hero {
+        padding: 100px 15px 50px;
+    }
+
+    .program-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .program-icon-large {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .program-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .stat-card {
+        padding: 16px 10px;
+    }
+
+    .stat-value {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .back-link {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+
+    .program-page section {
+        padding: 50px 15px;
+    }
+
+    .why-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .why-card {
+        padding: 25px 20px;
+    }
+
+    .curriculum-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .pricing-card {
+        padding: 30px 20px;
+    }
+
+    .pricing-card.recommended {
+        transform: none;
+    }
+
+    .plan-price {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.3rem, 5vw, 1.8rem);
+    }
 }
 
 @media (max-width: 480px) {
-  .program-hero {
-    padding: 80px 12px 40px;
-  }
-  
-  .program-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .program-icon-large {
-    font-size: 50px;
-  }
-  
-  .back-link {
-    padding: 8px 14px;
-    font-size: 0.8rem;
-  }
-  
-  .why-icon {
-    font-size: 40px;
-  }
-  
-  .why-card h3 {
-    font-size: 1rem;
-  }
-  
-  .project-icon {
-    font-size: 45px;
-  }
+    .program-hero {
+        padding: 80px 12px 40px;
+    }
+
+    .program-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .program-icon-large {
+        font-size: 50px;
+    }
+
+    .back-link {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
+
+    .why-icon {
+        font-size: 40px;
+    }
+
+    .why-card h3 {
+        font-size: 1rem;
+    }
+
+    .project-icon {
+        font-size: 45px;
+    }
 }
 
 @media (max-width: 375px) {
-  .program-stats {
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-  }
-  
-  .stat-value {
-    font-size: 1rem;
-  }
-  
-  .program-title {
-    font-size: 1.3rem;
-  }
+    .program-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .stat-value {
+        font-size: 1rem;
+    }
+
+    .program-title {
+        font-size: 1.3rem;
+    }
 }
 
 /* Fix navbar overlap */
 .program-page {
-  padding-top: 0;
+    padding-top: 0;
 }
 
 .program-hero {
-  padding-top: 140px !important;
+    padding-top: 140px !important;
 }
 
 /* ============================================
@@ -1049,78 +1054,78 @@
 
 /* Reduce hero padding on mobile - less space above icon */
 @media (max-width: 768px) {
-  .program-hero {
-    padding-top: 100px !important;
-    padding-bottom: 30px !important;
-  }
-  
-  .program-icon-large {
-    margin-top: 0 !important;
-  }
-  
-  .program-category {
-    padding-bottom: 15px !important;
-    margin-bottom: 20px !important;
-  }
+    .program-hero {
+        padding-top: 100px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .program-icon-large {
+        margin-top: 0 !important;
+    }
+
+    .program-category {
+        padding-bottom: 15px !important;
+        margin-bottom: 20px !important;
+    }
 }
 
 @media (max-width: 480px) {
-  .program-hero {
-    padding-top: 80px !important;
-    padding-bottom: 25px !important;
-  }
-  
-  .hero-content {
-    padding-top: 10px !important;
-  }
-  
-  .program-category {
-    padding-bottom: 20px !important;
-    margin-bottom: 25px !important;
-  }
+    .program-hero {
+        padding-top: 80px !important;
+        padding-bottom: 25px !important;
+    }
+
+    .hero-content {
+        padding-top: 10px !important;
+    }
+
+    .program-category {
+        padding-bottom: 20px !important;
+        margin-bottom: 25px !important;
+    }
 }
 
 /* Improve FAQ Section Visibility */
 .faq-section {
-  background: rgba(15, 20, 40, 0.95) !important;
+    background: rgba(15, 20, 40, 0.95) !important;
 }
 
 .faq-section .section-title {
-  color: white !important;
-  font-weight: 700 !important;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
 }
 
 .faq-item {
-  background: rgba(30, 40, 70, 0.9) !important;
-  border: 1px solid rgba(0, 217, 255, 0.2) !important;
+    background: rgba(30, 40, 70, 0.9) !important;
+    border: 1px solid rgba(0, 217, 255, 0.2) !important;
 }
 
 .faq-question {
-  color: white !important;
-  font-weight: 600 !important;
+    color: white !important;
+    font-weight: 600 !important;
 }
 
 .faq-answer {
-  color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Improve Explore More Domains Visibility */
 .explore-section {
-  background: rgba(15, 20, 40, 0.95) !important;
+    background: rgba(15, 20, 40, 0.95) !important;
 }
 
 .explore-section .section-title {
-  color: white !important;
-  font-weight: 700 !important;
+    color: white !important;
+    font-weight: 700 !important;
 }
 
 .domain-card {
-  background: rgba(30, 40, 70, 0.9) !important;
-  border: 1px solid rgba(0, 217, 255, 0.25) !important;
+    background: rgba(30, 40, 70, 0.9) !important;
+    border: 1px solid rgba(0, 217, 255, 0.25) !important;
 }
 
 .domain-card:hover {
-  border-color: rgba(0, 217, 255, 0.5) !important;
-  box-shadow: 0 8px 30px rgba(0, 217, 255, 0.15) !important;
+    border-color: rgba(0, 217, 255, 0.5) !important;
+    box-shadow: 0 8px 30px rgba(0, 217, 255, 0.15) !important;
 }

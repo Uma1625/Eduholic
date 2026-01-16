@@ -15,7 +15,7 @@ function PrivacyPolicy() {
                     <section className="policy-section">
                         <h2>1. Information We Collect</h2>
                         <p>
-                            At Acmegrade, we collect information you provide directly to us, such as when you create an account,
+                            At Eduholic, we collect information you provide directly to us, such as when you create an account,
                             enroll in a program, contact us for support, or communicate with us through our website.
                         </p>
                         <ul>

@@ -15,7 +15,7 @@ function TermsAndConditions() {
                     <section className="policy-section">
                         <h2>1. Acceptance of Terms</h2>
                         <p>
-                            By accessing and using Acmegrade's website and services, you accept and agree to be bound
+                            By accessing and using Eduholic's website and services, you accept and agree to be bound
                             by these Terms and Conditions. If you do not agree to these terms, please do not use our services.
                         </p>
                     </section>
@@ -23,7 +23,7 @@ function TermsAndConditions() {
                     <section className="policy-section">
                         <h2>2. Services</h2>
                         <p>
-                            Acmegrade provides online training programs, internships, and placement assistance services.
+                            Eduholic provides online training programs, internships, and placement assistance services.
                             We reserve the right to modify, suspend, or discontinue any service at any time without prior notice.
                         </p>
                     </section>
@@ -50,7 +50,7 @@ function TermsAndConditions() {
                     <section className="policy-section">
                         <h2>5. Intellectual Property</h2>
                         <p>
-                            All content, materials, and resources provided by Acmegrade are protected by intellectual
+                            All content, materials, and resources provided by Eduholic are protected by intellectual
                             property laws. You may not reproduce, distribute, or create derivative works without our written permission.
                         </p>
                     </section>
@@ -58,7 +58,7 @@ function TermsAndConditions() {
                     <section className="policy-section">
                         <h2>6. Limitation of Liability</h2>
                         <p>
-                            Acmegrade shall not be liable for any indirect, incidental, special, or consequential damages
+                            Eduholic shall not be liable for any indirect, incidental, special, or consequential damages
                             arising from your use of our services.
                         </p>
                     </section>

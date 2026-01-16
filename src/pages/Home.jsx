@@ -307,7 +307,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* About Acmegrade - Scroll Driven Animation */}
+            {/* About Eduholic - Scroll Driven Animation */}
             <section className="about-scroll-section" id="about">
                 <div className="about-sticky-wrapper">
                     {/* Stage 1: About Intro */}

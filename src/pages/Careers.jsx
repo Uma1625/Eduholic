@@ -5,7 +5,7 @@ const careerPositions = [
         id: 1,
         title: 'Campus Delegate',
         category: 'CAMPUS DELEGATE',
-        description: 'Be the face of Acmegrade at your campus. Help fellow students discover internship opportunities and grow professionally.',
+        description: 'Be the face of Eduholic at your campus. Help fellow students discover internship opportunities and grow professionally.',
         email: 'careers@acmegrade.com',
         phone: '+91 8884922231',
         icon: '🎓'
@@ -23,7 +23,7 @@ const careerPositions = [
         id: 3,
         title: 'Human Resources',
         category: 'HUMAN RESOURCES',
-        description: 'Shape our company culture and help us find the best talent to join the Acmegrade family.',
+        description: 'Shape our company culture and help us find the best talent to join the Eduholic family.',
         email: 'careers@acmegrade.com',
         phone: '+91 8884080003',
         icon: '👥'

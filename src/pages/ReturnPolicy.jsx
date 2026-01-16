@@ -15,7 +15,7 @@ function ReturnPolicy() {
                     <section className="policy-section">
                         <h2>1. Refund Eligibility</h2>
                         <p>
-                            At Acmegrade, we strive to provide the best learning experience. If you are not satisfied
+                            At Eduholic, we strive to provide the best learning experience. If you are not satisfied
                             with your program, you may be eligible for a refund under the following conditions:
                         </p>
                         <ul>

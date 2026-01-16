@@ -51,8 +51,8 @@ function AboutUs() {
                                 join the workforce and immediately make a difference.
                             </p>
                             <p className="vision-text">
-                                At Acmegrade we envision a brighter future driven by the well-rounded youth of today.
-                                With Acmegrade, the only way to go is forward!
+                                At Eduholic we envision a brighter future driven by the well-rounded youth of today.
+                                With Eduholic, the only way to go is forward!
                             </p>
                             <ul className="vision-list">
                                 {visionPoints.map((point, idx) => (
@@ -135,7 +135,7 @@ function AboutUs() {
                             With a little over <span className="text-gradient">half a Lakh</span> learners turned professionals,
                         </h2>
                         <p className="global-subtitle text-center">
-                            Acmegrade has expanded its reach into more than 15 countries, and is impacting lives across the globe.
+                            Eduholic has expanded its reach into more than 15 countries, and is impacting lives across the globe.
                         </p>
 
                         <div className="glass-orb-large animate-float"></div>
@@ -158,7 +158,7 @@ function AboutUs() {
                     <div className="about-contact-grid">
                         <div className="about-contact-info" data-aos="fade-right">
                             <h2>Join more than <span className="text-gradient">10 million</span> learners worldwide</h2>
-                            <p>Start your journey with Acmegrade today and transform your career.</p>
+                            <p>Start your journey with Eduholic today and transform your career.</p>
                         </div>
                         <div className="about-contact-form" data-aos="fade-left">
                             <h3>Talk to our experts</h3>

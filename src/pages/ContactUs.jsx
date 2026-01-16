@@ -19,7 +19,7 @@ function ContactUs() {
                             <div className="contact-block">
                                 <h3>Address</h3>
                                 <p>
-                                    Acmegrade Pvt Ltd, 64, 27th Main Road 1st Sector,
+                                    Eduholic Pvt Ltd, 64, 27th Main Road 1st Sector,
                                     HSR Layout Hustlehub Techpark, 36/5, Somasundra palya,
                                     harlurkunte, village, Bengaluru, Karnataka 560102
                                 </p>
@@ -104,7 +104,7 @@ function ContactUs() {
                 <div className="map-container">
                     <div className="map-placeholder">
                         <span>📍</span>
-                        <p>Acmegrade Pvt Ltd, HSR Layout, Bengaluru</p>
+                        <p>Eduholic Pvt Ltd, HSR Layout, Bengaluru</p>
                     </div>
                 </div>
             </section>

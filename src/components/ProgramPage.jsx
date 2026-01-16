@@ -232,7 +232,13 @@ function ProgramPage({ program }) {
                     </p>
                     <div className="alumni-logos">
                         {alumniCompanies.map((company, idx) => (
-                            <div key={idx} className="company-badge">{company}</div>
+                            <div key={idx} className="company-badge">
+                                {company.logo ? (
+                                    <img src={company.logo} alt={company.name} className="company-logo-img" />
+                                ) : (
+                                    company.name
+                                )}
+                            </div>
                         ))}
                     </div>
                 </div>

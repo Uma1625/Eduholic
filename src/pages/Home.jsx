@@ -129,24 +129,24 @@ const statistics = [
 ]
 
 const alumniCompanies = [
-    { name: 'Amazon', logo: 'https://logo.clearbit.com/amazon.com' },
-    { name: 'Google', logo: 'https://logo.clearbit.com/google.com' },
-    { name: 'Microsoft', logo: 'https://logo.clearbit.com/microsoft.com' },
-    { name: 'Flipkart', logo: 'https://logo.clearbit.com/flipkart.com' },
-    { name: 'Wipro', logo: 'https://logo.clearbit.com/wipro.com' },
-    { name: 'TCS', logo: 'https://logo.clearbit.com/tcs.com' },
-    { name: 'Infosys', logo: 'https://logo.clearbit.com/infosys.com' },
-    { name: 'Accenture', logo: 'https://logo.clearbit.com/accenture.com' },
-    { name: 'IBM', logo: 'https://logo.clearbit.com/ibm.com' },
-    { name: 'Deloitte', logo: 'https://logo.clearbit.com/deloitte.com' },
-    { name: 'Cognizant', logo: 'https://logo.clearbit.com/cognizant.com' },
-    { name: 'HCL', logo: 'https://logo.clearbit.com/hcltech.com' },
-    { name: 'Capgemini', logo: 'https://logo.clearbit.com/capgemini.com' },
-    { name: 'Adobe', logo: 'https://logo.clearbit.com/adobe.com' },
-    { name: 'Oracle', logo: 'https://logo.clearbit.com/oracle.com' },
-    { name: 'Salesforce', logo: 'https://logo.clearbit.com/salesforce.com' },
-    { name: 'Samsung', logo: 'https://logo.clearbit.com/samsung.com' },
-    { name: 'Zoho', logo: 'https://logo.clearbit.com/zoho.com' }
+    { name: 'Amazon', logo: 'https://img.logo.dev/amazon.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Google', logo: 'https://img.logo.dev/google.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Microsoft', logo: 'https://img.logo.dev/microsoft.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Flipkart', logo: 'https://img.logo.dev/flipkart.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Wipro', logo: 'https://img.logo.dev/wipro.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'TCS', logo: 'https://img.logo.dev/tcs.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Infosys', logo: 'https://img.logo.dev/infosys.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Accenture', logo: 'https://img.logo.dev/accenture.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'IBM', logo: 'https://img.logo.dev/ibm.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Deloitte', logo: 'https://img.logo.dev/deloitte.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Cognizant', logo: 'https://img.logo.dev/cognizant.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'HCL', logo: 'https://img.logo.dev/hcltech.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Capgemini', logo: 'https://img.logo.dev/capgemini.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Adobe', logo: 'https://img.logo.dev/adobe.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Oracle', logo: 'https://img.logo.dev/oracle.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Salesforce', logo: 'https://img.logo.dev/salesforce.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Samsung', logo: 'https://img.logo.dev/samsung.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
+    { name: 'Zoho', logo: 'https://img.logo.dev/zoho.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' }
 ]
 
 

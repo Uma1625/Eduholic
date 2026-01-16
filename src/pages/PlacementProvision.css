@@ -714,3 +714,23 @@
       rgba(26, 26, 46, 0.9) 100%);
   }
 }
+
+/* ============================================
+   REMOVE SPACE BETWEEN SECTIONS
+   ============================================ */
+
+/* Reduce hero bottom padding */
+.video-background-wrapper .placement-hero {
+  padding-bottom: 10px !important;
+  min-height: auto !important;
+}
+
+/* Reduce programs section top padding */
+.video-background-wrapper .programs-section {
+  padding-top: 0 !important;
+}
+
+/* Remove section header margin */
+.video-background-wrapper .section-header {
+  margin-bottom: 2rem;
+}

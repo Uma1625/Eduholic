@@ -5,65 +5,91 @@ function ReturnPolicy() {
         <div className="policy-page">
             <div className="policy-hero">
                 <div className="container">
-                    <h1>Return Policy</h1>
-                    <p>Last updated: January 2024</p>
+                    <h1>Return, Refund, Rescheduling & Course Change Policy</h1>
+                    <p>Last Updated: 15/01/2026</p>
                 </div>
             </div>
 
             <div className="policy-content">
                 <div className="container">
-                    <section className="policy-section">
-                        <h2>1. Refund Eligibility</h2>
-                        <p>
-                            At Eduholic, we strive to provide the best learning experience. If you are not satisfied
-                            with your program, you may be eligible for a refund under the following conditions:
+                    <section className="policy-section intro">
+                        <p className="intro-text">
+                            This policy applies to all courses, programs, certifications, internships, and services purchased through
+                            the payment pages of Eduholic and via the official website <a href="https://www.eduholic.in">www.eduholic.in</a>.
                         </p>
-                        <ul>
-                            <li>Request made within 7 days of enrollment</li>
-                            <li>Less than 20% of course content accessed</li>
-                            <li>No certificates have been issued</li>
-                        </ul>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>2. Non-Refundable Items</h2>
-                        <p>The following are not eligible for refunds:</p>
-                        <ul>
-                            <li>Programs purchased during promotional offers</li>
-                            <li>Courses where more than 20% content has been accessed</li>
-                            <li>Programs where certificates have been issued</li>
-                            <li>Placement guarantee programs after onboarding</li>
-                        </ul>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>3. Refund Process</h2>
-                        <p>To request a refund:</p>
-                        <ul>
-                            <li>Email us at support@acmegrade.com with your enrollment details</li>
-                            <li>Include your reason for requesting a refund</li>
-                            <li>Our team will review and respond within 3-5 business days</li>
-                            <li>Approved refunds will be processed within 7-10 business days</li>
-                        </ul>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>4. Program Transfers</h2>
                         <p>
-                            If you wish to transfer to a different program instead of a refund, please contact our
-                            support team. Program transfers may be subject to price differences.
+                            <strong>EDUHOLIC EDTECH INDIA PRIVATE LIMITED</strong> ("Eduholic", "Company", "We", "Us", "Our") provides
+                            digital and blended learning services. Due to the nature of educational services and digital content delivery,
+                            Eduholic follows a strict and well-defined policy regarding returns, refunds, course changes, and rescheduling.
+                        </p>
+                        <p className="agreement-notice">
+                            By enrolling in any course or making a payment on Eduholic's Platform, you expressly acknowledge, understand,
+                            and agree to be bound by this policy.
                         </p>
                     </section>
 
                     <section className="policy-section">
-                        <h2>5. Contact Us</h2>
-                        <p>
-                            For any questions regarding our Return Policy, please reach out to us:
-                        </p>
+                        <h2>1. No Return Policy (Digital Services)</h2>
+                        <p>Eduholic offers non-tangible, irrevocable educational services, including but not limited to:</p>
                         <ul>
-                            <li>Email: support@acmegrade.com</li>
-                            <li>Phone: +91 8884080003</li>
+                            <li>Online and offline courses</li>
+                            <li>Certification programs</li>
+                            <li>Internship programs</li>
+                            <li>Mentorship, training, and placement assistance services</li>
                         </ul>
+                        <p>
+                            Accordingly, <strong>no return, reversal, or cancellation</strong> of purchased services shall be permitted
+                            once payment has been successfully completed, except as explicitly mentioned under the Refund section of this policy.
+                        </p>
+                        <p className="legal-note">
+                            This policy is in accordance with the Consumer Protection (E-Commerce) Rules, 2020, which recognize
+                            exceptions for digital and service-based products once delivery or access has commenced.
+                        </p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>2. Course Change Policy</h2>
+                        <p>
+                            Eduholic permits a <strong>one-time course change</strong> under controlled conditions to ensure fairness
+                            and academic continuity.
+                        </p>
+
+                        <h3>Eligibility Conditions</h3>
+                        <p>A course change request shall be considered only if:</p>
+                        <ul>
+                            <li>The request is submitted in writing at least <strong>7 (seven) days prior</strong> to the commencement of the originally enrolled course</li>
+                            <li>The alternative course has confirmed seat availability</li>
+                            <li>The alternative course is scheduled to conclude within <strong>1 month</strong> of the original course's completion date</li>
+                            <li>The request is the <strong>first and only</strong> course change during the entire program lifecycle</li>
+                        </ul>
+
+                        <h3>Financial Terms</h3>
+                        <ul>
+                            <li>If the alternative course is of <strong>higher value</strong>, the student must pay the difference in fees</li>
+                            <li>If the alternative course is of <strong>lower value</strong>, no refund or credit of the difference shall be provided</li>
+                            <li>A <strong>non-refundable administrative processing fee of ₹500</strong> must be paid within 3 calendar days of approval</li>
+                            <li>Failure to complete payment within the stipulated time shall result in automatic cancellation of the request</li>
+                        </ul>
+
+                        <h3>Procedure for Course Change</h3>
+                        <ol className="numbered-list">
+                            <li>Email the request to <a href="mailto:learnersupport@eduholic.in">learnersupport@eduholic.in</a> with enrollment details</li>
+                            <li>Upon provisional approval, submit the Course Change Form within 3 business days</li>
+                            <li>Pay applicable fees and submit proof of payment</li>
+                            <li>Final confirmation will be issued within 5–7 business days</li>
+                        </ol>
+
+                        <p className="legal-note">
+                            Eduholic reserves the right to reject requests that do not meet the above criteria.
+                        </p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>Contact Us</h2>
+                        <div className="contact-info-box">
+                            <p><strong>Email:</strong> <a href="mailto:learnersupport@eduholic.in">learnersupport@eduholic.in</a></p>
+                            <p><strong>Website:</strong> <a href="https://www.eduholic.in">www.eduholic.in</a></p>
+                        </div>
                     </section>
                 </div>
             </div>

@@ -786,6 +786,7 @@
     padding: 0;
     margin-bottom: 30px;
     text-align: left;
+    flex-grow: 1;
 }
 
 .plan-features li {

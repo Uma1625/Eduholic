@@ -3819,3 +3819,121 @@
     font-size: 0.8rem;
   }
 }
+
+/* ============================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS FIXES
+   ============================================ */
+
+/* HERO SECTION - Reduce excessive top space */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px !important;
+    min-height: auto !important;
+  }
+  
+  .hero-content {
+    padding-top: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 80px !important;
+  }
+  
+  .hero-content {
+    padding-top: 10px !important;
+  }
+}
+
+/* ABOUT SECTION - Reduce padding above/below */
+@media (max-width: 768px) {
+  .about-scroll-section {
+    padding: 40px 15px !important;
+  }
+  
+  .about-stage {
+    padding: 30px 0 !important;
+  }
+  
+  .about-intro,
+  .why-choose-stage {
+    min-height: auto !important;
+    padding: 20px 0 !important;
+  }
+  
+  .about-title {
+    font-size: 1.3rem !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .about-subtitle {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .about-label {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-scroll-section {
+    padding: 30px 10px !important;
+  }
+  
+  .about-stage {
+    padding: 20px 0 !important;
+  }
+}
+
+/* STARTUP INDIA SECTION - Center align properly */
+@media (max-width: 768px) {
+  .startup-badge-section,
+  .recognized-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 40px 20px !important;
+  }
+  
+  .startup-badge-section h3,
+  .recognized-section h3 {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .startup-badge {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .startup-badge-card {
+    margin: 0 auto !important;
+  }
+}
+
+/* Reduce overall section spacing on mobile */
+@media (max-width: 768px) {
+  section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .section-dark,
+  .section-light {
+    padding: 40px 15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}

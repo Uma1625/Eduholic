@@ -752,3 +752,31 @@
 .video-background-wrapper .programs-section::before {
   display: none !important;
 }
+
+/* ============================================
+   MOBILE VIDEO VISIBILITY
+   ============================================ */
+
+/* Ensure video shows on mobile */
+@media (max-width: 768px) {
+  .fullpage-video-bg {
+    display: block !important;
+    opacity: 0.3 !important;
+  }
+  
+  .video-background-wrapper {
+    position: relative !important;
+  }
+  
+  .fullpage-overlay {
+    background: linear-gradient(180deg, 
+      rgba(15, 15, 26, 0.85) 0%, 
+      rgba(26, 26, 46, 0.9) 100%) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .fullpage-video-bg {
+    opacity: 0.25 !important;
+  }
+}

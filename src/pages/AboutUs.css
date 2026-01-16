@@ -695,3 +695,65 @@
         gap: var(--spacing-xs);
     }
 }
+
+/* ============================================
+   MOBILE ABOUT US PAGE FIXES
+   ============================================ */
+
+/* Reduce icon section padding on mobile */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 100px 15px 40px !important;
+  }
+  
+  .values-section,
+  .team-section,
+  .stats-section,
+  .vision-section,
+  .mission-section {
+    padding: 40px 15px !important;
+  }
+  
+  .value-card,
+  .team-card,
+  .stat-item {
+    padding: 20px 15px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .value-icon,
+  .team-icon,
+  .stat-icon {
+    font-size: 40px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .values-grid,
+  .team-grid {
+    gap: 15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 80px 10px 30px !important;
+  }
+  
+  .values-section,
+  .team-section,
+  .stats-section {
+    padding: 30px 10px !important;
+  }
+  
+  .value-card,
+  .team-card {
+    padding: 15px 12px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .value-icon,
+  .stat-icon {
+    font-size: 35px !important;
+    margin-bottom: 8px !important;
+  }
+}

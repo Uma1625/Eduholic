@@ -65,20 +65,15 @@ const createDefaultProgram = (slug) => {
         ],
         pricing: [
             {
-                price: '₹5,000',
-                plan: 'Self-Paced',
-                features: ['Recorded Lectures', 'Real Time Projects', '4+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
-                price: '₹9,000',
-                plan: 'Mentor-Led',
-                features: ['Recorded Lectures', 'Real Time Projects', '16+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance'],
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access'],
                 recommended: true
-            },
-            {
-                price: '₹13,000',
-                plan: 'Advanced',
-                features: ['Recorded Lectures', 'Real Time Projects', '24+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
             }
         ],
         faqs: [
@@ -88,19 +83,19 @@ const createDefaultProgram = (slug) => {
             },
             {
                 question: 'How long is the training?',
-                answer: 'Our self-paced and mentor led courses both last for a period of 2 months. Our advanced courses last for a period of 3 months.'
+                answer: 'Our Mentor Led courses last for 2 months with 24+ hours of live sessions, and our Placement Guidance courses also last for 2 months with 40+ hours of live sessions.'
             },
             {
-                question: 'Will Acmegrade help with placements?',
-                answer: 'Acmegrade provides placement support for all students of our advanced courses. Students that perform well during their internship period will also get placement support.'
+                question: 'Will Eduholic help with placements?',
+                answer: 'Yes, Eduholic provides placement guidance and support for students in our Mentor Led + Placement Guidance plan.'
             },
             {
                 question: 'Will I get an internship?',
-                answer: 'Yes, Acmegrade guarantees an internship opportunity for all our students across all our courses.'
+                answer: 'Yes, Eduholic provides access to the Internship Portal where you can access stipend-based internships in the third month.'
             },
             {
-                question: 'Can I pay the fee in instalment?',
-                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+                question: 'Can I pay the fee in installments?',
+                answer: 'Yes, you can book your slot by paying ₹1000 as pre-registration and the remaining amount can be paid later before starting the program.'
             }
         ]
     }

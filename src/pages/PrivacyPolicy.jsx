@@ -6,63 +6,111 @@ function PrivacyPolicy() {
             <div className="policy-hero">
                 <div className="container">
                     <h1>Privacy Policy</h1>
-                    <p>Last updated: January 2024</p>
+                    <p>DPDP Act, 2023 Compliant</p>
                 </div>
             </div>
 
             <div className="policy-content">
                 <div className="container">
-                    <section className="policy-section">
-                        <h2>1. Information We Collect</h2>
-                        <p>
-                            At Eduholic, we collect information you provide directly to us, such as when you create an account,
-                            enroll in a program, contact us for support, or communicate with us through our website.
+                    <section className="policy-section intro">
+                        <p className="intro-text">
+                            <strong>EDUHOLIC EDTECH INDIA PRIVATE LIMITED</strong> ("Eduholic", "We", "Us") is committed to protecting
+                            personal data in accordance with the <strong>Digital Personal Data Protection Act, 2023 (India)</strong>.
                         </p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>1. Data Fiduciary</h2>
+                        <p>
+                            Eduholic acts as a Data Fiduciary and determines the purpose and means of processing personal data.
+                        </p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>2. Personal Data Collected</h2>
                         <ul>
-                            <li>Personal information (name, email address, phone number)</li>
-                            <li>Educational information (college name, course, year of study)</li>
-                            <li>Payment information (processed securely through payment gateways)</li>
-                            <li>Usage data and device information</li>
+                            <li>Name and contact details</li>
+                            <li>Educational details</li>
+                            <li>Payment-related information</li>
+                            <li>IP address</li>
+                            <li>Usage data</li>
                         </ul>
                     </section>
 
                     <section className="policy-section">
-                        <h2>2. How We Use Your Information</h2>
-                        <p>We use the information we collect to:</p>
+                        <h2>3. Purpose of Processing</h2>
                         <ul>
-                            <li>Provide, maintain, and improve our services</li>
-                            <li>Process transactions and send related information</li>
-                            <li>Send you technical notices, updates, and support messages</li>
-                            <li>Respond to your comments, questions, and requests</li>
-                            <li>Communicate with you about programs, promotions, and events</li>
+                            <li>Account creation</li>
+                            <li>Service delivery</li>
+                            <li>Payments</li>
+                            <li>Communication</li>
+                            <li>Marketing (with consent)</li>
+                            <li>Analytics</li>
+                            <li>Legal compliance</li>
                         </ul>
                     </section>
 
                     <section className="policy-section">
-                        <h2>3. Information Sharing</h2>
+                        <h2>4. Consent</h2>
                         <p>
-                            We do not sell, trade, or otherwise transfer your personal information to outside parties
-                            without your consent, except as described in this policy or as required by law.
+                            Consent is obtained explicitly before collecting personal data and may be withdrawn at any time by
+                            contacting <a href="mailto:support@eduholic.info">support@eduholic.info</a>.
                         </p>
                     </section>
 
                     <section className="policy-section">
-                        <h2>4. Data Security</h2>
+                        <h2>5. Data Sharing</h2>
                         <p>
-                            We implement appropriate security measures to protect your personal information against
-                            unauthorized access, alteration, disclosure, or destruction.
-                        </p>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>5. Contact Us</h2>
-                        <p>
-                            If you have any questions about this Privacy Policy, please contact us at:
+                            Data may be shared with authorized processors such as:
                         </p>
                         <ul>
-                            <li>Email: support@acmegrade.com</li>
-                            <li>Phone: +91 8884080003</li>
+                            <li>Payment gateways</li>
+                            <li>Hosting providers</li>
+                            <li>Legal authorities (where required by law)</li>
                         </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>6. Data Retention</h2>
+                        <p>
+                            Personal data is retained only for the duration necessary for lawful purposes or as required by law.
+                        </p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>7. Data Principal Rights</h2>
+                        <p>Under the DPDP Act, 2023, users may request:</p>
+                        <ul>
+                            <li>Access to personal data</li>
+                            <li>Correction of personal data</li>
+                            <li>Erasure of personal data</li>
+                            <li>Grievance redressal</li>
+                            <li>Nomination</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>8. Grievance Redressal</h2>
+                        <div className="contact-info-box">
+                            <p><strong>Grievance Officer:</strong> Eduholic Privacy Officer</p>
+                            <p><strong>Email:</strong> <a href="mailto:support@eduholic.info">support@eduholic.info</a></p>
+                            <p><strong>Response Time:</strong> Within 7 working days</p>
+                        </div>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>9. Security Safeguards</h2>
+                        <p>
+                            Reasonable security practices are implemented to protect personal data against unauthorized access,
+                            alteration, disclosure, or destruction.
+                        </p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>10. Governing Law</h2>
+                        <p>
+                            This Policy is governed by Indian laws with jurisdiction in <strong>Bengaluru, Karnataka</strong>.
+                        </p>
                     </section>
                 </div>
             </div>

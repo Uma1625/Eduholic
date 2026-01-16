@@ -1042,3 +1042,85 @@
 .program-hero {
   padding-top: 140px !important;
 }
+
+/* ============================================
+   MOBILE PROGRAM PAGE FIXES
+   ============================================ */
+
+/* Reduce hero padding on mobile - less space above icon */
+@media (max-width: 768px) {
+  .program-hero {
+    padding-top: 100px !important;
+    padding-bottom: 30px !important;
+  }
+  
+  .program-icon-large {
+    margin-top: 0 !important;
+  }
+  
+  .program-category {
+    padding-bottom: 15px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .program-hero {
+    padding-top: 80px !important;
+    padding-bottom: 25px !important;
+  }
+  
+  .hero-content {
+    padding-top: 10px !important;
+  }
+  
+  .program-category {
+    padding-bottom: 20px !important;
+    margin-bottom: 25px !important;
+  }
+}
+
+/* Improve FAQ Section Visibility */
+.faq-section {
+  background: rgba(15, 20, 40, 0.95) !important;
+}
+
+.faq-section .section-title {
+  color: white !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+}
+
+.faq-item {
+  background: rgba(30, 40, 70, 0.9) !important;
+  border: 1px solid rgba(0, 217, 255, 0.2) !important;
+}
+
+.faq-question {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.faq-answer {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Improve Explore More Domains Visibility */
+.explore-section {
+  background: rgba(15, 20, 40, 0.95) !important;
+}
+
+.explore-section .section-title {
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+.domain-card {
+  background: rgba(30, 40, 70, 0.9) !important;
+  border: 1px solid rgba(0, 217, 255, 0.25) !important;
+}
+
+.domain-card:hover {
+  border-color: rgba(0, 217, 255, 0.5) !important;
+  box-shadow: 0 8px 30px rgba(0, 217, 255, 0.15) !important;
+}

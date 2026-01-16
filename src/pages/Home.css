@@ -3398,3 +3398,182 @@
     font-size: 18px;
   }
 }
+
+/* ============================================
+   COMPREHENSIVE MOBILE FIX - WHY CHOOSE EDUHOLIC
+   ============================================ */
+
+/* Tablet - 1024px and below */
+@media (max-width: 1024px) {
+  .orbit-system {
+    transform: scale(0.85);
+  }
+  
+  .feature-bubble {
+    transform: rotate(var(--angle)) translateX(180px) rotate(calc(-1 * var(--angle)));
+  }
+}
+
+/* Mobile Landscape - 768px */
+@media (max-width: 768px) {
+  .why-choose-stage {
+    padding: 40px 15px;
+    min-height: auto;
+  }
+  
+  .why-choose-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .orbit-system {
+    transform: scale(0.65);
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  
+  .orbit-ring {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .feature-bubble {
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    transform: rotate(var(--angle)) translateX(140px) rotate(calc(-1 * var(--angle)));
+  }
+  
+  .bubble-icon {
+    font-size: 20px;
+  }
+  
+  .bubble-text {
+    font-size: 8px;
+  }
+  
+  .center-logo-img {
+    height: 60px;
+  }
+}
+
+/* Mobile Portrait - 480px */
+@media (max-width: 480px) {
+  .why-choose-stage {
+    padding: 30px 10px;
+  }
+  
+  .why-choose-title {
+    font-size: 1.1rem;
+  }
+  
+  .orbit-system {
+    transform: scale(0.5);
+    width: 280px;
+    height: 280px;
+  }
+  
+  .orbit-ring {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .feature-bubble {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    transform: rotate(var(--angle)) translateX(120px) rotate(calc(-1 * var(--angle)));
+  }
+  
+  .bubble-icon {
+    font-size: 16px;
+  }
+  
+  .bubble-text {
+    font-size: 7px;
+  }
+  
+  .center-logo-img {
+    height: 50px;
+  }
+}
+
+/* Small Mobile - 375px */
+@media (max-width: 375px) {
+  .orbit-system {
+    transform: scale(0.45);
+    width: 260px;
+    height: 260px;
+  }
+  
+  .feature-bubble {
+    width: 55px;
+    height: 55px;
+    transform: rotate(var(--angle)) translateX(100px) rotate(calc(-1 * var(--angle)));
+  }
+  
+  .bubble-icon {
+    font-size: 14px;
+  }
+  
+  .bubble-text {
+    font-size: 6px;
+  }
+}
+
+/* Extra Small Mobile - 320px */
+@media (max-width: 320px) {
+  .orbit-system {
+    transform: scale(0.4);
+    width: 240px;
+    height: 240px;
+  }
+  
+  .feature-bubble {
+    transform: rotate(var(--angle)) translateX(90px) rotate(calc(-1 * var(--angle)));
+  }
+}
+
+/* ============================================
+   CAROUSEL TOUCH/CLICK FIX
+   ============================================ */
+
+.categories-carousel-wrapper {
+  touch-action: pan-x;
+}
+
+.categories-carousel-track:active {
+  animation-play-state: paused !important;
+}
+
+/* On mobile - full width card when tapped */
+@media (max-width: 768px) {
+  .categories-carousel-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .categories-carousel-track {
+    animation: none !important;
+  }
+  
+  .categories-carousel-wrapper .premium-category-card {
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    width: 85vw;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-carousel-wrapper .premium-category-card {
+    width: 90vw;
+    max-width: 300px;
+    height: 280px;
+  }
+}

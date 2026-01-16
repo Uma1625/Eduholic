@@ -1197,3 +1197,80 @@ select {
   margin-top: -120px;
   padding-top: 120px;
 }
+
+/* ============================================
+   GLOBAL VIDEO BACKGROUND STYLES
+   ============================================ */
+
+/* Video Background */
+.hero-video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, 
+    rgba(10, 26, 58, 0.7) 0%, 
+    rgba(10, 26, 58, 0.85) 50%,
+    rgba(10, 26, 58, 0.95) 100%);
+  z-index: 1;
+}
+
+/* Ensure content is above video */
+.about-hero-content,
+.careers-hero-content,
+.contact-hero .container,
+.program-hero-content,
+.category-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero sections need relative positioning */
+.about-hero,
+.careers-hero,
+.contact-hero,
+.program-hero,
+.category-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hide video on mobile for performance */
+@media (max-width: 768px) {
+  .hero-video-bg {
+    display: none;
+  }
+  
+  /* Fallback gradient on mobile */
+  .about-hero,
+  .careers-hero,
+  .contact-hero,
+  .program-hero {
+    background: linear-gradient(135deg, 
+      #0a1a3a 0%, 
+      #1a2f6d 50%, 
+      #0d3a5c 100%);
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(180deg, 
+      rgba(10, 26, 58, 0.5) 0%, 
+      rgba(10, 26, 58, 0.7) 100%);
+  }
+}

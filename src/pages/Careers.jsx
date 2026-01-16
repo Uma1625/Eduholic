@@ -51,8 +51,19 @@ const careerPositions = [
 function Careers() {
     return (
         <div className="careers-page">
-            {/* Hero Section */}
-            <section className="careers-hero star-bg">
+            {/* Hero Section with Motion Graphics */}
+            <section className="careers-hero">
+                <video
+                    className="hero-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graphics4.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay"></div>
+
                 <div className="container">
                     <div className="careers-hero-content" data-aos="fade-up">
                         <h1 className="careers-title">CAREERS</h1>

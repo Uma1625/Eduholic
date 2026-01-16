@@ -28,8 +28,20 @@ const countries = [
 function AboutUs() {
     return (
         <div className="about-page">
-            {/* Hero Section */}
-            <section className="about-hero star-bg">
+            {/* Hero Section with Motion Graphics */}
+            <section className="about-hero">
+                {/* Video Background */}
+                <video
+                    className="hero-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graphics2.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay"></div>
+
                 <div className="about-hero-content">
                     <div className="glass-orb animate-float"></div>
                     <h1 className="about-title" data-aos="fade-up">Aim & Accomplish</h1>

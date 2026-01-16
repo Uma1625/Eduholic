@@ -22,11 +22,20 @@ function ProgramPage({ program }) {
 
     return (
         <div className="program-page">
-            {/* Hero Section */}
-            <section
-                className="program-hero"
-                style={{ background: program.gradient }}
-            >
+            {/* Hero Section with Motion Graphics */}
+            <section className="program-hero">
+                {/* Motion Graphics Video Background */}
+                <video
+                    className="hero-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graphics6.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay"></div>
+
                 <div className="container">
                     <div className="hero-content">
                         <div className="program-icon-large">{program.icon}</div>

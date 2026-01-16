@@ -101,8 +101,19 @@ function CategoryPrograms() {
 
     return (
         <div className="category-programs-page">
-            {/* Hero Section */}
+            {/* Hero Section with Motion Graphics */}
             <section className="category-hero">
+                <video
+                    className="hero-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graphics5.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay"></div>
+
                 <div className="container">
                     <div className="category-hero-content">
                         <span className="category-icon-large">{category.icon}</span>

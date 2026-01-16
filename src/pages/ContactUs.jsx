@@ -3,8 +3,19 @@ import './ContactUs.css'
 function ContactUs() {
     return (
         <div className="contact-page">
-            {/* Hero Section */}
-            <section className="contact-hero star-bg">
+            {/* Hero Section with Motion Graphics */}
+            <section className="contact-hero">
+                <video
+                    className="hero-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graohics3.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay"></div>
+
                 <div className="container">
                     <h1 className="contact-title" data-aos="fade-up">Contact Us</h1>
                 </div>

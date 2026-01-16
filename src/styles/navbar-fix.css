@@ -77,3 +77,110 @@
     transform: scale(0.4) !important;
   }
 }
+/* ============================================
+   MOBILE RESPONSIVE FIXES FOR ALL PAGES
+   ============================================ */
+
+@media (max-width: 480px) {
+  /* About Page */
+  .about-hero {
+    padding-top: 100px !important;
+    min-height: auto !important;
+  }
+  
+  .about-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .glass-orb {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  /* Contact Page */
+  .contact-hero {
+    padding-top: 100px !important;
+  }
+  
+  .contact-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .contact-form-card {
+    padding: 15px !important;
+    margin: 0 -10px !important;
+  }
+  
+  /* Careers Page */
+  .careers-hero {
+    padding-top: 100px !important;
+    min-height: auto !important;
+  }
+  
+  .careers-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .position-card {
+    padding: 15px !important;
+  }
+  
+  /* Program Pages */
+  .program-hero {
+    padding-top: 120px !important;
+  }
+  
+  .program-title {
+    font-size: 1.4rem !important;
+  }
+  
+  /* Category Programs Page */
+  .category-hero {
+    padding-top: 110px !important;
+  }
+  
+  .category-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .category-icon-large {
+    font-size: 50px !important;
+  }
+  
+  .programs-grid {
+    gap: 12px !important;
+  }
+  
+  .program-card {
+    padding: 15px !important;
+  }
+  
+  /* Placement Page */
+  .placement-hero {
+    padding-top: 110px !important;
+  }
+  
+  /* Policy Pages */
+  .policy-page {
+    padding-top: 100px !important;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .about-hero,
+  .careers-hero,
+  .contact-hero,
+  .category-hero,
+  .program-hero {
+    padding-top: 90px !important;
+  }
+  
+  .about-title,
+  .careers-title,
+  .contact-title,
+  .category-title,
+  .program-title {
+    font-size: 1.3rem !important;
+  }
+}

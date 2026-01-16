@@ -41,10 +41,10 @@ const jobGuaranteePrograms = [
 function PlacementProvision() {
     return (
         <div className="placement-provision-page">
-            {/* Hero Section with Motion Graphics */}
-            <section className="placement-hero">
+            {/* Combined Video Background Wrapper for Hero + Job Guarantee */}
+            <div className="video-background-wrapper">
                 <video
-                    className="hero-video-bg"
+                    className="fullpage-video-bg"
                     autoPlay
                     muted
                     loop
@@ -52,64 +52,67 @@ function PlacementProvision() {
                 >
                     <source src="/motion_graphics8.mp4" type="video/mp4" />
                 </video>
-                <div className="hero-overlay"></div>
+                <div className="fullpage-overlay"></div>
 
-                <div className="container">
-                    <div className="hero-content">
-                        <h1 className="hero-title">
-                            Placement Provision <span className="text-gradient">Programs</span>
-                        </h1>
-                        <p className="hero-subtitle">
-                            Launch your career with our industry-recognized programs featuring
-                            guaranteed job placements and professional certifications
-                        </p>
+                {/* Hero Section */}
+                <section className="placement-hero">
+                    <div className="container">
+                        <div className="hero-content">
+                            <h1 className="hero-title">
+                                Placement Provision <span className="text-gradient">Programs</span>
+                            </h1>
+                            <p className="hero-subtitle">
+                                Launch your career with our industry-recognized programs featuring
+                                guaranteed job placements and professional certifications
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* Job Guarantee Programs Section */}
-            <section className="programs-section job-guarantee-section">
-                <div className="container">
-                    <div className="section-header">
-                        <h2 className="section-title">
-                            <span className="title-icon">🎯</span>
-                            Job Guarantee <span className="text-gradient">Programs</span>
-                        </h2>
-                        <p className="section-description">
-                            Get 100% job placement guarantee with our intensive training programs
-                        </p>
+                {/* Job Guarantee Programs Section */}
+                <section className="programs-section job-guarantee-section">
+                    <div className="container">
+                        <div className="section-header">
+                            <h2 className="section-title">
+                                <span className="title-icon">🎯</span>
+                                Job Guarantee <span className="text-gradient">Programs</span>
+                            </h2>
+                            <p className="section-description">
+                                Get 100% job placement guarantee with our intensive training programs
+                            </p>
+                        </div>
+                        <div className="programs-grid">
+                            {jobGuaranteePrograms.map((program) => (
+                                <Link
+                                    key={program.id}
+                                    to={`/job-guarantee/${program.id}`}
+                                    className="program-card job-guarantee-card"
+                                >
+                                    <div className="card-icon">{program.icon}</div>
+                                    <h3 className="card-title">{program.title}</h3>
+                                    <p className="card-description">{program.description}</p>
+                                    <div className="card-meta">
+                                        <span className="duration">
+                                            <span className="meta-icon">⏱️</span>
+                                            {program.duration}
+                                        </span>
+                                    </div>
+                                    <div className="card-features">
+                                        {program.features.map((feature, idx) => (
+                                            <span key={idx} className="feature-tag">{feature}</span>
+                                        ))}
+                                    </div>
+                                    <div className="card-cta">
+                                        <span>Learn More</span>
+                                        <span className="arrow">→</span>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
                     </div>
-                    <div className="programs-grid">
-                        {jobGuaranteePrograms.map((program) => (
-                            <Link
-                                key={program.id}
-                                to={`/job-guarantee/${program.id}`}
-                                className="program-card job-guarantee-card"
-                            >
-                                <div className="card-icon">{program.icon}</div>
-                                <h3 className="card-title">{program.title}</h3>
-                                <p className="card-description">{program.description}</p>
-                                <div className="card-meta">
-                                    <span className="duration">
-                                        <span className="meta-icon">⏱️</span>
-                                        {program.duration}
-                                    </span>
-                                </div>
-                                <div className="card-features">
-                                    {program.features.map((feature, idx) => (
-                                        <span key={idx} className="feature-tag">{feature}</span>
-                                    ))}
-                                </div>
-                                <div className="card-cta">
-                                    <span>Learn More</span>
-                                    <span className="arrow">→</span>
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
+                </section>
+            </div>
+            {/* End of Video Background Wrapper */}
 
             {/* CTA Section */}
             <section className="cta-section">

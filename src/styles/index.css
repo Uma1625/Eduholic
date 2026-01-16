@@ -1175,3 +1175,25 @@ select {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, var(--color-cyan), var(--color-violet));
 }
+
+/* ============================================
+   NAVBAR SPACING FOR ALL PAGES
+   ============================================ */
+
+/* Ensure all pages have top padding for fixed navbar */
+.home,
+.about-page,
+.contact-page,
+.careers-page,
+.program-page,
+.placement-page,
+.policy-page {
+  padding-top: 120px;
+}
+
+/* Hero sections already have their own positioning */
+.hero-section {
+  padding-top: 0;
+  margin-top: -120px;
+  padding-top: 120px;
+}

@@ -28,7 +28,6 @@ function ProgramPage({ program }) {
                 style={{ background: program.gradient }}
             >
                 <div className="container">
-                    <Link to="/" className="back-link">Back to Home</Link>
                     <div className="hero-content">
                         <div className="program-icon-large">{program.icon}</div>
                         <h1 className="program-title">{program.title} Training</h1>

@@ -613,3 +613,7 @@
         transform: scale(1);
     }
 }
+/* Fix navbar overlap */
+.placement-page {
+  padding-top: 140px;
+}

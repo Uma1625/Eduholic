@@ -25,7 +25,8 @@ const categories = [
         id: 1,
         name: 'Computer Science & IT',
         icon: '💻',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        slug: 'computer-science-it',
+        gradient: 'linear-gradient(135deg, #0a1a3a 0%, #1a2f6d 100%)',
         courses: [
             { name: 'Cyber Security', path: '/programs/cyber-security' },
             { name: 'Data Analytics', path: '/programs/data-analytics' },
@@ -40,7 +41,8 @@ const categories = [
         id: 2,
         name: 'ECE / EEE',
         icon: '⚡',
-        gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
+        slug: 'ece-eee',
+        gradient: 'linear-gradient(135deg, #0d2137 0%, #0a3d5c 100%)',
         courses: [
             { name: 'Internet of Things (IoT)', path: '/programs/internet-of-things' },
             { name: 'Hybrid & Electric Vehicles', path: '/programs/hybrid-electric-vehicles' },
@@ -51,7 +53,8 @@ const categories = [
         id: 3,
         name: 'Mechanical',
         icon: '⚙️',
-        gradient: 'linear-gradient(135deg, #ee0979 0%, #ff6a00 100%)',
+        slug: 'mechanical',
+        gradient: 'linear-gradient(135deg, #1a1a3e 0%, #2d1f4a 100%)',
         courses: [
             { name: 'AutoCAD', path: '/programs/autocad' },
             { name: 'Hybrid & Electric Vehicles', path: '/programs/hybrid-electric-vehicles' }
@@ -61,7 +64,8 @@ const categories = [
         id: 4,
         name: 'Civil',
         icon: '🏗️',
-        gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+        slug: 'civil',
+        gradient: 'linear-gradient(135deg, #0f2847 0%, #1a3a5c 100%)',
         courses: [
             { name: 'AutoCAD', path: '/programs/autocad' },
             { name: 'Building Design & Construction', path: '/programs/building-design-construction' }
@@ -71,7 +75,8 @@ const categories = [
         id: 5,
         name: 'Management & Business',
         icon: '📈',
-        gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        slug: 'management-business',
+        gradient: 'linear-gradient(135deg, #0a1a3a 0%, #0d3a5c 100%)',
         courses: [
             { name: 'Digital Marketing', path: '/programs/digital-marketing' },
             { name: 'Stock Market & Cryptocurrency', path: '/programs/stock-market' },
@@ -86,7 +91,8 @@ const categories = [
         id: 6,
         name: 'IT & Design',
         icon: '🎨',
-        gradient: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)',
+        slug: 'it-design',
+        gradient: 'linear-gradient(135deg, #1a1a40 0%, #2a2a5a 100%)',
         courses: [
             { name: 'UI/UX Designing', path: '/programs/ui-ux-designing' },
             { name: 'Graphic Designing', path: '/programs/graphic-designing' }
@@ -96,7 +102,8 @@ const categories = [
         id: 7,
         name: 'Media & Communication',
         icon: '✍️',
-        gradient: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+        slug: 'media-communication',
+        gradient: 'linear-gradient(135deg, #0d2137 0%, #1a3a5c 100%)',
         courses: [
             { name: 'Content Writing', path: '/programs/content-writing' }
         ]
@@ -105,7 +112,8 @@ const categories = [
         id: 8,
         name: 'Healthcare & Life Sciences',
         icon: '🏥',
-        gradient: 'linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%)',
+        slug: 'healthcare-life-sciences',
+        gradient: 'linear-gradient(135deg, #0a1a3a 0%, #1a2f6d 100%)',
         courses: [
             { name: 'Medical Coding', path: '/programs/medical-coding' }
         ]
@@ -121,16 +129,24 @@ const statistics = [
 ]
 
 const alumniCompanies = [
-    // Row 1
-    'Amazon', 'Zoho', 'Toyota', 'Bosch', 'American Express', 'Axxela', 'Flipkart', 'EY', 'Knipex',
-    // Row 2
-    'Goldman Sachs', 'Mphasis', 'Tech Mahindra', 'HCL', 'Wipro', 'Accenture', 'Cognizant', 'TCS', 'Samsung',
-    // Row 3
-    'Microsoft', 'IBM', 'PWC', 'Bank of America', 'Capgemini', 'Larsen & Toubro', 'Bajaj Finserv', 'Deloitte', 'DXC Technology',
-    // Row 4
-    'State Street', 'Barclays', 'Jio', 'HSBC', 'LeadSquared', 'Adobe', 'Salesforce', 'Oracle', 'Infosys',
-    // Row 5
-    'Booking.com', 'ABInBev', 'Sony', 'Mu Sigma', 'Siemens', 'Optum', 'Tisco', 'Cisco', 'GE'
+    { name: 'Amazon', logo: 'https://logo.clearbit.com/amazon.com' },
+    { name: 'Google', logo: 'https://logo.clearbit.com/google.com' },
+    { name: 'Microsoft', logo: 'https://logo.clearbit.com/microsoft.com' },
+    { name: 'Flipkart', logo: 'https://logo.clearbit.com/flipkart.com' },
+    { name: 'Wipro', logo: 'https://logo.clearbit.com/wipro.com' },
+    { name: 'TCS', logo: 'https://logo.clearbit.com/tcs.com' },
+    { name: 'Infosys', logo: 'https://logo.clearbit.com/infosys.com' },
+    { name: 'Accenture', logo: 'https://logo.clearbit.com/accenture.com' },
+    { name: 'IBM', logo: 'https://logo.clearbit.com/ibm.com' },
+    { name: 'Deloitte', logo: 'https://logo.clearbit.com/deloitte.com' },
+    { name: 'Cognizant', logo: 'https://logo.clearbit.com/cognizant.com' },
+    { name: 'HCL', logo: 'https://logo.clearbit.com/hcltech.com' },
+    { name: 'Capgemini', logo: 'https://logo.clearbit.com/capgemini.com' },
+    { name: 'Adobe', logo: 'https://logo.clearbit.com/adobe.com' },
+    { name: 'Oracle', logo: 'https://logo.clearbit.com/oracle.com' },
+    { name: 'Salesforce', logo: 'https://logo.clearbit.com/salesforce.com' },
+    { name: 'Samsung', logo: 'https://logo.clearbit.com/samsung.com' },
+    { name: 'Zoho', logo: 'https://logo.clearbit.com/zoho.com' }
 ]
 
 
@@ -409,7 +425,7 @@ function Home() {
             </section>
 
 
-            {/* Browse by Category */}
+            {/* Browse by Category - Premium Cards */}
             <section className="categories-section section-dark">
                 <div className="container">
                     <h2 className="section-title text-center" data-aos="fade-up">
@@ -419,31 +435,83 @@ function Home() {
                         Obtain the practical skills you need to start a successful career in Engineering and Management domains.
                     </p>
 
-                    <div className="categories-expanded-grid">
-                        {categories.map((cat, idx) => (
-                            <div
-                                key={cat.id}
-                                className="category-expanded-card"
-                                data-aos="fade-up"
-                                data-aos-delay={idx * 100}
-                            >
-                                <div className="category-header">
-                                    <span className="category-icon">{cat.icon}</span>
-                                    <h3 className="category-name">{cat.name}</h3>
-                                </div>
-                                <div className="category-courses">
-                                    {cat.courses.map((course, cidx) => (
-                                        <Link
-                                            key={cidx}
-                                            to={course.path}
-                                            className="course-link"
-                                        >
-                                            {course.name}
+                    {/* Auto-scrolling Carousel */}
+                    <div className="categories-carousel-wrapper">
+                        <div className="categories-carousel-track">
+                            {/* First set of cards */}
+                            {categories.map((cat, idx) => (
+                                <div
+                                    key={cat.id}
+                                    className="premium-category-card"
+                                >
+                                    {/* Card Background */}
+                                    <div className="card-bg" style={{ background: cat.gradient }}></div>
+
+                                    {/* Cyan glow border */}
+                                    <div className="card-glow-border"></div>
+
+                                    {/* Card Front Content */}
+                                    <div className="card-front">
+                                        <span className="card-icon">{cat.icon}</span>
+                                        <h3 className="card-title">{cat.name}</h3>
+                                        <span className="card-count">{cat.courses.length} Programs</span>
+                                    </div>
+
+                                    {/* Card Hover Details */}
+                                    <div className="card-details">
+                                        <h4 className="details-title">{cat.name}</h4>
+                                        <div className="details-courses">
+                                            {cat.courses.slice(0, 4).map((course, cidx) => (
+                                                <Link
+                                                    key={cidx}
+                                                    to={course.path}
+                                                    className="detail-course-link"
+                                                >
+                                                    <span className="course-arrow">→</span>
+                                                    {course.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                        <Link to={`/category/${cat.slug}`} className="card-cta">
+                                            Explore All →
                                         </Link>
-                                    ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                            {/* Duplicate for infinite scroll */}
+                            {categories.map((cat, idx) => (
+                                <div
+                                    key={`dup-${cat.id}`}
+                                    className="premium-category-card"
+                                >
+                                    <div className="card-bg" style={{ background: cat.gradient }}></div>
+                                    <div className="card-glow-border"></div>
+                                    <div className="card-front">
+                                        <span className="card-icon">{cat.icon}</span>
+                                        <h3 className="card-title">{cat.name}</h3>
+                                        <span className="card-count">{cat.courses.length} Programs</span>
+                                    </div>
+                                    <div className="card-details">
+                                        <h4 className="details-title">{cat.name}</h4>
+                                        <div className="details-courses">
+                                            {cat.courses.slice(0, 4).map((course, cidx) => (
+                                                <Link
+                                                    key={cidx}
+                                                    to={course.path}
+                                                    className="detail-course-link"
+                                                >
+                                                    <span className="course-arrow">→</span>
+                                                    {course.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                        <Link to={`/category/${cat.slug}`} className="card-cta">
+                                            Explore All →
+                                        </Link>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -507,7 +575,13 @@ function Home() {
                         <div className="alumni-companies-grid" data-aos="fade-up">
                             {alumniCompanies.map((company, idx) => (
                                 <div key={idx} className="company-card">
-                                    {company}
+                                    <img
+                                        src={company.logo}
+                                        alt={company.name}
+                                        className="company-logo"
+                                        onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }}
+                                    />
+                                    <span className="company-name-fallback" style={{ display: 'none' }}>{company.name}</span>
                                 </div>
                             ))}
                         </div>

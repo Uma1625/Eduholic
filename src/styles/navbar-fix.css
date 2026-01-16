@@ -1,0 +1,79 @@
+/* ============================================
+   NAVBAR SPACING FIX FOR ALL PAGES
+   Navbar with 100px logo needs proper spacing
+   ============================================ */
+
+/* Global page padding to account for fixed navbar */
+.about-hero,
+.careers-hero,
+.contact-hero,
+.placement-hero,
+.policy-page,
+.program-hero {
+  padding-top: 120px !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+  .about-hero,
+  .careers-hero,
+  .contact-hero,
+  .placement-hero,
+  .policy-page,
+  .program-hero {
+    padding-top: 130px !important;
+  }
+
+  /* Navbar logo smaller on mobile */
+  .logo-image {
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-hero,
+  .careers-hero,
+  .contact-hero,
+  .placement-hero,
+  .policy-page,
+  .program-hero {
+    padding-top: 110px !important;
+  }
+
+  .logo-image {
+    height: 50px !important;
+  }
+}
+
+/* Why Choose Eduholic - Mobile Fix */
+@media (max-width: 768px) {
+  .about-scroll-section {
+    padding: 30px 15px !important;
+  }
+
+  .orbit-system {
+    transform: scale(0.5) !important;
+    margin: 0 auto !important;
+    max-width: 300px;
+  }
+
+  .why-choose-title {
+    font-size: 1.2rem !important;
+  }
+
+  .feature-bubble {
+    transform: scale(0.8);
+  }
+
+  .bubble-text {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .orbit-system {
+    transform: scale(0.4) !important;
+  }
+}

@@ -8,6 +8,7 @@ import AboutUs from './pages/AboutUs'
 import Careers from './pages/Careers'
 import ContactUs from './pages/ContactUs'
 import ProgramDetail from './pages/programs/ProgramDetail'
+import CategoryPrograms from './pages/CategoryPrograms'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions'
 import ReturnPolicy from './pages/ReturnPolicy'
@@ -44,6 +45,9 @@ function App() {
                     {/* Placement Provision Programs */}
                     <Route path="/placement" element={<PlacementProvision />} />
                     <Route path="/job-guarantee/:programSlug" element={<ProgramDetail />} />
+
+                    {/* Category Programs Page */}
+                    <Route path="/category/:slug" element={<CategoryPrograms />} />
 
                     {/* Dynamic Program Pages - handles all program routes */}
                     <Route path="/programs/:programSlug" element={<ProgramDetail />} />

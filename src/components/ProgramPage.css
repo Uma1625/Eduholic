@@ -1033,3 +1033,12 @@
     font-size: 1.3rem;
   }
 }
+
+/* Fix navbar overlap */
+.program-page {
+  padding-top: 0;
+}
+
+.program-hero {
+  padding-top: 140px !important;
+}

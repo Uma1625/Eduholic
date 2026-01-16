@@ -8,10 +8,10 @@
   left: 0;
   right: 0;
   z-index: var(--z-header);
-  background: rgba(10, 14, 39, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 217, 255, 0.15);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: none;
   transition: all 0.4s ease;
 }
 
@@ -32,17 +32,18 @@
 }
 
 /* ============================================
-   LOGO
+   LOGO - Large & Animated
    ============================================ */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: 20px;
   transition: transform 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .logo-icon {
@@ -65,18 +66,42 @@
   color: white;
 }
 
-/* Logo Image - EDUHOLIC */
+/* Logo Image - EDUHOLIC - BIGGER & ANIMATED */
 .logo-image {
-  height: 60px;
+  height: 100px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 2px 10px rgba(0, 217, 255, 0.3));
-  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 20px rgba(0, 217, 255, 0.5));
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: logoFloat 4s ease-in-out infinite, logoGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes logoFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes logoGlow {
+  0% {
+    filter: drop-shadow(0 4px 20px rgba(0, 217, 255, 0.4));
+  }
+
+  100% {
+    filter: drop-shadow(0 4px 35px rgba(0, 217, 255, 0.8)) drop-shadow(0 0 20px rgba(124, 58, 237, 0.4));
+  }
 }
 
 .logo:hover .logo-image {
-  filter: drop-shadow(0 4px 20px rgba(0, 217, 255, 0.5));
-  transform: scale(1.05);
+  transform: scale(1.1) translateY(-3px);
+  filter: drop-shadow(0 8px 40px rgba(0, 217, 255, 0.9));
+  animation-play-state: paused;
 }
 
 /* ============================================

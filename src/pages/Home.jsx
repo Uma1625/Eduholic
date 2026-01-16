@@ -129,24 +129,24 @@ const statistics = [
 ]
 
 const alumniCompanies = [
-    { name: 'Amazon', logo: 'https://img.logo.dev/amazon.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Google', logo: 'https://img.logo.dev/google.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Microsoft', logo: 'https://img.logo.dev/microsoft.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Flipkart', logo: 'https://img.logo.dev/flipkart.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Wipro', logo: 'https://img.logo.dev/wipro.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'TCS', logo: 'https://img.logo.dev/tcs.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Infosys', logo: 'https://img.logo.dev/infosys.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Accenture', logo: 'https://img.logo.dev/accenture.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'IBM', logo: 'https://img.logo.dev/ibm.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Deloitte', logo: 'https://img.logo.dev/deloitte.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Cognizant', logo: 'https://img.logo.dev/cognizant.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'HCL', logo: 'https://img.logo.dev/hcltech.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Capgemini', logo: 'https://img.logo.dev/capgemini.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Adobe', logo: 'https://img.logo.dev/adobe.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Oracle', logo: 'https://img.logo.dev/oracle.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Salesforce', logo: 'https://img.logo.dev/salesforce.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Samsung', logo: 'https://img.logo.dev/samsung.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Zoho', logo: 'https://img.logo.dev/zoho.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' }
+    { name: 'Amazon', logo: '/logos/Amazon_logo.svg' },
+    { name: 'Google', logo: '/logos/Google.png' },
+    { name: 'Microsoft', logo: '/logos/microsoft.png' },
+    { name: 'Wipro', logo: '/logos/wipro.png' },
+    { name: 'Infosys', logo: '/logos/infosys.png' },
+    { name: 'Accenture', logo: '/logos/accenture.png' },
+    { name: 'IBM', logo: '/logos/ibm.png' },
+    { name: 'HCL', logo: '/logos/hcl.png' },
+    { name: 'Oracle', logo: '/logos/oracle.png' },
+    { name: 'Salesforce', logo: '/logos/salesforce.png' },
+    { name: 'TCS', logo: '' },
+    { name: 'Deloitte', logo: '' },
+    { name: 'Cognizant', logo: '' },
+    { name: 'Capgemini', logo: '' },
+    { name: 'Adobe', logo: '' },
+    { name: 'Flipkart', logo: '' },
+    { name: 'Samsung', logo: '' },
+    { name: 'Zoho', logo: '' }
 ]
 
 

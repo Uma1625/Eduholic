@@ -734,3 +734,21 @@
 .video-background-wrapper .section-header {
   margin-bottom: 2rem;
 }
+
+/* Hide any visible border/line between sections */
+.video-background-wrapper .placement-hero {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;
+}
+
+.video-background-wrapper .programs-section {
+  border-top: none !important;
+  margin-top: 0 !important;
+  padding-top: 30px !important;
+}
+
+/* Remove any potential divider lines */
+.video-background-wrapper .placement-hero::after,
+.video-background-wrapper .programs-section::before {
+  display: none !important;
+}

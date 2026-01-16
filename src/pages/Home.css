@@ -3988,3 +3988,31 @@
     max-width: 260px !important;
   }
 }
+
+/* ============================================
+   STARTUP INDIA TEXT OVERFLOW FIX
+   ============================================ */
+
+.recognition-badge {
+  padding: 20px 30px !important;
+  overflow: hidden !important;
+  word-wrap: break-word !important;
+}
+
+.startup-india-text {
+  font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+@media (max-width: 480px) {
+  .recognition-badge {
+    padding: 15px 20px !important;
+    max-width: 95% !important;
+  }
+  
+  .startup-india-text {
+    font-size: 1.5rem !important;
+  }
+}

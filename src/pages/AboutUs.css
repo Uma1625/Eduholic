@@ -757,3 +757,65 @@
     margin-bottom: 8px !important;
   }
 }
+
+/* ============================================
+   ABOUTUS ICON CONTAINERS - MOBILE FIX
+   ============================================ */
+
+/* Reduce icon container padding on mobile */
+@media (max-width: 768px) {
+  .glass-orb {
+    width: 100px !important;
+    height: 100px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .lightbulb-container,
+  .plane-container {
+    padding: 15px !important;
+    margin: 10px auto !important;
+  }
+  
+  .lightbulb-icon,
+  .plane-icon {
+    font-size: 50px !important;
+  }
+  
+  .vision-graphic,
+  .mission-graphic {
+    padding: 20px 0 !important;
+    margin: 15px 0 !important;
+  }
+  
+  .vision-grid,
+  .mission-grid {
+    gap: 20px !important;
+  }
+  
+  .glow-ring {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-orb {
+    width: 80px !important;
+    height: 80px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .lightbulb-container,
+  .plane-container {
+    padding: 10px !important;
+  }
+  
+  .lightbulb-icon,
+  .plane-icon {
+    font-size: 40px !important;
+  }
+  
+  .vision-section,
+  .mission-section {
+    padding: 25px 10px !important;
+  }
+}

@@ -378,6 +378,34 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Mobile Alternative - Feature Cards Grid (shown only on mobile) */}
+                        <div className="mobile-features-grid">
+                            <div className="mobile-feature-card">
+                                <span className="mobile-feature-icon">👨‍🏫</span>
+                                <span className="mobile-feature-text">Distinguished Mentors</span>
+                            </div>
+                            <div className="mobile-feature-card">
+                                <span className="mobile-feature-icon">💼</span>
+                                <span className="mobile-feature-text">Industrial Projects</span>
+                            </div>
+                            <div className="mobile-feature-card">
+                                <span className="mobile-feature-icon">🎥</span>
+                                <span className="mobile-feature-text">Live Sessions</span>
+                            </div>
+                            <div className="mobile-feature-card">
+                                <span className="mobile-feature-icon">🎓</span>
+                                <span className="mobile-feature-text">Internship</span>
+                            </div>
+                            <div className="mobile-feature-card">
+                                <span className="mobile-feature-icon">📚</span>
+                                <span className="mobile-feature-text">LMS Portal</span>
+                            </div>
+                            <div className="mobile-feature-card">
+                                <span className="mobile-feature-icon">🏆</span>
+                                <span className="mobile-feature-text">Certifications</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -393,10 +421,10 @@ function Home() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Trending Internships */}
-            <section className="trending-section section-dark" id="programs">
+            < section className="trending-section section-dark" id="programs" >
                 <div className="container">
                     <h2 className="section-title text-center" data-aos="fade-up">
                         <span className="text-gradient">Trending</span> Internships
@@ -422,11 +450,11 @@ function Home() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
 
             {/* Browse by Category - Premium Cards */}
-            <section className="categories-section section-dark">
+            < section className="categories-section section-dark" >
                 <div className="container">
                     <h2 className="section-title text-center" data-aos="fade-up">
                         Browse By <span className="text-gradient">Category</span>
@@ -514,10 +542,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Statistics Section */}
-            <section className="stats-section section-white" ref={statsRef}>
+            < section className="stats-section section-white" ref={statsRef} >
                 <div className="container">
                     <div className="stats-grid">
                         {statistics.map((stat, idx) => (
@@ -525,10 +553,10 @@ function Home() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Alumni Section */}
-            <section className="alumni-section section-dark star-bg">
+            < section className="alumni-section section-dark star-bg" >
                 <div className="container">
                     <h2 className="section-title text-center" data-aos="fade-up">
                         What Our <span className="text-gradient">Alumni</span> Say
@@ -597,10 +625,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Contact Form Section */}
-            <section className="contact-section section-dark">
+            < section className="contact-section section-dark" >
                 <div className="container">
                     <div className="contact-grid">
                         <div className="contact-info" data-aos="fade-right">
@@ -650,8 +678,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     )
 }
 

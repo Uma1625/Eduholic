@@ -226,3 +226,90 @@
     font-size: 0.85rem;
   }
 }
+
+/* ============================================
+   GRID LAYOUT FOR COMPACT POLICY PAGES
+   ============================================ */
+
+/* Make content container wider */
+.policy-content .container {
+  max-width: 1200px !important;
+}
+
+/* Grid layout for sections */
+.policy-content .container {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px !important;
+}
+
+/* Intro section spans full width */
+.policy-section.intro {
+  grid-column: 1 / -1 !important;
+}
+
+/* Compact section styling */
+.policy-section {
+  padding: 20px 25px !important;
+  margin-bottom: 0 !important;
+}
+
+.policy-section h2 {
+  font-size: 1.1rem !important;
+  margin-bottom: 10px !important;
+  padding-bottom: 8px !important;
+}
+
+.policy-section h3 {
+  font-size: 0.95rem !important;
+  margin: 12px 0 8px !important;
+  color: #667eea;
+}
+
+.policy-section p {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 8px !important;
+}
+
+.policy-section li {
+  font-size: 0.85rem !important;
+  padding: 6px 0 !important;
+  padding-left: 20px !important;
+}
+
+.contact-info-box {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)) !important;
+  border: 1px solid rgba(102, 126, 234, 0.3) !important;
+  border-radius: 8px !important;
+  padding: 15px !important;
+  margin-top: 10px !important;
+}
+
+.contact-info-box p {
+  margin-bottom: 5px !important;
+}
+
+/* Tablet - single column */
+@media (max-width: 900px) {
+  .policy-content .container {
+    grid-template-columns: 1fr !important;
+    max-width: 700px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .policy-section {
+    padding: 15px !important;
+  }
+  
+  .policy-section h2 {
+    font-size: 1rem !important;
+  }
+  
+  .policy-section p,
+  .policy-section li {
+    font-size: 0.8rem !important;
+  }
+}

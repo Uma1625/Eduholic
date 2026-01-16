@@ -526,6 +526,7 @@ select {
 
 /* New elegant animations for modern UI */
 @keyframes gradient-shift {
+
   0%,
   100% {
     background-position: 0% 50%;
@@ -537,6 +538,7 @@ select {
 }
 
 @keyframes float-smooth {
+
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
@@ -556,6 +558,7 @@ select {
 }
 
 @keyframes glow-pulse {
+
   0%,
   100% {
     box-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
@@ -592,6 +595,7 @@ select {
 
 /* Float Animation */
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
@@ -611,6 +615,7 @@ select {
 }
 
 @keyframes float-slow {
+
   0%,
   100% {
     transform: translateY(0);
@@ -623,6 +628,7 @@ select {
 
 /* Pulse */
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
@@ -636,6 +642,7 @@ select {
 }
 
 @keyframes pulse-glow {
+
   0%,
   100% {
     box-shadow: 0 0 20px var(--glow-cyan);
@@ -648,6 +655,7 @@ select {
 
 /* Glow */
 @keyframes glow {
+
   0%,
   100% {
     box-shadow: 0 0 20px rgba(0, 204, 255, 0.3);
@@ -660,6 +668,7 @@ select {
 
 /* Button Glow */
 @keyframes button-glow {
+
   0%,
   100% {
     box-shadow: 0 0 20px rgba(0, 153, 255, 0.4);
@@ -732,6 +741,7 @@ select {
 
 /* Bounce */
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
@@ -781,6 +791,7 @@ select {
 
 /* Wiggle */
 @keyframes wiggle {
+
   0%,
   100% {
     transform: rotate(-3deg);
@@ -806,6 +817,7 @@ select {
 
 /* Border Animation */
 @keyframes border-flow {
+
   0%,
   100% {
     border-color: var(--color-sky-blue);
@@ -818,6 +830,7 @@ select {
 
 /* Star Twinkle */
 @keyframes twinkle {
+
   0%,
   100% {
     opacity: 0.3;
@@ -1003,7 +1016,7 @@ select {
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(ellipse 80% 50% at 20% 40%, rgba(0, 217, 255, 0.15), transparent 50%),
     radial-gradient(ellipse 60% 60% at 80% 20%, rgba(124, 58, 237, 0.2), transparent 50%),
     radial-gradient(ellipse 50% 80% at 50% 80%, rgba(0, 153, 255, 0.1), transparent 50%);
@@ -1013,10 +1026,23 @@ select {
 }
 
 @keyframes meshMove {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(-20px, 20px) scale(1.05); }
-  50% { transform: translate(20px, -10px) scale(0.95); }
-  75% { transform: translate(-10px, -20px) scale(1.02); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate(-20px, 20px) scale(1.05);
+  }
+
+  50% {
+    transform: translate(20px, -10px) scale(0.95);
+  }
+
+  75% {
+    transform: translate(-10px, -20px) scale(1.02);
+  }
 }
 
 /* 3D Tilt Card Effect */
@@ -1034,13 +1060,20 @@ select {
   position: relative;
   border: 2px solid transparent;
   background: linear-gradient(var(--color-dark-navy), var(--color-dark-navy)) padding-box,
-              linear-gradient(135deg, var(--color-sky-blue), var(--color-purple)) border-box;
+    linear-gradient(135deg, var(--color-sky-blue), var(--color-purple)) border-box;
   animation: borderGlow 3s ease-in-out infinite;
 }
 
 @keyframes borderGlow {
-  0%, 100% { filter: drop-shadow(0 0 5px var(--glow-cyan)); }
-  50% { filter: drop-shadow(0 0 20px var(--glow-cyan)) drop-shadow(0 0 40px var(--glow-purple)); }
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 5px var(--glow-cyan));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 20px var(--glow-cyan)) drop-shadow(0 0 40px var(--glow-purple));
+  }
 }
 
 /* Floating Particles */
@@ -1062,18 +1095,60 @@ select {
   opacity: 0.6;
 }
 
-.particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 8s; }
-.particle:nth-child(2) { left: 25%; animation-delay: 1s; animation-duration: 10s; }
-.particle:nth-child(3) { left: 40%; animation-delay: 2s; animation-duration: 7s; }
-.particle:nth-child(4) { left: 55%; animation-delay: 0.5s; animation-duration: 9s; }
-.particle:nth-child(5) { left: 70%; animation-delay: 1.5s; animation-duration: 11s; }
-.particle:nth-child(6) { left: 85%; animation-delay: 2.5s; animation-duration: 8s; }
+.particle:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 8s;
+}
+
+.particle:nth-child(2) {
+  left: 25%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+}
+
+.particle:nth-child(3) {
+  left: 40%;
+  animation-delay: 2s;
+  animation-duration: 7s;
+}
+
+.particle:nth-child(4) {
+  left: 55%;
+  animation-delay: 0.5s;
+  animation-duration: 9s;
+}
+
+.particle:nth-child(5) {
+  left: 70%;
+  animation-delay: 1.5s;
+  animation-duration: 11s;
+}
+
+.particle:nth-child(6) {
+  left: 85%;
+  animation-delay: 2.5s;
+  animation-duration: 8s;
+}
 
 @keyframes particleFloat {
-  0% { transform: translateY(100vh) scale(0); opacity: 0; }
-  10% { opacity: 0.6; }
-  90% { opacity: 0.6; }
-  100% { transform: translateY(-100vh) scale(1); opacity: 0; }
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.6;
+  }
+
+  90% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
 }
 
 /* Morphing Blob Background */
@@ -1088,10 +1163,27 @@ select {
 }
 
 @keyframes blobMorph {
-  0%, 100% { border-radius: 50% 40% 60% 50%; transform: translate(0, 0) scale(1); }
-  25% { border-radius: 60% 50% 40% 60%; transform: translate(20px, -30px) scale(1.1); }
-  50% { border-radius: 40% 60% 50% 40%; transform: translate(-20px, 20px) scale(0.9); }
-  75% { border-radius: 50% 40% 60% 50%; transform: translate(10px, 10px) scale(1.05); }
+
+  0%,
+  100% {
+    border-radius: 50% 40% 60% 50%;
+    transform: translate(0, 0) scale(1);
+  }
+
+  25% {
+    border-radius: 60% 50% 40% 60%;
+    transform: translate(20px, -30px) scale(1.1);
+  }
+
+  50% {
+    border-radius: 40% 60% 50% 40%;
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  75% {
+    border-radius: 50% 40% 60% 50%;
+    transform: translate(10px, 10px) scale(1.05);
+  }
 }
 
 /* Glowing Text */
@@ -1100,8 +1192,13 @@ select {
 }
 
 @keyframes textGlow {
-  from { text-shadow: 0 0 10px var(--glow-cyan), 0 0 20px var(--glow-cyan); }
-  to { text-shadow: 0 0 20px var(--glow-cyan), 0 0 40px var(--glow-cyan), 0 0 60px var(--glow-purple); }
+  from {
+    text-shadow: 0 0 10px var(--glow-cyan), 0 0 20px var(--glow-cyan);
+  }
+
+  to {
+    text-shadow: 0 0 20px var(--glow-cyan), 0 0 40px var(--glow-cyan), 0 0 60px var(--glow-purple);
+  }
 }
 
 /* Magnetic Hover Effect */
@@ -1143,8 +1240,15 @@ select {
 }
 
 @keyframes cursorBlink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Scroll Progress Bar */
@@ -1224,10 +1328,10 @@ select {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, 
-    rgba(10, 26, 58, 0.7) 0%, 
-    rgba(10, 26, 58, 0.85) 50%,
-    rgba(10, 26, 58, 0.95) 100%);
+  background: linear-gradient(180deg,
+      rgba(10, 26, 58, 0.7) 0%,
+      rgba(10, 26, 58, 0.85) 50%,
+      rgba(10, 26, 58, 0.95) 100%);
   z-index: 1;
 }
 
@@ -1251,26 +1355,29 @@ select {
   overflow: hidden;
 }
 
-/* Hide video on mobile for performance */
+/* Mobile video optimization - keep videos but optimize overlay */
 @media (max-width: 768px) {
   .hero-video-bg {
-    display: none;
+    /* Videos now visible on mobile too */
+    opacity: 0.4;
   }
-  
-  /* Fallback gradient on mobile */
-  .about-hero,
-  .careers-hero,
-  .contact-hero,
-  .program-hero {
-    background: linear-gradient(135deg, 
-      #0a1a3a 0%, 
-      #1a2f6d 50%, 
-      #0d3a5c 100%);
-  }
-  
+
+  /* Darker overlay on mobile for better text readability */
   .hero-overlay {
-    background: linear-gradient(180deg, 
-      rgba(10, 26, 58, 0.5) 0%, 
-      rgba(10, 26, 58, 0.7) 100%);
+    background: linear-gradient(180deg,
+        rgba(10, 26, 58, 0.75) 0%,
+        rgba(10, 26, 58, 0.85) 100%);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-video-bg {
+    opacity: 0.35;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg,
+        rgba(10, 26, 58, 0.8) 0%,
+        rgba(10, 26, 58, 0.9) 100%);
   }
 }

@@ -6,7 +6,6 @@ function ReturnPolicy() {
             <div className="policy-hero">
                 <div className="container">
                     <h1>Return, Refund, Rescheduling & Course Change Policy</h1>
-                    <p>Last Updated: 15/01/2026</p>
                 </div>
             </div>
 

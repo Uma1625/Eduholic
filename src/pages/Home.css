@@ -3937,3 +3937,54 @@
     padding-bottom: 30px !important;
   }
 }
+
+/* ============================================
+   RECOGNIZED BY STARTUP INDIA - MOBILE FIX
+   ============================================ */
+
+/* Center the recognition section on mobile */
+@media (max-width: 768px) {
+  .recognition-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 30px 15px !important;
+    width: 100% !important;
+  }
+  
+  .recognition-title {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .recognition-badge {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+  
+  .startup-india-text {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .recognition-section {
+    padding: 20px 10px !important;
+  }
+  
+  .recognition-badge {
+    max-width: 260px !important;
+  }
+}

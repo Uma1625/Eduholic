@@ -1,70 +1,204 @@
-import { useState } from 'react'
 import './PolicyPage.css'
 
 function TermsAndConditions() {
-    const [openSection, setOpenSection] = useState(null)
-
-    const toggleSection = (section) => {
-        setOpenSection(openSection === section ? null : section)
-    }
-
-    const sections = [
-        { id: 1, title: 'Electronic Record & Legal Compliance', content: 'This is an electronic record under IT Act, 2000. No physical signature required.' },
-        { id: 2, title: 'Company Details', content: 'EDUHOLIC EDTECH INDIA PRIVATE LIMITED, incorporated under Companies Act, 2013, India.' },
-        { id: 3, title: 'Definitions', content: '"Website" = www.eduholic.in | "Services" = courses, certifications, internships | "User" = any person using the platform.' },
-        { id: 4, title: 'Acceptance of Terms', content: 'Using this Website means you accept these Terms. If you disagree, stop using the Website.' },
-        { id: 5, title: 'Modification of Terms', content: 'We may update these Terms anytime. Continued use = acceptance of changes.' },
-        { id: 6, title: 'Eligibility & Registration', content: 'Users under 18 need parent consent. Keep login credentials confidential.' },
-        { id: 7, title: 'Courses & Pricing', content: 'Prices may change without notice. Access granted after payment confirmation.' },
-        { id: 8, title: 'Payments', content: 'Payments via authorized gateways. We don\'t store card details.' },
-        { id: 9, title: 'Refunds & Returns', content: 'Governed by our separate Return & Refund Policy.' },
-        { id: 10, title: 'Intellectual Property', content: 'All content is owned by Eduholic. No copying/distribution without permission.' },
-        { id: 11, title: 'User Conduct', content: 'No unlawful use, hacking, spamming, or harmful activities allowed.' },
-        { id: 12, title: 'Data Protection', content: 'Personal data processed per Privacy Policy and DPDP Act, 2023.' },
-        { id: 13, title: 'Security', content: 'Unauthorized access is prohibited. Violations = civil/criminal liability.' },
-        { id: 14, title: 'Termination', content: 'We may suspend accounts for Terms violation or harmful conduct.' },
-        { id: 15, title: 'Disclaimer', content: 'Services provided "as is". No guarantee of uninterrupted access.' },
-        { id: 16, title: 'Limitation of Liability', content: 'Max liability = amount paid for specific service.' },
-        { id: 17, title: 'Indemnity', content: 'Users indemnify Eduholic from claims arising from misuse.' },
-        { id: 18, title: 'Third-Party Links', content: 'We\'re not responsible for external websites.' },
-        { id: 19, title: 'Electronic Communications', content: 'You consent to receiving communications electronically.' },
-        { id: 20, title: 'Force Majeure', content: 'Not liable for delays due to events beyond control.' },
-        { id: 21, title: 'Governing Law', content: 'Indian laws apply. Jurisdiction: Hyderabad, Telangana.' },
-        { id: 22, title: 'Severability', content: 'Invalid provisions don\'t affect remaining Terms.' },
-        { id: 23, title: 'Entire Agreement', content: 'These Terms + policies = complete agreement.' },
-        { id: 24, title: 'Contact', content: 'Email: support@eduholic.info | Website: www.eduholic.in' }
-    ]
-
     return (
         <div className="policy-page">
-            <div className="policy-hero compact">
+            <div className="policy-hero">
                 <div className="container">
                     <h1>Terms & Conditions</h1>
+                    <p>Terms of Use</p>
                 </div>
             </div>
 
-            <div className="policy-content compact">
+            <div className="policy-content">
                 <div className="container">
-                    <p className="policy-intro">
-                        By using <a href="https://www.eduholic.in">www.eduholic.in</a>, you agree to these Terms,
-                        our Privacy Policy, and Refund Policy. Click any section below to expand.
-                    </p>
+                    <section className="policy-section intro">
+                        <p className="intro-text">
+                            These Terms & Conditions ("Terms", "Terms of Use") govern the access to and use of the website
+                            <a href="https://www.eduholic.in"> www.eduholic.in</a>, its subdomains, payment pages, mobile platforms,
+                            and all services offered by <strong>EDUHOLIC EDTECH INDIA PRIVATE LIMITED</strong> ("Eduholic", "Company", "We", "Us", "Our").
+                        </p>
+                        <p className="agreement-notice">
+                            By accessing, browsing, registering, enrolling, or making any payment on the Website, you ("User", "You")
+                            agree to be legally bound by these Terms, our Privacy Policy, Refund & Return Policy, and any other policies
+                            published on the Website.
+                        </p>
+                    </section>
 
-                    <div className="accordion-container">
-                        {sections.map((section) => (
-                            <div key={section.id} className={`accordion-item ${openSection === section.id ? 'open' : ''}`}>
-                                <div className="accordion-header" onClick={() => toggleSection(section.id)}>
-                                    <span>{section.id}. {section.title}</span>
-                                    <span className="accordion-icon">{openSection === section.id ? '−' : '+'}</span>
-                                </div>
-                                {openSection === section.id && (
-                                    <div className="accordion-content">
-                                        <p>{section.content}</p>
-                                    </div>
-                                )}
-                            </div>
-                        ))}
-                    </div>
+                    <section className="policy-section">
+                        <h2>1. Electronic Record & Legal Compliance</h2>
+                        <ul>
+                            <li>This document is an electronic record as defined under the Information Technology Act, 2000.</li>
+                            <li>This electronic record is generated by a computer system and does not require physical or digital signatures.</li>
+                            <li>Published in compliance with Rule 3(1) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2011.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>2. Company Details</h2>
+                        <p>The domain www.eduholic.in is owned and operated by:</p>
+                        <div className="contact-info-box">
+                            <p><strong>EDUHOLIC EDTECH INDIA PRIVATE LIMITED</strong></p>
+                            <p>A company incorporated under the Companies Act, 2013, India.</p>
+                        </div>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>3. Definitions</h2>
+                        <ul>
+                            <li><strong>"Website"</strong> means www.eduholic.in and associated payment pages.</li>
+                            <li><strong>"Platform"</strong> means all digital infrastructure used to deliver services.</li>
+                            <li><strong>"Services"</strong> include online/offline courses, certifications, training programs, internships, events, workshops.</li>
+                            <li><strong>"User" / "You"</strong> means any individual or legal entity competent to contract under the Indian Contract Act, 1872.</li>
+                            <li><strong>"Content"</strong> includes text, videos, graphics, materials, software, and course content.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>4. Acceptance of Terms</h2>
+                        <ul>
+                            <li>Accessing or using the Website constitutes unconditional acceptance of these Terms.</li>
+                            <li>If you do not agree, you must immediately discontinue use of the Website and Services.</li>
+                            <li>These Terms apply to all users, including visitors, students, trainees, customers, contributors, and affiliates.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>5. Modification of Terms</h2>
+                        <ul>
+                            <li>Eduholic reserves the right to amend, modify, or replace these Terms at any time without prior notice.</li>
+                            <li>Continued use of the Website after changes constitutes acceptance of the revised Terms.</li>
+                            <li>Users are responsible for periodically reviewing the Terms.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>6. Eligibility & Account Registration</h2>
+                        <ul>
+                            <li>Users below 18 years may use the Website only under parental/guardian supervision and consent.</li>
+                            <li>Certain features require account registration with accurate, current, and complete information.</li>
+                            <li>Users are responsible for maintaining confidentiality of login credentials.</li>
+                            <li>Eduholic reserves the right to suspend or terminate accounts for violations.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>7. Courses, Services & Pricing</h2>
+                        <ul>
+                            <li>Course details, pricing, duration, and inclusions are displayed on the Website.</li>
+                            <li>Prices are subject to change without notice.</li>
+                            <li>Eduholic reserves the right to modify, suspend, or discontinue any Service without liability.</li>
+                            <li>Course access is granted only after successful payment confirmation.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>8. Payments & Billing</h2>
+                        <ul>
+                            <li>Payments must be made through authorized third-party payment gateways.</li>
+                            <li>Eduholic does not store credit/debit card or banking details.</li>
+                            <li>By making a payment, you confirm legal capacity to contract and accuracy of payment information.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>9. Refunds, Returns & Course Changes</h2>
+                        <ul>
+                            <li>All refunds, cancellations, and course changes are governed by Eduholic's Return, Refund, Rescheduling & Course Change Policy.</li>
+                            <li>No refunds shall be granted except as explicitly stated in the policy.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>10. Intellectual Property Rights</h2>
+                        <ul>
+                            <li>All intellectual property is the exclusive property of Eduholic or its licensors.</li>
+                            <li>Users shall not copy, reproduce, distribute, sell, modify, or exploit any content without prior written permission.</li>
+                            <li>Any infringement shall result in legal action under applicable laws.</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>11. User Conduct & Obligations</h2>
+                        <p>Users agree not to:</p>
+                        <ul>
+                            <li>Use the Website for unlawful purposes</li>
+                            <li>Post defamatory, offensive, misleading, or illegal content</li>
+                            <li>Infringe intellectual property rights</li>
+                            <li>Introduce malware, viruses, or harmful code</li>
+                            <li>Engage in spamming, solicitation, or unauthorized advertising</li>
+                            <li>Attempt unauthorized access or security breaches</li>
+                        </ul>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>12. Data Protection & Privacy</h2>
+                        <p>Personal data is collected and processed in accordance with Eduholic's Privacy Policy and the Digital Personal Data Protection Act, 2023.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>13. Security</h2>
+                        <p>Unauthorized access, hacking attempts, or disruption of services are strictly prohibited. Violations may result in civil and criminal liability.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>14. Suspension & Termination</h2>
+                        <p>Eduholic reserves the right to suspend or terminate access without notice if Terms are violated or required by law.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>15. Disclaimer & No Warranties</h2>
+                        <p>Services are provided on an "as is" and "as available" basis. Eduholic does not guarantee uninterrupted, error-free, or secure access.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>16. Limitation of Liability</h2>
+                        <p>Eduholic shall not be liable for indirect, incidental, consequential, or punitive damages. Maximum liability is limited to the amount paid by the User.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>17. Indemnity</h2>
+                        <p>Users agree to indemnify and hold harmless Eduholic from all claims arising from breach of Terms, misuse of the Website, or violation of laws.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>18. Third-Party Links</h2>
+                        <p>Eduholic is not responsible for third-party websites, content, or services. Accessing them is at your own risk.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>19. Electronic Communications</h2>
+                        <p>Users consent to receiving communications electronically. Electronic records satisfy legal requirements.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>20. Force Majeure</h2>
+                        <p>Eduholic shall not be liable for delays or failures caused by events beyond reasonable control.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>21. Governing Law & Jurisdiction</h2>
+                        <p>These Terms shall be governed by the laws of India. The courts located at <strong>Hyderabad, Telangana and Andhra Pradesh</strong> shall have exclusive jurisdiction.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>22. Severability</h2>
+                        <p>If any provision is held invalid, the remaining provisions shall continue in full force.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>23. Entire Agreement</h2>
+                        <p>These Terms, along with the Privacy Policy and other published policies, constitute the entire agreement between the User and Eduholic.</p>
+                    </section>
+
+                    <section className="policy-section">
+                        <h2>24. Contact Information</h2>
+                        <div className="contact-info-box">
+                            <p><strong>EDUHOLIC EDTECH INDIA PRIVATE LIMITED</strong></p>
+                            <p><strong>Website:</strong> <a href="https://www.eduholic.in">https://www.eduholic.in</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:support@eduholic.info">support@eduholic.info</a></p>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

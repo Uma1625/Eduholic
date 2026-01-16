@@ -41,13 +41,20 @@ const jobGuaranteePrograms = [
 function PlacementProvision() {
     return (
         <div className="placement-provision-page">
-            {/* Hero Section */}
+            {/* Hero Section with Motion Graphics */}
             <section className="placement-hero">
+                <video
+                    className="hero-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graphics8.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay"></div>
+
                 <div className="container">
-                    <Link to="/" className="back-button">
-                        <span className="back-arrow">←</span>
-                        <span>Back to Home</span>
-                    </Link>
                     <div className="hero-content">
                         <h1 className="hero-title">
                             Placement Provision <span className="text-gradient">Programs</span>

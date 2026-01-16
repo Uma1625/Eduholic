@@ -635,3 +635,124 @@
     padding: 14px 20px;
   }
 }
+/* ============================================
+   MOBILE ACCORDION MENU STYLES
+   ============================================ */
+
+.mobile-accordion {
+  width: 100%;
+}
+
+.mobile-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.accordion-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.accordion-arrow.open {
+  transform: rotate(180deg);
+}
+
+.mobile-accordion-content {
+  padding-left: 10px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 2000px;
+  }
+}
+
+.mobile-sub-accordion {
+  margin-bottom: 5px;
+}
+
+.mobile-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+.mobile-sub-header:hover,
+.mobile-sub-header:active {
+  background: rgba(0, 217, 255, 0.1);
+}
+
+.mobile-domains-list {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mobile-branch-group {
+  margin-bottom: 15px;
+}
+
+.mobile-branch-name {
+  color: rgba(0, 217, 255, 0.9);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.mobile-domain-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mobile-domain-links a,
+.mobile-domains-list > a {
+  display: block;
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.mobile-domain-links a:hover,
+.mobile-domain-links a:active,
+.mobile-domains-list > a:hover,
+.mobile-domains-list > a:active {
+  background: rgba(0, 217, 255, 0.15);
+  color: #00d9ff;
+  padding-left: 18px;
+}
+
+/* Ensure mobile menu scrolls properly */
+.nav-mobile {
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

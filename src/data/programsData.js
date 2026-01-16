@@ -1086,6 +1086,28 @@ export const getAllPrograms = () => Object.values(programsData)
 
 // Alumni companies (shared across programs)
 export const alumniCompanies = [
-    'Amazon', 'Google', 'Microsoft', 'Toyota', 'Zoho',
-    'TCS', 'Infosys', 'Wipro', 'HCL', 'Accenture', 'IBM', 'Oracle'
+    { name: 'Amazon', logo: 'https://logo.clearbit.com/amazon.com' },
+    { name: 'Google', logo: 'https://logo.clearbit.com/google.com' },
+    { name: 'Microsoft', logo: 'https://logo.clearbit.com/microsoft.com' },
+    { name: 'Toyota', logo: 'https://logo.clearbit.com/toyota.com' },
+    { name: 'Zoho', logo: 'https://logo.clearbit.com/zoho.com' },
+    { name: 'TCS', logo: 'https://logo.clearbit.com/tcs.com' },
+    { name: 'Infosys', logo: 'https://logo.clearbit.com/infosys.com' },
+    { name: 'Wipro', logo: 'https://logo.clearbit.com/wipro.com' },
+    { name: 'HCL', logo: 'https://logo.clearbit.com/hcltech.com' },
+    { name: 'Accenture', logo: 'https://logo.clearbit.com/accenture.com' },
+    { name: 'IBM', logo: 'https://logo.clearbit.com/ibm.com' },
+    { name: 'Oracle', logo: 'https://logo.clearbit.com/oracle.com' },
+    { name: 'Flipkart', logo: 'https://logo.clearbit.com/flipkart.com' },
+    { name: 'Deloitte', logo: 'https://logo.clearbit.com/deloitte.com' },
+    { name: 'Cognizant', logo: 'https://logo.clearbit.com/cognizant.com' },
+    { name: 'Capgemini', logo: 'https://logo.clearbit.com/capgemini.com' },
+    { name: 'Adobe', logo: 'https://logo.clearbit.com/adobe.com' },
+    { name: 'Salesforce', logo: 'https://logo.clearbit.com/salesforce.com' },
+    { name: 'Samsung', logo: 'https://logo.clearbit.com/samsung.com' },
+    { name: 'Cisco', logo: 'https://logo.clearbit.com/cisco.com' },
+    { name: 'PWC', logo: 'https://logo.clearbit.com/pwc.com' },
+    { name: 'EY', logo: 'https://logo.clearbit.com/ey.com' },
+    { name: 'HSBC', logo: 'https://logo.clearbit.com/hsbc.com' },
+    { name: 'Bosch', logo: 'https://logo.clearbit.com/bosch.com' }
 ]

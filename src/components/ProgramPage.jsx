@@ -209,14 +209,16 @@ function ProgramPage({ program }) {
                                 className={`pricing-card ${plan.recommended ? 'recommended' : ''}`}
                             >
                                 {plan.recommended && <div className="recommended-badge">Most Popular</div>}
-                                <h3 className="plan-name">{plan.plan}</h3>
-                                <div className="plan-price">{plan.price}</div>
-                                <ul className="plan-features">
-                                    {plan.features.map((feature, fidx) => (
-                                        <li key={fidx}>✓ {feature}</li>
-                                    ))}
-                                </ul>
-                                <button className="btn btn-primary">Enroll Now</button>
+                                <div className="plan-content">
+                                    <h3 className="plan-name">{plan.plan}</h3>
+                                    <div className="plan-price">{plan.price}</div>
+                                    <ul className="plan-features">
+                                        {plan.features.map((feature, fidx) => (
+                                            <li key={fidx}>✓ {feature}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <button className="btn btn-primary enroll-btn">Enroll Now</button>
                             </div>
                         ))}
                     </div>

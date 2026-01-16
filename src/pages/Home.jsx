@@ -272,7 +272,7 @@ function Home() {
                         playsInline
                         poster="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
                     >
-                        <source src="https://jitter.video/file/?id=XQNzqQJ4unPDNlMSTdtbuMgg" type="video/mp4" />
+                        <source src="/motion_graphics1.mp4" type="video/mp4" />
                     </video>
                     <div className="hero-video-overlay"></div>
                 </div>
@@ -288,10 +288,6 @@ function Home() {
                         <a href="#programs" className="btn btn-primary">Explore Programs</a>
                         <a href="#about" className="btn btn-outline">Know More</a>
                     </div>
-                </div>
-                <div className="hero-scroll-indicator">
-                    <span>Scroll Down</span>
-                    <div className="scroll-arrow">↓</div>
                 </div>
             </section>
 

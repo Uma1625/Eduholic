@@ -506,3 +506,23 @@
 .contact-item {
     margin-bottom: 15px;
 }
+
+/* ============================================
+   FOOTER LOGO - CLEAR, NO BORDER
+   ============================================ */
+
+.footer-logo-img {
+    height: 50px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    object-fit: contain !important;
+}
+
+@media (max-width: 768px) {
+    .footer-logo-img {
+        height: 40px !important;
+    }
+}

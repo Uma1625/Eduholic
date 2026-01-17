@@ -4313,3 +4313,30 @@
     border-radius: 12px !important;
     box-shadow: none !important;
 }
+
+/* ============================================
+   ORBIT CENTER LOGO - CLEAR, NO BORDER
+   ============================================ */
+
+.center-logo-img {
+    max-width: 80px !important;
+    max-height: 80px !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    object-fit: contain !important;
+}
+
+.orbit-center {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: none !important;
+    box-shadow: 0 0 30px rgba(34, 197, 255, 0.3) !important;
+}
+
+@media (max-width: 768px) {
+    .center-logo-img {
+        max-width: 50px !important;
+        max-height: 50px !important;
+    }
+}

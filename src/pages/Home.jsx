@@ -334,7 +334,7 @@ function Home() {
                         <div className="orbit-system">
                             {/* Center Logo */}
                             <div className="orbit-center">
-                                <img src="/logo.png" alt="Eduholic" className="center-logo-img" />
+                                <img src="/eduholic_logo.png" alt="Eduholic" className="center-logo-img" />
                             </div>
 
                             {/* Orbit Ring - the circle background */}
@@ -661,10 +661,30 @@ function Home() {
                                 <div className="form-group">
                                     <select required>
                                         <option value="">Select Program</option>
-                                        <option value="ml">Machine Learning</option>
+                                        <option value="">Select Program</option>
+                                        <option value="ml">Machine Learning with Python</option>
                                         <option value="web">Web Development</option>
-                                        <option value="ai">Artificial Intelligence</option>
-                                        <option value="ds">Data Science</option>
+                                        <option value="ai">Artificial Intelligence(AI)</option>
+                                        <option value="ds">Data Analytics</option>
+                                        <option value="cyber">Cyber Security</option>
+                                        <option value="android">Android Development</option>
+                                        <option value="fullstack">Full Stack Web Development</option>
+                                        <option value="hybrid">Hybrid & Electronic Vehicles</option>
+                                        <option value="iot">Internet of Things</option>
+                                        <option value="embedded">Embedded Systems</option>
+                                        <option value="autocad">AutoCAD</option>
+                                        <option value="building">Building Design and Construction Planning</option>
+                                        <option value="digital">Digital Marketing</option>
+                                        <option value="stock">Stock Market & Cryptocurrency</option>
+                                        <option value="finance">Finance</option>
+                                        <option value="hr">Human Resources (HR)</option>
+                                        <option value="project">Project Management</option>
+                                        <option value="supply">Supply Chain & Logistics</option>
+                                        <option value="business">Business Analytics</option>
+                                        <option value="ui">UI/UX Design</option>
+                                        <option value="graphic">Graphic Designing</option>
+                                        <option value="content">Content Writing</option>
+                                        <option value="medical">Medical Coding</option>
                                         <option value="other">Other</option>
                                     </select>
                                 </div>

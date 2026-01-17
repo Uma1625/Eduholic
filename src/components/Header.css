@@ -756,3 +756,45 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+/* ============================================
+   NAVBAR LOGO - CLEAR, NO BORDER, BLENDS WITH NAVBAR
+   ============================================ */
+
+.logo {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+}
+
+.logo-image {
+    height: 45px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    object-fit: contain !important;
+    filter: brightness(1.1) !important;
+}
+
+/* Scrolled state - slightly smaller */
+.header.scrolled .logo-image {
+    height: 38px !important;
+}
+
+/* Mobile responsive logo */
+@media (max-width: 768px) {
+    .logo-image {
+        height: 35px !important;
+    }
+    .header.scrolled .logo-image {
+        height: 32px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        height: 30px !important;
+    }
+}

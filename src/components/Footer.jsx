@@ -30,7 +30,7 @@ function Footer() {
                     {/* Company Info */}
                     <div className="footer-col footer-about">
                         <div className="footer-logo">
-                            <img src="/logo.png" alt="Eduholic" className="footer-logo-img" />
+                            <img src="/eduholic_logo.png" alt="Eduholic" className="footer-logo-img" />
                         </div>
                         <p className="footer-desc">
                             A knowledge & skill acquisition portal with the goal of getting the youth of today ready for their professional careers.

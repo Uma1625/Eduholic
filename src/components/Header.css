@@ -521,9 +521,9 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation - HIDDEN BY DEFAULT */
 .nav-mobile {
-  display: none;
+  display: none !important;
   position: absolute;
   top: 100%;
   left: 0;
@@ -536,6 +536,12 @@
   gap: 8px;
   border-top: 1px solid rgba(0, 217, 255, 0.1);
   animation: slideDown 0.3s ease;
+  z-index: 1000;
+}
+
+/* Show mobile nav ONLY when open class is present */
+.nav-mobile.open {
+  display: flex !important;
 }
 
 @keyframes slideDown {

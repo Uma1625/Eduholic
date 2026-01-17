@@ -4267,3 +4267,25 @@
     min-height: 60px !important;
     background: #ffffff !important;
 }
+
+/* ============================================
+   FIX: Startup India - No border, less padding
+   ============================================ */
+
+.recognition-badge {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 10px 0 !important;
+}
+
+.startup-india-logo {
+    max-width: 140px !important;
+    border-radius: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.recognition-section {
+    padding: 15px 0 !important;
+}

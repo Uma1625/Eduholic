@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   z-index: var(--z-header);
-  background: transparent;
+  background: white;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: none;
@@ -47,10 +47,10 @@
 }
 
 .logo-icon {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 55px;
   background: linear-gradient(135deg, var(--color-sky-blue), var(--color-bright-blue));
-  border-radius: 12px;
+  border-radius: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@
 
 /* Logo Image - EDUHOLIC - BIGGER & ANIMATED */
 .logo-image {
-  height: 100px;
+  height: 150px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 4px 20px rgba(0, 217, 255, 0.5));
@@ -635,6 +635,7 @@
     padding: 14px 20px;
   }
 }
+
 /* ============================================
    MOBILE ACCORDION MENU STYLES
    ============================================ */
@@ -675,6 +676,7 @@
     opacity: 0;
     max-height: 0;
   }
+
   to {
     opacity: 1;
     max-height: 2000px;
@@ -731,7 +733,7 @@
 }
 
 .mobile-domain-links a,
-.mobile-domains-list > a {
+.mobile-domains-list>a {
   display: block;
   padding: 10px 12px;
   color: rgba(255, 255, 255, 0.8);
@@ -743,8 +745,8 @@
 
 .mobile-domain-links a:hover,
 .mobile-domain-links a:active,
-.mobile-domains-list > a:hover,
-.mobile-domains-list > a:active {
+.mobile-domains-list>a:hover,
+.mobile-domains-list>a:active {
   background: rgba(0, 217, 255, 0.15);
   color: #00d9ff;
   padding-left: 18px;
@@ -762,41 +764,42 @@
    ============================================ */
 
 .logo {
-    display: flex !important;
-    align-items: center !important;
-    text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
 }
 
 .logo-image {
-    height: 45px !important;
-    width: auto !important;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    object-fit: contain !important;
-    filter: brightness(1.1) !important;
+  height: 45px !important;
+  width: auto !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  object-fit: contain !important;
+  filter: brightness(1.1) !important;
 }
 
 /* Scrolled state - slightly smaller */
 .header.scrolled .logo-image {
-    height: 38px !important;
+  height: 38px !important;
 }
 
 /* Mobile responsive logo */
 @media (max-width: 768px) {
-    .logo-image {
-        height: 35px !important;
-    }
-    .header.scrolled .logo-image {
-        height: 32px !important;
-    }
+  .logo-image {
+    height: 35px !important;
+  }
+
+  .header.scrolled .logo-image {
+    height: 32px !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .logo-image {
-        height: 30px !important;
-    }
+  .logo-image {
+    height: 30px !important;
+  }
 }
 
 /* ============================================
@@ -804,66 +807,69 @@
    ============================================ */
 
 .logo {
-    display: flex !important;
-    align-items: center !important;
-    background: white !important;
-    padding: 6px 12px !important;
-    border-radius: 12px !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-    transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  background: white !important;
+  padding: 6px 12px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
 }
 
 .logo:hover {
-    box-shadow: 0 4px 15px rgba(34, 197, 255, 0.3) !important;
-    transform: translateY(-2px) !important;
+  box-shadow: 0 4px 15px rgba(34, 197, 255, 0.3) !important;
+  transform: translateY(-2px) !important;
 }
 
 .logo-image {
-    height: 55px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    background: transparent !important;
-    border: none !important;
+  height: 55px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  border: none !important;
 }
 
 /* Scrolled state */
 .header.scrolled .logo {
-    padding: 4px 10px !important;
-    border-radius: 10px !important;
+  padding: 4px 10px !important;
+  border-radius: 10px !important;
 }
 
 .header.scrolled .logo-image {
-    height: 45px !important;
+  height: 45px !important;
 }
 
 /* Tablet */
 @media (max-width: 992px) {
-    .logo-image {
-        height: 48px !important;
-    }
-    .logo {
-        padding: 5px 10px !important;
-    }
+  .logo-image {
+    height: 48px !important;
+  }
+
+  .logo {
+    padding: 5px 10px !important;
+  }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-    .logo-image {
-        height: 42px !important;
-    }
-    .logo {
-        padding: 4px 8px !important;
-        border-radius: 8px !important;
-    }
+  .logo-image {
+    height: 42px !important;
+  }
+
+  .logo {
+    padding: 4px 8px !important;
+    border-radius: 8px !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .logo-image {
-        height: 36px !important;
-    }
-    .logo {
-        padding: 3px 6px !important;
-    }
+  .logo-image {
+    height: 36px !important;
+  }
+
+  .logo {
+    padding: 3px 6px !important;
+  }
 }
 
 /* ============================================
@@ -871,41 +877,43 @@
    ============================================ */
 
 .logo-image {
-    height: 70px !important;
-    width: auto !important;
+  height: 70px !important;
+  width: auto !important;
 }
 
 .header.scrolled .logo-image {
-    height: 55px !important;
+  height: 55px !important;
 }
 
 .logo {
-    padding: 8px 15px !important;
-    border-radius: 14px !important;
+  padding: 8px 15px !important;
+  border-radius: 14px !important;
 }
 
 @media (max-width: 992px) {
-    .logo-image {
-        height: 60px !important;
-    }
-    .header.scrolled .logo-image {
-        height: 50px !important;
-    }
+  .logo-image {
+    height: 60px !important;
+  }
+
+  .header.scrolled .logo-image {
+    height: 50px !important;
+  }
 }
 
 @media (max-width: 768px) {
-    .logo-image {
-        height: 50px !important;
-    }
-    .header.scrolled .logo-image {
-        height: 42px !important;
-    }
+  .logo-image {
+    height: 50px !important;
+  }
+
+  .header.scrolled .logo-image {
+    height: 42px !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .logo-image {
-        height: 45px !important;
-    }
+  .logo-image {
+    height: 45px !important;
+  }
 }
 
 /* ============================================
@@ -913,16 +921,199 @@
    ============================================ */
 
 .header {
+  background: white !important;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.header.scrolled {
+  background: white !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Dark text colors for white navbar */
+.nav-link {
+  color: #1a1a2e !important;
+  font-weight: 600 !important;
+}
+
+.nav-link:hover {
+  color: #667eea !important;
+}
+
+.nav-item.has-dropdown .nav-link {
+  color: #1a1a2e !important;
+}
+
+.nav-item.has-dropdown:hover .nav-link {
+  color: #667eea !important;
+}
+
+/* CTA Button remains colorful */
+.nav-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+}
+
+/* Mobile menu button - dark */
+.mobile-menu-btn span {
+  background: #1a1a2e !important;
+}
+
+/* Logo styling for white navbar - no background needed */
+.logo {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.logo-image {
+  height: 60px !important;
+  background: transparent !important;
+}
+
+.header.scrolled .logo-image {
+  height: 50px !important;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 45px !important;
+  }
+}
+
+/* ============================================
+   REVERT: DARK NAVBAR BACKGROUND (ORIGINAL)
+   ============================================ */
+
+.header {
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(26, 31, 77, 0.95) 100%) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.header.scrolled {
+  background: linear-gradient(135deg, rgba(10, 14, 39, 0.98) 0%, rgba(26, 31, 77, 0.98) 100%) !important;
+}
+
+/* White text for dark navbar */
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #22c5ff !important;
+}
+
+.nav-item.has-dropdown .nav-link {
+  color: white !important;
+}
+
+/* Mobile menu button - white */
+.mobile-menu-btn span {
+  background: white !important;
+}
+
+/* Logo with white pill background for visibility on dark navbar */
+.logo {
+  background: white !important;
+  padding: 6px 12px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.logo-image {
+  height: 50px !important;
+}
+
+.header.scrolled .logo-image {
+  height: 42px !important;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 40px !important;
+  }
+
+  .logo {
+    padding: 4px 8px !important;
+  }
+}
+
+/* ============================================
+   LOGO: LARGER SIZE, NO BORDER/BACKGROUND
+   ============================================ */
+
+.logo {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.logo-image {
+  height: 65px !important;
+  width: auto !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.header.scrolled .logo-image {
+  height: 55px !important;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 50px !important;
+  }
+
+  .header.scrolled .logo-image {
+    height: 45px !important;
+  }
+}
+/* ============================================
+   FINAL FIX: WHITE NAVBAR, LARGE LOGO, NO BOX
+   ============================================ */
+
+.header {
     background: white !important;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+    height: 90px !important;
+    padding: 10px 0 !important;
 }
 
 .header.scrolled {
     background: white !important;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12) !important;
+    height: 75px !important;
 }
 
-/* Dark text colors for white navbar */
+.header-container {
+    height: 100% !important;
+    align-items: center !important;
+}
+
+/* Logo - NO white box, transparent background */
+.logo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.logo-image {
+    height: 70px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.header.scrolled .logo-image {
+    height: 55px !important;
+}
+
+/* Dark text for white navbar */
 .nav-link {
     color: #1a1a2e !important;
     font-weight: 600 !important;
@@ -936,128 +1127,12 @@
     color: #1a1a2e !important;
 }
 
-.nav-item.has-dropdown:hover .nav-link {
-    color: #667eea !important;
-}
-
-/* CTA Button remains colorful */
-.nav-cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-    color: white !important;
-}
-
-/* Mobile menu button - dark */
-.mobile-menu-btn span {
-    background: #1a1a2e !important;
-}
-
-/* Logo styling for white navbar - no background needed */
-.logo {
-    background: transparent !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-}
-
-.logo-image {
-    height: 60px !important;
-    background: transparent !important;
-}
-
-.header.scrolled .logo-image {
-    height: 50px !important;
-}
-
+/* Mobile */
 @media (max-width: 768px) {
-    .logo-image {
-        height: 45px !important;
+    .header {
+        height: 70px !important;
     }
-}
-
-/* ============================================
-   REVERT: DARK NAVBAR BACKGROUND (ORIGINAL)
-   ============================================ */
-
-.header {
-    background: linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(26, 31, 77, 0.95) 100%) !important;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3) !important;
-    backdrop-filter: blur(10px) !important;
-}
-
-.header.scrolled {
-    background: linear-gradient(135deg, rgba(10, 14, 39, 0.98) 0%, rgba(26, 31, 77, 0.98) 100%) !important;
-}
-
-/* White text for dark navbar */
-.nav-link {
-    color: white !important;
-}
-
-.nav-link:hover {
-    color: #22c5ff !important;
-}
-
-.nav-item.has-dropdown .nav-link {
-    color: white !important;
-}
-
-/* Mobile menu button - white */
-.mobile-menu-btn span {
-    background: white !important;
-}
-
-/* Logo with white pill background for visibility on dark navbar */
-.logo {
-    background: white !important;
-    padding: 6px 12px !important;
-    border-radius: 12px !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
-}
-
-.logo-image {
-    height: 50px !important;
-}
-
-.header.scrolled .logo-image {
-    height: 42px !important;
-}
-
-@media (max-width: 768px) {
-    .logo-image {
-        height: 40px !important;
-    }
-    .logo {
-        padding: 4px 8px !important;
-    }
-}
-
-/* ============================================
-   LOGO: LARGER SIZE, NO BORDER/BACKGROUND
-   ============================================ */
-
-.logo {
-    background: transparent !important;
-    padding: 0 !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-}
-
-.logo-image {
-    height: 65px !important;
-    width: auto !important;
-    background: transparent !important;
-    border: none !important;
-}
-
-.header.scrolled .logo-image {
-    height: 55px !important;
-}
-
-@media (max-width: 768px) {
     .logo-image {
         height: 50px !important;
-    }
-    .header.scrolled .logo-image {
-        height: 45px !important;
     }
 }

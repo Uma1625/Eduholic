@@ -3001,7 +3001,8 @@
 @media (max-width: 768px) {
   .categories-carousel-wrapper .premium-category-card {
     width: 280px;
-    height: 260px;
+    height: auto;
+    min-height: 300px;
   }
 
   .categories-carousel-track {
@@ -3009,8 +3010,18 @@
     animation-duration: 25s;
   }
 
+  /* On tablets, also show card-details for touch friendliness */
   .premium-category-card .card-front {
+    display: none;
+  }
+
+  .premium-category-card .card-details {
+    position: relative;
+    transform: translateX(0);
+    opacity: 1;
     padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%);
+    border-radius: 16px;
   }
 
   .premium-category-card .card-icon {
@@ -3021,28 +3032,82 @@
     font-size: 1.1rem;
   }
 
-  .premium-category-card .card-details {
-    padding: 18px;
-  }
-
   .premium-category-card .details-title {
     font-size: 1rem;
   }
 
   .premium-category-card .detail-course-link {
-    font-size: 0.8rem;
-    padding: 5px 0;
+    font-size: 0.85rem;
+    padding: 6px 0;
+  }
+
+  .premium-category-card .card-cta {
+    margin-top: 12px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: block;
+    background: linear-gradient(135deg, #00d9ff, #7c3aed);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
   }
 }
 
 @media (max-width: 480px) {
   .categories-carousel-wrapper .premium-category-card {
-    width: 260px;
-    height: 240px;
+    width: 280px;
+    height: auto;
+    min-height: 320px;
   }
 
   .categories-carousel-track {
     animation-duration: 20s;
+  }
+
+  /* On mobile, always show card-details instead of hover effect */
+  .premium-category-card .card-front {
+    display: none;
+  }
+
+  .premium-category-card .card-details {
+    position: relative;
+    transform: translateX(0);
+    opacity: 1;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%);
+    border-radius: 16px;
+  }
+
+  .premium-category-card .details-title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .premium-category-card .detail-course-link {
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+
+  .premium-category-card .card-cta {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: block;
+    background: linear-gradient(135deg, #00d9ff, #7c3aed);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  /* Navigation buttons spacing */
+  .carousel-nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
   }
 }
 

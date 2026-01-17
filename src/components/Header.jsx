@@ -258,93 +258,91 @@ function Header() {
                 </button>
 
                 {/* Mobile Navigation - Accordion Style */}
-                {isMobileMenuOpen && (
-                    <nav className="nav-mobile">
-                        <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+                <nav className={`nav-mobile ${isMobileMenuOpen ? 'open' : ''}`}>
+                    <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
 
-                        {/* Programs Accordion */}
-                        <div className="mobile-accordion">
-                            <div
-                                className="mobile-accordion-header"
-                                onClick={() => setMobileExpandedProgram(mobileExpandedProgram ? null : 'programs')}
-                            >
-                                <span>Programs</span>
-                                <span className={`accordion-arrow ${mobileExpandedProgram ? 'open' : ''}`}>▼</span>
-                            </div>
-
-                            {mobileExpandedProgram && (
-                                <div className="mobile-accordion-content">
-                                    {/* Internship Program */}
-                                    <div className="mobile-sub-accordion">
-                                        <div
-                                            className="mobile-sub-header"
-                                            onClick={() => setMobileExpandedBranch(mobileExpandedBranch === 'internship' ? null : 'internship')}
-                                        >
-                                            <span>📋 Internship Program</span>
-                                            <span className={`accordion-arrow ${mobileExpandedBranch === 'internship' ? 'open' : ''}`}>▼</span>
-                                        </div>
-
-                                        {mobileExpandedBranch === 'internship' && (
-                                            <div className="mobile-domains-list">
-                                                {programsData.branches
-                                                    .filter(b => b.program === 'internship')
-                                                    .map(branch => (
-                                                        <div key={branch.id} className="mobile-branch-group">
-                                                            <div className="mobile-branch-name">{branch.name}</div>
-                                                            <div className="mobile-domain-links">
-                                                                {programsData.domains[branch.id]?.map((domain, idx) => (
-                                                                    <Link
-                                                                        key={idx}
-                                                                        to={domain.path}
-                                                                        onClick={() => setIsMobileMenuOpen(false)}
-                                                                    >
-                                                                        {domain.name}
-                                                                    </Link>
-                                                                ))}
-                                                            </div>
-                                                        </div>
-                                                    ))
-                                                }
-                                            </div>
-                                        )}
-                                    </div>
-
-                                    {/* Placement Provision Program */}
-                                    <div className="mobile-sub-accordion">
-                                        <div
-                                            className="mobile-sub-header"
-                                            onClick={() => setMobileExpandedBranch(mobileExpandedBranch === 'placement' ? null : 'placement')}
-                                        >
-                                            <span>🎯 Placement Provision Program</span>
-                                            <span className={`accordion-arrow ${mobileExpandedBranch === 'placement' ? 'open' : ''}`}>▼</span>
-                                        </div>
-
-                                        {mobileExpandedBranch === 'placement' && (
-                                            <div className="mobile-domains-list">
-                                                <Link to="/placement" onClick={() => setIsMobileMenuOpen(false)}>
-                                                    View All Placement Programs
-                                                </Link>
-                                                {programsData.domains.jobguarantee?.map((domain, idx) => (
-                                                    <Link
-                                                        key={idx}
-                                                        to={domain.path}
-                                                        onClick={() => setIsMobileMenuOpen(false)}
-                                                    >
-                                                        {domain.name}
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            )}
+                    {/* Programs Accordion */}
+                    <div className="mobile-accordion">
+                        <div
+                            className="mobile-accordion-header"
+                            onClick={() => setMobileExpandedProgram(mobileExpandedProgram ? null : 'programs')}
+                        >
+                            <span>Programs</span>
+                            <span className={`accordion-arrow ${mobileExpandedProgram ? 'open' : ''}`}>▼</span>
                         </div>
 
-                        <Link to="/aboutus" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
-                        <Link to="/careers" onClick={() => setIsMobileMenuOpen(false)}>Careers</Link>
-                        <Link to="/contactus" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
-                    </nav>
-                )}
+                        {mobileExpandedProgram && (
+                            <div className="mobile-accordion-content">
+                                {/* Internship Program */}
+                                <div className="mobile-sub-accordion">
+                                    <div
+                                        className="mobile-sub-header"
+                                        onClick={() => setMobileExpandedBranch(mobileExpandedBranch === 'internship' ? null : 'internship')}
+                                    >
+                                        <span>📋 Internship Program</span>
+                                        <span className={`accordion-arrow ${mobileExpandedBranch === 'internship' ? 'open' : ''}`}>▼</span>
+                                    </div>
+
+                                    {mobileExpandedBranch === 'internship' && (
+                                        <div className="mobile-domains-list">
+                                            {programsData.branches
+                                                .filter(b => b.program === 'internship')
+                                                .map(branch => (
+                                                    <div key={branch.id} className="mobile-branch-group">
+                                                        <div className="mobile-branch-name">{branch.name}</div>
+                                                        <div className="mobile-domain-links">
+                                                            {programsData.domains[branch.id]?.map((domain, idx) => (
+                                                                <Link
+                                                                    key={idx}
+                                                                    to={domain.path}
+                                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                                >
+                                                                    {domain.name}
+                                                                </Link>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                ))
+                                            }
+                                        </div>
+                                    )}
+                                </div>
+
+                                {/* Placement Provision Program */}
+                                <div className="mobile-sub-accordion">
+                                    <div
+                                        className="mobile-sub-header"
+                                        onClick={() => setMobileExpandedBranch(mobileExpandedBranch === 'placement' ? null : 'placement')}
+                                    >
+                                        <span>🎯 Placement Provision Program</span>
+                                        <span className={`accordion-arrow ${mobileExpandedBranch === 'placement' ? 'open' : ''}`}>▼</span>
+                                    </div>
+
+                                    {mobileExpandedBranch === 'placement' && (
+                                        <div className="mobile-domains-list">
+                                            <Link to="/placement" onClick={() => setIsMobileMenuOpen(false)}>
+                                                View All Placement Programs
+                                            </Link>
+                                            {programsData.domains.jobguarantee?.map((domain, idx) => (
+                                                <Link
+                                                    key={idx}
+                                                    to={domain.path}
+                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                >
+                                                    {domain.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    <Link to="/aboutus" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+                    <Link to="/careers" onClick={() => setIsMobileMenuOpen(false)}>Careers</Link>
+                    <Link to="/contactus" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
+                </nav>
             </div>
         </header >
     )

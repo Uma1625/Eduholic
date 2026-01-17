@@ -1171,3 +1171,50 @@
 .nav-item.has-dropdown:hover .nav-link {
   color: #667eea !important;
 }
+
+/* ============================================
+   CRITICAL MOBILE RESPONSIVE RULES
+   ============================================ */
+@media (max-width: 992px) {
+
+  /* Hide desktop navigation */
+  .nav-desktop {
+    display: none !important;
+  }
+
+  /* Show mobile menu button */
+  .mobile-menu-btn {
+    display: flex !important;
+    border: none;
+  }
+
+  /* Show mobile navigation when open */
+  .nav-mobile.open {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Hide desktop navigation */
+  .nav-desktop {
+    display: none !important;
+  }
+
+  /* Show mobile menu button */
+  .mobile-menu-btn {
+    display: flex !important;
+    border: none;
+    z-index: 1001;
+  }
+
+  /* Show mobile navigation when open */
+  .nav-mobile.open {
+    display: flex !important;
+  }
+
+  /* Header container flex adjustment */
+  .header-container {
+    justify-content: space-between;
+  }
+}

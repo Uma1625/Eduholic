@@ -313,3 +313,79 @@
     font-size: 0.8rem !important;
   }
 }
+
+/* ============================================
+   POLICY PAGE - COMPACT GRID LAYOUT
+   ============================================ */
+
+.policy-intro {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.policy-intro p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.policy-grid.compact {
+    gap: 15px;
+}
+
+.policy-item {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.policy-item h3 {
+    color: #667eea;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #667eea;
+}
+
+.policy-item p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .policy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .policy-item {
+        padding: 15px 20px;
+    }
+    
+    .policy-item h3 {
+        font-size: 0.95rem;
+    }
+    
+    .policy-item p {
+        font-size: 0.85rem;
+    }
+}

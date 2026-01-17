@@ -169,7 +169,7 @@ function AboutUs() {
                 <div className="container">
                     <div className="about-contact-grid">
                         <div className="about-contact-info" data-aos="fade-right">
-                            <h2>Join more than <span className="text-gradient">10 million</span> learners worldwide</h2>
+                            <h2>Joined more than <span className="text-gradient">1 Lakh</span> learners worldwide</h2>
                             <p>Start your journey with Eduholic today and transform your career.</p>
                         </div>
                         <div className="about-contact-form" data-aos="fade-left">
@@ -182,11 +182,31 @@ function AboutUs() {
                                 <div className="form-row">
                                     <input type="tel" placeholder="Mobile Number" required />
                                     <select required>
-                                        <option value="">Select Course</option>
-                                        <option value="ml">Machine Learning</option>
+                                        <option value="">Select Program</option>
+                                        <option value="ml">Machine Learning with Python</option>
                                         <option value="web">Web Development</option>
-                                        <option value="ai">Artificial Intelligence</option>
-                                        <option value="ds">Data Science</option>
+                                        <option value="ai">Artificial Intelligence(AI)</option>
+                                        <option value="ds">Data Analytics</option>
+                                        <option value="cyber">Cyber Security</option>
+                                        <option value="android">Android Development</option>
+                                        <option value="fullstack">Full Stack Web Development</option>
+                                        <option value="hybrid">Hybrid & Electronic Vehicles</option>
+                                        <option value="iot">Internet of Things</option>
+                                        <option value="embedded">Embedded Systems</option>
+                                        <option value="autocad">AutoCAD</option>
+                                        <option value="building">Building Design and Construction Planning</option>
+                                        <option value="digital">Digital Marketing</option>
+                                        <option value="stock">Stock Market & Cryptocurrency</option>
+                                        <option value="finance">Finance</option>
+                                        <option value="hr">Human Resources (HR)</option>
+                                        <option value="project">Project Management</option>
+                                        <option value="supply">Supply Chain & Logistics</option>
+                                        <option value="business">Business Analytics</option>
+                                        <option value="ui">UI/UX Design</option>
+                                        <option value="graphic">Graphic Designing</option>
+                                        <option value="content">Content Writing</option>
+                                        <option value="medical">Medical Coding</option>
+                                        <option value="other">Other</option>
                                     </select>
                                 </div>
                                 <textarea placeholder="Your Message (Optional)" rows="3"></textarea>

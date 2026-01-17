@@ -661,7 +661,6 @@ function Home() {
                                 <div className="form-group">
                                     <select required>
                                         <option value="">Select Program</option>
-                                        <option value="">Select Program</option>
                                         <option value="ml">Machine Learning with Python</option>
                                         <option value="web">Web Development</option>
                                         <option value="ai">Artificial Intelligence(AI)</option>

@@ -4362,3 +4362,32 @@
         height: 100px !important;
     }
 }
+
+/* Orbit Center Logo - Original size with rounded corners */
+.center-logo-img {
+    max-width: 80px !important;
+    max-height: 80px !important;
+    border-radius: 12px !important;
+    background: white !important;
+    padding: 8px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.orbit-center {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+}
+
+@media (max-width: 768px) {
+    .center-logo-img {
+        max-width: 50px !important;
+        max-height: 50px !important;
+        padding: 5px !important;
+        border-radius: 8px !important;
+    }
+    .orbit-center {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}

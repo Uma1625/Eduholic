@@ -538,3 +538,18 @@
         height: 55px !important;
     }
 }
+
+/* Footer Logo - Rounded corners, keep current size */
+.footer-logo-img {
+    border-radius: 12px !important;
+    background: white !important;
+    padding: 8px 12px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media (max-width: 768px) {
+    .footer-logo-img {
+        border-radius: 10px !important;
+        padding: 6px 10px !important;
+    }
+}

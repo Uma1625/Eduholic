@@ -3,103 +3,78 @@ import './PolicyPage.css'
 function PrivacyPolicy() {
     return (
         <div className="policy-page">
-            <div className="policy-hero">
+            <section className="policy-hero">
                 <div className="container">
-                    <h1>Privacy Policy</h1>
-                    <p>DPDP Act, 2023 Compliant</p>
+                    <h1 className="policy-title">Privacy Policy</h1>
+                    <p className="policy-subtitle">DPDP Act, 2023 Compliant</p>
                 </div>
-            </div>
+            </section>
 
-            <div className="policy-content">
+            <section className="policy-content">
                 <div className="container">
-                    <section className="policy-section intro">
-                        <p className="intro-text">
-                            <strong>EDUHOLIC EDTECH INDIA PRIVATE LIMITED</strong> ("Eduholic", "We", "Us") is committed to protecting
-                            personal data in accordance with the <strong>Digital Personal Data Protection Act, 2023 (India)</strong>.
+                    <div className="policy-intro">
+                        <p>
+                            <strong>EDUHOLIC EDTECH INDIA PRIVATE LIMITED</strong> ("Eduholic", "We", "Us") is committed to protecting personal data in accordance with the Digital Personal Data Protection Act, 2023 (India).
                         </p>
-                    </section>
+                    </div>
 
-                    <section className="policy-section">
-                        <h2>1. Data Fiduciary</h2>
-                        <p>Eduholic acts as a Data Fiduciary and determines the purpose and means of processing personal data.</p>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>2. Personal Data Collected</h2>
-                        <ul>
-                            <li>Name and contact details</li>
-                            <li>Educational details</li>
-                            <li>Payment-related information</li>
-                            <li>IP address</li>
-                            <li>Usage data</li>
-                        </ul>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>3. Purpose of Processing</h2>
-                        <ul>
-                            <li>Account creation</li>
-                            <li>Service delivery</li>
-                            <li>Payments</li>
-                            <li>Communication</li>
-                            <li>Marketing (with consent)</li>
-                            <li>Analytics</li>
-                            <li>Legal compliance</li>
-                        </ul>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>4. Consent</h2>
-                        <p>Consent is obtained explicitly before collecting personal data and may be withdrawn at any time by contacting <a href="mailto:support@eduholic.info">support@eduholic.info</a>.</p>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>5. Data Sharing</h2>
-                        <p>Data may be shared with authorized processors such as:</p>
-                        <ul>
-                            <li>Payment gateways</li>
-                            <li>Hosting providers</li>
-                            <li>Legal authorities (where required by law)</li>
-                        </ul>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>6. Data Retention</h2>
-                        <p>Personal data is retained only for the duration necessary for lawful purposes or as required by law.</p>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>7. Data Principal Rights</h2>
-                        <p>Under the DPDP Act, 2023, users may request:</p>
-                        <ul>
-                            <li>Access to personal data</li>
-                            <li>Correction of personal data</li>
-                            <li>Erasure of personal data</li>
-                            <li>Grievance redressal</li>
-                            <li>Nomination</li>
-                        </ul>
-                    </section>
-
-                    <section className="policy-section">
-                        <h2>8. Grievance Redressal</h2>
-                        <div className="contact-info-box">
-                            <p><strong>Grievance Officer:</strong> Eduholic Privacy Officer</p>
-                            <p><strong>Email:</strong> <a href="mailto:support@eduholic.info">support@eduholic.info</a></p>
-                            <p><strong>Response Time:</strong> Within 7 working days</p>
+                    <div className="policy-grid compact">
+                        <div className="policy-item">
+                            <h3>1. DATA FIDUCIARY</h3>
+                            <p>Eduholic acts as a Data Fiduciary and determines the purpose and means of processing personal data.</p>
                         </div>
-                    </section>
 
-                    <section className="policy-section">
-                        <h2>9. Security Safeguards</h2>
-                        <p>Reasonable security practices are implemented to protect personal data against unauthorized access, alteration, disclosure, or destruction.</p>
-                    </section>
+                        <div className="policy-item">
+                            <h3>2. PERSONAL DATA COLLECTED</h3>
+                            <p>Name, contact details, educational details, payment-related information, IP address, and usage data.</p>
+                        </div>
 
-                    <section className="policy-section">
-                        <h2>10. Governing Law</h2>
-                        <p>This Policy is governed by Indian laws with jurisdiction in <strong>Bengaluru, Karnataka</strong>.</p>
-                    </section>
+                        <div className="policy-item">
+                            <h3>3. PURPOSE OF PROCESSING</h3>
+                            <p>Account creation, service delivery, payments, communication, marketing (with consent), analytics, and legal compliance.</p>
+                        </div>
+
+                        <div className="policy-item">
+                            <h3>4. CONSENT</h3>
+                            <p>Consent is obtained explicitly before collecting personal data and may be withdrawn at any time by contacting support@eduholic.info.</p>
+                        </div>
+
+                        <div className="policy-item">
+                            <h3>5. DATA SHARING</h3>
+                            <p>Data may be shared with authorized processors such as payment gateways, hosting providers, and legal authorities where required.</p>
+                        </div>
+
+                        <div className="policy-item">
+                            <h3>6. DATA RETENTION</h3>
+                            <p>Personal data is retained only for the duration necessary for lawful purposes or as required by law.</p>
+                        </div>
+
+                        <div className="policy-item">
+                            <h3>7. DATA PRINCIPAL RIGHTS</h3>
+                            <p>Users may request access, correction, erasure, grievance redressal, or nomination under DPDP Act, 2023.</p>
+                        </div>
+
+                        <div className="policy-item">
+                            <h3>8. GRIEVANCE REDRESSAL</h3>
+                            <p>
+                                Grievance Officer: Eduholic Privacy Officer<br />
+                                Email: support@eduholic.info<br />
+                                Response Time: Within 7 working days.
+                            </p>
+                        </div>
+
+                        <div className="policy-item">
+                            <h3>9. SECURITY SAFEGUARDS</h3>
+                            <p>Reasonable security practices are implemented to protect personal data.</p>
+                        </div>
+
+                        <div className="policy-item">
+                            <h3>10. GOVERNING LAW</h3>
+                            <p>This Policy is governed by Indian laws with jurisdiction in Bengaluru, Karnataka.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

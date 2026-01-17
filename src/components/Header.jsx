@@ -109,7 +109,7 @@ function Header() {
             <div className="header-container">
                 {/* Logo */}
                 <Link to="/" className="logo">
-                    <img src="/logo.png" alt="Eduholic" className="logo-image" />
+                    <img src="/eduholic_logo.png" alt="Eduholic" className="logo-image" />
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -342,7 +342,7 @@ function Header() {
                     </nav>
                 )}
             </div>
-        </header>
+        </header >
     )
 }
 

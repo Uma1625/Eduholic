@@ -5288,7 +5288,8 @@
 /* Tablet Portrait - 768px */
 @media (max-width: 768px) {
   .hero {
-    padding: 80px 16px 50px;
+    padding: 60px 16px 40px !important;
+    padding-top: 60px !important;
     min-height: auto;
   }
 
@@ -5356,7 +5357,8 @@
 /* Mobile - 576px */
 @media (max-width: 576px) {
   .hero {
-    padding: 70px 12px 40px;
+    padding: 55px 12px 30px !important;
+    padding-top: 55px !important;
   }
 
   .hero-title {
@@ -5398,9 +5400,15 @@
 
 /* Small Mobile - 480px */
 @media (max-width: 480px) {
+  .hero {
+    padding: 50px 10px 25px !important;
+    padding-top: 50px !important;
+  }
+
   .hero-title {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     padding: 0 5px;
+    line-height: 1.25;
   }
 
   .trending-card {

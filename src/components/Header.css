@@ -1136,3 +1136,37 @@
         height: 50px !important;
     }
 }
+
+/* ============================================
+   FIX: INCREASE HEADER HEIGHT TO COVER GAP
+   ============================================ */
+
+.header {
+    height: 100px !important;
+    padding: 15px 0 !important;
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+.header.scrolled {
+    height: 85px !important;
+    padding: 10px 0 !important;
+}
+
+/* Larger Logo */
+.logo-image {
+    height: 80px !important;
+}
+
+.header.scrolled .logo-image {
+    height: 65px !important;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 80px !important;
+    }
+    .logo-image {
+        height: 55px !important;
+    }
+}

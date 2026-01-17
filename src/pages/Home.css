@@ -3001,8 +3001,8 @@
 @media (max-width: 768px) {
   .categories-carousel-wrapper .premium-category-card {
     width: 280px;
-    height: auto;
-    min-height: 300px;
+    height: auto !important;
+    min-height: 350px;
   }
 
   .categories-carousel-track {
@@ -3012,16 +3012,19 @@
 
   /* On tablets, also show card-details for touch friendliness */
   .premium-category-card .card-front {
-    display: none;
+    display: none !important;
   }
 
   .premium-category-card .card-details {
-    position: relative;
-    transform: translateX(0);
-    opacity: 1;
-    padding: 20px;
-    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%);
-    border-radius: 16px;
+    position: relative !important;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    padding: 20px !important;
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%) !important;
+    border-radius: 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
   }
 
   .premium-category-card .card-icon {
@@ -3033,20 +3036,30 @@
   }
 
   .premium-category-card .details-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: white !important;
+    margin-bottom: 12px;
+  }
+
+  .premium-category-card .details-courses {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
   }
 
   .premium-category-card .detail-course-link {
-    font-size: 0.85rem;
-    padding: 6px 0;
+    font-size: 0.9rem;
+    padding: 8px 0;
+    color: white !important;
+    display: block !important;
   }
 
   .premium-category-card .card-cta {
-    margin-top: 12px;
-    padding: 10px 18px;
+    margin-top: 15px;
+    padding: 12px 20px;
     font-size: 0.9rem;
     text-align: center;
-    display: block;
+    display: block !important;
     background: linear-gradient(135deg, #00d9ff, #7c3aed);
     color: white;
     border-radius: 25px;
@@ -3058,8 +3071,8 @@
 @media (max-width: 480px) {
   .categories-carousel-wrapper .premium-category-card {
     width: 280px;
-    height: auto;
-    min-height: 320px;
+    height: auto !important;
+    min-height: 350px;
   }
 
   .categories-carousel-track {
@@ -3068,38 +3081,38 @@
 
   /* On mobile, always show card-details instead of hover effect */
   .premium-category-card .card-front {
-    display: none;
+    display: none !important;
   }
 
   .premium-category-card .card-details {
-    position: relative;
-    transform: translateX(0);
-    opacity: 1;
-    padding: 20px;
-    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%);
-    border-radius: 16px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+    position: relative !important;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    padding: 20px !important;
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%) !important;
+    border-radius: 16px !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .premium-category-card .details-title {
     font-size: 1.1rem;
     margin-bottom: 12px;
-    color: white;
+    color: white !important;
   }
 
   .premium-category-card .details-courses {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
   }
 
   .premium-category-card .detail-course-link {
     font-size: 0.85rem;
     padding: 8px 0;
-    color: white;
-    display: block;
+    color: white !important;
+    display: block !important;
   }
 
   .premium-category-card .card-cta {
@@ -3107,7 +3120,7 @@
     padding: 12px 20px;
     font-size: 0.9rem;
     text-align: center;
-    display: block;
+    display: block !important;
     background: linear-gradient(135deg, #00d9ff, #7c3aed);
     color: white;
     border-radius: 25px;

@@ -1084,30 +1084,16 @@ export const getProgram = (slug) => programsData[slug]
 // Get all programs as array
 export const getAllPrograms = () => Object.values(programsData)
 
-// Alumni companies (shared across programs)
+// Alumni companies (shared across programs) - 45 logos
 export const alumniCompanies = [
-    { name: 'Amazon', logo: 'https://img.logo.dev/amazon.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Google', logo: 'https://img.logo.dev/google.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Microsoft', logo: 'https://img.logo.dev/microsoft.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Toyota', logo: 'https://img.logo.dev/toyota.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Zoho', logo: 'https://img.logo.dev/zoho.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'TCS', logo: 'https://img.logo.dev/tcs.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Infosys', logo: 'https://img.logo.dev/infosys.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Wipro', logo: 'https://img.logo.dev/wipro.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'HCL', logo: 'https://img.logo.dev/hcltech.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Accenture', logo: 'https://img.logo.dev/accenture.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'IBM', logo: 'https://img.logo.dev/ibm.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Oracle', logo: 'https://img.logo.dev/oracle.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Flipkart', logo: 'https://img.logo.dev/flipkart.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Deloitte', logo: 'https://img.logo.dev/deloitte.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Cognizant', logo: 'https://img.logo.dev/cognizant.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Capgemini', logo: 'https://img.logo.dev/capgemini.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Adobe', logo: 'https://img.logo.dev/adobe.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Salesforce', logo: 'https://img.logo.dev/salesforce.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Samsung', logo: 'https://img.logo.dev/samsung.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Cisco', logo: 'https://img.logo.dev/cisco.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'PWC', logo: 'https://img.logo.dev/pwc.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'EY', logo: 'https://img.logo.dev/ey.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'HSBC', logo: 'https://img.logo.dev/hsbc.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' },
-    { name: 'Bosch', logo: 'https://img.logo.dev/bosch.com?token=pk_Xpm6VwOcTyaC1L4SQML6yw' }
+    '/logos/logo1.png', '/logos/logo2.png', '/logos/logo3.png', '/logos/logo4.png', '/logos/logo5.png',
+    '/logos/logo6.png', '/logos/logo7.png', '/logos/logo8.png', '/logos/logo9.png', '/logos/logo10.png',
+    '/logos/logo11.png', '/logos/logo12.png', '/logos/logo13.png', '/logos/logo14.png', '/logos/logo15.png',
+    '/logos/logo16.png', '/logos/logo17.png', '/logos/logo18.png', '/logos/logo19.png', '/logos/logo20.png',
+    '/logos/logo21.png', '/logos/logo22.png', '/logos/logo23.png', '/logos/logo24.png', '/logos/logo25.png',
+    '/logos/logo26.png', '/logos/logo27.png', '/logos/logo28.png', '/logos/logo29.png', '/logos/logo30.png',
+    '/logos/logo31.png', '/logos/logo32.png', '/logos/logo33.png', '/logos/logo34.png', '/logos/logo35.png',
+    '/logos/logo36.png', '/logos/logo37.png', '/logos/logo38.png', '/logos/logo39.png', '/logos/logo40.png',
+    '/logos/logo41.png', '/logos/logo42.png', '/logos/logo43.png', '/logos/logo44.png', '/logos/logo45.png'
 ]
+

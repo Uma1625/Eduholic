@@ -1176,3 +1176,65 @@
     margin-top: auto !important;
     width: 100% !important;
 }
+
+/* ============================================
+   ALUMNI COMPANIES GRID - Same as Home page
+   ============================================ */
+
+.alumni-section .alumni-companies-grid {
+    display: grid !important;
+    grid-template-columns: repeat(9, 1fr) !important;
+    gap: 15px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+}
+
+.alumni-section .company-card {
+    background: white !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+    transition: all 0.3s ease !important;
+    aspect-ratio: 3/2 !important;
+}
+
+.alumni-section .company-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.alumni-section .company-logo {
+    max-width: 100% !important;
+    max-height: 50px !important;
+    object-fit: contain !important;
+}
+
+/* Responsive Grid for Program Pages */
+@media (max-width: 1100px) {
+    .alumni-section .alumni-companies-grid {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .alumni-section .alumni-companies-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px !important;
+    }
+    .alumni-section .company-logo {
+        max-height: 35px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .alumni-section .alumni-companies-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .alumni-section .company-card {
+        padding: 10px !important;
+    }
+}

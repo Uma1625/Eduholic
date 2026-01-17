@@ -232,14 +232,10 @@ function ProgramPage({ program }) {
                     <p className="section-subtitle">
                         Our alumni are already making waves in their industries.
                     </p>
-                    <div className="alumni-logos">
-                        {alumniCompanies.map((company, idx) => (
-                            <div key={idx} className="company-badge">
-                                {company.logo ? (
-                                    <img src={company.logo} alt={company.name} className="company-logo-img" />
-                                ) : (
-                                    company.name
-                                )}
+                    <div className="alumni-companies-grid">
+                        {alumniCompanies.map((logo, idx) => (
+                            <div key={idx} className="company-card">
+                                <img src={logo} alt={`Company ${idx + 1}`} className="company-logo" />
                             </div>
                         ))}
                     </div>

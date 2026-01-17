@@ -17,7 +17,10 @@ const trainingPartners = [
 ]
 
 const techLogos = [
-    'Java', 'Python', 'React', 'Node.js', 'AWS', 'Android', 'Flutter', 'MongoDB', 'TensorFlow', 'Docker'
+    '/icons/icon1.png', '/icons/icon2.png', '/icons/icon3.png', '/icons/icon4.png', '/icons/icon5.png',
+    '/icons/icon6.png', '/icons/icon7.png', '/icons/icon8.png', '/icons/icon9.png', '/icons/icon10.png',
+    '/icons/icon11.png', '/icons/icon12.png', '/icons/icon13.png', '/icons/icon14.png', '/icons/icon15.png',
+    '/icons/icon16.png', '/icons/icon17.png', '/icons/icon18.png', '/icons/icon19.png', '/icons/icon20.png'
 ]
 
 const categories = [
@@ -129,24 +132,23 @@ const statistics = [
 ]
 
 const alumniCompanies = [
-    { name: 'Amazon', logo: '/logos/Amazon_logo.svg' },
-    { name: 'Google', logo: '/logos/Google.png' },
-    { name: 'Microsoft', logo: '/logos/microsoft.png' },
-    { name: 'Wipro', logo: '/logos/wipro.png' },
-    { name: 'Infosys', logo: '/logos/infosys.png' },
-    { name: 'Accenture', logo: '/logos/accenture.png' },
-    { name: 'IBM', logo: '/logos/ibm.png' },
-    { name: 'HCL', logo: '/logos/hcl.png' },
-    { name: 'Oracle', logo: '/logos/oracle.png' },
-    { name: 'Salesforce', logo: '/logos/salesforce.png' },
-    { name: 'TCS', logo: '' },
-    { name: 'Deloitte', logo: '' },
-    { name: 'Cognizant', logo: '' },
-    { name: 'Capgemini', logo: '' },
-    { name: 'Adobe', logo: '' },
-    { name: 'Flipkart', logo: '' },
-    { name: 'Samsung', logo: '' },
-    { name: 'Zoho', logo: '' }
+    '/logos/logo1.png', '/logos/logo2.png', '/logos/logo3.png', '/logos/logo4.png', '/logos/logo5.png',
+    '/logos/logo6.png', '/logos/logo7.png', '/logos/logo8.png', '/logos/logo9.png', '/logos/logo10.png',
+    '/logos/logo11.png', '/logos/logo12.png', '/logos/logo13.png', '/logos/logo14.png', '/logos/logo15.png',
+    '/logos/logo16.png', '/logos/logo17.png', '/logos/logo18.png', '/logos/logo19.png', '/logos/logo20.png',
+    '/logos/logo21.png', '/logos/logo22.png', '/logos/logo23.png', '/logos/logo24.png', '/logos/logo25.png',
+    '/logos/logo26.png', '/logos/logo27.png', '/logos/logo28.png', '/logos/logo29.png', '/logos/logo30.png',
+    '/logos/logo31.png', '/logos/logo32.png', '/logos/logo33.png', '/logos/logo34.png', '/logos/logo35.png',
+    '/logos/logo36.png', '/logos/logo37.png', '/logos/logo38.png', '/logos/logo39.png', '/logos/logo40.png',
+    '/logos/logo41.png', '/logos/logo42.png', '/logos/logo43.png', '/logos/logo44.png', '/logos/logo45.png'
+]
+
+// Technology icons for display
+const techIcons = [
+    '/icons/icon1.png', '/icons/icon2.png', '/icons/icon3.png', '/icons/icon4.png', '/icons/icon5.png',
+    '/icons/icon6.png', '/icons/icon7.png', '/icons/icon8.png', '/icons/icon9.png', '/icons/icon10.png',
+    '/icons/icon11.png', '/icons/icon12.png', '/icons/icon13.png', '/icons/icon14.png', '/icons/icon15.png',
+    '/icons/icon16.png', '/icons/icon17.png', '/icons/icon18.png', '/icons/icon19.png', '/icons/icon20.png'
 ]
 
 
@@ -294,8 +296,8 @@ function Home() {
                 </div>
                 <div className="hero-content">
                     <h1 className="hero-title" data-aos="fade-up">
-                        DON'T STUDY FOR THE REAL WORLD,<br />
-                        <span className="text-gradient">PREPARE FOR THE REAL WORLD</span>
+                        LEARN BY DOING.<br />
+                        <span className="text-gradient">GROW BY EXPERIENCE.</span>
                     </h1>
                     <p className="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
                         Bridge the gap between education and industry with hands-on internships and real-world projects
@@ -416,7 +418,7 @@ function Home() {
                     <div className="marquee-track">
                         {[...techLogos, ...techLogos].map((logo, idx) => (
                             <div key={idx} className="marquee-item">
-                                <span className="tech-logo">{logo}</span>
+                                <img src={logo} alt={`Tech ${idx + 1}`} className="tech-logo-img" />
                             </div>
                         ))}
                     </div>
@@ -601,15 +603,13 @@ function Home() {
                             Our alumni are already starting to make waves in their industries. Our former students are already working in high-profile industries and are shaping our futures.
                         </p>
                         <div className="alumni-companies-grid" data-aos="fade-up">
-                            {alumniCompanies.map((company, idx) => (
+                            {alumniCompanies.map((logo, idx) => (
                                 <div key={idx} className="company-card">
                                     <img
-                                        src={company.logo}
-                                        alt={company.name}
+                                        src={logo}
+                                        alt={`Company ${idx + 1}`}
                                         className="company-logo"
-                                        onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }}
                                     />
-                                    <span className="company-name-fallback" style={{ display: 'none' }}>{company.name}</span>
                                 </div>
                             ))}
                         </div>
@@ -621,7 +621,7 @@ function Home() {
                             <span className="text-gradient">Recognized by</span>
                         </h3>
                         <div className="recognition-badge">
-                            <span className="startup-india-text">#startupindia</span>
+                            <img src="/startup_logo.jpeg" alt="Startup India" className="startup-india-logo" />
                         </div>
                     </div>
                 </div>

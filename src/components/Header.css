@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   z-index: var(--z-header);
-  background: white;
+  background: transparent;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: none;
@@ -375,70 +375,106 @@
   padding-left: 18px;
 }
 
-/* Mega Footer */
+/* Mega Footer - Microsoft Entra ID & Startup India Badges */
 .mega-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 20px;
+  padding: 20px 24px;
   background: linear-gradient(90deg, #f0f4f8, #e8ecf0);
   border-top: 1px solid rgba(0, 0, 0, 0.05);
+  gap: 30px;
 }
 
-.training-partners {
+/* Microsoft Entra ID Badge */
+.microsoft-entra-badge {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 15px;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #0078D4;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 }
 
-.partners-label {
-  color: #666;
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.microsoft-entra-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 120, 212, 0.15);
 }
 
-.partner-badge {
+.microsoft-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.entra-content {
   display: flex;
   flex-direction: column;
+  gap: 3px;
+}
+
+.entra-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0078D4;
+  letter-spacing: 0.3px;
+}
+
+.entra-tagline {
+  font-size: 0.7rem;
+  color: #555;
+  line-height: 1.3;
+  max-width: 280px;
+}
+
+/* Startup India Badge */
+.startup-india-badge {
+  display: flex;
   align-items: center;
-  padding: 8px 16px;
+  gap: 12px;
+  padding: 12px 20px;
   background: white;
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  transition: all 0.2s ease;
+  border-left: 4px solid #FF6B35;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 }
 
-.partner-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 153, 255, 0.15);
+.startup-india-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
 }
 
-.partner-name {
-  font-weight: 700;
-  color: #333;
-  font-size: 13px;
+.startup-india-logo {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-.partner-subtitle {
-  font-size: 11px;
-  color: #888;
+.startup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.startup-badge {
-  text-align: right;
-  font-size: 11px;
+.startup-text {
+  font-size: 0.7rem;
   color: #666;
+  font-weight: 500;
 }
 
-.startup-badge .highlight {
-  background: linear-gradient(90deg, var(--color-bright-blue), var(--color-purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.startup-highlight {
+  font-size: 0.95rem;
   font-weight: 700;
+  color: #FF6B35;
+  letter-spacing: 0.5px;
 }
 
 /* ============================================
@@ -1035,7 +1071,7 @@
   }
 
   .logo {
-    padding: 4px 8px !important;
+    padding: 4px 6px !important;
   }
 }
 
@@ -1071,102 +1107,67 @@
     height: 45px !important;
   }
 }
+
 /* ============================================
-   FINAL FIX: WHITE NAVBAR, LARGE LOGO, NO BOX
+   WHITE NAVBAR, LARGE LOGO, INCREASED HEIGHT
    ============================================ */
 
 .header {
-    background: white !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
-    height: 90px !important;
-    padding: 10px 0 !important;
+  height: 120px !important;
+  padding: 15px 0 !important;
+  background: white !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
 }
 
 .header.scrolled {
-    background: white !important;
-    height: 75px !important;
-}
-
-.header-container {
-    height: 100% !important;
-    align-items: center !important;
-}
-
-/* Logo - NO white box, transparent background */
-.logo {
-    background: transparent !important;
-    padding: 0 !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
+  height: 110px !important;
+  background: white !important;
 }
 
 .logo-image {
-    height: 70px !important;
-    width: auto !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
+  height: 100px !important;
+  width: auto !important;
 }
 
 .header.scrolled .logo-image {
-    height: 55px !important;
+  height: 80px !important;
 }
 
 /* Dark text for white navbar */
 .nav-link {
-    color: #1a1a2e !important;
-    font-weight: 600 !important;
+  color: #1a1a2e !important;
 }
 
 .nav-link:hover {
-    color: #667eea !important;
+  color: #667eea !important;
 }
 
-.nav-item.has-dropdown .nav-link {
-    color: #1a1a2e !important;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .header {
-        height: 70px !important;
-    }
-    .logo-image {
-        height: 50px !important;
-    }
-}
-
-/* ============================================
-   FIX: INCREASE HEADER HEIGHT TO COVER GAP
-   ============================================ */
-
-.header {
+@media (max-width: 992px) {
+  .header {
     height: 100px !important;
-    padding: 15px 0 !important;
-    margin-bottom: 0 !important;
-    border-bottom: none !important;
-}
+  }
 
-.header.scrolled {
-    height: 85px !important;
-    padding: 10px 0 !important;
-}
-
-/* Larger Logo */
-.logo-image {
+  .logo-image {
     height: 80px !important;
-}
-
-.header.scrolled .logo-image {
-    height: 65px !important;
+  }
 }
 
 @media (max-width: 768px) {
-    .header {
-        height: 80px !important;
-    }
-    .logo-image {
-        height: 55px !important;
-    }
+  .header {
+    height: 85px !important;
+  }
+
+  .logo-image {
+    height: 60px !important;
+  }
+}
+
+/* Programs dropdown - same color as About Us */
+.nav-item.has-dropdown .nav-link,
+.nav-item.has-dropdown>.nav-link {
+  color: #1a1a2e !important;
+}
+
+.nav-item.has-dropdown:hover .nav-link {
+  color: #667eea !important;
 }

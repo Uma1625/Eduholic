@@ -105,10 +105,29 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
+.program-icon {
+    font-size: 2rem;
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(124, 58, 237, 0.15));
+    border-radius: 12px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.program-card:hover .program-icon {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.25), rgba(124, 58, 237, 0.25));
+}
+
 .program-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
 }
 
 .program-name {

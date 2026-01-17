@@ -1906,20 +1906,21 @@
     transform: translate(-40px, -40px);
   }
 }
+
 /* ============================================
    PROFESSIONAL BACKGROUND IMAGES
    ============================================ */
 
 /* Hero Section - Tech/Education Background */
 .hero-section {
-  background: 
+  background:
     linear-gradient(135deg, rgba(10, 14, 39, 0.95) 0%, rgba(26, 31, 77, 0.9) 50%, rgba(15, 40, 71, 0.95) 100%),
     url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80') center/cover no-repeat;
 }
 
 /* Categories Section - Abstract Tech Background */
 .categories-section {
-  background: 
+  background:
     linear-gradient(180deg, rgba(10, 14, 39, 0.98) 0%, rgba(15, 20, 45, 0.95) 100%),
     url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80') center/cover no-repeat fixed;
 }
@@ -1934,7 +1935,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: 
+  background:
     linear-gradient(135deg, rgba(10, 14, 39, 0.97) 0%, rgba(20, 25, 60, 0.95) 100%),
     url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80') center/cover no-repeat;
   z-index: 0;
@@ -1942,7 +1943,7 @@
 
 /* Testimonials Section - Gradient Overlay */
 .testimonials-section {
-  background: 
+  background:
     linear-gradient(135deg, rgba(15, 12, 41, 0.96) 0%, rgba(48, 43, 99, 0.94) 50%, rgba(36, 36, 62, 0.96) 100%),
     url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80') center/cover no-repeat;
 }
@@ -1951,21 +1952,21 @@
 .alumni-work-section {
   position: relative;
   padding: 60px 0;
-  background: 
+  background:
     linear-gradient(180deg, rgba(10, 14, 39, 0.98) 0%, rgba(20, 30, 70, 0.95) 100%),
     url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80') center/cover no-repeat;
 }
 
 /* Contact Section - Modern Office Background */
 .contact-section {
-  background: 
+  background:
     linear-gradient(135deg, rgba(15, 12, 41, 0.97) 0%, rgba(48, 43, 99, 0.95) 100%),
     url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80') center/cover no-repeat;
 }
 
 /* About/Features Section - Abstract Lines */
 .orbit-section {
-  background: 
+  background:
     linear-gradient(180deg, rgba(10, 14, 39, 0.98) 0%, rgba(15, 20, 50, 0.96) 100%),
     url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80') center/cover no-repeat;
 }
@@ -2037,18 +2038,18 @@
     padding: 100px 15px 60px;
     min-height: auto;
   }
-  
+
   .hero-title {
     font-size: clamp(1.8rem, 7vw, 2.5rem);
     margin-bottom: 16px;
   }
-  
+
   .hero-subtitle {
     font-size: 0.95rem;
     margin-bottom: 20px;
     padding: 0 10px;
   }
-  
+
   .hero-cta {
     flex-direction: column;
     gap: 12px;
@@ -2056,105 +2057,105 @@
     max-width: 280px;
     margin: 0 auto;
   }
-  
+
   .hero-cta .btn {
     width: 100%;
     padding: 14px 20px;
   }
-  
+
   /* Categories */
   .categories-expanded-grid {
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 0 10px;
   }
-  
+
   .category-expanded-card {
     padding: 20px 16px;
   }
-  
+
   .category-courses {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
-  
+
   .course-link {
     font-size: 0.8rem;
     padding: 8px 10px;
   }
-  
+
   /* Stats Section */
   .stats-grid {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .stat-item {
     padding: 16px;
   }
-  
+
   .stat-number {
     font-size: 2rem;
   }
-  
+
   /* Trending Cards */
   .trending-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
-  
+
   .trending-card {
     padding: 16px;
   }
-  
+
   .trending-icon {
     font-size: 2rem;
   }
-  
+
   .trending-title {
     font-size: 0.9rem;
   }
-  
+
   /* Testimonials */
   .testimonial-card {
     min-width: 280px;
     padding: 20px;
   }
-  
+
   /* Alumni Companies */
   .alumni-companies-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
-  
+
   .company-card {
     padding: 10px 6px;
     font-size: 0.65rem;
   }
-  
+
   /* Orbit Section - Smaller on mobile */
   .orbit-system {
     transform: scale(0.7);
     margin: 0 auto;
   }
-  
+
   .about-scroll-section {
     padding: 40px 15px;
   }
-  
+
   .about-title {
     font-size: clamp(1.5rem, 5vw, 2rem);
   }
-  
+
   .about-subtitle {
     font-size: 0.9rem;
   }
-  
+
   .section-title {
     font-size: clamp(1.4rem, 5vw, 2rem);
   }
-  
+
   .section-subtitle {
     font-size: 0.9rem;
     padding: 0 10px;
@@ -2166,59 +2167,59 @@
   .hero-section {
     padding: 80px 12px 40px;
   }
-  
+
   .hero-title {
     font-size: clamp(1.5rem, 8vw, 2rem);
   }
-  
+
   .hero-subtitle {
     font-size: 0.85rem;
   }
-  
+
   .hero-cta {
     max-width: 240px;
   }
-  
+
   .hero-cta .btn {
     font-size: 0.9rem;
     padding: 12px 16px;
   }
-  
+
   /* Categories */
   .category-courses {
     grid-template-columns: 1fr;
   }
-  
+
   .category-name {
     font-size: 1rem;
   }
-  
+
   /* Trending */
   .trending-grid {
     grid-template-columns: 1fr;
     max-width: 300px;
     margin: 0 auto;
   }
-  
+
   /* Alumni */
   .alumni-companies-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   /* Stats */
   .stat-number {
     font-size: 1.8rem;
   }
-  
+
   .stat-label {
     font-size: 0.75rem;
   }
-  
+
   /* Orbit - very small on mobile */
   .orbit-system {
     transform: scale(0.55);
   }
-  
+
   .why-choose-title {
     font-size: 1.2rem;
   }
@@ -2229,28 +2230,28 @@
   .hero-title {
     font-size: 1.4rem;
   }
-  
+
   .hero-subtitle {
     font-size: 0.8rem;
   }
-  
+
   .hero-cta {
     max-width: 220px;
   }
-  
+
   .hero-cta .btn {
     font-size: 0.85rem;
     padding: 10px 14px;
   }
-  
+
   .section-title {
     font-size: 1.2rem;
   }
-  
+
   .trending-card {
     padding: 14px;
   }
-  
+
   .orbit-system {
     transform: scale(0.5);
   }
@@ -2261,19 +2262,19 @@
   .hero-title {
     font-size: 1.2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 0.75rem;
   }
-  
+
   .section-title {
     font-size: 1.1rem;
   }
-  
+
   .orbit-system {
     transform: scale(0.45);
   }
-  
+
   .alumni-companies-grid {
     grid-template-columns: 1fr;
   }
@@ -2284,159 +2285,160 @@
    ============================================ */
 
 @media (max-width: 768px) {
+
   /* Global section padding reduction */
   section {
     padding: 30px 12px !important;
   }
-  
+
   .section-title {
     margin-bottom: 15px;
   }
-  
+
   .section-subtitle {
     margin-bottom: 20px;
   }
-  
+
   /* About section - remove br tags effect */
   .about-title br,
   .about-subtitle br {
     display: none;
   }
-  
+
   .about-scroll-section {
     padding: 25px 12px !important;
     min-height: auto !important;
   }
-  
+
   .about-sticky-wrapper {
     position: relative !important;
     height: auto !important;
   }
-  
+
   .about-stage {
     padding: 20px 0;
   }
-  
+
   .about-intro {
     margin-bottom: 20px;
   }
-  
+
   .about-label {
     font-size: 0.7rem;
     margin-bottom: 8px;
   }
-  
+
   .about-title {
     font-size: 1.3rem;
     line-height: 1.3;
   }
-  
+
   .about-subtitle {
     font-size: 0.85rem;
     line-height: 1.4;
     margin-top: 10px;
   }
-  
+
   /* Orbit section compact */
   .why-choose-stage {
     padding: 15px 0;
   }
-  
+
   .why-choose-title {
     font-size: 1.1rem;
     margin-bottom: 15px;
   }
-  
+
   .orbit-system {
     transform: scale(0.55);
     margin: -30px auto;
   }
-  
+
   /* Marquee section */
   .marquee-section {
     padding: 15px 0 !important;
   }
-  
+
   /* Trending section */
   .trending-section {
     padding: 25px 12px !important;
   }
-  
+
   .trending-grid {
     gap: 10px;
   }
-  
+
   .trending-card {
     padding: 14px 12px;
   }
-  
+
   /* Categories section compact */
   .categories-section {
     padding: 25px 12px !important;
   }
-  
+
   .categories-expanded-grid {
     gap: 12px;
   }
-  
+
   .category-expanded-card {
     padding: 15px 12px;
   }
-  
+
   .category-header {
     margin-bottom: 10px;
   }
-  
+
   .category-icon {
     font-size: 28px;
   }
-  
+
   .category-name {
     font-size: 0.95rem;
   }
-  
+
   /* Stats section */
   .stats-section {
     padding: 25px 12px !important;
   }
-  
+
   .stats-grid {
     gap: 12px;
   }
-  
+
   /* Testimonials compact */
   .testimonials-section {
     padding: 25px 12px !important;
   }
-  
+
   .testimonials-track-wrapper {
     padding: 10px 0;
   }
-  
+
   /* Alumni section */
   .alumni-work-section {
     padding: 20px 12px !important;
   }
-  
+
   .alumni-description {
     font-size: 0.8rem;
     margin-bottom: 15px;
   }
-  
+
   .alumni-companies-grid {
     gap: 8px;
   }
-  
+
   .company-card {
     padding: 8px 4px;
     font-size: 0.6rem;
   }
-  
+
   /* Recognition section */
   .recognition-section {
     padding: 15px 12px !important;
   }
-  
+
   /* Contact CTA section */
   .contact-section {
     padding: 25px 12px !important;
@@ -2447,24 +2449,24 @@
   section {
     padding: 20px 10px !important;
   }
-  
+
   .orbit-system {
     transform: scale(0.45);
     margin: -40px auto;
   }
-  
+
   .trending-card {
     padding: 12px 10px;
   }
-  
+
   .category-expanded-card {
     padding: 12px 10px;
   }
-  
+
   .category-icon {
     font-size: 24px;
   }
-  
+
   .company-card {
     font-size: 0.55rem;
     padding: 6px 3px;
@@ -2526,7 +2528,7 @@
   .hero-video-wrapper {
     display: block;
   }
-  
+
   .hero-video-overlay {
     background: linear-gradient(135deg, rgba(10, 14, 39, 0.9) 0%, rgba(26, 31, 77, 0.85) 50%, rgba(15, 40, 71, 0.9) 100%);
   }
@@ -2591,11 +2593,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
-  
+
   .company-card {
     padding: 15px;
   }
-  
+
   .company-logo {
     max-width: 60px;
     max-height: 30px;
@@ -2607,11 +2609,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  
+
   .company-card {
     padding: 12px;
   }
-  
+
   .company-logo {
     max-width: 50px;
     max-height: 25px;
@@ -2775,10 +2777,21 @@
   transform: translateX(0);
 }
 
-.premium-category-card:hover .detail-course-link:nth-child(1) { transition-delay: 0.1s; }
-.premium-category-card:hover .detail-course-link:nth-child(2) { transition-delay: 0.15s; }
-.premium-category-card:hover .detail-course-link:nth-child(3) { transition-delay: 0.2s; }
-.premium-category-card:hover .detail-course-link:nth-child(4) { transition-delay: 0.25s; }
+.premium-category-card:hover .detail-course-link:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.premium-category-card:hover .detail-course-link:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.premium-category-card:hover .detail-course-link:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.premium-category-card:hover .detail-course-link:nth-child(4) {
+  transition-delay: 0.25s;
+}
 
 .premium-category-card .detail-course-link:hover {
   padding-left: 8px;
@@ -2831,23 +2844,23 @@
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  
+
   .premium-category-card {
     height: 240px;
   }
-  
+
   .premium-category-card .card-icon {
     font-size: 36px;
   }
-  
+
   .premium-category-card .card-title {
     font-size: 1.2rem;
   }
-  
+
   .premium-category-card .card-details {
     padding: 20px;
   }
-  
+
   .premium-category-card .detail-course-link {
     font-size: 0.85rem;
     padding: 6px 0;
@@ -2858,20 +2871,20 @@
   .premium-category-card {
     height: 200px;
   }
-  
+
   .premium-category-card .card-front {
     padding: 20px;
   }
-  
+
   .premium-category-card .card-icon {
     font-size: 30px;
     margin-bottom: 10px;
   }
-  
+
   .premium-category-card .card-title {
     font-size: 1rem;
   }
-  
+
   .premium-category-card .card-count {
     font-size: 0.75rem;
     padding: 3px 10px;
@@ -2901,8 +2914,13 @@
 }
 
 @keyframes carouselScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Card sizing for 3 visible */
@@ -2985,32 +3003,32 @@
     width: 280px;
     height: 260px;
   }
-  
+
   .categories-carousel-track {
     gap: 16px;
     animation-duration: 25s;
   }
-  
+
   .premium-category-card .card-front {
     padding: 20px;
   }
-  
+
   .premium-category-card .card-icon {
     font-size: 36px;
   }
-  
+
   .premium-category-card .card-title {
     font-size: 1.1rem;
   }
-  
+
   .premium-category-card .card-details {
     padding: 18px;
   }
-  
+
   .premium-category-card .details-title {
     font-size: 1rem;
   }
-  
+
   .premium-category-card .detail-course-link {
     font-size: 0.8rem;
     padding: 5px 0;
@@ -3022,7 +3040,7 @@
     width: 260px;
     height: 240px;
   }
-  
+
   .categories-carousel-track {
     animation-duration: 20s;
   }
@@ -3081,12 +3099,15 @@
   gap: 24px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE */
 }
 
 .carousel-container .categories-carousel-track::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
 
 /* Dot Indicators */
@@ -3125,18 +3146,18 @@
   .carousel-container {
     gap: 10px;
   }
-  
+
   .carousel-arrow {
     width: 40px;
     height: 40px;
     font-size: 22px;
   }
-  
+
   .carousel-dots {
     gap: 8px;
     margin-top: 20px;
   }
-  
+
   .carousel-dot {
     width: 10px;
     height: 10px;
@@ -3203,6 +3224,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-50%));
   }
@@ -3372,15 +3394,15 @@
     min-width: 260px;
     height: 260px;
   }
-  
+
   .carousel-track {
     animation-duration: 20s;
   }
-  
+
   .carousel-card .card-icon {
     font-size: 32px;
   }
-  
+
   .carousel-card .card-title {
     font-size: 1rem;
   }
@@ -3391,7 +3413,7 @@
     min-width: 240px;
     height: 240px;
   }
-  
+
   .carousel-arrow {
     width: 35px;
     height: 35px;
@@ -3408,7 +3430,7 @@
   .orbit-system {
     transform: scale(0.85);
   }
-  
+
   .feature-bubble {
     transform: rotate(var(--angle)) translateX(180px) rotate(calc(-1 * var(--angle)));
   }
@@ -3420,24 +3442,24 @@
     padding: 40px 15px;
     min-height: auto;
   }
-  
+
   .why-choose-title {
     font-size: 1.3rem;
     margin-bottom: 20px;
   }
-  
+
   .orbit-system {
     transform: scale(0.65);
     width: 320px;
     height: 320px;
     margin: 0 auto;
   }
-  
+
   .orbit-ring {
     width: 280px;
     height: 280px;
   }
-  
+
   .feature-bubble {
     width: 70px;
     height: 70px;
@@ -3445,15 +3467,15 @@
     margin-left: -35px;
     transform: rotate(var(--angle)) translateX(140px) rotate(calc(-1 * var(--angle)));
   }
-  
+
   .bubble-icon {
     font-size: 20px;
   }
-  
+
   .bubble-text {
     font-size: 8px;
   }
-  
+
   .center-logo-img {
     height: 60px;
   }
@@ -3464,22 +3486,22 @@
   .why-choose-stage {
     padding: 30px 10px;
   }
-  
+
   .why-choose-title {
     font-size: 1.1rem;
   }
-  
+
   .orbit-system {
     transform: scale(0.5);
     width: 280px;
     height: 280px;
   }
-  
+
   .orbit-ring {
     width: 240px;
     height: 240px;
   }
-  
+
   .feature-bubble {
     width: 60px;
     height: 60px;
@@ -3487,15 +3509,15 @@
     margin-left: -30px;
     transform: rotate(var(--angle)) translateX(120px) rotate(calc(-1 * var(--angle)));
   }
-  
+
   .bubble-icon {
     font-size: 16px;
   }
-  
+
   .bubble-text {
     font-size: 7px;
   }
-  
+
   .center-logo-img {
     height: 50px;
   }
@@ -3508,17 +3530,17 @@
     width: 260px;
     height: 260px;
   }
-  
+
   .feature-bubble {
     width: 55px;
     height: 55px;
     transform: rotate(var(--angle)) translateX(100px) rotate(calc(-1 * var(--angle)));
   }
-  
+
   .bubble-icon {
     font-size: 14px;
   }
-  
+
   .bubble-text {
     font-size: 6px;
   }
@@ -3531,7 +3553,7 @@
     width: 240px;
     height: 240px;
   }
-  
+
   .feature-bubble {
     transform: rotate(var(--angle)) translateX(90px) rotate(calc(-1 * var(--angle)));
   }
@@ -3557,11 +3579,11 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
-  
+
   .categories-carousel-track {
     animation: none !important;
   }
-  
+
   .categories-carousel-wrapper .premium-category-card {
     scroll-snap-align: center;
     flex-shrink: 0;
@@ -3592,7 +3614,7 @@
   .orbit-system {
     display: none !important;
   }
-  
+
   .mobile-features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -3600,7 +3622,7 @@
     padding: 20px;
     margin-top: 20px;
   }
-  
+
   .mobile-feature-card {
     background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(124, 58, 237, 0.1));
     border: 1px solid rgba(0, 217, 255, 0.2);
@@ -3612,26 +3634,26 @@
     text-align: center;
     transition: all 0.3s ease;
   }
-  
+
   .mobile-feature-card:hover,
   .mobile-feature-card:active {
     background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(124, 58, 237, 0.2));
     transform: translateY(-3px);
   }
-  
+
   .mobile-feature-icon {
     font-size: 32px;
     margin-bottom: 10px;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   }
-  
+
   .mobile-feature-text {
     font-size: 0.85rem;
     font-weight: 600;
     color: white;
     line-height: 1.3;
   }
-  
+
   .why-choose-title {
     font-size: 1.3rem !important;
     margin-bottom: 10px !important;
@@ -3643,16 +3665,16 @@
     gap: 12px;
     padding: 15px;
   }
-  
+
   .mobile-feature-card {
     padding: 15px 10px;
     border-radius: 12px;
   }
-  
+
   .mobile-feature-icon {
     font-size: 28px;
   }
-  
+
   .mobile-feature-text {
     font-size: 0.75rem;
   }
@@ -3664,16 +3686,16 @@
     gap: 10px;
     padding: 10px;
   }
-  
+
   .mobile-feature-card {
     padding: 12px 8px;
   }
-  
+
   .mobile-feature-icon {
     font-size: 24px;
     margin-bottom: 8px;
   }
-  
+
   .mobile-feature-text {
     font-size: 0.7rem;
   }
@@ -3684,6 +3706,7 @@
    ============================================ */
 
 @media (max-width: 768px) {
+
   /* Override basic cards with premium design */
   .mobile-features-grid {
     display: grid;
@@ -3692,12 +3715,12 @@
     padding: 20px;
     perspective: 1000px;
   }
-  
+
   .mobile-feature-card {
-    background: linear-gradient(145deg, 
-      rgba(10, 26, 58, 0.95) 0%, 
-      rgba(26, 47, 109, 0.9) 50%, 
-      rgba(15, 40, 71, 0.95) 100%);
+    background: linear-gradient(145deg,
+        rgba(10, 26, 58, 0.95) 0%,
+        rgba(26, 47, 109, 0.9) 50%,
+        rgba(15, 40, 71, 0.95) 100%);
     border: 1px solid rgba(0, 217, 255, 0.3);
     border-radius: 20px;
     padding: 24px 16px;
@@ -3708,26 +3731,50 @@
     position: relative;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    box-shadow: 
+    box-shadow:
       0 8px 32px rgba(0, 0, 0, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
     animation: cardFloat 4s ease-in-out infinite;
     transform-style: preserve-3d;
   }
-  
+
   /* Staggered animation delays */
-  .mobile-feature-card:nth-child(1) { animation-delay: 0s; }
-  .mobile-feature-card:nth-child(2) { animation-delay: 0.3s; }
-  .mobile-feature-card:nth-child(3) { animation-delay: 0.6s; }
-  .mobile-feature-card:nth-child(4) { animation-delay: 0.9s; }
-  .mobile-feature-card:nth-child(5) { animation-delay: 1.2s; }
-  .mobile-feature-card:nth-child(6) { animation-delay: 1.5s; }
-  
-  @keyframes cardFloat {
-    0%, 100% { transform: translateY(0) rotateX(0); }
-    50% { transform: translateY(-8px) rotateX(2deg); }
+  .mobile-feature-card:nth-child(1) {
+    animation-delay: 0s;
   }
-  
+
+  .mobile-feature-card:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  .mobile-feature-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  .mobile-feature-card:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+
+  .mobile-feature-card:nth-child(5) {
+    animation-delay: 1.2s;
+  }
+
+  .mobile-feature-card:nth-child(6) {
+    animation-delay: 1.5s;
+  }
+
+  @keyframes cardFloat {
+
+    0%,
+    100% {
+      transform: translateY(0) rotateX(0);
+    }
+
+    50% {
+      transform: translateY(-8px) rotateX(2deg);
+    }
+  }
+
   /* Glowing border animation */
   .mobile-feature-card::before {
     content: '';
@@ -3736,21 +3783,29 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, 
-      #00d9ff, #7c3aed, #00d9ff, #7c3aed);
+    background: linear-gradient(45deg,
+        #00d9ff, #7c3aed, #00d9ff, #7c3aed);
     background-size: 400% 400%;
     border-radius: 22px;
     z-index: -1;
     animation: glowRotate 4s linear infinite;
     opacity: 0.5;
   }
-  
+
   @keyframes glowRotate {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
   }
-  
+
   /* Shimmer effect overlay */
   .mobile-feature-card::after {
     content: '';
@@ -3759,18 +3814,25 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, 
-      transparent, 
-      rgba(255, 255, 255, 0.1), 
-      transparent);
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent);
     animation: shimmer 3s ease-in-out infinite;
   }
-  
+
   @keyframes shimmer {
-    0%, 100% { left: -100%; }
-    50% { left: 100%; }
+
+    0%,
+    100% {
+      left: -100%;
+    }
+
+    50% {
+      left: 100%;
+    }
   }
-  
+
   /* Icon with pulse effect */
   .mobile-feature-icon {
     font-size: 40px;
@@ -3780,12 +3842,21 @@
     position: relative;
     z-index: 1;
   }
-  
+
   @keyframes iconPulse {
-    0%, 100% { transform: scale(1); filter: drop-shadow(0 4px 15px rgba(0, 217, 255, 0.4)); }
-    50% { transform: scale(1.1); filter: drop-shadow(0 6px 20px rgba(0, 217, 255, 0.6)); }
+
+    0%,
+    100% {
+      transform: scale(1);
+      filter: drop-shadow(0 4px 15px rgba(0, 217, 255, 0.4));
+    }
+
+    50% {
+      transform: scale(1.1);
+      filter: drop-shadow(0 6px 20px rgba(0, 217, 255, 0.6));
+    }
   }
-  
+
   /* Text styling */
   .mobile-feature-text {
     font-size: 0.9rem;
@@ -3796,7 +3867,7 @@
     z-index: 1;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
-  
+
   /* Tap feedback */
   .mobile-feature-card:active {
     transform: scale(0.95);
@@ -3810,11 +3881,11 @@
     padding: 20px 12px;
     border-radius: 16px;
   }
-  
+
   .mobile-feature-icon {
     font-size: 34px;
   }
-  
+
   .mobile-feature-text {
     font-size: 0.8rem;
   }
@@ -3830,7 +3901,7 @@
     padding-top: 100px !important;
     min-height: auto !important;
   }
-  
+
   .hero-content {
     padding-top: 20px !important;
   }
@@ -3840,7 +3911,7 @@
   .hero-section {
     padding-top: 80px !important;
   }
-  
+
   .hero-content {
     padding-top: 10px !important;
   }
@@ -3851,27 +3922,27 @@
   .about-scroll-section {
     padding: 40px 15px !important;
   }
-  
+
   .about-stage {
     padding: 30px 0 !important;
   }
-  
+
   .about-intro,
   .why-choose-stage {
     min-height: auto !important;
     padding: 20px 0 !important;
   }
-  
+
   .about-title {
     font-size: 1.3rem !important;
     margin-bottom: 10px !important;
   }
-  
+
   .about-subtitle {
     font-size: 0.9rem !important;
     line-height: 1.4 !important;
   }
-  
+
   .about-label {
     margin-bottom: 10px !important;
   }
@@ -3881,7 +3952,7 @@
   .about-scroll-section {
     padding: 30px 10px !important;
   }
-  
+
   .about-stage {
     padding: 20px 0 !important;
   }
@@ -3889,6 +3960,7 @@
 
 /* STARTUP INDIA SECTION - Center align properly */
 @media (max-width: 768px) {
+
   .startup-badge-section,
   .recognized-section {
     display: flex !important;
@@ -3898,13 +3970,13 @@
     text-align: center !important;
     padding: 40px 20px !important;
   }
-  
+
   .startup-badge-section h3,
   .recognized-section h3 {
     text-align: center !important;
     margin-bottom: 20px !important;
   }
-  
+
   .startup-badge {
     display: flex !important;
     flex-direction: column !important;
@@ -3912,7 +3984,7 @@
     text-align: center !important;
     margin: 0 auto !important;
   }
-  
+
   .startup-badge-card {
     margin: 0 auto !important;
   }
@@ -3924,7 +3996,7 @@
     padding-top: 40px !important;
     padding-bottom: 40px !important;
   }
-  
+
   .section-dark,
   .section-light {
     padding: 40px 15px !important;
@@ -3953,14 +4025,14 @@
     padding: 30px 15px !important;
     width: 100% !important;
   }
-  
+
   .recognition-title {
     text-align: center !important;
     width: 100% !important;
     display: block !important;
     margin-bottom: 15px !important;
   }
-  
+
   .recognition-badge {
     display: flex !important;
     flex-direction: column !important;
@@ -3971,7 +4043,7 @@
     max-width: 300px !important;
     margin: 0 auto !important;
   }
-  
+
   .startup-india-text {
     text-align: center !important;
     display: block !important;
@@ -3983,7 +4055,7 @@
   .recognition-section {
     padding: 20px 10px !important;
   }
-  
+
   .recognition-badge {
     max-width: 260px !important;
   }
@@ -4011,7 +4083,7 @@
     padding: 15px 20px !important;
     max-width: 95% !important;
   }
-  
+
   .startup-india-text {
     font-size: 1.5rem !important;
   }
@@ -4070,12 +4142,12 @@
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 10px !important;
   }
-  
+
   .company-card {
     padding: 15px 10px !important;
     min-height: 60px !important;
   }
-  
+
   .company-logo {
     max-height: 30px !important;
   }
@@ -4086,12 +4158,12 @@
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 8px !important;
   }
-  
+
   .company-card {
     padding: 12px 8px !important;
     min-height: 50px !important;
   }
-  
+
   .company-logo {
     max-height: 25px !important;
   }
@@ -4102,78 +4174,82 @@
    ============================================ */
 
 .alumni-companies-grid {
-    display: grid !important;
-    grid-template-columns: repeat(9, 1fr) !important;
-    gap: 15px !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 20px !important;
+  display: grid !important;
+  grid-template-columns: repeat(9, 1fr) !important;
+  gap: 15px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
 }
 
 .company-card {
-    background: white !important;
-    border-radius: 12px !important;
-    padding: 15px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
-    transition: all 0.3s ease !important;
-    aspect-ratio: 3/2 !important;
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+  aspect-ratio: 3/2 !important;
 }
 
 .company-card:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
 }
 
 .company-logo {
-    max-width: 100% !important;
-    max-height: 50px !important;
-    object-fit: contain !important;
-    filter: none !important;
+  max-width: 100% !important;
+  max-height: 50px !important;
+  object-fit: contain !important;
+  filter: none !important;
 }
 
 /* Startup India Logo */
 .startup-india-logo {
-    max-width: 280px !important;
-    height: auto !important;
-    border-radius: 10px !important;
+  max-width: 600px !important;
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 12px !important;
 }
 
 .recognition-badge {
-    display: flex !important;
-    justify-content: center !important;
-    padding: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 20px !important;
 }
 
 /* Responsive Grid */
 @media (max-width: 1100px) {
-    .alumni-companies-grid {
-        grid-template-columns: repeat(5, 1fr) !important;
-    }
+  .alumni-companies-grid {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
 }
 
 @media (max-width: 768px) {
-    .alumni-companies-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 10px !important;
-    }
-    .company-logo {
-        max-height: 35px !important;
-    }
-    .startup-india-logo {
-        max-width: 200px !important;
-    }
+  .alumni-companies-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .company-logo {
+    max-height: 35px !important;
+  }
+
+  .startup-india-logo {
+    max-width: 200px !important;
+  }
 }
 
 @media (max-width: 480px) {
-    .alumni-companies-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-    .company-card {
-        padding: 10px !important;
-    }
+  .alumni-companies-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .company-card {
+    padding: 10px !important;
+  }
 }
 
 /* ============================================
@@ -4181,64 +4257,64 @@
    ============================================ */
 
 .tech-icons-grid {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 20px !important;
-    padding: 20px !important;
-    overflow-x: visible !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 20px !important;
+  padding: 20px !important;
+  overflow-x: visible !important;
 }
 
 .tech-icon-card {
-    background: rgba(255, 255, 255, 0.1) !important;
-    border-radius: 12px !important;
-    padding: 15px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: all 0.3s ease !important;
-    width: 80px !important;
-    height: 80px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  padding: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease !important;
+  width: 80px !important;
+  height: 80px !important;
 }
 
 .tech-icon-card:hover {
-    transform: scale(1.1) !important;
-    background: rgba(255, 255, 255, 0.2) !important;
+  transform: scale(1.1) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
 }
 
 .tech-icon-card img {
-    max-width: 50px !important;
-    max-height: 50px !important;
-    object-fit: contain !important;
+  max-width: 50px !important;
+  max-height: 50px !important;
+  object-fit: contain !important;
 }
 
 /* Tech Logo Images in Marquee */
 .tech-logo-img {
-    max-width: 60px !important;
-    max-height: 60px !important;
-    object-fit: contain !important;
-    filter: none !important;
+  max-width: 60px !important;
+  max-height: 60px !important;
+  object-fit: contain !important;
+  filter: none !important;
 }
 
 .marquee-item {
-    background: rgba(255, 255, 255, 0.05) !important;
-    border-radius: 12px !important;
-    padding: 15px 20px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    min-width: 100px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 12px !important;
+  padding: 15px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 100px !important;
 }
 
 /* Fix marquee scroll */
 .marquee-container {
-    overflow: visible !important;
-    width: 100% !important;
+  overflow: visible !important;
+  width: 100% !important;
 }
 
 .marquee-section {
-    overflow: visible !important;
-    padding: 30px 0 !important;
+  overflow: visible !important;
+  padding: 30px 0 !important;
 }
 
 /* ============================================
@@ -4246,9 +4322,9 @@
    ============================================ */
 
 .startup-india-logo {
-    max-width: 150px !important;
-    height: auto !important;
-    border-radius: 8px !important;
+  max-width: 150px !important;
+  height: auto !important;
+  border-radius: 8px !important;
 }
 
 /* ============================================
@@ -4256,16 +4332,16 @@
    ============================================ */
 
 .company-card img.company-logo {
-    display: block !important;
-    width: auto !important;
-    height: 40px !important;
-    max-width: 100% !important;
-    object-fit: contain !important;
+  display: block !important;
+  width: auto !important;
+  height: 40px !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
 }
 
 .alumni-companies-grid .company-card {
-    min-height: 60px !important;
-    background: #ffffff !important;
+  min-height: 60px !important;
+  background: #ffffff !important;
 }
 
 /* ============================================
@@ -4273,21 +4349,21 @@
    ============================================ */
 
 .recognition-badge {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 10px 0 !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 10px 0 !important;
 }
 
 .startup-india-logo {
-    max-width: 140px !important;
-    border-radius: 0 !important;
-    background: none !important;
-    box-shadow: none !important;
+  max-width: 140px !important;
+  border-radius: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .recognition-section {
-    padding: 15px 0 !important;
+  padding: 15px 0 !important;
 }
 
 /* ============================================
@@ -4295,23 +4371,23 @@
    ============================================ */
 
 .recognition-section {
-    padding: 5px 0 20px 0 !important;
-    margin-top: 0 !important;
+  padding: 5px 0 20px 0 !important;
+  margin-top: 0 !important;
 }
 
 .recognition-title {
-    margin-bottom: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .recognition-badge {
-    padding: 0 !important;
-    margin-top: 5px !important;
+  padding: 0 !important;
+  margin-top: 5px !important;
 }
 
 .startup-india-logo {
-    max-width: 140px !important;
-    border-radius: 12px !important;
-    box-shadow: none !important;
+  max-width: 140px !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
 }
 
 /* ============================================
@@ -4319,77 +4395,79 @@
    ============================================ */
 
 .center-logo-img {
-    max-width: 80px !important;
-    max-height: 80px !important;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    object-fit: contain !important;
+  max-width: 80px !important;
+  max-height: 80px !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  object-fit: contain !important;
 }
 
 .orbit-center {
-    background: rgba(255, 255, 255, 0.95) !important;
-    border: none !important;
-    box-shadow: 0 0 30px rgba(34, 197, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: none !important;
+  box-shadow: 0 0 30px rgba(34, 197, 255, 0.3) !important;
 }
 
 @media (max-width: 768px) {
-    .center-logo-img {
-        max-width: 50px !important;
-        max-height: 50px !important;
-    }
+  .center-logo-img {
+    max-width: 50px !important;
+    max-height: 50px !important;
+  }
 }
 
 /* Orbit Center Logo - Larger Size */
 .center-logo-img {
-    max-width: 100px !important;
-    max-height: 100px !important;
+  max-width: 100px !important;
+  max-height: 100px !important;
 }
 
 .orbit-center {
-    width: 140px !important;
-    height: 140px !important;
+  width: 140px !important;
+  height: 140px !important;
 }
 
 @media (max-width: 768px) {
-    .center-logo-img {
-        max-width: 70px !important;
-        max-height: 70px !important;
-    }
-    .orbit-center {
-        width: 100px !important;
-        height: 100px !important;
-    }
+  .center-logo-img {
+    max-width: 70px !important;
+    max-height: 70px !important;
+  }
+
+  .orbit-center {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 /* Orbit Center Logo - Original size with rounded corners */
 .center-logo-img {
-    max-width: 80px !important;
-    max-height: 80px !important;
-    border-radius: 12px !important;
-    background: white !important;
-    padding: 8px !important;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  max-width: 80px !important;
+  max-height: 80px !important;
+  border-radius: 12px !important;
+  background: white !important;
+  padding: 8px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
 }
 
 .orbit-center {
-    width: 120px !important;
-    height: 120px !important;
-    border-radius: 50% !important;
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
 }
 
 @media (max-width: 768px) {
-    .center-logo-img {
-        max-width: 50px !important;
-        max-height: 50px !important;
-        padding: 5px !important;
-        border-radius: 8px !important;
-    }
-    .orbit-center {
-        width: 80px !important;
-        height: 80px !important;
-    }
+  .center-logo-img {
+    max-width: 50px !important;
+    max-height: 50px !important;
+    padding: 5px !important;
+    border-radius: 8px !important;
+  }
+
+  .orbit-center {
+    width: 80px !important;
+    height: 80px !important;
+  }
 }
 
 /* ============================================
@@ -4397,26 +4475,594 @@
    ============================================ */
 
 .orbit-center {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    width: auto !important;
-    height: auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: auto !important;
+  height: auto !important;
 }
 
 .center-logo-img {
-    max-width: 80px !important;
-    max-height: 80px !important;
-    background: white !important;
-    border-radius: 12px !important;
-    padding: 10px !important;
-    box-shadow: 0 4px 20px rgba(34, 197, 255, 0.3) !important;
+  max-width: 80px !important;
+  max-height: 80px !important;
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+  box-shadow: 0 4px 20px rgba(34, 197, 255, 0.3) !important;
 }
 
 @media (max-width: 768px) {
-    .center-logo-img {
-        max-width: 55px !important;
-        max-height: 55px !important;
-        padding: 6px !important;
-    }
+  .center-logo-img {
+    max-width: 55px !important;
+    max-height: 55px !important;
+    padding: 6px !important;
+  }
+}
+
+/* ============================================
+   CAROUSEL NAVIGATION BUTTONS
+   ============================================ */
+.carousel-nav-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.carousel-nav-btn {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(124, 58, 237, 0.2) 100%);
+  border: 2px solid rgba(0, 217, 255, 0.4);
+  color: #00d9ff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.carousel-nav-btn:hover {
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.4) 0%, rgba(124, 58, 237, 0.4) 100%);
+  border-color: rgba(0, 217, 255, 0.8);
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 217, 255, 0.5);
+}
+
+.carousel-nav-btn:active {
+  transform: scale(0.95);
+}
+
+/* Make carousels scrollable with snapping */
+.categories-carousel-wrapper,
+.testimonials-track-wrapper {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.categories-carousel-wrapper::-webkit-scrollbar,
+.testimonials-track-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Pause animation when .paused class is applied */
+.categories-carousel-track.paused,
+.testimonials-track.paused {
+  animation-play-state: paused !important;
+}
+
+/* Card highlighting on hover */
+.premium-category-card:hover,
+.testimonial-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  z-index: 20;
+  box-shadow: 0 25px 60px rgba(0, 217, 255, 0.3);
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  .carousel-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .carousel-nav-container {
+    gap: 10px;
+  }
+
+  .premium-category-card,
+  .testimonial-card {
+    scroll-snap-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+/* ============================================
+   RECOGNITION BADGES SECTION
+   Clean, structured layout for Microsoft Entra ID and StartupIndia
+   ============================================ */
+.recognition-badges-section {
+  padding: 40px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.recognition-badges-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.recognition-badge {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.recognition-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.badge-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.startup-logo {
+  width: 80px;
+  height: auto;
+}
+
+.badge-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.badge-title {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.badge-tagline {
+  font-size: 0.9rem;
+  color: #1a1a2e;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 280px;
+}
+
+.badge-tagline-highlight {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FF6B35;
+  letter-spacing: 0.5px;
+}
+
+/* Microsoft specific styling */
+.microsoft-badge {
+  border-left: 4px solid #0078D4;
+}
+
+/* Startup India specific styling */
+.startup-badge {
+  border-left: 4px solid #FF6B35;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recognition-badges-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .recognition-badge {
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .badge-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .startup-logo {
+    width: 70px;
+  }
+
+  .badge-tagline {
+    font-size: 0.85rem;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recognition-badges-section {
+    padding: 30px 15px;
+  }
+
+  .recognition-badge {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .badge-content {
+    align-items: center;
+  }
+
+  .badge-tagline {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* ============================================
+   MICROSOFT CERTIFICATION SECTION - PREMIUM ANIMATED
+   ============================================ */
+.microsoft-certification-section {
+  position: relative;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f4d 50%, #0d1230 100%);
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+/* Animated Background Container */
+.ms-cert-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Floating Particles */
+.ms-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 217, 255, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.8);
+  animation: msParticleFloat 8s ease-in-out infinite;
+}
+
+.ms-particle-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.ms-particle-2 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 1.5s;
+  width: 6px;
+  height: 6px;
+}
+
+.ms-particle-3 {
+  bottom: 30%;
+  left: 20%;
+  animation-delay: 3s;
+  width: 10px;
+  height: 10px;
+}
+
+.ms-particle-4 {
+  top: 40%;
+  right: 25%;
+  animation-delay: 4.5s;
+  width: 5px;
+  height: 5px;
+}
+
+.ms-particle-5 {
+  bottom: 20%;
+  right: 10%;
+  animation-delay: 6s;
+}
+
+@keyframes msParticleFloat {
+
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.6;
+  }
+
+  25% {
+    transform: translateY(-30px) translateX(20px) scale(1.3);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-60px) translateX(-10px) scale(0.8);
+    opacity: 0.8;
+  }
+
+  75% {
+    transform: translateY(-30px) translateX(-30px) scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+/* Infinity Ring Animation */
+.ms-infinity-ring {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, transparent 0%, transparent 100%);
+  border-image: linear-gradient(135deg, rgba(0, 217, 255, 0.5), rgba(124, 58, 237, 0.5), rgba(0, 217, 255, 0.5)) 1;
+  animation: msInfinityRotate 12s linear infinite;
+}
+
+.ms-infinity-ring::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.3), rgba(124, 58, 237, 0.3)) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.ms-ring-2 {
+  width: 500px;
+  height: 500px;
+  animation: msInfinityRotate 18s linear infinite reverse;
+  opacity: 0.5;
+}
+
+@keyframes msInfinityRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Glow Orb */
+.ms-glow-orb {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 120, 212, 0.4) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: msGlowPulse 4s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+@keyframes msGlowPulse {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+    opacity: 0.8;
+  }
+}
+
+/* Content Styling */
+.ms-cert-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ms-cert-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0 0 40px rgba(0, 217, 255, 0.5);
+  line-height: 1.2;
+}
+
+.ms-highlight {
+  background: linear-gradient(135deg, #00a4ef, #7fba00, #f25022, #ffb900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: msGradientShift 5s linear infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes msGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ms-cert-tagline {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+/* Logo Container */
+.ms-logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.ms-logo-glow {
+  display: none;
+  /* Hidden - was causing round shape */
+}
+
+@keyframes msLogoGlow {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+}
+
+.ms-cert-logo {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  animation: msLogoFloat 4s ease-in-out infinite;
+  filter: drop-shadow(0 10px 40px rgba(0, 120, 212, 0.5)) brightness(1.1);
+  /* Remove white background effect - blend with dark bg */
+  mix-blend-mode: screen;
+}
+
+@keyframes msLogoFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.ms-badge-text {
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .microsoft-certification-section {
+    padding: 70px 20px;
+    min-height: 400px;
+  }
+
+  .ms-cert-heading {
+    font-size: 2.2rem;
+  }
+
+  .ms-cert-tagline {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+  }
+
+  .ms-cert-logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .ms-infinity-ring {
+    width: 280px;
+    height: 280px;
+  }
+
+  .ms-ring-2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ms-cert-heading {
+    font-size: 1.8rem;
+  }
+
+  .ms-cert-tagline {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .ms-cert-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ms-badge-text {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+  }
 }

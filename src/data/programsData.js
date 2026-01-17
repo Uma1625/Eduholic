@@ -24,8 +24,8 @@ export const programsData = {
                 answer: 'Machine Learning engineers are among the highest paid professionals in the tech industry. Senior ML engineers can earn upwards of rupees 1 crore per annum. In order to get into this field as a profession, you will need to possess the necessary skills, as well as a level of exposure to the industry.'
             },
             {
-                question: 'Why Acmegrade?',
-                answer: 'At Acmegrade we place an emphasis on equipping our interns with the practical skills necessary to succeed. This doesn\'t mean however, that the subject\'s theory is exempted from our course. We will teach you the necessary theoretical concepts and practical skills to succeed. We will also let you get hands-on experience from our top associated mentors who are distinguished in their respective fields.'
+                question: 'Why Eduholic?',
+                answer: 'At Eduholic we place an emphasis on equipping our interns with the practical skills necessary to succeed. This doesn\'t mean however, that the subject\'s theory is exempted from our course. We will teach you the necessary theoretical concepts and practical skills to succeed. We will also let you get hands-on experience from our top associated mentors who are distinguished in their respective fields.'
             }
         ],
         curriculum: [
@@ -87,34 +87,29 @@ export const programsData = {
         ],
         pricing: [
             {
-                price: '₹5,000',
-                plan: 'Self-Paced',
-                features: ['Recorded Lectures', 'Real Time Projects', '4+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
-            },
-            {
-                price: '₹9,000',
-                plan: 'Mentor-Led',
-                features: ['Recorded Lectures', 'Real Time Projects', '16+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance'],
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
                 recommended: true
             },
             {
-                price: '₹13,000',
-                plan: 'Advanced',
-                features: ['Recorded Lectures', 'Real Time Projects', '24+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
             }
         ],
         faqs: [
             {
                 question: 'Do I need knowledge in computer science to join this program?',
-                answer: 'No, at Acmegrade we teach you all the important concepts surrounding machine learning from scratch, train you in the necessary skills, and provide you with an internship to make sure you get the necessary industry exposure.'
+                answer: 'No, at Eduholic we teach you all the important concepts surrounding machine learning from scratch, train you in the necessary skills, and provide you with an internship to make sure you get the necessary industry exposure.'
             },
             {
                 question: 'How long is the training?',
-                answer: 'Our self-paced and mentor led courses both last for a period of 2 months. Our advanced courses last for a period of 3 months.'
+                answer: 'Our Mentor Led programs last for a period of 3 months. All programs include comprehensive training and hands-on projects.'
             },
             {
-                question: 'Will Acmegrade help with placements?',
-                answer: 'Acmegrade provides placement support for all students of our advanced courses. Students that perform well during their internship period in our self-paced and mentor led courses will also get placement support.'
+                question: 'Will Eduholic help with placements?',
+                answer: 'Eduholic provides placement support for all students of our advanced courses. Students that perform well during their internship period in our self-paced and mentor led courses will also get placement support.'
             },
             {
                 question: 'What kind of companies hire machine learning engineers?',
@@ -122,7 +117,7 @@ export const programsData = {
             },
             {
                 question: 'Will I get an internship?',
-                answer: 'Yes, Acmegrade guarantees an internship opportunity for all our students across all our courses.'
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
             },
             {
                 question: 'Can I pay the fee in instalment?',
@@ -138,7 +133,7 @@ export const programsData = {
         color: '#11998e',
         gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
         stats: {
-            duration: '2 Months',
+            duration: '3 Months',
             hours: '25+ Hours',
             students: '1 Lakh+',
             experts: '50+',
@@ -154,8 +149,8 @@ export const programsData = {
                 answer: 'Websites are the digital storefront for businesses. They are essential for brand presence, customer engagement, e-commerce, and digital marketing. A well-designed website can significantly impact a business\'s success.'
             },
             {
-                question: 'Why Acmegrade?',
-                answer: 'At Acmegrade we place an emphasis on equipping our interns with the practical skills necessary to succeed. We will teach you the necessary theoretical concepts and practical skills to succeed with hands-on experience from our top associated mentors.'
+                question: 'Why Eduholic?',
+                answer: 'At Eduholic we place an emphasis on equipping our interns with the practical skills necessary to succeed. We will teach you the necessary theoretical concepts and practical skills to succeed with hands-on experience from our top associated mentors.'
             }
         ],
         curriculum: [
@@ -200,20 +195,15 @@ export const programsData = {
         ],
         pricing: [
             {
-                price: '₹5,000',
-                plan: 'Self-Paced',
-                features: ['Recorded Lectures', 'Real Time Projects', '4+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
-            },
-            {
-                price: '₹9,000',
-                plan: 'Mentor-Led',
-                features: ['Recorded Lectures', 'Real Time Projects', '16+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance'],
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
                 recommended: true
             },
             {
-                price: '₹13,000',
-                plan: 'Advanced',
-                features: ['Recorded Lectures', 'Real Time Projects', '24+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
             }
         ],
         faqs: [
@@ -223,11 +213,11 @@ export const programsData = {
             },
             {
                 question: 'How long is the training?',
-                answer: 'Our self-paced and mentor led courses both last for a period of 2 months. Our advanced courses last for a period of 3 months.'
+                answer: 'Our Mentor Led programs last for a period of 3 months. All programs include comprehensive training and hands-on projects.'
             },
             {
-                question: 'Will Acmegrade help with placements?',
-                answer: 'Acmegrade provides placement support for all students of our advanced courses. Students that perform well during their internship period will also get placement support.'
+                question: 'Will Eduholic help with placements?',
+                answer: 'Eduholic provides placement support for all students of our advanced courses. Students that perform well during their internship period will also get placement support.'
             },
             {
                 question: 'Are full-stack web developers in demand?',
@@ -235,7 +225,7 @@ export const programsData = {
             },
             {
                 question: 'Will I get an internship?',
-                answer: 'Yes, Acmegrade guarantees an internship opportunity for all our students across all our courses.'
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
             },
             {
                 question: 'Can I pay the fee in instalment?',
@@ -251,7 +241,7 @@ export const programsData = {
         color: '#ee0979',
         gradient: 'linear-gradient(135deg, #ee0979 0%, #ff6a00 100%)',
         stats: {
-            duration: '2 Months',
+            duration: '3 Months',
             hours: '25+ Hours',
             students: '1 Lakh+',
             experts: '50+',
@@ -267,8 +257,8 @@ export const programsData = {
                 answer: 'AutoCAD skills open doors to careers as CAD technicians, draftsmen, architects, mechanical engineers, civil engineers, interior designers, and more. These are well-paying positions in demand across multiple industries.'
             },
             {
-                question: 'Why Acmegrade?',
-                answer: 'At Acmegrade we place an emphasis on equipping our interns with the practical skills necessary to succeed. We will teach you both the theoretical concepts and practical skills with hands-on experience from our top associated mentors.'
+                question: 'Why Eduholic?',
+                answer: 'At Eduholic we place an emphasis on equipping our interns with the practical skills necessary to succeed. We will teach you both the theoretical concepts and practical skills with hands-on experience from our top associated mentors.'
             }
         ],
         curriculum: [
@@ -313,20 +303,15 @@ export const programsData = {
         ],
         pricing: [
             {
-                price: '₹5,000',
-                plan: 'Self-Paced',
-                features: ['Recorded Lectures', 'Real Time Projects', '4+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
-            },
-            {
-                price: '₹9,000',
-                plan: 'Mentor-Led',
-                features: ['Recorded Lectures', 'Real Time Projects', '16+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance'],
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
                 recommended: true
             },
             {
-                price: '₹13,000',
-                plan: 'Advanced',
-                features: ['Recorded Lectures', 'Real Time Projects', '24+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
             }
         ],
         faqs: [
@@ -336,11 +321,11 @@ export const programsData = {
             },
             {
                 question: 'How long is the training?',
-                answer: 'Our self-paced and mentor led courses both last for a period of 2 months. Our advanced courses last for a period of 3 months.'
+                answer: 'Our Mentor Led programs last for a period of 3 months. All programs include comprehensive training and hands-on projects.'
             },
             {
-                question: 'Will Acmegrade help with placements?',
-                answer: 'Acmegrade provides placement support for all students of our advanced courses.'
+                question: 'Will Eduholic help with placements?',
+                answer: 'Eduholic provides placement support for all students of our advanced courses.'
             },
             {
                 question: 'How is AutoCAD different from CATIA?',
@@ -348,7 +333,7 @@ export const programsData = {
             },
             {
                 question: 'Will I get an internship?',
-                answer: 'Yes, Acmegrade guarantees an internship opportunity for all our students across all our courses.'
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
             },
             {
                 question: 'Can I pay the fee in instalment?',
@@ -364,7 +349,7 @@ export const programsData = {
         color: '#f093fb',
         gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
         stats: {
-            duration: '2 Months',
+            duration: '3 Months',
             hours: '25+ Hours',
             students: '1 Lakh+',
             experts: '50+',
@@ -380,8 +365,8 @@ export const programsData = {
                 answer: 'Yes! IoT professionals are in high demand across industries. From smart home devices to industrial automation, IoT skills are valuable and well-compensated.'
             },
             {
-                question: 'Why Acmegrade?',
-                answer: 'At Acmegrade we place an emphasis on equipping our interns with the practical skills necessary to succeed. We provide hands-on experience with real IoT devices and platforms.'
+                question: 'Why Eduholic?',
+                answer: 'At Eduholic we place an emphasis on equipping our interns with the practical skills necessary to succeed. We provide hands-on experience with real IoT devices and platforms.'
             }
         ],
         curriculum: [
@@ -418,20 +403,15 @@ export const programsData = {
         ],
         pricing: [
             {
-                price: '₹5,000',
-                plan: 'Self-Paced',
-                features: ['Recorded Lectures', 'Real Time Projects', '4+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
-            },
-            {
-                price: '₹9,000',
-                plan: 'Mentor-Led',
-                features: ['Recorded Lectures', 'Real Time Projects', '16+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance'],
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
                 recommended: true
             },
             {
-                price: '₹13,000',
-                plan: 'Advanced',
-                features: ['Recorded Lectures', 'Real Time Projects', '24+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
             }
         ],
         faqs: [
@@ -441,11 +421,11 @@ export const programsData = {
             },
             {
                 question: 'How long is the training?',
-                answer: 'Our self-paced and mentor led courses both last for a period of 2 months. Our advanced courses last for a period of 3 months.'
+                answer: 'Our Mentor Led programs last for a period of 3 months. All programs include comprehensive training and hands-on projects.'
             },
             {
-                question: 'Will Acmegrade help with placements?',
-                answer: 'Acmegrade provides placement support for all students of our advanced courses.'
+                question: 'Will Eduholic help with placements?',
+                answer: 'Eduholic provides placement support for all students of our advanced courses.'
             },
             {
                 question: 'What is industrial equipment monitoring?',
@@ -453,7 +433,7 @@ export const programsData = {
             },
             {
                 question: 'Will I get an internship?',
-                answer: 'Yes, Acmegrade guarantees an internship opportunity for all our students across all our courses.'
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
             },
             {
                 question: 'Can I pay the fee in instalment?',
@@ -469,7 +449,7 @@ export const programsData = {
         color: '#4facfe',
         gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
         stats: {
-            duration: '2 Months',
+            duration: '3 Months',
             hours: '25+ Hours',
             students: '1 Lakh+',
             experts: '50+',
@@ -485,8 +465,8 @@ export const programsData = {
                 answer: 'Data Scientists are among the highest-paid professionals in tech. With the explosion of data, skilled data scientists are in extremely high demand across all industries.'
             },
             {
-                question: 'Why Acmegrade?',
-                answer: 'At Acmegrade we provide comprehensive data science training with real-world projects, industry mentors, and practical experience that employers value.'
+                question: 'Why Eduholic?',
+                answer: 'At Eduholic we provide comprehensive data science training with real-world projects, industry mentors, and practical experience that employers value.'
             }
         ],
         curriculum: [
@@ -523,20 +503,15 @@ export const programsData = {
         ],
         pricing: [
             {
-                price: '₹5,000',
-                plan: 'Self-Paced',
-                features: ['Recorded Lectures', 'Real Time Projects', '4+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
-            },
-            {
-                price: '₹9,000',
-                plan: 'Mentor-Led',
-                features: ['Recorded Lectures', 'Real Time Projects', '16+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance'],
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
                 recommended: true
             },
             {
-                price: '₹13,000',
-                plan: 'Advanced',
-                features: ['Recorded Lectures', 'Real Time Projects', '24+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
             }
         ],
         faqs: [
@@ -546,11 +521,11 @@ export const programsData = {
             },
             {
                 question: 'How long is the training?',
-                answer: 'Our self-paced and mentor led courses both last for a period of 2 months. Our advanced courses last for a period of 3 months.'
+                answer: 'Our Mentor Led programs last for a period of 3 months. All programs include comprehensive training and hands-on projects.'
             },
             {
-                question: 'Will Acmegrade help with placements?',
-                answer: 'Acmegrade provides placement support for all students of our advanced courses.'
+                question: 'Will Eduholic help with placements?',
+                answer: 'Eduholic provides placement support for all students of our advanced courses.'
             },
             {
                 question: 'What tools will I learn?',
@@ -558,7 +533,7 @@ export const programsData = {
             },
             {
                 question: 'Will I get an internship?',
-                answer: 'Yes, Acmegrade guarantees an internship opportunity for all our students across all our courses.'
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
             },
             {
                 question: 'Can I pay the fee in instalment?',
@@ -574,7 +549,7 @@ export const programsData = {
         color: '#764ba2',
         gradient: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
         stats: {
-            duration: '2 Months',
+            duration: '3 Months',
             hours: '25+ Hours',
             students: '1 Lakh+',
             experts: '50+',
@@ -590,8 +565,8 @@ export const programsData = {
                 answer: 'AI is revolutionizing every industry from healthcare to finance. AI skills are among the most sought-after in the job market, with significant earning potential.'
             },
             {
-                question: 'Why Acmegrade?',
-                answer: 'At Acmegrade we provide comprehensive AI training with real-world projects, covering both theory and practical implementation with guidance from industry experts.'
+                question: 'Why Eduholic?',
+                answer: 'At Eduholic we provide comprehensive AI training with real-world projects, covering both theory and practical implementation with guidance from industry experts.'
             }
         ],
         curriculum: [
@@ -628,20 +603,15 @@ export const programsData = {
         ],
         pricing: [
             {
-                price: '₹5,000',
-                plan: 'Self-Paced',
-                features: ['Recorded Lectures', 'Real Time Projects', '4+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
-            },
-            {
-                price: '₹9,000',
-                plan: 'Mentor-Led',
-                features: ['Recorded Lectures', 'Real Time Projects', '16+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance'],
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
                 recommended: true
             },
             {
-                price: '₹13,000',
-                plan: 'Advanced',
-                features: ['Recorded Lectures', 'Real Time Projects', '24+ Hrs of Live Sessions', 'One On One Doubt Sessions', 'Certifications', 'Mentor Support', 'Placement Guidance', 'Interview Assistance']
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
             }
         ],
         faqs: [
@@ -651,11 +621,11 @@ export const programsData = {
             },
             {
                 question: 'How long is the training?',
-                answer: 'Our self-paced and mentor led courses both last for a period of 2 months. Our advanced courses last for a period of 3 months.'
+                answer: 'Our Mentor Led programs last for a period of 3 months. All programs include comprehensive training and hands-on projects.'
             },
             {
-                question: 'Will Acmegrade help with placements?',
-                answer: 'Acmegrade provides placement support for all students of our advanced courses.'
+                question: 'Will Eduholic help with placements?',
+                answer: 'Eduholic provides placement support for all students of our advanced courses.'
             },
             {
                 question: 'What is the difference between AI and ML?',
@@ -663,7 +633,7 @@ export const programsData = {
             },
             {
                 question: 'Will I get an internship?',
-                answer: 'Yes, Acmegrade guarantees an internship opportunity for all our students across all our courses.'
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
             },
             {
                 question: 'Can I pay the fee in instalment?',
@@ -697,7 +667,7 @@ export const programsData = {
                 answer: 'You will master the complete MERN stack (MongoDB, Express.js, React.js, Node.js), along with HTML5, CSS3, JavaScript ES6+, TypeScript, Git, and deployment on cloud platforms like AWS and Vercel.'
             },
             {
-                question: 'Why choose Acmegrade Job Guarantee?',
+                question: 'Why choose Eduholic Job Guarantee?',
                 answer: 'We provide dedicated placement support, mock interviews, resume building, and soft skills training. Our alumni work at top companies like Amazon, Google, Microsoft, and leading startups.'
             }
         ],
@@ -743,7 +713,7 @@ export const programsData = {
         overview: [
             { question: 'Why Digital Marketing with Job Guarantee?', answer: 'Digital Marketing is the fastest-growing career field. With our job guarantee, you\'re assured a position in marketing teams of top companies or agencies.' },
             { question: 'What will I learn?', answer: 'Complete digital marketing including SEO, SEM, Social Media Marketing, Email Marketing, Content Marketing, PPC campaigns, Analytics, and Marketing Automation.' },
-            { question: 'Why Acmegrade?', answer: 'Learn from industry practitioners, work on live campaigns for real brands, and get placed with our extensive network of agencies and in-house marketing teams.' }
+            { question: 'Why Eduholic?', answer: 'Learn from industry practitioners, work on live campaigns for real brands, and get placed with our extensive network of agencies and in-house marketing teams.' }
         ],
         curriculum: [
             { module: 'Digital Marketing Fundamentals', topics: ['Marketing Basics', 'Digital Landscape', 'Customer Journey', 'Brand Strategy'] },
@@ -762,7 +732,7 @@ export const programsData = {
             { price: '₹65,000', plan: 'Premium', features: ['120+ Hours Training', 'Live Sessions', 'Placement Guarantee', 'Tool Certifications', 'Resume Building', 'Mock Interviews', 'Google & Meta Certifications', 'Agency Internship'], recommended: true }
         ],
         faqs: [
-            { question: 'What certifications will I get?', answer: 'Google Ads, Google Analytics, Meta Blueprint, HubSpot, and Acmegrade completion certificate.' },
+            { question: 'What certifications will I get?', answer: 'Google Ads, Google Analytics, Meta Blueprint, HubSpot, and Eduholic completion certificate.' },
             { question: 'What is the salary range?', answer: 'Digital marketers typically start at ₹3-6 LPA and can grow to ₹15+ LPA with experience.' }
         ]
     },
@@ -783,7 +753,7 @@ export const programsData = {
         overview: [
             { question: 'Why HR with Job Guarantee?', answer: 'HR professionals are essential to every organization. Our program prepares you for roles in recruitment, employee engagement, HR operations, and people management.' },
             { question: 'What will I learn?', answer: 'Talent acquisition, employee lifecycle management, HR analytics, payroll, labor laws, performance management, and HR technology tools.' },
-            { question: 'Why Acmegrade?', answer: 'Our curriculum is designed by HR leaders from Fortune 500 companies. We provide hands-on experience with HR tools and real recruitment scenarios.' }
+            { question: 'Why Eduholic?', answer: 'Our curriculum is designed by HR leaders from Fortune 500 companies. We provide hands-on experience with HR tools and real recruitment scenarios.' }
         ],
         curriculum: [
             { module: 'HR Fundamentals', topics: ['HR Functions', 'Organizational Behavior', 'Employment Law', 'HR Metrics'] },
@@ -822,7 +792,7 @@ export const programsData = {
         overview: [
             { question: 'Why Flutter with Job Guarantee?', answer: 'Flutter allows building beautiful apps for iOS, Android, and web from a single codebase. Companies are actively hiring Flutter developers for their cross-platform needs.' },
             { question: 'What will I learn?', answer: 'Dart programming, Flutter widgets, state management (Provider, Riverpod, Bloc), Firebase integration, REST APIs, and publishing apps to stores.' },
-            { question: 'Why Acmegrade?', answer: 'Build 10+ production-ready apps during training. Our mentors include developers from Google and top app development companies.' }
+            { question: 'Why Eduholic?', answer: 'Build 10+ production-ready apps during training. Our mentors include developers from Google and top app development companies.' }
         ],
         curriculum: [
             { module: 'Dart Programming', topics: ['Dart Basics', 'OOP in Dart', 'Async Programming', 'Null Safety'] },

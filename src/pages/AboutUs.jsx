@@ -51,8 +51,28 @@ function AboutUs() {
                 </div>
             </section>
 
-            {/* Vision Section */}
+            {/* Vision Section with Motion Graphics */}
             <section className="vision-section">
+                {/* Video Background */}
+                <video
+                    className="section-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graphics5.mp4" type="video/mp4" />
+                </video>
+                <div className="section-overlay vision-overlay"></div>
+
+                {/* Animated Background Elements */}
+                <div className="vision-animated-bg">
+                    <div className="vision-particle v-p1"></div>
+                    <div className="vision-particle v-p2"></div>
+                    <div className="vision-particle v-p3"></div>
+                    <div className="vision-ring"></div>
+                </div>
+
                 <div className="container">
                     <div className="vision-grid">
                         <div className="vision-content" data-aos="fade-right">
@@ -84,8 +104,28 @@ function AboutUs() {
                 </div>
             </section>
 
-            {/* Mission Section */}
+            {/* Mission Section with Motion Graphics */}
             <section className="mission-section">
+                {/* Video Background */}
+                <video
+                    className="section-video-bg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/motion_graphics6.mp4" type="video/mp4" />
+                </video>
+                <div className="section-overlay mission-overlay"></div>
+
+                {/* Animated Background Elements */}
+                <div className="mission-animated-bg">
+                    <div className="mission-particle m-p1"></div>
+                    <div className="mission-particle m-p2"></div>
+                    <div className="mission-particle m-p3"></div>
+                    <div className="mission-arrow-trail"></div>
+                </div>
+
                 <div className="container">
                     <div className="mission-grid">
                         <div className="mission-graphic" data-aos="fade-right">
@@ -144,7 +184,7 @@ function AboutUs() {
                 <div className="container">
                     <div className="global-content" data-aos="fade-up">
                         <h2 className="section-heading text-center">
-                            With a little more than <span className="text-gradient">one Lakh</span> students turned professionals,
+                            With a little more than <span className="text-gradient text-underline">one Lakh</span> students turned professionals,
                         </h2>
                         {/* <p className="global-subtitle text-center">
                             Eduholic has expanded its reach into more than 15 countries, and is impacting lives across the globe.

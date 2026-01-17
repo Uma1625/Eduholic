@@ -117,7 +117,7 @@ function Careers() {
                     <div className="cta-content" data-aos="fade-up">
                         <h2>Don't see a position that fits?</h2>
                         <p>We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities!</p>
-                        <a href="mailto:careers@acmegrade.com" className="btn btn-primary">
+                        <a href="mailto:careers@eduholic.com" className="btn btn-primary">
                             Send Your Resume
                         </a>
                     </div>

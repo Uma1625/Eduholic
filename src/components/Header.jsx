@@ -209,20 +209,24 @@ function Header() {
                                     </div>
                                 </div>
 
-                                {/* Training Partners */}
+                                {/* Certification & Recognition Footer */}
                                 <div className="mega-footer">
-                                    <div className="training-partners">
-                                        <span className="partners-label">TRAINING PARTNERS</span>
-                                        {trainingPartners.map((partner, idx) => (
-                                            <div key={idx} className="partner-badge">
-                                                <span className="partner-name">{partner.name}</span>
-                                                <span className="partner-subtitle">{partner.subtitle}</span>
-                                            </div>
-                                        ))}
+                                    {/* Microsoft Entra ID Badge */}
+                                    <div className="microsoft-entra-badge">
+                                        <img src="/microsoft_logo.png" alt="Microsoft" className="microsoft-logo" />
+                                        <div className="entra-content">
+                                            <span className="entra-title">Powered by Microsoft Entra ID</span>
+                                            <span className="entra-tagline">Industry-Focused Internships with Microsoft Entra ID–Verified Certification</span>
+                                        </div>
                                     </div>
-                                    <div className="startup-badge">
-                                        recognized by<br />
-                                        <span className="highlight">#startupindia</span>
+
+                                    {/* Startup India Badge */}
+                                    <div className="startup-india-badge">
+                                        <img src="/startup_logo.jpeg" alt="Startup India" className="startup-india-logo" />
+                                        <div className="startup-content">
+                                            <span className="startup-text">recognized by</span>
+                                            <span className="startup-highlight">#StartupIndia</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

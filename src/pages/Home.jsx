@@ -172,14 +172,14 @@ const testimonials = [
         role: 'Data Scientist',
         company: 'Microsoft',
         image: '👨‍🔬',
-        text: 'From a fresher to a data scientist - Eduholic made this journey possible with their industry-relevant courses.'
+        text: 'From a fresher to a data scientist - Eduholic made this journey possible with their industry-relevant programs.'
     },
     {
         name: 'Sneha Reddy',
         role: 'Digital Marketer',
         company: 'Zoho',
         image: '👩‍💼',
-        text: 'The digital marketing course was comprehensive. The practical approach helped me understand real campaign strategies.'
+        text: 'The digital marketing program was comprehensive. The practical approach helped me understand real campaign strategies.'
     },
     {
         name: 'Vikram Singh',
@@ -207,13 +207,27 @@ const testimonials = [
         role: 'Business Analyst',
         company: 'Deloitte',
         image: '👩‍💻',
-        text: 'The analytics course taught me real tools like Power BI and Tableau. Now I make data-driven decisions daily.'
+        text: 'The analytics program taught me real tools like Power BI and Tableau. Now I make data-driven decisions daily.'
+    },
+    {
+        name: 'Rohan Mehta',
+        role: 'Backend Developer',
+        company: 'Razorpay',
+        image: '👨‍💻',
+        text: 'Joining a fast-paced startup like Razorpay was my dream. Eduholic\'s practical training gave me the skills to thrive here!'
+    },
+    {
+        name: 'Divya Krishnan',
+        role: 'Product Analyst',
+        company: 'Zerodha',
+        image: '👩‍💼',
+        text: 'The finance and analytics program was perfect for fintech. Now I analyze trading patterns at India\'s largest brokerage!'
     }
 ]
 
 
-// Counter Animation Hook
-function useCountUp(end, duration = 2000, trigger = true) {
+// Counter Animation Hook - Slower duration for better UX
+function useCountUp(end, duration = 4000, trigger = true) {
     const [count, setCount] = useState(0)
 
     useEffect(() => {
@@ -223,7 +237,9 @@ function useCountUp(end, duration = 2000, trigger = true) {
         const animate = (timestamp) => {
             if (!startTime) startTime = timestamp
             const progress = Math.min((timestamp - startTime) / duration, 1)
-            setCount(Math.floor(progress * end))
+            // Use easeOutQuad for smoother animation that slows down at the end
+            const eased = 1 - (1 - progress) * (1 - progress)
+            setCount(Math.floor(eased * end))
             if (progress < 1) {
                 requestAnimationFrame(animate)
             }
@@ -236,11 +252,11 @@ function useCountUp(end, duration = 2000, trigger = true) {
 
 // Stat Counter Component
 function StatCounter({ stat, inView }) {
-    const count = useCountUp(stat.value, 2000, inView)
+    const count = useCountUp(stat.value, 4000, inView)
 
     const formatNumber = (num) => {
-        if (num >= 100000) return (num / 1000).toFixed(0) + 'K'
-        if (num >= 1000) return (num / 1000).toFixed(0) + 'K'
+        if (num >= 100000) return (num / 1000).toFixed(0)
+        if (num >= 1000) return (num / 1000).toFixed(0)
         return num.toString()
     }
 
@@ -259,6 +275,23 @@ function Home() {
     const statsRef = useRef(null)
     const [statsInView, setStatsInView] = useState(false)
 
+    // Carousel refs for navigation
+    const categoriesCarouselRef = useRef(null)
+    const testimonialsCarouselRef = useRef(null)
+    const techMarqueeRef = useRef(null)
+
+    // Pause animation states
+    const [categoriesPaused, setCategoriesPaused] = useState(false)
+    const [testimonialsPaused, setTestimonialsPaused] = useState(false)
+
+    // Scroll carousel left/right
+    const scrollCarousel = (ref, direction) => {
+        if (!ref.current) return
+        const cardWidth = 320 // approximate card width
+        const scrollAmount = direction === 'left' ? -cardWidth : cardWidth
+        ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+    }
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -272,6 +305,7 @@ function Home() {
         if (statsRef.current) {
             observer.observe(statsRef.current)
         }
+
 
         return () => observer.disconnect()
     }, [])
@@ -465,83 +499,104 @@ function Home() {
                         Obtain the practical skills you need to start a successful career in Engineering and Management domains.
                     </p>
 
-                    {/* Auto-scrolling Carousel */}
-                    <div className="categories-carousel-wrapper">
-                        <div className="categories-carousel-track">
-                            {/* First set of cards */}
-                            {categories.map((cat, idx) => (
-                                <div
-                                    key={cat.id}
-                                    className="premium-category-card"
-                                >
-                                    {/* Card Background */}
-                                    <div className="card-bg" style={{ background: cat.gradient }}></div>
+                    {/* Scrollable Carousel with Navigation */}
+                    <div className="carousel-nav-container">
+                        <button
+                            className="carousel-nav-btn carousel-prev"
+                            onClick={() => scrollCarousel(categoriesCarouselRef, 'left')}
+                            aria-label="Previous"
+                        >
+                            ‹
+                        </button>
+                        <div
+                            className="categories-carousel-wrapper"
+                            ref={categoriesCarouselRef}
+                            onMouseEnter={() => setCategoriesPaused(true)}
+                            onMouseLeave={() => setCategoriesPaused(false)}
+                        >
+                            <div className={`categories-carousel-track ${categoriesPaused ? 'paused' : ''}`}>
+                                {/* First set of cards */}
+                                {categories.map((cat, idx) => (
+                                    <div
+                                        key={cat.id}
+                                        className="premium-category-card"
+                                    >
+                                        {/* Card Background */}
+                                        <div className="card-bg" style={{ background: cat.gradient }}></div>
 
-                                    {/* Cyan glow border */}
-                                    <div className="card-glow-border"></div>
+                                        {/* Cyan glow border */}
+                                        <div className="card-glow-border"></div>
 
-                                    {/* Card Front Content */}
-                                    <div className="card-front">
-                                        <span className="card-icon">{cat.icon}</span>
-                                        <h3 className="card-title">{cat.name}</h3>
-                                        <span className="card-count">{cat.courses.length} Programs</span>
-                                    </div>
-
-                                    {/* Card Hover Details */}
-                                    <div className="card-details">
-                                        <h4 className="details-title">{cat.name}</h4>
-                                        <div className="details-courses">
-                                            {cat.courses.slice(0, 4).map((course, cidx) => (
-                                                <Link
-                                                    key={cidx}
-                                                    to={course.path}
-                                                    className="detail-course-link"
-                                                >
-                                                    <span className="course-arrow">→</span>
-                                                    {course.name}
-                                                </Link>
-                                            ))}
+                                        {/* Card Front Content */}
+                                        <div className="card-front">
+                                            <span className="card-icon">{cat.icon}</span>
+                                            <h3 className="card-title">{cat.name}</h3>
+                                            <span className="card-count">{cat.courses.length} Programs</span>
                                         </div>
-                                        <Link to={`/category/${cat.slug}`} className="card-cta">
-                                            Explore All →
-                                        </Link>
-                                    </div>
-                                </div>
-                            ))}
-                            {/* Duplicate for infinite scroll */}
-                            {categories.map((cat, idx) => (
-                                <div
-                                    key={`dup-${cat.id}`}
-                                    className="premium-category-card"
-                                >
-                                    <div className="card-bg" style={{ background: cat.gradient }}></div>
-                                    <div className="card-glow-border"></div>
-                                    <div className="card-front">
-                                        <span className="card-icon">{cat.icon}</span>
-                                        <h3 className="card-title">{cat.name}</h3>
-                                        <span className="card-count">{cat.courses.length} Programs</span>
-                                    </div>
-                                    <div className="card-details">
-                                        <h4 className="details-title">{cat.name}</h4>
-                                        <div className="details-courses">
-                                            {cat.courses.slice(0, 4).map((course, cidx) => (
-                                                <Link
-                                                    key={cidx}
-                                                    to={course.path}
-                                                    className="detail-course-link"
-                                                >
-                                                    <span className="course-arrow">→</span>
-                                                    {course.name}
-                                                </Link>
-                                            ))}
+
+                                        {/* Card Hover Details */}
+                                        <div className="card-details">
+                                            <h4 className="details-title">{cat.name}</h4>
+                                            <div className="details-courses">
+                                                {cat.courses.slice(0, 4).map((course, cidx) => (
+                                                    <Link
+                                                        key={cidx}
+                                                        to={course.path}
+                                                        className="detail-course-link"
+                                                    >
+                                                        <span className="course-arrow">→</span>
+                                                        {course.name}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                            <Link to={`/category/${cat.slug}`} className="card-cta">
+                                                Explore All →
+                                            </Link>
                                         </div>
-                                        <Link to={`/category/${cat.slug}`} className="card-cta">
-                                            Explore All →
-                                        </Link>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                                {/* Duplicate for infinite scroll */}
+                                {categories.map((cat, idx) => (
+                                    <div
+                                        key={`dup-${cat.id}`}
+                                        className="premium-category-card"
+                                    >
+                                        <div className="card-bg" style={{ background: cat.gradient }}></div>
+                                        <div className="card-glow-border"></div>
+                                        <div className="card-front">
+                                            <span className="card-icon">{cat.icon}</span>
+                                            <h3 className="card-title">{cat.name}</h3>
+                                            <span className="card-count">{cat.courses.length} Programs</span>
+                                        </div>
+                                        <div className="card-details">
+                                            <h4 className="details-title">{cat.name}</h4>
+                                            <div className="details-courses">
+                                                {cat.courses.slice(0, 4).map((course, cidx) => (
+                                                    <Link
+                                                        key={cidx}
+                                                        to={course.path}
+                                                        className="detail-course-link"
+                                                    >
+                                                        <span className="course-arrow">→</span>
+                                                        {course.name}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                            <Link to={`/category/${cat.slug}`} className="card-cta">
+                                                Explore All →
+                                            </Link>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
+                        <button
+                            className="carousel-nav-btn carousel-next"
+                            onClick={() => scrollCarousel(categoriesCarouselRef, 'right')}
+                            aria-label="Next"
+                        >
+                            ›
+                        </button>
                     </div>
                 </div>
             </section >
@@ -557,42 +612,97 @@ function Home() {
                 </div>
             </section >
 
+            {/* Microsoft Certification Section - Premium Animated */}
+            <section className="microsoft-certification-section">
+                {/* Animated Background */}
+                <div className="ms-cert-bg">
+                    <div className="ms-particle ms-particle-1"></div>
+                    <div className="ms-particle ms-particle-2"></div>
+                    <div className="ms-particle ms-particle-3"></div>
+                    <div className="ms-particle ms-particle-4"></div>
+                    <div className="ms-particle ms-particle-5"></div>
+                    <div className="ms-infinity-ring"></div>
+                    <div className="ms-infinity-ring ms-ring-2"></div>
+                    <div className="ms-glow-orb"></div>
+                </div>
+
+                <div className="container">
+                    <div className="ms-cert-content" data-aos="zoom-in">
+                        <h2 className="ms-cert-heading">
+                            Certification Powered by <span className="ms-highlight">Microsoft</span>
+                        </h2>
+                        <p className="ms-cert-tagline">
+                            Verified Learning. Trusted Credentials.
+                        </p>
+                        <div className="ms-logo-container">
+                            <div className="ms-logo-glow"></div>
+                            <img
+                                src="/microsoft_logo1.png"
+                                alt="Microsoft"
+                                className="ms-cert-logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Alumni Section */}
             < section className="alumni-section section-dark star-bg" >
                 <div className="container">
                     <h2 className="section-title text-center" data-aos="fade-up">
                         What Our <span className="text-gradient">Alumni</span> Say
                     </h2>
-                    {/* Horizontal Moving Carousel */}
-                    <div className="testimonials-track-wrapper">
-                        <div className="testimonials-track">
-                            {/* First set of cards */}
-                            {testimonials.map((testimonial, idx) => (
-                                <div key={idx} className="testimonial-card">
-                                    <div className="testimonial-header">
-                                        <div className="testimonial-avatar-emoji">{testimonial.image}</div>
-                                        <div className="testimonial-info">
-                                            <h4>{testimonial.name}</h4>
-                                            <span>{testimonial.role} at {testimonial.company}</span>
+                    {/* Testimonials Carousel with Navigation */}
+                    <div className="carousel-nav-container">
+                        <button
+                            className="carousel-nav-btn carousel-prev"
+                            onClick={() => scrollCarousel(testimonialsCarouselRef, 'left')}
+                            aria-label="Previous"
+                        >
+                            ‹
+                        </button>
+                        <div
+                            className="testimonials-track-wrapper"
+                            ref={testimonialsCarouselRef}
+                            onMouseEnter={() => setTestimonialsPaused(true)}
+                            onMouseLeave={() => setTestimonialsPaused(false)}
+                        >
+                            <div className={`testimonials-track ${testimonialsPaused ? 'paused' : ''}`}>
+                                {/* First set of cards */}
+                                {testimonials.map((testimonial, idx) => (
+                                    <div key={idx} className="testimonial-card">
+                                        <div className="testimonial-header">
+                                            <div className="testimonial-avatar-emoji">{testimonial.image}</div>
+                                            <div className="testimonial-info">
+                                                <h4>{testimonial.name}</h4>
+                                                <span>{testimonial.role} at {testimonial.company}</span>
+                                            </div>
                                         </div>
+                                        <p className="testimonial-text">"{testimonial.text}"</p>
                                     </div>
-                                    <p className="testimonial-text">"{testimonial.text}"</p>
-                                </div>
-                            ))}
-                            {/* Duplicate for infinite scroll */}
-                            {testimonials.map((testimonial, idx) => (
-                                <div key={`dup-${idx}`} className="testimonial-card">
-                                    <div className="testimonial-header">
-                                        <div className="testimonial-avatar-emoji">{testimonial.image}</div>
-                                        <div className="testimonial-info">
-                                            <h4>{testimonial.name}</h4>
-                                            <span>{testimonial.role} at {testimonial.company}</span>
+                                ))}
+                                {/* Duplicate for infinite scroll */}
+                                {testimonials.map((testimonial, idx) => (
+                                    <div key={`dup-${idx}`} className="testimonial-card">
+                                        <div className="testimonial-header">
+                                            <div className="testimonial-avatar-emoji">{testimonial.image}</div>
+                                            <div className="testimonial-info">
+                                                <h4>{testimonial.name}</h4>
+                                                <span>{testimonial.role} at {testimonial.company}</span>
+                                            </div>
                                         </div>
+                                        <p className="testimonial-text">"{testimonial.text}"</p>
                                     </div>
-                                    <p className="testimonial-text">"{testimonial.text}"</p>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
+                        <button
+                            className="carousel-nav-btn carousel-next"
+                            onClick={() => scrollCarousel(testimonialsCarouselRef, 'right')}
+                            aria-label="Next"
+                        >
+                            ›
+                        </button>
                     </div>
                     {/* Alumni Companies Section */}
                     <div className="alumni-work-section">

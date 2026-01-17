@@ -1,20 +1,20 @@
 import { useParams, Link } from 'react-router-dom'
 import './CategoryPrograms.css'
 
-// Category data with programs
+// Category data with programs - each program has a unique icon
 const categoriesData = {
     'computer-science-it': {
         name: 'Computer Science & IT',
         icon: '💻',
         description: 'Master cutting-edge technologies and programming skills',
         programs: [
-            { name: 'Cyber Security', path: '/programs/cyber-security', duration: '3 Months' },
-            { name: 'Data Analytics', path: '/programs/data-analytics', duration: '3 Months' },
-            { name: 'Web Development', path: '/programs/web-development', duration: '3 Months' },
-            { name: 'Machine Learning with Python', path: '/programs/machine-learning', duration: '3 Months' },
-            { name: 'Artificial Intelligence (AI)', path: '/programs/artificial-intelligence', duration: '3 Months' },
-            { name: 'Android Development', path: '/programs/android-development', duration: '3 Months' },
-            { name: 'Full Stack Web Development', path: '/programs/full-stack-web-development', duration: '3 Months' }
+            { name: 'Cyber Security', path: '/programs/cyber-security', duration: '3 Months', icon: '🔐' },
+            { name: 'Data Analytics', path: '/programs/data-analytics', duration: '3 Months', icon: '📊' },
+            { name: 'Web Development', path: '/programs/web-development', duration: '3 Months', icon: '🌐' },
+            { name: 'Machine Learning with Python', path: '/programs/machine-learning', duration: '3 Months', icon: '🤖' },
+            { name: 'Artificial Intelligence (AI)', path: '/programs/artificial-intelligence', duration: '3 Months', icon: '🧠' },
+            { name: 'Android Development', path: '/programs/android-development', duration: '3 Months', icon: '📱' },
+            { name: 'Full Stack Web Development', path: '/programs/full-stack-web-development', duration: '3 Months', icon: '💻' }
         ]
     },
     'ece-eee': {
@@ -22,9 +22,9 @@ const categoriesData = {
         icon: '⚡',
         description: 'Explore electronics and electrical engineering programs',
         programs: [
-            { name: 'Internet of Things (IoT)', path: '/programs/internet-of-things', duration: '3 Months' },
-            { name: 'Hybrid & Electric Vehicles', path: '/programs/hybrid-electric-vehicles', duration: '3 Months' },
-            { name: 'Embedded Systems', path: '/programs/embedded-systems', duration: '3 Months' }
+            { name: 'Internet of Things (IoT)', path: '/programs/internet-of-things', duration: '3 Months', icon: '📡' },
+            { name: 'Hybrid & Electric Vehicles', path: '/programs/hybrid-electric-vehicles', duration: '3 Months', icon: '🚗' },
+            { name: 'Embedded Systems', path: '/programs/embedded-systems', duration: '3 Months', icon: '🔌' }
         ]
     },
     'mechanical': {
@@ -32,8 +32,8 @@ const categoriesData = {
         icon: '⚙️',
         description: 'Learn mechanical engineering tools and techniques',
         programs: [
-            { name: 'AutoCAD', path: '/programs/autocad', duration: '3 Months' },
-            { name: 'Hybrid & Electric Vehicles', path: '/programs/hybrid-electric-vehicles', duration: '3 Months' }
+            { name: 'AutoCAD', path: '/programs/autocad', duration: '3 Months', icon: '📐' },
+            { name: 'Hybrid & Electric Vehicles', path: '/programs/hybrid-electric-vehicles', duration: '3 Months', icon: '🔋' }
         ]
     },
     'civil': {
@@ -41,8 +41,8 @@ const categoriesData = {
         icon: '🏗️',
         description: 'Master civil engineering and construction skills',
         programs: [
-            { name: 'AutoCAD', path: '/programs/autocad', duration: '3 Months' },
-            { name: 'Building Design & Construction', path: '/programs/building-design-construction', duration: '3 Months' }
+            { name: 'AutoCAD', path: '/programs/autocad', duration: '3 Months', icon: '📏' },
+            { name: 'Building Design & Construction', path: '/programs/building-design-construction', duration: '3 Months', icon: '🏠' }
         ]
     },
     'management-business': {
@@ -50,13 +50,13 @@ const categoriesData = {
         icon: '📈',
         description: 'Develop business and management expertise',
         programs: [
-            { name: 'Digital Marketing', path: '/programs/digital-marketing', duration: '3 Months' },
-            { name: 'Stock Market & Cryptocurrency', path: '/programs/stock-market', duration: '3 Months' },
-            { name: 'Finance', path: '/programs/finance', duration: '3 Months' },
-            { name: 'Human Resources (HR)', path: '/programs/human-resources', duration: '3 Months' },
-            { name: 'Project Management', path: '/programs/project-management', duration: '3 Months' },
-            { name: 'Supply Chain & Logistics', path: '/programs/supply-chain-logistics', duration: '3 Months' },
-            { name: 'Business Analytics', path: '/programs/business-analytics', duration: '3 Months' }
+            { name: 'Digital Marketing', path: '/programs/digital-marketing', duration: '3 Months', icon: '📣' },
+            { name: 'Stock Market & Cryptocurrency', path: '/programs/stock-market', duration: '3 Months', icon: '📈' },
+            { name: 'Finance', path: '/programs/finance', duration: '3 Months', icon: '💰' },
+            { name: 'Human Resources (HR)', path: '/programs/human-resources', duration: '3 Months', icon: '👥' },
+            { name: 'Project Management', path: '/programs/project-management', duration: '3 Months', icon: '📋' },
+            { name: 'Supply Chain & Logistics', path: '/programs/supply-chain-logistics', duration: '3 Months', icon: '🚚' },
+            { name: 'Business Analytics', path: '/programs/business-analytics', duration: '3 Months', icon: '📉' }
         ]
     },
     'it-design': {
@@ -64,8 +64,8 @@ const categoriesData = {
         icon: '🎨',
         description: 'Creative design and user experience programs',
         programs: [
-            { name: 'UI/UX Designing', path: '/programs/ui-ux-designing', duration: '3 Months' },
-            { name: 'Graphic Designing', path: '/programs/graphic-designing', duration: '3 Months' }
+            { name: 'UI/UX Designing', path: '/programs/ui-ux-designing', duration: '3 Months', icon: '🎯' },
+            { name: 'Graphic Designing', path: '/programs/graphic-designing', duration: '3 Months', icon: '🖌️' }
         ]
     },
     'media-communication': {
@@ -73,7 +73,7 @@ const categoriesData = {
         icon: '✍️',
         description: 'Content creation and communication skills',
         programs: [
-            { name: 'Content Writing', path: '/programs/content-writing', duration: '3 Months' }
+            { name: 'Content Writing', path: '/programs/content-writing', duration: '3 Months', icon: '✏️' }
         ]
     },
     'healthcare-life-sciences': {
@@ -81,7 +81,7 @@ const categoriesData = {
         icon: '🏥',
         description: 'Healthcare and medical industry programs',
         programs: [
-            { name: 'Medical Coding', path: '/programs/medical-coding', duration: '3 Months' }
+            { name: 'Medical Coding', path: '/programs/medical-coding', duration: '3 Months', icon: '🩺' }
         ]
     }
 }
@@ -133,6 +133,7 @@ function CategoryPrograms() {
                     <div className="programs-grid">
                         {category.programs.map((program, idx) => (
                             <Link key={idx} to={program.path} className="program-card">
+                                <span className="program-icon">{program.icon}</span>
                                 <div className="program-content">
                                     <h3 className="program-name">{program.name}</h3>
                                     <span className="program-duration">{program.duration}</span>

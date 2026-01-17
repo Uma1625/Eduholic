@@ -134,6 +134,18 @@
     border-radius: 2px;
 }
 
+/* Hide the line for centered headings */
+.section-heading.text-center::after {
+    display: none;
+}
+
+/* Text underline for gradient text */
+.text-underline {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+}
+
 .vision-text {
     font-size: var(--font-size-base);
     color: rgba(255, 255, 255, 0.95);
@@ -702,60 +714,60 @@
 
 /* Reduce icon section padding on mobile */
 @media (max-width: 768px) {
-  .about-hero {
-    padding: 100px 15px 40px !important;
-  }
-  
-  .values-section,
-  .team-section,
-  .stats-section,
-  .vision-section,
-  .mission-section {
-    padding: 40px 15px !important;
-  }
-  
-  .value-card,
-  .team-card,
-  .stat-item {
-    padding: 20px 15px !important;
-    margin-bottom: 15px !important;
-  }
-  
-  .value-icon,
-  .team-icon,
-  .stat-icon {
-    font-size: 40px !important;
-    margin-bottom: 10px !important;
-  }
-  
-  .values-grid,
-  .team-grid {
-    gap: 15px !important;
-  }
+    .about-hero {
+        padding: 100px 15px 40px !important;
+    }
+
+    .values-section,
+    .team-section,
+    .stats-section,
+    .vision-section,
+    .mission-section {
+        padding: 40px 15px !important;
+    }
+
+    .value-card,
+    .team-card,
+    .stat-item {
+        padding: 20px 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .value-icon,
+    .team-icon,
+    .stat-icon {
+        font-size: 40px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .values-grid,
+    .team-grid {
+        gap: 15px !important;
+    }
 }
 
 @media (max-width: 480px) {
-  .about-hero {
-    padding: 80px 10px 30px !important;
-  }
-  
-  .values-section,
-  .team-section,
-  .stats-section {
-    padding: 30px 10px !important;
-  }
-  
-  .value-card,
-  .team-card {
-    padding: 15px 12px !important;
-    margin-bottom: 12px !important;
-  }
-  
-  .value-icon,
-  .stat-icon {
-    font-size: 35px !important;
-    margin-bottom: 8px !important;
-  }
+    .about-hero {
+        padding: 80px 10px 30px !important;
+    }
+
+    .values-section,
+    .team-section,
+    .stats-section {
+        padding: 30px 10px !important;
+    }
+
+    .value-card,
+    .team-card {
+        padding: 15px 12px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .value-icon,
+    .stat-icon {
+        font-size: 35px !important;
+        margin-bottom: 8px !important;
+    }
 }
 
 /* ============================================
@@ -764,58 +776,294 @@
 
 /* Reduce icon container padding on mobile */
 @media (max-width: 768px) {
-  .glass-orb {
-    width: 100px !important;
-    height: 100px !important;
-    margin-bottom: 20px !important;
-  }
-  
-  .lightbulb-container,
-  .plane-container {
-    padding: 15px !important;
-    margin: 10px auto !important;
-  }
-  
-  .lightbulb-icon,
-  .plane-icon {
-    font-size: 50px !important;
-  }
-  
-  .vision-graphic,
-  .mission-graphic {
-    padding: 20px 0 !important;
-    margin: 15px 0 !important;
-  }
-  
-  .vision-grid,
-  .mission-grid {
-    gap: 20px !important;
-  }
-  
-  .glow-ring {
-    display: none !important;
-  }
+    .glass-orb {
+        width: 100px !important;
+        height: 100px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .lightbulb-container,
+    .plane-container {
+        padding: 15px !important;
+        margin: 10px auto !important;
+    }
+
+    .lightbulb-icon,
+    .plane-icon {
+        font-size: 50px !important;
+    }
+
+    .vision-graphic,
+    .mission-graphic {
+        padding: 20px 0 !important;
+        margin: 15px 0 !important;
+    }
+
+    .vision-grid,
+    .mission-grid {
+        gap: 20px !important;
+    }
+
+    .glow-ring {
+        display: none !important;
+    }
 }
 
 @media (max-width: 480px) {
-  .glass-orb {
-    width: 80px !important;
-    height: 80px !important;
-    margin-bottom: 15px !important;
-  }
-  
-  .lightbulb-container,
-  .plane-container {
-    padding: 10px !important;
-  }
-  
-  .lightbulb-icon,
-  .plane-icon {
-    font-size: 40px !important;
-  }
-  
-  .vision-section,
-  .mission-section {
-    padding: 25px 10px !important;
-  }
+    .glass-orb {
+        width: 80px !important;
+        height: 80px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .lightbulb-container,
+    .plane-container {
+        padding: 10px !important;
+    }
+
+    .lightbulb-icon,
+    .plane-icon {
+        font-size: 40px !important;
+    }
+
+    .vision-section,
+    .mission-section {
+        padding: 25px 10px !important;
+    }
+}
+
+/* ============================================
+   VISION & MISSION - VIDEO MOTION GRAPHICS
+   ============================================ */
+
+/* Section Video Background */
+.section-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Overlays for text readability */
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.vision-overlay {
+    background: linear-gradient(135deg, rgba(0, 153, 255, 0.85) 0%, rgba(0, 204, 255, 0.8) 50%, rgba(0, 229, 220, 0.85) 100%);
+}
+
+.mission-overlay {
+    background: linear-gradient(135deg, rgba(107, 0, 182, 0.85) 0%, rgba(155, 48, 255, 0.8) 50%, rgba(178, 75, 243, 0.85) 100%);
+}
+
+/* Animated Background Container */
+.vision-animated-bg,
+.mission-animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* Vision Particles - Light/Ideas themed */
+.vision-particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 40px rgba(255, 255, 0, 0.4);
+    animation: visionParticleFloat 8s ease-in-out infinite;
+}
+
+.v-p1 {
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.v-p2 {
+    top: 60%;
+    right: 15%;
+    animation-delay: 2s;
+    width: 8px;
+    height: 8px;
+}
+
+.v-p3 {
+    bottom: 20%;
+    left: 25%;
+    animation-delay: 4s;
+    width: 12px;
+    height: 12px;
+}
+
+@keyframes visionParticleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translateY(-30px) scale(1.3);
+        opacity: 1;
+    }
+}
+
+/* Vision Ring - Expanding light ring */
+.vision-ring {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    animation: visionRingExpand 6s ease-in-out infinite;
+}
+
+@keyframes visionRingExpand {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.5;
+    }
+}
+
+/* Mission Particles - Journey/Action themed */
+.mission-particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 100, 255, 0.8);
+    animation: missionParticleMove 10s linear infinite;
+}
+
+.m-p1 {
+    top: 20%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.m-p2 {
+    top: 50%;
+    left: 0%;
+    animation-delay: 3s;
+}
+
+.m-p3 {
+    bottom: 25%;
+    left: -2%;
+    animation-delay: 6s;
+}
+
+@keyframes missionParticleMove {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100vw) translateY(-50px);
+        opacity: 0;
+    }
+}
+
+/* Mission Arrow Trail - Direction/Purpose */
+.mission-arrow-trail {
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    top: 50%;
+    left: 20%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: arrowTrailPulse 3s ease-in-out infinite;
+}
+
+.mission-arrow-trail::after {
+    content: '→';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    animation: arrowMove 3s ease-in-out infinite;
+}
+
+@keyframes arrowTrailPulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes arrowMove {
+
+    0%,
+    100% {
+        transform: translateY(-50%) translateX(0);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(-50%) translateX(20px);
+        opacity: 0.8;
+    }
+}
+
+/* Ensure content is above video/overlay */
+.vision-section .container,
+.mission-section .container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Responsive - Hide heavy animations on mobile */
+@media (max-width: 768px) {
+    .section-video-bg {
+        display: none;
+    }
+
+    .vision-ring,
+    .mission-arrow-trail {
+        display: none;
+    }
 }

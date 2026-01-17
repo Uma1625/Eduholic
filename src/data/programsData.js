@@ -233,6 +233,122 @@ export const programsData = {
             }
         ]
     },
+    'data-analytics': {
+        id: 'data-analytics',
+        title: 'Data Analytics',
+        category: 'Computer Science & IT',
+        icon: '📊',
+        color: '#8b5cf6',
+        gradient: 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What is Data Analytics?',
+                answer: 'Data Analytics is the science of analyzing raw data to make conclusions about information. It involves applying algorithms and statistical analysis to data sets to identify trends, patterns, and relationships.'
+            },
+            {
+                question: 'Why is Data Analytics important?',
+                answer: 'Data Analytics helps organizations make data-driven decisions, optimize operations, understand customer behavior, predict future trends, and gain competitive advantage in the market.'
+            },
+            {
+                question: 'Why Eduholic for Data Analytics?',
+                answer: 'At Eduholic, we provide comprehensive training covering Python, data visualization, machine learning, and statistics with hands-on projects on real datasets. Our expert mentors guide you through industry-relevant skills.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Introduction',
+                topics: ['What is data science?', 'Applications & uses of data science', 'Relation between data science, AI & machine learning']
+            },
+            {
+                module: 'Introduction to Python',
+                topics: ['Understanding Python', 'Data types, list, dictionary', 'Array, string operations', 'Conditions and loops']
+            },
+            {
+                module: 'Fundamental of Python',
+                topics: ['Inbuilt and user defined functions', 'IO, Excel and DB operations', 'Error Handling', 'OOPs and Regular Expressions', 'Scope of Python', 'Decorators']
+            },
+            {
+                module: 'Data Analysis',
+                topics: ['Data Visualization', 'Building a data visualization library', 'Numpy', 'Pandas', 'Matplot and seaborn libraries']
+            },
+            {
+                module: 'Introduction to Machine Learning',
+                topics: ['Decoding Artificial Intelligence', 'Fundamentals of Machine Learning', 'Types of machine learning']
+            },
+            {
+                module: 'Tools Required for Data Science',
+                topics: ['Training, Testing', 'Cross validation Data Pickling', 'Scaling Technique', 'Error Metrics Features and label']
+            },
+            {
+                module: 'Machine Learning in Data Science',
+                topics: ['Performance Metrics', 'Understanding Algorithms', 'Implementation of algorithms']
+            },
+            {
+                module: 'Supervised vs Unsupervised Learning',
+                topics: ['Classification vs regression', 'Support vector machine', 'K-means clustering', 'Random forest linear']
+            },
+            {
+                module: 'Deriving Insights from Data Sets',
+                topics: ['Introduction to Joins', 'Working with geodata & what-ifs parameters', 'Creation, calculation, and grouping of fields', 'Sorting, filtering, & analyzing data']
+            },
+            {
+                module: 'Natural Language',
+                topics: ['What is natural language?', 'Natural Language Toolkits (NLTK)', 'Stopwords', 'Stemming', 'Lemmatization', 'What is sentiment analysis?', 'Native and bayes']
+            },
+            {
+                module: 'Statistics',
+                topics: ['Probability & distribution', 'Central limit theorem', 'Hypothesis testing', 'Categorical data']
+            },
+            {
+                module: 'Predictive Modelling',
+                topics: ['Introduction', 'Types of productive modelling', 'Data extraction', 'Data exploration']
+            }
+        ],
+        projects: [
+            { name: 'Used Cars Cost Prediction', description: 'Build a predictive model to estimate used car prices based on various features' },
+            { name: 'Detection of Parkinson\'s Disease', description: 'Develop a machine learning model to detect Parkinson\'s disease from medical data' },
+            { name: 'Sales Forecasting', description: 'Create a forecasting model to predict future sales trends' },
+            { name: 'Movie Recommendation Engine', description: 'Build a recommendation system to suggest movies based on user preferences' },
+            { name: 'Stock Price Prediction', description: 'Develop a model to predict stock prices using historical data and analytics' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Do I need prior programming knowledge?',
+                answer: 'Basic understanding of programming concepts is helpful but we cover Python fundamentals from scratch in the initial modules.'
+            },
+            {
+                question: 'What tools will I learn?',
+                answer: 'You will learn Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, and other industry-standard data analysis tools.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
     'web-development': {
         id: 'web-development',
         title: 'Web Development',

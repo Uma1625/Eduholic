@@ -1558,3 +1558,27 @@ select {
     padding-top: 70px;
   }
 }
+/* Extra Small Mobile Global Fixes - 360px and below */
+@media (max-width: 360px) {
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 8px !important;
+  }
+  
+  .section {
+    padding: var(--spacing-lg) 0 !important;
+  }
+  
+  .heading-1 {
+    font-size: 1.2rem !important;
+  }
+  
+  .heading-2 {
+    font-size: 1.1rem !important;
+  }
+  
+  .heading-3 {
+    font-size: 1rem !important;
+  }
+}

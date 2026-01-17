@@ -3078,16 +3078,28 @@
     padding: 20px;
     background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%);
     border-radius: 16px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .premium-category-card .details-title {
     font-size: 1.1rem;
     margin-bottom: 12px;
+    color: white;
+  }
+
+  .premium-category-card .details-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .premium-category-card .detail-course-link {
     font-size: 0.85rem;
     padding: 8px 0;
+    color: white;
+    display: block;
   }
 
   .premium-category-card .card-cta {

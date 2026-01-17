@@ -14,13 +14,13 @@ const usefulLinks = [
     { name: 'Return Policy', path: '/return-policy' }
 ]
 
-const socialLinks = [
-    { name: 'Facebook', icon: 'fb', url: 'https://www.facebook.com/eduholic' },
-    { name: 'Instagram', icon: 'ig', url: 'https://www.instagram.com/eduholic' },
-    { name: 'LinkedIn', icon: 'in', url: 'https://www.linkedin.com/company/eduholic' },
-    { name: 'Twitter', icon: 'tw', url: 'https://twitter.com/eduholic' },
-    { name: 'YouTube', icon: 'yt', url: 'https://www.youtube.com/eduholic' }
-]
+// const socialLinks = [
+//     { name: 'Facebook', icon: 'fb', url: 'https://www.facebook.com/eduholic' },
+//     { name: 'Instagram', icon: 'ig', url: 'https://www.instagram.com/eduholic' },
+//     { name: 'LinkedIn', icon: 'in', url: 'https://www.linkedin.com/company/eduholic' },
+//     { name: 'Twitter', icon: 'tw', url: 'https://twitter.com/eduholic' },
+//     { name: 'YouTube', icon: 'yt', url: 'https://www.youtube.com/eduholic' }
+// ]
 
 function Footer() {
     return (
@@ -35,7 +35,7 @@ function Footer() {
                         <p className="footer-desc">
                             A knowledge & skill acquisition portal with the goal of getting the youth of today ready for their professional careers.
                         </p>
-                        <div className="social-links">
+                        {/* <div className="social-links">
                             {socialLinks.map((social, idx) => (
                                 <a
                                     key={idx}
@@ -49,7 +49,7 @@ function Footer() {
                                     <SocialIcon name={social.icon} />
                                 </a>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Company Links */}
@@ -82,15 +82,24 @@ function Footer() {
                         <div className="contact-info">
                             <div className="contact-item">
                                 <span className="contact-icon">📍</span>
-                                <span>Eduholic Pvt Ltd, 64, 27th Main Road 1st Sector, HSR Layout Hustlehub Techpark, 36/5, Somasundrapalya, Bengaluru, Karnataka 560102</span>
+                                <div className="address-block">
+                                    <strong>Registered:</strong>
+                                    <span>9-1 Nagavamsapu Street, Ward No-3, Main Road, Palakonda, Srikakulam, Andhra Pradesh, 532440</span>
+                                </div>
+                            </div>
+                            <div className="contact-item">
+                                <span className="contact-icon">🏢</span>
+                                <div className="address-block">
+                                    <strong>Branch:</strong>
+                                    <span>Unit No. 203, 2nd Floor, Suite No. 502, SBR CV Towers, Sector-I, Sy No. 64 HUDA Techno Enclave, Madhapur, Hyderabad – 500081</span>
+                                </div>
                             </div>
                             <div className="contact-item">
                                 <span className="contact-icon">✉️</span>
-                                <a href="mailto:support@eduholic.com">support@eduholic.com</a>
-                            </div>
-                            <div className="contact-item">
-                                <span className="contact-icon">📞</span>
-                                <a href="tel:+918884080003">+91 8884080003</a>
+                                <div className="email-block">
+                                    <a href="mailto:Learnersupport@eduholic.in">Learner: Learnersupport@eduholic.in</a>
+                                    <a href="mailto:Support@eduholic.info">General: Support@eduholic.info</a>
+                                </div>
                             </div>
                         </div>
                     </div>

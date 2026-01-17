@@ -28,39 +28,33 @@ function ContactUs() {
                         {/* Contact Details */}
                         <div className="contact-details" data-aos="fade-right">
                             <div className="contact-block">
-                                <h3>Address</h3>
+                                <h3>Registered Address</h3>
                                 <p>
-                                    Eduholic Pvt Ltd, 64, 27th Main Road 1st Sector,
-                                    HSR Layout Hustlehub Techpark, 36/5, Somasundra palya,
-                                    harlurkunte, village, Bengaluru, Karnataka 560102
+                                    9-1 Nagavamsapu Street, Ward No-3, Main Road,
+                                    Palakonda, Srikakulam, Andhra Pradesh, 532440
                                 </p>
                             </div>
 
                             <div className="contact-block">
-                                <h3>Phone Numbers</h3>
-                                <a href="tel:+918884080003" className="contact-link">
-                                    <span className="link-icon">📞</span>
-                                    +91 8884080003
-                                </a>
+                                <h3>Branch Address</h3>
+                                <p>
+                                    Eduholic Edtech India Private Limited,
+                                    Unit No. 203, 2nd Floor, Suite No. 502,
+                                    SBR CV Towers, Sector-I, Sy No. 64 HUDA Techno Enclave,
+                                    Madhapur, Hyderabad – 500081
+                                </p>
                             </div>
 
                             <div className="contact-block">
-                                <h3>Email</h3>
-                                <a href="mailto:support@acmegrade.com" className="contact-link">
+                                <h3>Email Support</h3>
+                                <a href="mailto:Learnersupport@eduholic.in" className="contact-link">
+                                    <span className="link-icon">📚</span>
+                                    Learner Support: Learnersupport@eduholic.in
+                                </a>
+                                <a href="mailto:Support@eduholic.info" className="contact-link">
                                     <span className="link-icon">✉️</span>
-                                    support@acmegrade.com
+                                    General Support: Support@eduholic.info
                                 </a>
-                            </div>
-
-                            <div className="contact-block">
-                                <h3>Follow Us</h3>
-                                <div className="social-icons">
-                                    <a href="https://facebook.com/acmegrade" target="_blank" rel="noopener noreferrer" className="social-icon">📘</a>
-                                    <a href="https://instagram.com/acmegrade" target="_blank" rel="noopener noreferrer" className="social-icon">📸</a>
-                                    <a href="https://linkedin.com/company/acmegrade" target="_blank" rel="noopener noreferrer" className="social-icon">💼</a>
-                                    <a href="https://twitter.com/acmegrade" target="_blank" rel="noopener noreferrer" className="social-icon">🐦</a>
-                                    <a href="https://youtube.com/acmegrade" target="_blank" rel="noopener noreferrer" className="social-icon">📺</a>
-                                </div>
                             </div>
                         </div>
 

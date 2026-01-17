@@ -468,3 +468,41 @@
         margin-left: 8px;
     }
 }
+/* ============================================
+   FOOTER ADDRESS AND EMAIL BLOCKS
+   ============================================ */
+
+.footer-col .address-block,
+.footer-col .email-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-col .address-block strong,
+.footer-col .email-block strong {
+    font-weight: 600;
+    color: #22c5ff;
+    font-size: 0.85rem;
+}
+
+.footer-col .address-block span {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-col .email-block a {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col .email-block a:hover {
+    color: #22c5ff;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}

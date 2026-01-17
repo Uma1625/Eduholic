@@ -4240,3 +4240,30 @@
     overflow: visible !important;
     padding: 30px 0 !important;
 }
+
+/* ============================================
+   FIX: Startup India Logo Size - SMALLER
+   ============================================ */
+
+.startup-india-logo {
+    max-width: 150px !important;
+    height: auto !important;
+    border-radius: 8px !important;
+}
+
+/* ============================================
+   FIX: Company Logo Visibility
+   ============================================ */
+
+.company-card img.company-logo {
+    display: block !important;
+    width: auto !important;
+    height: 40px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+}
+
+.alumni-companies-grid .company-card {
+    min-height: 60px !important;
+    background: #ffffff !important;
+}

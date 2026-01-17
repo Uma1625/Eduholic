@@ -334,7 +334,7 @@ function Home() {
                         <div className="orbit-system">
                             {/* Center Logo */}
                             <div className="orbit-center">
-                                <img src="/eduholic_logo.png" alt="Eduholic" className="center-logo-img" />
+                                <img src="/logo.png" alt="Eduholic" className="center-logo-img" />
                             </div>
 
                             {/* Orbit Ring - the circle background */}

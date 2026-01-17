@@ -907,3 +907,68 @@
         height: 45px !important;
     }
 }
+
+/* ============================================
+   WHITE NAVBAR BACKGROUND
+   ============================================ */
+
+.header {
+    background: white !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.header.scrolled {
+    background: white !important;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Dark text colors for white navbar */
+.nav-link {
+    color: #1a1a2e !important;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover {
+    color: #667eea !important;
+}
+
+.nav-item.has-dropdown .nav-link {
+    color: #1a1a2e !important;
+}
+
+.nav-item.has-dropdown:hover .nav-link {
+    color: #667eea !important;
+}
+
+/* CTA Button remains colorful */
+.nav-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+}
+
+/* Mobile menu button - dark */
+.mobile-menu-btn span {
+    background: #1a1a2e !important;
+}
+
+/* Logo styling for white navbar - no background needed */
+.logo {
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.logo-image {
+    height: 60px !important;
+    background: transparent !important;
+}
+
+.header.scrolled .logo-image {
+    height: 50px !important;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 45px !important;
+    }
+}

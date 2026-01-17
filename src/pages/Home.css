@@ -5131,9 +5131,24 @@
     margin-bottom: 35px;
   }
 
+  .ms-logo-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .ms-cert-logo {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: auto;
+  }
+
+  .ms-entra-logo {
+    width: 80px;
+  }
+
+  .ms-entra-tagline {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+    margin-top: 25px;
   }
 
   .ms-infinity-ring {
@@ -5158,8 +5173,19 @@
   }
 
   .ms-cert-logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: auto;
+  }
+
+  .ms-entra-logo {
+    width: 60px;
+  }
+
+  .ms-entra-tagline {
+    font-size: 0.75rem;
+    padding: 10px 15px;
+    margin-top: 20px;
+    max-width: 90%;
   }
 
   .ms-badge-text {

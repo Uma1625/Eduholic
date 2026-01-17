@@ -1186,7 +1186,26 @@
   /* Show mobile menu button */
   .mobile-menu-btn {
     display: flex !important;
-    border: none;
+    border: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px !important;
+  }
+
+  /* Hamburger lines - must be visible */
+  .hamburger {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    width: 24px !important;
+  }
+
+  .hamburger span {
+    display: block !important;
+    height: 3px !important;
+    width: 100% !important;
+    background: #1a1a2e !important;
+    border-radius: 2px !important;
   }
 
   /* Show mobile navigation when open */
@@ -1205,8 +1224,28 @@
   /* Show mobile menu button */
   .mobile-menu-btn {
     display: flex !important;
-    border: none;
-    z-index: 1001;
+    border: none !important;
+    z-index: 1001 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px !important;
+    background: transparent !important;
+  }
+
+  /* Hamburger lines - must be visible */
+  .hamburger {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    width: 24px !important;
+  }
+
+  .hamburger span {
+    display: block !important;
+    height: 3px !important;
+    width: 100% !important;
+    background: #1a1a2e !important;
+    border-radius: 2px !important;
   }
 
   /* Show mobile navigation when open */
@@ -1216,6 +1255,6 @@
 
   /* Header container flex adjustment */
   .header-container {
-    justify-content: space-between;
+    justify-content: space-between !important;
   }
 }

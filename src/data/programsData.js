@@ -125,6 +125,114 @@ export const programsData = {
             }
         ]
     },
+    'cyber-security': {
+        id: 'cyber-security',
+        title: 'Cyber Security',
+        category: 'Computer Science & IT',
+        icon: '🔐',
+        color: '#dc2626',
+        gradient: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What is Cyber Security?',
+                answer: 'Cyber security is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users, or interrupting normal business processes.'
+            },
+            {
+                question: 'Why is Cyber Security important?',
+                answer: 'With the increasing reliance on technology and the internet, organizations and individuals are at greater risk of cyber attacks. Cyber security helps protect sensitive data, ensures business continuity, and maintains trust with customers and stakeholders.'
+            },
+            {
+                question: 'Why Eduholic for Cyber Security?',
+                answer: 'At Eduholic, we provide hands-on training with real-world scenarios, covering ethical hacking, penetration testing, and security analysis. Our expert mentors guide you through practical projects to build industry-ready skills.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Introduction',
+                topics: ['Networking concepts overview', 'What is cyber security?', 'Why is cyber security so important?', 'Cyber security roles in an organization', 'Key cybersecurity processes']
+            },
+            {
+                module: 'Cybersecurity Fundamentals',
+                topics: ['Introduction To cybersecurity', 'Fundamentals of cybersecurity', 'Threats, attacks and mitigation']
+            },
+            {
+                module: 'Concepts of Information Security',
+                topics: ['Introduction', 'Governance of information security', 'Types of attacks and Security measures', 'Information security programs']
+            },
+            {
+                module: 'Operating System',
+                topics: ['What is an operating system?', 'Introduction to Kernels', 'BIOS', 'Functions of BIOS', 'Architecture of OS']
+            },
+            {
+                module: 'Ethical Hacking',
+                topics: ['What is Hacking?', 'Who is a Hacker?', 'Skills of a Hacker', 'Types of Hackers', 'Reasons for Hacking', 'Who are at the risk of hacking attacks?', 'Effects of Computer Hacking on an organization', 'The Security, Functionality & Usability Triangle', 'What is Ethical Hacking?', 'Why is Ethical Hacking Necessary?', 'Scope & Limitations of Ethical Hacking']
+            },
+            {
+                module: 'Foot Printing & Reconnaissance',
+                topics: ['What is Footprinting', 'Objectives of Footprinting', 'Finding a company\'s details', 'Finding a company\'s domain name', 'Finding a company\'s Internal URLs', 'Finding a company\'s Server details', 'Finding the details of domain registration', 'Finding the range of IP Address', 'Finding the DNS information', 'Finding the location of servers', 'Traceroute analysis', 'Tracking email communications']
+            },
+            {
+                module: 'Scanning',
+                topics: ['What is network scanning?', 'Objectives of network scanning', 'Finding the live hosting a network', 'SNMP Enumeration', 'SMTP Enumeration', 'DNS Enumeration', 'Finding open ports on a server', 'Finding the services on a server', 'OS fingerprinting', 'Server Banner grabbing tools', 'What is Vulnerability Scanning?', 'What is a proxy server?', 'How does a proxy server work?', 'Why do hackers use proxy servers?', 'What is a TOR network?', 'Why hackers prefer to use TOR networks']
+            },
+            {
+                module: 'Hacking & Web Server Applications',
+                topics: ['What is a web server?', 'Different web server applications', 'Why are web servers hacked & its consequences?', 'Directory traversal attacks', 'Website defacement', 'Website password brute forcing']
+            },
+            {
+                module: 'Cross-site Scripting',
+                topics: ['Persistent XSS', 'Reflected XSS', 'DOM-based XSS']
+            },
+            {
+                module: 'SQL Injection',
+                topics: ['What is SQL Injection', 'Effects of SQL Injection', 'Types of SQL Injection attacks', 'SQL Injection detection tools']
+            }
+        ],
+        projects: [
+            { name: 'Web Application Penetration Testing', description: 'Perform comprehensive security testing on web applications to identify vulnerabilities' },
+            { name: 'Man in the Middle Attack', description: 'Simulate and understand MITM attacks in a controlled environment' },
+            { name: 'Hack into Windows Target Machine', description: 'Learn exploitation techniques on Windows systems ethically' },
+            { name: 'Perform MITM on Windows Machine', description: 'Execute man-in-the-middle attacks on Windows networks' },
+            { name: 'Mock Site Ethical Hacking', description: 'Practice ethical hacking on a mock website with real vulnerabilities' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Do I need prior coding knowledge for Cyber Security?',
+                answer: 'Basic understanding of programming and networking concepts is helpful but not mandatory. We cover fundamentals in the initial modules.'
+            },
+            {
+                question: 'What tools will I learn?',
+                answer: 'You will learn industry-standard tools like Nmap, Wireshark, Metasploit, Burp Suite, and various other penetration testing tools.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
     'web-development': {
         id: 'web-development',
         title: 'Web Development',

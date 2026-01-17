@@ -389,3 +389,20 @@
         font-size: 0.85rem;
     }
 }
+
+/* Centered Eduholic Title */
+.policy-intro.text-center {
+    text-align: center !important;
+}
+
+.eduholic-title {
+    color: #667eea !important;
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 15px !important;
+}
+
+.policy-intro.text-center p {
+    max-width: 700px !important;
+    margin: 0 auto !important;
+}

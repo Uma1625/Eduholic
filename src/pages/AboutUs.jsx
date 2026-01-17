@@ -144,9 +144,9 @@ function AboutUs() {
                 <div className="container">
                     <div className="global-content" data-aos="fade-up">
                         <h2 className="section-heading text-center">
-                            With a little over <span className="text-gradient">half a Lakh</span> learners turned professionals,
+                            With a little more than <span className="text-gradient">one Lakh</span> students turned professionals,
                         </h2>
-                        <p className="global-subtitle text-center">
+                        {/* <p className="global-subtitle text-center">
                             Eduholic has expanded its reach into more than 15 countries, and is impacting lives across the globe.
                         </p>
 
@@ -159,7 +159,7 @@ function AboutUs() {
                                     <span className="country-name">{country.name}</span>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

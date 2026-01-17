@@ -6,8 +6,8 @@ const careerPositions = [
         title: 'Campus Delegate',
         category: 'CAMPUS DELEGATE',
         description: 'Be the face of Eduholic at your campus. Help fellow students discover internship opportunities and grow professionally.',
-        email: 'careers@acmegrade.com',
-        phone: '+91 8884922231',
+        email: 'campusdelegate@eduholic.in',
+        // phone: '+91 8884922231',
         icon: '🎓'
     },
     {
@@ -15,8 +15,8 @@ const careerPositions = [
         title: 'Sales & Marketing',
         category: 'SALES & MARKETING',
         description: 'Drive growth through strategic marketing initiatives and build relationships with potential learners and partners.',
-        email: 'careers@acmegrade.com',
-        phone: '+91 8884080003',
+        email: 'HR@eduholic.in',
+        // phone: '+91 8884080003',
         icon: '📈'
     },
     {
@@ -24,8 +24,8 @@ const careerPositions = [
         title: 'Human Resources',
         category: 'HUMAN RESOURCES',
         description: 'Shape our company culture and help us find the best talent to join the Eduholic family.',
-        email: 'careers@acmegrade.com',
-        phone: '+91 8884080003',
+        email: 'HR@eduholic.in',
+        // phone: '+91 8884080003',
         icon: '👥'
     },
     {
@@ -33,8 +33,8 @@ const careerPositions = [
         title: 'Operations',
         category: 'OPERATIONS',
         description: 'Ensure smooth delivery of our programs and maintain operational excellence across all processes.',
-        email: 'careers@acmegrade.com',
-        phone: '+91 8884080003',
+        email: 'lakshman@eduholic.info',
+        // phone: '+91 8884080003',
         icon: '⚙️'
     },
     {
@@ -42,8 +42,8 @@ const careerPositions = [
         title: 'Collaborations',
         category: 'COLLABORATIONS',
         description: 'Build strategic partnerships with colleges, universities, and industry leaders to expand our reach.',
-        email: 'collaborations@acmegrade.com',
-        phone: '+91 8884972900',
+        email: 'lakshman@eduholic.info',
+        // phone: '+91 8884972900',
         icon: '🤝'
     }
 ]
@@ -97,10 +97,10 @@ function Careers() {
                                         <span className="contact-icon">✉️</span>
                                         {position.email}
                                     </a>
-                                    <a href={`tel:${position.phone.replace(/\s/g, '')}`} className="contact-link">
+                                    {/* <a href={`tel:${position.phone.replace(/\s/g, '')}`} className="contact-link">
                                         <span className="contact-icon">📞</span>
                                         {position.phone}
-                                    </a>
+                                    </a> */}
                                 </div>
                                 <button className="btn btn-primary btn-apply">
                                     Apply Now

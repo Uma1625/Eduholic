@@ -865,3 +865,45 @@
         padding: 3px 6px !important;
     }
 }
+
+/* ============================================
+   LARGER NAVBAR LOGO - CAPTION VISIBLE
+   ============================================ */
+
+.logo-image {
+    height: 70px !important;
+    width: auto !important;
+}
+
+.header.scrolled .logo-image {
+    height: 55px !important;
+}
+
+.logo {
+    padding: 8px 15px !important;
+    border-radius: 14px !important;
+}
+
+@media (max-width: 992px) {
+    .logo-image {
+        height: 60px !important;
+    }
+    .header.scrolled .logo-image {
+        height: 50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 50px !important;
+    }
+    .header.scrolled .logo-image {
+        height: 42px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        height: 45px !important;
+    }
+}

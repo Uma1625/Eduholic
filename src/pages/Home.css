@@ -4340,3 +4340,25 @@
         max-height: 50px !important;
     }
 }
+
+/* Orbit Center Logo - Larger Size */
+.center-logo-img {
+    max-width: 100px !important;
+    max-height: 100px !important;
+}
+
+.orbit-center {
+    width: 140px !important;
+    height: 140px !important;
+}
+
+@media (max-width: 768px) {
+    .center-logo-img {
+        max-width: 70px !important;
+        max-height: 70px !important;
+    }
+    .orbit-center {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}

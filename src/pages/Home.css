@@ -4289,3 +4289,27 @@
 .recognition-section {
     padding: 15px 0 !important;
 }
+
+/* ============================================
+   STARTUP INDIA - FINAL STYLING
+   ============================================ */
+
+.recognition-section {
+    padding: 5px 0 20px 0 !important;
+    margin-top: 0 !important;
+}
+
+.recognition-title {
+    margin-bottom: 10px !important;
+}
+
+.recognition-badge {
+    padding: 0 !important;
+    margin-top: 5px !important;
+}
+
+.startup-india-logo {
+    max-width: 140px !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}

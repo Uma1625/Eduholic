@@ -1029,3 +1029,35 @@
         padding: 4px 8px !important;
     }
 }
+
+/* ============================================
+   LOGO: LARGER SIZE, NO BORDER/BACKGROUND
+   ============================================ */
+
+.logo {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.logo-image {
+    height: 65px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.header.scrolled .logo-image {
+    height: 55px !important;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 50px !important;
+    }
+    .header.scrolled .logo-image {
+        height: 45px !important;
+    }
+}

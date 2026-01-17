@@ -5401,14 +5401,31 @@
 /* Small Mobile - 480px */
 @media (max-width: 480px) {
   .hero {
-    padding: 50px 10px 25px !important;
-    padding-top: 50px !important;
+    padding: 40px 10px 20px !important;
+    padding-top: 40px !important;
+    min-height: auto !important;
   }
 
   .hero-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     padding: 0 5px;
-    line-height: 1.25;
+    line-height: 1.2;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* Category cards - ensure visible */
+  .premium-category-card {
+    width: 260px !important;
+    min-height: 280px !important;
+  }
+
+  .categories-carousel-track {
+    gap: 12px !important;
   }
 
   .trending-card {
@@ -5435,7 +5452,8 @@
     width: 100% !important;
     min-width: 100% !important;
     min-height: auto !important;
-    padding: 50px 8px 30px !important;
+    padding: 35px 8px 20px !important;
+    padding-top: 35px !important;
     margin: 0 !important;
   }
 
@@ -5488,6 +5506,25 @@
   .hero::before,
   .hero::after {
     display: none !important;
+  }
+
+  /* Category cards - smaller for very small screens */
+  .premium-category-card {
+    width: 240px !important;
+    min-height: 260px !important;
+  }
+
+  .categories-carousel-track {
+    gap: 10px !important;
+  }
+
+  .details-title {
+    font-size: 0.95rem !important;
+  }
+
+  .detail-course-link {
+    font-size: 0.8rem !important;
+    padding: 6px 0 !important;
   }
 }
 

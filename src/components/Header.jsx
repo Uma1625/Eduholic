@@ -213,7 +213,10 @@ function Header() {
                                 <div className="mega-footer">
                                     {/* Microsoft Entra ID Badge */}
                                     <div className="microsoft-entra-badge">
-                                        <img src="/microsoft_logo.png" alt="Microsoft" className="microsoft-logo" />
+                                        <div className="entra-logos">
+                                            <img src="/microsoft_logo.png" alt="Microsoft" className="microsoft-logo" />
+                                            <img src="/microsoft_entraid.png" alt="Microsoft Entra ID" className="entra-id-logo" />
+                                        </div>
                                         <div className="entra-content">
                                             <span className="entra-title">Powered by Microsoft Entra ID</span>
                                             <span className="entra-tagline">Industry-Focused Internships with Microsoft Entra ID–Verified Certification</span>

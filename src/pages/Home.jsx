@@ -17,10 +17,10 @@ const trainingPartners = [
 ]
 
 const techLogos = [
-    '/icons/icon1.png', '/icons/icon2.png', '/icons/icon3.png', '/icons/icon4.png', '/icons/icon5.png',
-    '/icons/icon6.png', '/icons/icon7.png', '/icons/icon8.png', '/icons/icon9.png', '/icons/icon10.png',
-    '/icons/icon11.png', '/icons/icon12.png', '/icons/icon13.png', '/icons/icon14.png', '/icons/icon15.png',
-    '/icons/icon16.png', '/icons/icon17.png', '/icons/icon18.png', '/icons/icon19.png', '/icons/icon20.png'
+    '/icons/icon4.png', '/icons/icon2.png', '/icons/icon18.png', '/icons/icon1.png', '/icons/icon5.png',
+    '/icons/icon16.png', '/icons/icon7.png', '/icons/icon8.png', '/icons/icon13.png', '/icons/icon10.png',
+    '/icons/icon15.png', '/icons/icon20.png', '/icons/icon9.png', '/icons/icon14.png', '/icons/icon11.png',
+    '/icons/icon6.png', '/icons/icon17.png', '/icons/icon3.png', '/icons/icon19.png', '/icons/icon12.png'
 ]
 
 const categories = [
@@ -132,15 +132,15 @@ const statistics = [
 ]
 
 const alumniCompanies = [
-    '/logos/logo1.png', '/logos/logo2.png', '/logos/logo3.png', '/logos/logo4.png', '/logos/logo5.png',
-    '/logos/logo6.png', '/logos/logo7.png', '/logos/logo8.png', '/logos/logo9.png', '/logos/logo10.png',
-    '/logos/logo11.png', '/logos/logo12.png', '/logos/logo13.png', '/logos/logo14.png', '/logos/logo15.png',
-    '/logos/logo16.png', '/logos/logo17.png', '/logos/logo18.png', '/logos/logo19.png', '/logos/logo20.png',
-    '/logos/logo21.png', '/logos/logo22.png', '/logos/logo23.png', '/logos/logo24.png', '/logos/logo25.png',
-    '/logos/logo26.png', '/logos/logo27.png', '/logos/logo28.png', '/logos/logo29.png', '/logos/logo30.png',
+    '/logos/logo4.png', '/logos/logo24.png', '/logos/logo40.png', '/logos/logo1.png', '/logos/logo5.png',
+    '/logos/logo29.png', '/logos/logo12.png', '/logos/logo8.png', '/logos/logo9.png', '/logos/logo41.png',
+    '/logos/logo11.png', '/logos/logo7.png', '/logos/logo13.png', '/logos/logo44.png', '/logos/logo15.png',
+    '/logos/logo16.png', '/logos/logo17.png', '/logos/logo42.png', '/logos/logo19.png', '/logos/logo20.png',
+    '/logos/logo21.png', '/logos/logo43.png', '/logos/logo23.png', '/logos/logo2.png', '/logos/logo37.png',
+    '/logos/logo26.png', '/logos/logo45.png', '/logos/logo39.png', '/logos/logo6.png', '/logos/logo30.png',
     '/logos/logo31.png', '/logos/logo32.png', '/logos/logo33.png', '/logos/logo34.png', '/logos/logo35.png',
-    '/logos/logo36.png', '/logos/logo37.png', '/logos/logo38.png', '/logos/logo39.png', '/logos/logo40.png',
-    '/logos/logo41.png', '/logos/logo42.png', '/logos/logo43.png', '/logos/logo44.png', '/logos/logo45.png'
+    '/logos/logo36.png', '/logos/logo25.png', '/logos/logo38.png', '/logos/logo28.png', '/logos/logo3.png',
+    '/logos/logo10.png', '/logos/logo18.png', '/logos/logo22.png', '/logos/logo14.png', '/logos/logo27.png'
 ]
 
 // Technology icons for display
@@ -641,7 +641,15 @@ function Home() {
                                 alt="Microsoft"
                                 className="ms-cert-logo"
                             />
+                            <img
+                                src="/microsoft_entraid.png"
+                                alt="Microsoft Entra ID"
+                                className="ms-cert-logo ms-entra-logo"
+                            />
                         </div>
+                        <p className="ms-entra-tagline">
+                            Certification powered by Microsoft Entra ID — trusted by employers worldwide.
+                        </p>
                     </div>
                 </div>
             </section>

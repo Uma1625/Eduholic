@@ -349,6 +349,114 @@ export const programsData = {
             }
         ]
     },
+    'android-development': {
+        id: 'android-development',
+        title: 'Android Development',
+        category: 'Computer Science & IT',
+        icon: '📱',
+        color: '#3ddc84',
+        gradient: 'linear-gradient(135deg, #3ddc84 0%, #2fa866 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What is Android Development?',
+                answer: 'Android Development is the process of creating applications for devices running the Android operating system. It involves using programming languages like Java or Kotlin along with the Android SDK to build mobile apps.'
+            },
+            {
+                question: 'Why learn Android Development?',
+                answer: 'Android holds the largest market share in the mobile OS market. Learning Android development opens doors to millions of potential users and lucrative career opportunities in mobile app development.'
+            },
+            {
+                question: 'Why Eduholic for Android Development?',
+                answer: 'At Eduholic, we provide hands-on training covering the complete Android development lifecycle from basics to publishing on Play Store. Our expert mentors guide you through real-world projects.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Introduction',
+                topics: ['App-development overview', 'Introduction to Android OS', 'Environment setup', 'Android development tools overview', 'Apps & APK files', 'Android app component']
+            },
+            {
+                module: 'Input Data',
+                topics: ['Removing & avoid undesired input data', 'Building activities for results', 'Generic filtering search Activity', 'Creating search & array adapter', 'Setting up & filtering list view']
+            },
+            {
+                module: 'Building Android Applications',
+                topics: ['Building Activities', 'Building and using Services', 'Notifications', 'App widgets', 'App framework']
+            },
+            {
+                module: 'Views & UI',
+                topics: ['Views overview', 'Using views in app development', 'Designing UI with views', 'Designing buttons', 'Displaying web pages', 'Using the TimePicker & DatePicker', 'Relative, linear, frame layout for view positioning', 'Using table layout for view positioning']
+            },
+            {
+                module: 'Layouts and Widgets',
+                topics: ['Packages', 'Customizing and displaying lists with ListView', 'Displaying multiple lists', 'Using additional text views', 'Displaying a List of Images', 'Animating images using ImageSwitcher']
+            },
+            {
+                module: 'Network Programming',
+                topics: ['Using HTTP', 'XML & JSON web services', 'Creating a socket server & client', 'Bluetooth']
+            },
+            {
+                module: 'Location-Based Data Services',
+                topics: ['Obtaining Geographical Location', 'Using a Broadcast Receiver to Obtain Locations', 'Choosing the Best Location Provider to Use', 'Monitoring a Location']
+            },
+            {
+                module: 'Accessing Hardware',
+                topics: ['Camera', 'Flashlight', 'Hardware buttons']
+            },
+            {
+                module: 'Data Management',
+                topics: ['Saving and loading user preferences', 'Creating a preference screen', 'Saving Files to the data directory, cache directory, external storage', 'Attaching files to your project', 'Local databases', 'SQL databases']
+            },
+            {
+                module: 'App Testing and Release',
+                topics: ['Introduction', 'Unit Testing', 'Instrumented test', 'Inspect code', 'APK signing', 'Google play console signup']
+            }
+        ],
+        projects: [
+            { name: 'Online Shopping Application', description: 'Build a complete e-commerce mobile app with product listings and cart functionality' },
+            { name: 'Text and Image Detector', description: 'Create an app using ML Kit for text and image detection' },
+            { name: 'Weather Forecast Application', description: 'Build a weather app that fetches real-time weather data from APIs' },
+            { name: 'Bluetooth Application', description: 'Develop an app for Bluetooth device pairing and data transfer' },
+            { name: 'Chatting App', description: 'Create a real-time messaging application with user authentication' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Do I need prior programming knowledge?',
+                answer: 'Basic understanding of programming concepts is helpful. We cover Java/Kotlin fundamentals in the initial modules.'
+            },
+            {
+                question: 'What tools will I learn?',
+                answer: 'You will learn Android Studio, Java/Kotlin, Firebase, REST APIs, and other industry-standard Android development tools.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
     'web-development': {
         id: 'web-development',
         title: 'Web Development',
@@ -446,6 +554,122 @@ export const programsData = {
             {
                 question: 'Are full-stack web developers in demand?',
                 answer: 'Yes! Full-stack developers are among the most sought-after professionals in the tech industry due to their versatility.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
+    'full-stack-web-development': {
+        id: 'full-stack-web-development',
+        title: 'Full Stack Web Development',
+        category: 'Computer Science & IT',
+        icon: '🌐',
+        color: '#f97316',
+        gradient: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What is Full Stack Web Development?',
+                answer: 'Full Stack Web Development involves both frontend and backend development, enabling you to build complete web applications from start to finish including user interfaces, server-side logic, and databases.'
+            },
+            {
+                question: 'Why learn Full Stack Development?',
+                answer: 'Full Stack developers are highly valued in the industry for their versatility. They can handle complete projects independently and are among the highest-paid professionals in tech.'
+            },
+            {
+                question: 'Why Eduholic for Full Stack Development?',
+                answer: 'At Eduholic we provide comprehensive training covering HTML, CSS, JavaScript, Python, databases, and backend programming with real-world projects and expert mentorship.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Web Development Introduction',
+                topics: ['What is website design?', 'Why are websites important?', 'Fundamental web principles & technology', 'Command Line Interface tools']
+            },
+            {
+                module: 'Introduction to Python',
+                topics: ['Python Basics', 'Python Data Structures', 'Python Programming Fundamentals']
+            },
+            {
+                module: 'Website Design Principles',
+                topics: ['Introduction to UX', 'Creating a website with good UX', 'Website design process']
+            },
+            {
+                module: 'HTML5',
+                topics: ['What is HTML 5?', 'Differences between HTML5 & HTML', 'Div & Span', 'Basics of HTML', 'HTML Tags', 'Metadata', 'Advanced HTML5 features']
+            },
+            {
+                module: 'CSS',
+                topics: ['What is a CSS?', 'Use of CSS in web design', 'Introduction to CSS3', 'Types of CSS', 'Images and animations', 'CSS grid & layout', 'CSS grid & flexbox']
+            },
+            {
+                module: 'JavaScript',
+                topics: ['Introduction to Javascript', 'Basics of coding', 'JavaScript data types', 'Flow control & Looping', 'Programming', 'Refactoring & Debugging']
+            },
+            {
+                module: 'Object Oriented Programming',
+                topics: ['Inheritance, Constructors and Destructor', 'Encapsulation', 'Polymorphism']
+            },
+            {
+                module: 'jQuery',
+                topics: ['Selector, Traversing', 'Events, Ajax, DOM']
+            },
+            {
+                module: 'Database Management',
+                topics: ['Introduction to database management', 'SQL', 'Data Modelling', 'PHP']
+            },
+            {
+                module: 'Backend Programming',
+                topics: ['Nodes introduction', 'Server - Side JavaScript', 'NPM', 'JavaScript Build Processes', 'Event Loop and Emitters', 'APIs', 'Creating the UI']
+            },
+            {
+                module: 'SEO',
+                topics: ['Understanding Search Engine Optimization (SEO)', 'Keyword research and tools for Keyword research', 'Creating Content for SEO', 'Link Building and BackLinks', 'Schema Mark-up For SEO']
+            },
+            {
+                module: 'Classification',
+                topics: ['kNN introduction', 'kNN practical', 'SVM introduction', 'SVM practical', 'Decision tree classifier and random forest classifier in python']
+            }
+        ],
+        projects: [
+            { name: 'EdTech Company Website Design', description: 'Design and develop a complete educational technology company website' },
+            { name: 'E-commerce Website', description: 'Build a full-featured e-commerce website with cart and checkout' },
+            { name: 'Entertainment Website', description: 'Create an entertainment portal with dynamic content' },
+            { name: 'Multiple Mock Website Designs', description: 'Practice creating various website layouts and designs' },
+            { name: 'Webpages', description: 'Build multiple responsive webpages with modern designs' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Is full-stack web development hard?',
+                answer: 'Full-stack development requires learning multiple technologies, but with proper guidance and practice, anyone can master it. Our structured curriculum makes learning easy.'
+            },
+            {
+                question: 'What technologies will I learn?',
+                answer: 'You will learn HTML5, CSS3, JavaScript, Python, Node.js, SQL, MongoDB, and various frameworks and tools used in industry.'
             },
             {
                 question: 'Will I get an internship?',
@@ -565,6 +789,214 @@ export const programsData = {
             }
         ]
     },
+    'hybrid-electric-vehicles': {
+        id: 'hybrid-electric-vehicles',
+        title: 'Hybrid & Electric Vehicles',
+        category: 'Electronics & Communication',
+        icon: '🚗',
+        color: '#22c55e',
+        gradient: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What is the Hybrid & Electric Vehicles course?',
+                answer: 'This course covers the fundamentals and advanced concepts of electric and hybrid vehicles, including EV systems, batteries, motors, charging infrastructure, and vehicle design using CAD tools.'
+            },
+            {
+                question: 'Why learn about Electric Vehicles?',
+                answer: 'The automotive industry is rapidly transitioning to electric mobility. Understanding EV technology opens doors to exciting career opportunities in a growing sustainable transportation sector.'
+            },
+            {
+                question: 'Why Eduholic for EV Training?',
+                answer: 'At Eduholic, we provide comprehensive training covering EV fundamentals, battery technology, hybrid systems, and CAD modeling with hands-on projects and expert mentorship.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Introduction',
+                topics: ['History of Vehicles', 'Types of Engineering Drawing', 'Introduction to Sketching', 'Introduction to AutoCAD', 'Geometry Development']
+            },
+            {
+                module: 'Introduction to Electric Vehicles',
+                topics: ['Sustainable transportation', 'EV systems', 'EV advantages', 'EV transmission configuration', 'Utility of electric vehicles', 'Electric Vehicle market', 'Types of electric vehicle in use', 'Future of Electric vehicles']
+            },
+            {
+                module: 'Electric Vehicle Modelling',
+                topics: ['Consideration of rolling resistance, transmission efficiency', 'Consideration of vehicle mass', 'Aerodynamic consideration', 'General issues in design']
+            },
+            {
+                module: 'Electric Vehicle Batteries',
+                topics: ['Characteristics of batteries', 'Types of batteries', 'EV batteries']
+            },
+            {
+                module: 'Introduction to Hybrid Vehicles',
+                topics: ['Introduction', 'Advantages and Disadvantages of hybrid vehicles', 'Principle of energy hybridization']
+            },
+            {
+                module: 'Hybrid-Electric Vehicles',
+                topics: ['HEV fundamentals', 'Architectures of HEVs', 'Advantages and disadvantages', 'Automobile hybridization', 'Fuel cell hybrid electric vehicle', 'Battery charger topologies', 'Charging station infrastructures']
+            },
+            {
+                module: 'Design of Hybrid Electric Vehicles',
+                topics: ['Design Principles of HEVs I', 'Design Principles of HEVs II', 'Detailed analysis', 'EMS based on real time optimisation']
+            },
+            {
+                module: 'Modelling of HEV using Inventor',
+                topics: ['Introduction to CAD', 'Developing EV components', 'Constraints and drafting', 'Develop PHEV', 'Develop HEV']
+            },
+            {
+                module: 'Energy Sources',
+                topics: ['Renewable energy sources', 'Battery charger topologies', 'Charging stations', 'Infrastructure']
+            }
+        ],
+        projects: [
+            { name: 'Assembly Design', description: 'Design complete vehicle assembly using CAD tools' },
+            { name: 'Vehicle Control Unit', description: 'Develop and understand vehicle control systems' },
+            { name: 'Lifecycle Ownership Cost Analysis', description: 'Analyze total cost of ownership for electric vehicles' },
+            { name: 'Analysis of Various Vehicles', description: 'Compare different EV and HEV configurations' },
+            { name: 'EV Chargers', description: 'Design and understand EV charging infrastructure' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Do I need prior automotive knowledge?',
+                answer: 'Basic understanding of engineering concepts is helpful but not mandatory. We cover fundamentals from the beginning.'
+            },
+            {
+                question: 'What tools will I learn?',
+                answer: 'You will learn AutoCAD, Autodesk Inventor, and various EV analysis tools used in the automotive industry.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
+    'embedded-systems': {
+        id: 'embedded-systems',
+        title: 'Embedded Systems',
+        category: 'Electronics & Communication',
+        icon: '🔌',
+        color: '#0ea5e9',
+        gradient: 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What are Embedded Systems?',
+                answer: 'Embedded systems are specialized computer systems designed to perform dedicated functions within larger mechanical or electrical systems. They are found in everyday devices from smartphones to automobiles.'
+            },
+            {
+                question: 'Why learn Embedded Systems?',
+                answer: 'Embedded systems are the backbone of IoT, automotive, consumer electronics, and industrial automation. Learning embedded programming opens doors to diverse career opportunities in hardware and software integration.'
+            },
+            {
+                question: 'Why Eduholic for Embedded Systems?',
+                answer: 'At Eduholic, we provide hands-on training with microcontrollers, Arduino, ARM processors, and real hardware interfacing with practical projects guided by industry experts.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Introduction',
+                topics: ['What are embedded systems?', 'Scope & Practical uses of embedded systems', 'History & evolution of embedded systems']
+            },
+            {
+                module: 'Microcontroller',
+                topics: ['What is a microcontroller?', 'ATMega 328p', 'Architecture and block']
+            },
+            {
+                module: 'Introduction to Microcontroller Architecture',
+                topics: ['Introduction on Architecture', 'Overview of 8051 Architecture', 'Functional block Diagram']
+            },
+            {
+                module: 'Arduino',
+                topics: ['What is Arduino?', 'Working of Arduino', 'Integration of sensors and actuators', 'DC Motors', 'Servo and Stepper Motors']
+            },
+            {
+                module: 'Embedded Tools',
+                topics: ['Programmer / Debugger', 'IDE', 'Programming Tool']
+            },
+            {
+                module: 'Interfacing',
+                topics: ['Embedded C', 'I/O functionalities', 'Interfacing LEDs and switches', 'Interfacing LCD with 8051', 'Interfacing keypad matrix with 8051']
+            },
+            {
+                module: 'Communication',
+                topics: ['I2C', 'SPI', 'I2C Programming']
+            },
+            {
+                module: 'Peripheral Programming and Internal Architecture',
+                topics: ['GPIO', 'Input', 'Output', 'ADC and PWM', 'EEPROM', 'UART, Serial Port and Serial plotter']
+            },
+            {
+                module: 'Introduction to Advanced Controllers',
+                topics: ['ARM Cortex', 'Programming with embedded C', 'LEDs and switches', 'LCD with ARM controller']
+            }
+        ],
+        projects: [
+            { name: 'Smart Home Automation', description: 'Build an automated smart home system using microcontrollers' },
+            { name: 'Controlling Devices using IR Remote', description: 'Create an IR-based device control system' },
+            { name: 'Wireless Metal Detector Robot', description: 'Build a robot that can detect metal objects wirelessly' },
+            { name: 'Arduino Based Fire Alarm System', description: 'Develop a fire detection and alarm system using Arduino' },
+            { name: 'Door Lock System', description: 'Create an electronic door lock security system' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Do I need prior electronics knowledge?',
+                answer: 'Basic understanding of electronics is helpful but not mandatory. We cover fundamentals in the initial modules.'
+            },
+            {
+                question: 'What hardware will I work with?',
+                answer: 'You will work with Arduino, 8051 microcontroller, ARM Cortex, various sensors, and actuators for hands-on learning.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
     'internet-of-things': {
         id: 'internet-of-things',
         title: 'Internet of Things',
@@ -654,6 +1086,190 @@ export const programsData = {
             {
                 question: 'What is industrial equipment monitoring?',
                 answer: 'Industrial IoT enables real-time monitoring of factory equipment, predicting maintenance needs, and optimizing operations.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
+    'finance': {
+        id: 'finance',
+        title: 'Finance',
+        category: 'Management & Business',
+        icon: '💰',
+        color: '#059669',
+        gradient: 'linear-gradient(135deg, #059669 0%, #047857 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What is Finance?',
+                answer: 'Finance involves the management, creation, and study of money, banking, credit, investments, assets, and liabilities. It covers financial planning, treasury management, corporate finance, and risk management.'
+            },
+            {
+                question: 'Why learn Finance?',
+                answer: 'Finance skills are essential in every industry. Understanding financial concepts opens doors to careers in banking, corporate finance, investment management, and financial consulting.'
+            },
+            {
+                question: 'Why Eduholic for Finance?',
+                answer: 'At Eduholic, we provide comprehensive training covering treasury management, portfolio management, risk analysis, and supply chain finance with real-world case studies and expert mentorship.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Introduction to Finance',
+                topics: ['What is finance?', 'Types of finance', 'What is financial planning']
+            },
+            {
+                module: 'Introduction to Treasury',
+                topics: ['What is treasury?', 'Functions and roles of treasury', 'Treasury management in banks and corporations']
+            },
+            {
+                module: 'Corporate Finance & Portfolio Management',
+                topics: ['Basics of financing decisions', 'Capital structure & ratios', 'Credit assessment for financing decisions', 'What is a portfolio?', 'Why do corporations invest in other businesses?', 'Liquidity, credit, and market risk', 'Investment management', 'Formulation and application of investment policy']
+            },
+            {
+                module: 'Financial Risk Management',
+                topics: ['Introduction to financial risks', 'Currency, interest rates, and commodity risk', 'Price movement analysis', 'Risk mitigation techniques']
+            },
+            {
+                module: 'Cash and Liquidity Management',
+                topics: ['Liquidity management', 'Cash forecasting', 'Physical and notional cash pools', 'POBO/ROBO models', 'Clearing and settlement systems']
+            },
+            {
+                module: 'Supply Chain Management',
+                topics: ['Working capital management', 'Cash conversion cycle', 'Receipts and payables outstanding/indents and requisitions outstanding', 'Letter of credit, bank guarantee, discounting, factoring, and forfeiting', 'Legal terms, regulatory and compliances']
+            }
+        ],
+        projects: [
+            { name: 'Financial Derivatives Analysis', description: 'Analyze financial derivatives and their applications' },
+            { name: 'Portfolio Evaluation', description: 'Evaluate and optimize investment portfolios' },
+            { name: 'Capital Structure Analysis', description: 'Analyze corporate capital structures and financing decisions' },
+            { name: 'Debt Analysis', description: 'Comprehensive debt analysis and management strategies' },
+            { name: 'Mutual Funds Investment Analysis', description: 'Analyze mutual fund investments and performance' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Do I need prior finance knowledge?',
+                answer: 'Basic understanding of mathematics and business concepts is helpful but we cover fundamentals from scratch.'
+            },
+            {
+                question: 'What tools will I learn?',
+                answer: 'You will learn Excel for financial modeling, financial statement analysis, and various finance-related software tools.'
+            },
+            {
+                question: 'Will I get an internship?',
+                answer: 'Yes, Eduholic guarantees an internship opportunity for all our students across all our courses.'
+            },
+            {
+                question: 'Can I pay the fee in instalment?',
+                answer: 'Yes, you can book your slot by paying 1000 INR as pre-registration and the remaining amount can be paid later before starting the program.'
+            }
+        ]
+    },
+    'stock-market': {
+        id: 'stock-market',
+        title: 'Stock Market & Cryptocurrency',
+        category: 'Management & Business',
+        icon: '📈',
+        color: '#f59e0b',
+        gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+        stats: {
+            duration: '4 Months',
+            hours: '100+ Hours',
+            students: '2000+',
+            experts: '15+',
+            interaction: '1 on 1'
+        },
+        overview: [
+            {
+                question: 'What is the Stock Market & Cryptocurrency course?',
+                answer: 'This course covers stock market fundamentals, trading strategies, derivatives, technical and fundamental analysis, portfolio management, and cryptocurrency investing.'
+            },
+            {
+                question: 'Why learn Stock Market & Crypto?',
+                answer: 'Financial markets offer tremendous opportunities for wealth creation. Understanding stocks and crypto opens doors to careers in trading, investment banking, and personal wealth management.'
+            },
+            {
+                question: 'Why Eduholic for Stock Market Training?',
+                answer: 'At Eduholic, we provide hands-on training with real market analysis, trading simulations, and expert guidance from experienced market professionals.'
+            }
+        ],
+        curriculum: [
+            {
+                module: 'Introduction',
+                topics: ['What are stocks?', 'What is the stock market?', 'Who is a stock marketer?', 'Estimating Manpower Gaps', 'Why do companies go public?']
+            },
+            {
+                module: 'Trading',
+                topics: ['Introduction to trading', 'Trading', 'Clearing', 'Settling']
+            },
+            {
+                module: 'Derivatives Market',
+                topics: ['What are derivatives?', 'How are derivatives classified?', 'Types of derivatives', 'What is the derivatives market?', 'Participants in derivatives']
+            },
+            {
+                module: 'Market Analysis',
+                topics: ['Fundamental analysis', 'Technical analysis', 'Stock market analysis', 'Gold market analysis', 'Candles, patterns & indicators']
+            },
+            {
+                module: 'Portfolio Management',
+                topics: ['What is a portfolio?', 'How do you build a good portfolio?', 'Risk tolerance', 'Rebalancing your portfolio']
+            },
+            {
+                module: 'Cryptocurrency',
+                topics: ['What is cryptocurrency?', 'Most popular cryptocurrency', 'Crypto-Mining', 'The long-term future of cryptocurrency', 'How to invest in cryptocurrency']
+            }
+        ],
+        projects: [
+            { name: 'Market Analysis', description: 'Conduct comprehensive stock market analysis' },
+            { name: 'Case Studies', description: 'Analyze real-world market case studies and investment decisions' },
+            { name: 'Growth Analysis', description: 'Perform growth analysis on stocks and market sectors' },
+            { name: 'Candles, Patterns & Indicators', description: 'Master technical analysis using chart patterns and indicators' },
+            { name: 'Mock Cryptocurrency Investments', description: 'Simulate cryptocurrency investment strategies' }
+        ],
+        pricing: [
+            {
+                name: 'Mentor Led Training',
+                price: 7000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+            },
+            {
+                name: 'Mentor Led + Placement Guidance',
+                price: 10000,
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
+        ],
+        faqs: [
+            {
+                question: 'Do I need prior trading experience?',
+                answer: 'No prior experience is needed. We start from the basics and gradually move to advanced concepts.'
+            },
+            {
+                question: 'Will I learn about cryptocurrency too?',
+                answer: 'Yes, the course covers cryptocurrency fundamentals, popular coins, mining, and investment strategies.'
             },
             {
                 question: 'Will I get an internship?',
@@ -940,16 +1556,24 @@ export const programsData = {
             { question: 'Why Eduholic?', answer: 'Learn from industry practitioners, work on live campaigns for real brands, and get placed with our extensive network of agencies and in-house marketing teams.' }
         ],
         curriculum: [
-            { module: 'Digital Marketing Fundamentals', topics: ['Marketing Basics', 'Digital Landscape', 'Customer Journey', 'Brand Strategy'] },
-            { module: 'Search Engine Optimization', topics: ['On-page SEO', 'Off-page SEO', 'Technical SEO', 'SEO Tools & Analytics'] },
-            { module: 'Paid Advertising', topics: ['Google Ads', 'Facebook & Instagram Ads', 'LinkedIn Ads', 'Remarketing Strategies'] },
-            { module: 'Social Media Marketing', topics: ['Platform Strategies', 'Content Creation', 'Community Management', 'Influencer Marketing'] },
-            { module: 'Content & Email Marketing', topics: ['Content Strategy', 'Copywriting', 'Email Campaigns', 'Marketing Automation'] }
+            { module: 'Basic Marketing', topics: ['Introduction to marketing', 'Why marketing is important', 'Production concept', 'Marketing mix'] },
+            { module: 'Introduction to Digital Marketing', topics: ['What is digital marketing?', 'Digital marketing analytics', 'Connection between digital marketing and marketing', 'Using digital marketing to drive sales'] },
+            { module: 'Content Marketing', topics: ['What is content marketing?', 'Content marketing as an effective part of a digital marketing strategy', 'Different types of content marketing', 'Content idea generation', 'Long-term content planning', 'Blogging and guest blogging'] },
+            { module: 'Email Marketing', topics: ['What is email marketing?', 'Email newsletters', 'Building conversions through email', 'Customer retention and re-targeting', 'E-mail marketing ethics and principles'] },
+            { module: 'Website Planning', topics: ['Creating basic HTML pages', 'Web graphics', 'Designing & planning web pages', 'Mobile web design', 'WordPress essentials'] },
+            { module: 'Lead Generation', topics: ['What is lead generation?', 'What is the lead conversion process?', 'How do you convert a lead?', 'Contact management and segmentation strategies', 'Lead conversion metrics'] },
+            { module: 'Strategic Marketing', topics: ['Building objectives and budget', 'Popular digital marketing plans', 'Building a digital marketing plan', 'Web-metrics/tracking digital marketing plan'] },
+            { module: 'SEO & SEM', topics: ['Understanding Search Engine Optimization (SEO)', 'Keyword research and tools for Keyword research', 'Creating Content for SEO', 'Link Building and BackLinks', 'Schema Mark-up For SEO', 'Understanding Search engine marketing', 'Pay per click (PPC), its Importance, types, and benefits'] },
+            { module: 'Social Media Advertising', topics: ['What is social media content?', 'Brand building on social media', 'Benefits of advertising on social media', 'Advertising on major social media platforms (Facebook, Instagram, LinkedIn, Twitter)'] },
+            { module: 'Evolution of the Digital Market', topics: ['Creation of the internet', 'Evolution of web ads', 'Advent of social media', 'Evolution of traffic tracking analytics', 'Growth in web users since COVID-19 pandemic'] },
+            { module: 'Digital Business vs Digital Marketing', topics: ['Differences between digital business and digital marketing'] }
         ],
         projects: [
-            { name: 'SEO Audit & Strategy', description: 'Complete SEO analysis for a business' },
-            { name: 'Paid Campaign Management', description: 'Run and optimize actual ad campaigns' },
-            { name: 'Social Media Strategy', description: 'Develop comprehensive social media plan' }
+            { name: 'Google Search Engine Marketing Analysis', description: 'Analyze and optimize Google search marketing campaigns' },
+            { name: 'SEO/SEM Analysis', description: 'Comprehensive SEO and SEM audit for websites' },
+            { name: 'ROI for Various Digital Marketing Analysis', description: 'Calculate and analyze ROI across different digital marketing channels' },
+            { name: 'Email Marketing', description: 'Create and execute email marketing campaigns' },
+            { name: 'Social Media Calendar', description: 'Develop a comprehensive social media content calendar' }
         ],
         pricing: [
             { price: '₹45,000', plan: 'Standard', features: ['120+ Hours Training', 'Live Sessions', 'Placement Guarantee', 'Tool Certifications', 'Resume Building', 'Mock Interviews'] },
@@ -980,15 +1604,19 @@ export const programsData = {
             { question: 'Why Eduholic?', answer: 'Our curriculum is designed by HR leaders from Fortune 500 companies. We provide hands-on experience with HR tools and real recruitment scenarios.' }
         ],
         curriculum: [
-            { module: 'HR Fundamentals', topics: ['HR Functions', 'Organizational Behavior', 'Employment Law', 'HR Metrics'] },
-            { module: 'Talent Acquisition', topics: ['Recruitment Strategies', 'Interview Techniques', 'Employer Branding', 'ATS Systems'] },
-            { module: 'HR Operations', topics: ['Onboarding', 'Payroll Management', 'Benefits Administration', 'HRIS Tools'] },
-            { module: 'People Development', topics: ['Performance Management', 'Learning & Development', 'Employee Engagement', 'Retention Strategies'] }
+            { module: 'HR Planning', topics: ['Analyzing objectives', 'Inventory current human resources', 'Forecast the demand and the supply of employees', 'Estimating Manpower Gaps', 'Monitoring, Control & Feedback'] },
+            { module: 'Recruitment & Selection', topics: ['What is the recruitment process?', 'Steps in the recruitment and selection process', 'Sources of recruitment', 'Methods of recruitment'] },
+            { module: 'Training & Development', topics: ['What do you mean by training?', 'Need for training', 'What is the difference between training and development?', 'Methods of training & development', 'Succession Planning'] },
+            { module: 'Compensation & Benefits', topics: ['Types of Pay', 'Total Rewards and Compensation', 'Employee Motivation & Incentives', 'Wage & Salary Policies'] },
+            { module: 'Performance Appraisals', topics: ['Management by objectives', 'Performance appraisal overview', 'Performance appraisal process', 'Methods of performance appraisals', 'Potential benefits and problems of performance appraisals', 'Performance appraisals in non-traditional work settings', 'Alternatives to performance appraisals'] },
+            { module: 'Employee Relations', topics: ['Conflict management', 'Workplace employee relations', 'Stages of employee life cycle', 'Hour and wage issues'] }
         ],
         projects: [
-            { name: 'Recruitment Drive', description: 'End-to-end hiring for a position' },
-            { name: 'HR Policy Framework', description: 'Develop company HR policies' },
-            { name: 'Employee Engagement Plan', description: 'Design engagement initiatives' }
+            { name: 'Employee Attrition and Retention in EdTech', description: 'Study employee attrition and retention strategies in an EdTech industry' },
+            { name: 'Performance Appraisals in EdTech Organization', description: 'Design and implement performance appraisal systems' },
+            { name: 'Study on Employees Welfare Scheme', description: 'Analyze and develop employee welfare programs' },
+            { name: 'Study on Gender Equality at Workplace', description: 'Research gender equality practices in organizations' },
+            { name: 'Drafting Organizational Policy', description: 'Create comprehensive organizational HR policies' }
         ],
         pricing: [
             { price: '₹40,000', plan: 'Standard', features: ['100+ Hours Training', 'Live Sessions', 'Placement Guarantee', 'HR Tool Training', 'Resume Building'] },
@@ -999,8 +1627,8 @@ export const programsData = {
             { question: 'What is the salary range?', answer: 'HR professionals start at ₹3-5 LPA and can grow to ₹12+ LPA with experience.' }
         ]
     },
-    'flutter-development': {
-        id: 'flutter-development',
+    'flutter': {
+        id: 'flutter',
         title: 'Flutter Development',
         category: 'Job Guarantee Program',
         icon: '📱',
@@ -1019,16 +1647,27 @@ export const programsData = {
             { question: 'Why Eduholic?', answer: 'Build 10+ production-ready apps during training. Our mentors include developers from Google and top app development companies.' }
         ],
         curriculum: [
-            { module: 'Dart Programming', topics: ['Dart Basics', 'OOP in Dart', 'Async Programming', 'Null Safety'] },
-            { module: 'Flutter Fundamentals', topics: ['Widgets & Layouts', 'Navigation', 'Forms & Validation', 'Animations'] },
-            { module: 'State Management', topics: ['Provider', 'Riverpod', 'Bloc Pattern', 'GetX'] },
-            { module: 'Backend Integration', topics: ['REST APIs', 'Firebase', 'Local Storage', 'Push Notifications'] },
-            { module: 'Publishing & Beyond', topics: ['Play Store Publishing', 'App Store Publishing', 'CI/CD for Apps', 'App Monetization'] }
+            { module: 'Introduction', topics: ['Introduction to Flutter - The What\'s and The Why\'s', 'Applications', 'Challenges'] },
+            { module: 'Introduction To Dart', topics: ['Reason why Dart holds the fort strong', 'Installing Visual Studio Code and the Dart Plugin', 'Installing Dart SDK', 'Writing the first Dart Program'] },
+            { module: 'Setting up Flutter', topics: ['Downloading/Cloning the Flutter SDK', 'Installing Flutter Plugin within VS Code', 'Understanding the structure of a Flutter Project', 'Building a simple app from scratch'] },
+            { module: 'Introducing Widget', topics: ['Widgets and their role in a Flutter app', 'The MaterialApp and Scaffold widget', 'AppBar', 'FloatingActionButton', 'More widgets - Text, Center and Padding', 'Hot Reload and Hot Restart', 'Recreating the Default Flutter App (UI Only)', 'Common Widget in Flutter'] },
+            { module: 'Containers and Their Role', topics: ['Importing images from a network', 'Importing images as assets', 'Adding icons to widgets', 'Understanding Row and Column', 'ListView and ListTile', 'Building views using ListView.builder', 'Inkwell and its importance'] },
+            { module: 'Stateless and Stateful Widgets', topics: ['Stateless vs. Stateful widgets', 'Defining a State', 'The set state method', 'Returning to the Default Flutter App'] },
+            { module: 'Navigation', topics: ['Navigator and routes', 'Applying push', 'Using Material Page Route', 'Applying pop', 'Declaring parameter-less routes (pushNamed()) in MaterialApp widget'] },
+            { module: 'Handling User Input', topics: ['Using TextField', 'Handling changes to a Text Field', 'Pass retrieved values using Navigator'] },
+            { module: 'User Interface', topics: ['Applying ThemeData', 'The Basic Screen Layout', 'Applying Custom Font'] },
+            { module: 'Asynchronous Functions', topics: ['The Future function', 'async and await'] },
+            { module: 'Working with Remote Data', topics: ['The http package', 'Model Class and JSON parsing', 'Displaying Remote Data (NEWS API)'] },
+            { module: 'Using 3rd Party Packages', topics: ['The url_launcher package', 'Adding on Tap to NEWS API'] },
+            { module: 'Other Useful Widgets', topics: ['Grid View', 'The Hero Animation', 'Stack', 'Alert Dialog with buttons'] },
+            { module: 'Advanced User Interface', topics: ['Applying ThemeData', 'The Basic Screen Layout', 'Applying Custom Font'] }
         ],
         projects: [
-            { name: 'E-commerce App', description: 'Complete shopping app with payments' },
-            { name: 'Chat Application', description: 'Real-time messaging app' },
-            { name: 'Fitness Tracker', description: 'Health and workout tracking app' }
+            { name: 'Instagram Clone', description: 'Build a complete Instagram-like social media application' },
+            { name: 'E-Commerce App', description: 'Create a full-featured shopping application with cart and checkout' },
+            { name: 'Spotify Clone', description: 'Develop a music streaming app similar to Spotify' },
+            { name: 'Skype Clone', description: 'Build a video calling and messaging application' },
+            { name: 'Netflix Clone', description: 'Create a video streaming application like Netflix' }
         ],
         pricing: [
             { price: '₹55,000', plan: 'Standard', features: ['150+ Hours Training', 'Live Sessions', 'Placement Guarantee', '10+ App Projects', 'Resume Building'] },
@@ -1280,14 +1919,14 @@ export const getAllPrograms = () => Object.values(programsData)
 
 // Alumni companies (shared across programs) - 45 logos
 export const alumniCompanies = [
-    '/logos/logo1.png', '/logos/logo2.png', '/logos/logo3.png', '/logos/logo4.png', '/logos/logo5.png',
-    '/logos/logo6.png', '/logos/logo7.png', '/logos/logo8.png', '/logos/logo9.png', '/logos/logo10.png',
-    '/logos/logo11.png', '/logos/logo12.png', '/logos/logo13.png', '/logos/logo14.png', '/logos/logo15.png',
-    '/logos/logo16.png', '/logos/logo17.png', '/logos/logo18.png', '/logos/logo19.png', '/logos/logo20.png',
-    '/logos/logo21.png', '/logos/logo22.png', '/logos/logo23.png', '/logos/logo24.png', '/logos/logo25.png',
-    '/logos/logo26.png', '/logos/logo27.png', '/logos/logo28.png', '/logos/logo29.png', '/logos/logo30.png',
+    '/logos/logo4.png', '/logos/logo24.png', '/logos/logo40.png', '/logos/logo1.png', '/logos/logo5.png',
+    '/logos/logo29.png', '/logos/logo12.png', '/logos/logo8.png', '/logos/logo9.png', '/logos/logo41.png',
+    '/logos/logo11.png', '/logos/logo7.png', '/logos/logo13.png', '/logos/logo44.png', '/logos/logo15.png',
+    '/logos/logo16.png', '/logos/logo17.png', '/logos/logo42.png', '/logos/logo19.png', '/logos/logo20.png',
+    '/logos/logo21.png', '/logos/logo43.png', '/logos/logo23.png', '/logos/logo2.png', '/logos/logo37.png',
+    '/logos/logo26.png', '/logos/logo45.png', '/logos/logo39.png', '/logos/logo6.png', '/logos/logo30.png',
     '/logos/logo31.png', '/logos/logo32.png', '/logos/logo33.png', '/logos/logo34.png', '/logos/logo35.png',
-    '/logos/logo36.png', '/logos/logo37.png', '/logos/logo38.png', '/logos/logo39.png', '/logos/logo40.png',
-    '/logos/logo41.png', '/logos/logo42.png', '/logos/logo43.png', '/logos/logo44.png', '/logos/logo45.png'
+    '/logos/logo36.png', '/logos/logo25.png', '/logos/logo38.png', '/logos/logo28.png', '/logos/logo3.png',
+    '/logos/logo10.png', '/logos/logo18.png', '/logos/logo22.png', '/logos/logo14.png', '/logos/logo27.png'
 ]
 

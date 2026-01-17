@@ -5031,7 +5031,10 @@
 /* Logo Container */
 .ms-logo-container {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .ms-logo-glow {
@@ -5054,13 +5057,35 @@
 }
 
 .ms-cert-logo {
-  width: 250px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   animation: msLogoFloat 4s ease-in-out infinite;
   filter: drop-shadow(0 10px 40px rgba(0, 120, 212, 0.5)) brightness(1.1);
   /* Remove white background effect - blend with dark bg */
   mix-blend-mode: screen;
+}
+
+.ms-entra-logo {
+  width: 120px;
+  animation-delay: 0.5s;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 10px 40px rgba(0, 120, 212, 0.5)) brightness(1.1);
+}
+
+/* Entra ID Tagline */
+.ms-entra-tagline {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  margin-top: 40px;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  background: rgba(0, 120, 212, 0.15);
+  border-radius: 50px;
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  display: inline-block;
+  backdrop-filter: blur(10px);
 }
 
 @keyframes msLogoFloat {

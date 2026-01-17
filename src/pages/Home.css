@@ -5543,6 +5543,7 @@ body,
   min-width: 100%;
   overflow-x: hidden;
 }
+
 /* ============================================
    HERO SECTION RESPONSIVE FIX - Correct Class
    ============================================ */
@@ -5550,13 +5551,14 @@ body,
 /* The hero uses .hero-section class, not .hero */
 @media (max-width: 576px) {
   .hero-section {
-    padding-top: 50px !important;
+    padding-top: 0 !important;
+    margin-top: -35px !important;
   }
-  
+
   .hero-section .hero-content {
     padding-top: 5px !important;
   }
-  
+
   .hero-section .hero-title {
     font-size: 1.3rem !important;
     line-height: 1.25 !important;
@@ -5566,19 +5568,20 @@ body,
 
 @media (max-width: 480px) {
   .hero-section {
-    padding-top: 45px !important;
+    padding-top: 0 !important;
+    margin-top: -160px !important;
   }
-  
+
   .hero-section .hero-content {
     padding-top: 5px !important;
   }
-  
+
   .hero-section .hero-title {
     font-size: 1.15rem !important;
     line-height: 1.2 !important;
     margin-bottom: 8px !important;
   }
-  
+
   .hero-section .hero-subtitle {
     font-size: 0.8rem !important;
     margin-bottom: 12px !important;
@@ -5587,14 +5590,15 @@ body,
 
 @media (max-width: 400px) {
   .hero-section {
-    padding-top: 40px !important;
+    padding-top: 0 !important;
+    margin-top: -15px !important;
   }
-  
+
   .hero-section .hero-title {
     font-size: 1rem !important;
     line-height: 1.2 !important;
   }
-  
+
   .hero-section .hero-subtitle {
     font-size: 0.75rem !important;
   }
@@ -5602,9 +5606,10 @@ body,
 
 @media (max-width: 360px) {
   .hero-section {
-    padding-top: 35px !important;
+    padding-top: 0 !important;
+    margin-top: -10px !important;
   }
-  
+
   .hero-section .hero-title {
     font-size: 0.95rem !important;
   }

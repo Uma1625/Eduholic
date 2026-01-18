@@ -298,3 +298,87 @@
         gap: var(--spacing-sm);
     }
 }
+
+/* Extra Small Mobile - 360px */
+@media (max-width: 360px) {
+    .careers-hero {
+        padding: 80px 10px 40px;
+    }
+
+    .careers-title {
+        font-size: 1.25rem;
+        letter-spacing: 0.5px;
+    }
+
+    .careers-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .positions-section,
+    .careers-cta {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .position-card {
+        padding: var(--spacing-md);
+    }
+
+    .position-icon {
+        font-size: 30px;
+    }
+
+    .position-title {
+        font-size: 1rem;
+    }
+
+    .position-description {
+        font-size: 0.8rem;
+    }
+
+    .position-category {
+        font-size: 9px;
+        padding: 4px 8px;
+        letter-spacing: 1px;
+    }
+
+    .btn-apply {
+        font-size: 0.85rem;
+        padding: 10px 16px;
+    }
+
+    .careers-cta h2 {
+        font-size: 1.25rem;
+    }
+
+    .careers-cta p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Minimum Mobile - 320px */
+@media (max-width: 320px) {
+    .careers-hero {
+        padding: 70px 8px 35px;
+    }
+
+    .careers-title {
+        font-size: 1.1rem;
+    }
+
+    .position-card {
+        padding: 15px;
+    }
+
+    .position-icon {
+        font-size: 26px;
+    }
+
+    .position-title {
+        font-size: 0.95rem;
+    }
+
+    .btn-apply {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+    }
+}

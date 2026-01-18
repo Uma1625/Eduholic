@@ -1063,9 +1063,9 @@
 
 .pricing-section {
     position: relative;
-    padding: 100px 20px;
+    padding: 100px 20px 120px;
     background: linear-gradient(135deg, #e0f7ff 0%, #f0e6ff 50%, #e8f4ff 100%);
-    overflow: hidden;
+    overflow: visible !important;
 }
 
 /* Subtle decorative elements */
@@ -1117,7 +1117,7 @@
     min-width: 300px;
     background: white;
     border-radius: 20px;
-    padding: 40px 30px;
+    padding: 40px 30px 30px;
     text-align: center;
     border: 2px dashed #d1d5db;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1125,6 +1125,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    overflow: visible !important;
 }
 
 .pricing-card:hover {
@@ -1208,17 +1209,22 @@
 .enroll-btn {
     background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
     color: white;
-    padding: 16px 40px;
+    padding: 18px 45px;
     border: none;
     border-radius: 12px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3);
-    margin-top: auto;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .enroll-btn:hover {
@@ -1586,9 +1592,11 @@
 .pricing-card {
     flex: 1 1 350px !important;
     max-width: 380px !important;
-    min-height: 480px !important;
+    min-height: auto !important;
     display: flex !important;
     flex-direction: column !important;
+    overflow: visible !important;
+    padding-bottom: 30px !important;
 }
 
 /* Features list grows to fill space */
@@ -1610,10 +1618,16 @@
     flex-direction: column !important;
 }
 
-/* Enroll button always at bottom */
+/* Enroll button always visible at bottom */
 .enroll-btn {
-    margin-top: auto !important;
+    margin-top: 15px !important;
     width: 100% !important;
+    min-height: 55px !important;
+    font-size: 1rem !important;
+    padding: 16px 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 /* ============================================
@@ -2131,235 +2145,422 @@
         height: 400px;
     }
 }
+
 /* ============================================
    COMPREHENSIVE PROGRAM PAGE RESPONSIVE FIXES
    ============================================ */
 
 /* Prevent horizontal overflow */
 .program-page {
-  overflow-x: hidden;
-  width: 100%;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .program-page * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Desktop - 1200px */
 @media (max-width: 1200px) {
-  .program-hero .container {
-    max-width: 100%;
-    padding: 0 30px;
-  }
-  
-  .program-stats {
-    gap: 20px;
-  }
-  
-  .curriculum-section .container,
-  .project-section .container {
-    max-width: 100%;
-    padding: 0 30px;
-  }
+    .program-hero .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .program-stats {
+        gap: 20px;
+    }
+
+    .curriculum-section .container,
+    .project-section .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
 }
 
 /* Tablet Landscape - 992px */
 @media (max-width: 992px) {
-  .program-hero {
-    padding: 100px 20px 60px;
-  }
-  
-  .program-title {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
-  }
-  
-  .program-stats {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .stat-card {
-    flex: 1 1 calc(50% - 10px);
-    min-width: 140px;
-  }
-  
-  .overview-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .why-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .curriculum-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .pricing-cards {
-    gap: 20px;
-  }
+    .program-hero {
+        padding: 100px 20px 60px;
+    }
+
+    .program-title {
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+    }
+
+    .program-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .stat-card {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 140px;
+    }
+
+    .overview-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .curriculum-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-cards {
+        gap: 20px;
+    }
 }
 
 /* Tablet Portrait - 768px */
 @media (max-width: 768px) {
-  .program-hero {
-    padding: 80px 16px 50px;
-  }
-  
-  .program-title {
-    font-size: 1.75rem;
-    line-height: 1.2;
-  }
-  
-  .program-category {
-    font-size: 0.85rem;
-  }
-  
-  .program-stats {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .stat-card {
-    width: 100%;
-    max-width: 250px;
-  }
-  
-  .back-link {
-    font-size: 13px;
-    padding: 10px 18px;
-  }
-  
-  .overview-cards-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .why-cards {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .why-card {
-    padding: 30px 25px;
-  }
-  
-  .curriculum-section,
-  .projects-section,
-  .pricing-section,
-  .why-section {
-    padding: 50px 16px;
-  }
-  
-  .program-page .section-title {
-    font-size: 1.5rem !important;
-  }
-  
-  .program-page .section-subtitle {
-    font-size: 0.95rem;
-    margin-bottom: 30px;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .pricing-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .pricing-card {
-    width: 100%;
-    max-width: 350px;
-  }
-  
-  .accordion-header,
-  .faq-header {
-    padding: 20px 20px;
-    font-size: 1rem;
-  }
-  
-  .accordion-content,
-  .faq-content {
-    padding: 0 20px 20px;
-  }
+    .program-hero {
+        padding: 80px 16px 50px;
+    }
+
+    .program-title {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+
+    .program-category {
+        font-size: 0.85rem;
+    }
+
+    .program-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .back-link {
+        font-size: 13px;
+        padding: 10px 18px;
+    }
+
+    .overview-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .why-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .why-card {
+        padding: 30px 25px;
+    }
+
+    .curriculum-section,
+    .projects-section,
+    .pricing-section,
+    .why-section {
+        padding: 50px 16px;
+    }
+
+    .program-page .section-title {
+        font-size: 1.5rem !important;
+    }
+
+    .program-page .section-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .accordion-header,
+    .faq-header {
+        padding: 20px 20px;
+        font-size: 1rem;
+    }
+
+    .accordion-content,
+    .faq-content {
+        padding: 0 20px 20px;
+    }
 }
 
 /* Mobile - 576px */
 @media (max-width: 576px) {
-  .program-hero {
-    padding: 70px 12px 40px;
-  }
-  
-  .program-title {
-    font-size: 1.5rem;
-  }
-  
-  .stat-card {
-    padding: 20px 15px;
-  }
-  
-  .stat-number {
-    font-size: 1.5rem;
-  }
-  
-  .stat-label {
-    font-size: 0.75rem;
-  }
-  
-  .overview-card-new {
-    padding: 25px 20px;
-  }
-  
-  .overview-card-title {
-    font-size: 1.1rem;
-  }
-  
-  .curriculum-module {
-    padding: 20px 15px;
-  }
-  
-  .project-card {
-    padding: 20px;
-  }
+    .program-hero {
+        padding: 70px 12px 40px;
+    }
+
+    .program-title {
+        font-size: 1.5rem;
+    }
+
+    .stat-card {
+        padding: 20px 15px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .overview-card-new {
+        padding: 25px 20px;
+    }
+
+    .overview-card-title {
+        font-size: 1.1rem;
+    }
+
+    .curriculum-module {
+        padding: 20px 15px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
 }
 
 /* Small Mobile - 480px */
 @media (max-width: 480px) {
-  .program-title {
-    font-size: 1.35rem;
-    padding: 0 5px;
-  }
-  
-  .program-page .section-title {
-    font-size: 1.25rem !important;
-  }
-  
-  .stat-card {
-    padding: 15px 12px;
-  }
-  
-  .why-card {
-    padding: 25px 18px;
-  }
-  
-  .why-icon {
-    font-size: 2rem;
-  }
-  
-  .curriculum-header {
-    font-size: 0.95rem;
-  }
-  
-  .accordion-header,
-  .faq-header {
-    padding: 15px 15px;
-    font-size: 0.9rem;
-  }
+    .program-title {
+        font-size: 1.35rem;
+        padding: 0 5px;
+    }
+
+    .program-page .section-title {
+        font-size: 1.25rem !important;
+    }
+
+    .stat-card {
+        padding: 15px 12px;
+    }
+
+    .why-card {
+        padding: 25px 18px;
+    }
+
+    .why-icon {
+        font-size: 2rem;
+    }
+
+    .curriculum-header {
+        font-size: 0.95rem;
+    }
+
+    .accordion-header,
+    .faq-header {
+        padding: 15px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Mobile - 360px */
+@media (max-width: 360px) {
+    .program-hero {
+        padding: 60px 8px 30px;
+    }
+
+    .program-title {
+        font-size: 1.2rem !important;
+        line-height: 1.25;
+        padding: 0 3px;
+    }
+
+    .program-category {
+        font-size: 0.75rem;
+    }
+
+    .program-icon-large {
+        font-size: 50px;
+    }
+
+    .program-page .section-title {
+        font-size: 1.1rem !important;
+    }
+
+    .stat-card {
+        padding: 12px 10px;
+        min-width: auto;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    .overview-card-new {
+        padding: 20px 15px;
+    }
+
+    .overview-card-title {
+        font-size: 1rem;
+    }
+
+    .overview-card-text {
+        font-size: 0.85rem;
+    }
+
+    .why-card {
+        padding: 20px 15px;
+    }
+
+    .why-icon {
+        font-size: 1.75rem;
+    }
+
+    .curriculum-card {
+        padding: 15px 12px;
+    }
+
+    .module-title {
+        font-size: 0.9rem;
+    }
+
+    .project-card {
+        padding: 18px 15px;
+    }
+
+    .project-card h3 {
+        font-size: 1rem;
+    }
+
+    .project-card p {
+        font-size: 0.8rem;
+    }
+
+    .pricing-card {
+        padding: 25px 18px;
+        min-height: auto !important;
+    }
+
+    .plan-name {
+        font-size: 1rem;
+    }
+
+    .plan-price {
+        font-size: 1.75rem;
+    }
+
+    .plan-features li {
+        font-size: 0.8rem;
+    }
+
+    .enroll-btn {
+        font-size: 1rem !important;
+        padding: 16px 25px !important;
+        min-height: 52px !important;
+        width: 100% !important;
+    }
+
+    .faq-item {
+        margin-bottom: 10px;
+    }
+
+    .faq-question {
+        font-size: 0.9rem;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-form {
+        padding: 25px 18px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-form input {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .contact-form .btn {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Minimum Mobile - 320px */
+@media (max-width: 320px) {
+    .program-hero {
+        padding: 55px 6px 25px;
+    }
+
+    .program-title {
+        font-size: 1.05rem !important;
+    }
+
+    .program-icon-large {
+        font-size: 40px;
+    }
+
+    .program-page .section-title {
+        font-size: 1rem !important;
+    }
+
+    .stat-card {
+        padding: 10px 8px;
+    }
+
+    .stat-value {
+        font-size: 1rem;
+    }
+
+    .overview-card-new,
+    .why-card,
+    .curriculum-card,
+    .project-card {
+        padding: 15px 12px;
+    }
+
+    .pricing-card {
+        padding: 20px 15px;
+    }
+
+    .plan-price {
+        font-size: 1.5rem;
+    }
+
+    .enroll-btn {
+        font-size: 0.95rem !important;
+        padding: 14px 20px !important;
+        min-height: 48px !important;
+        width: 100% !important;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
 }

@@ -657,62 +657,63 @@
 .placement-page {
     padding-top: 140px;
 }
+
 /* ============================================
    FULLPAGE VIDEO BACKGROUND WRAPPER
    ============================================ */
 
 .video-background-wrapper {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .fullpage-video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5;
 }
 
 .fullpage-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(180deg, 
-    rgba(15, 15, 26, 0.7) 0%, 
-    rgba(26, 26, 46, 0.75) 50%,
-    rgba(22, 33, 62, 0.8) 100%);
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,
+            rgba(15, 15, 26, 0.7) 0%,
+            rgba(26, 26, 46, 0.75) 50%,
+            rgba(22, 33, 62, 0.8) 100%);
+    z-index: 1;
 }
 
 /* Ensure sections inside wrapper are above video */
 .video-background-wrapper .placement-hero,
 .video-background-wrapper .programs-section {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .video-background-wrapper .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 /* Mobile - hide video for performance */
 @media (max-width: 768px) {
-  .fullpage-video-bg {
-    opacity: 0.35;
-  }
-  
-  .fullpage-overlay {
-    background: linear-gradient(180deg, 
-      rgba(15, 15, 26, 0.85) 0%, 
-      rgba(26, 26, 46, 0.9) 100%);
-  }
+    .fullpage-video-bg {
+        opacity: 0.35;
+    }
+
+    .fullpage-overlay {
+        background: linear-gradient(180deg,
+                rgba(15, 15, 26, 0.85) 0%,
+                rgba(26, 26, 46, 0.9) 100%);
+    }
 }
 
 /* ============================================
@@ -721,36 +722,36 @@
 
 /* Reduce hero bottom padding */
 .video-background-wrapper .placement-hero {
-  padding-bottom: 10px !important;
-  min-height: auto !important;
+    padding-bottom: 10px !important;
+    min-height: auto !important;
 }
 
 /* Reduce programs section top padding */
 .video-background-wrapper .programs-section {
-  padding-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 /* Remove section header margin */
 .video-background-wrapper .section-header {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Hide any visible border/line between sections */
 .video-background-wrapper .placement-hero {
-  border-bottom: none !important;
-  margin-bottom: 0 !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
 }
 
 .video-background-wrapper .programs-section {
-  border-top: none !important;
-  margin-top: 0 !important;
-  padding-top: 30px !important;
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 30px !important;
 }
 
 /* Remove any potential divider lines */
 .video-background-wrapper .placement-hero::after,
 .video-background-wrapper .programs-section::before {
-  display: none !important;
+    display: none !important;
 }
 
 /* ============================================
@@ -759,24 +760,146 @@
 
 /* Ensure video shows on mobile */
 @media (max-width: 768px) {
-  .fullpage-video-bg {
-    display: block !important;
-    opacity: 0.3 !important;
-  }
-  
-  .video-background-wrapper {
-    position: relative !important;
-  }
-  
-  .fullpage-overlay {
-    background: linear-gradient(180deg, 
-      rgba(15, 15, 26, 0.85) 0%, 
-      rgba(26, 26, 46, 0.9) 100%) !important;
-  }
+    .fullpage-video-bg {
+        display: block !important;
+        opacity: 0.3 !important;
+    }
+
+    .video-background-wrapper {
+        position: relative !important;
+    }
+
+    .fullpage-overlay {
+        background: linear-gradient(180deg,
+                rgba(15, 15, 26, 0.85) 0%,
+                rgba(26, 26, 46, 0.9) 100%) !important;
+    }
 }
 
 @media (max-width: 480px) {
-  .fullpage-video-bg {
-    opacity: 0.25 !important;
-  }
+    .fullpage-video-bg {
+        opacity: 0.25 !important;
+    }
+}
+
+/* Extra Small Mobile - 360px */
+@media (max-width: 360px) {
+    .placement-hero {
+        padding: 80px 10px 30px;
+    }
+
+    .hero-title {
+        font-size: 1.35rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .back-button {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.65rem;
+    }
+
+    .programs-section {
+        padding: 2rem 10px;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .section-description {
+        font-size: 0.85rem;
+    }
+
+    .program-card {
+        padding: 1.25rem;
+    }
+
+    .card-icon {
+        font-size: 1.75rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-description {
+        font-size: 0.8rem;
+    }
+
+    .feature-tag {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .cta-section {
+        padding: 2.5rem 10px;
+    }
+
+    .cta-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .cta-stats {
+        gap: 1.5rem;
+    }
+
+    .cta-stats .stat-value {
+        font-size: 1.25rem;
+    }
+
+    .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Minimum Mobile - 320px */
+@media (max-width: 320px) {
+    .placement-hero {
+        padding: 70px 8px 25px;
+    }
+
+    .hero-title {
+        font-size: 1.15rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .programs-section {
+        padding: 1.5rem 8px;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+
+    .program-card {
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .card-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    .tech-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.85rem;
+    }
 }

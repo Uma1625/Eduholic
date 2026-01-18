@@ -468,6 +468,7 @@
         margin-left: 8px;
     }
 }
+
 /* ============================================
    FOOTER ADDRESS AND EMAIL BLOCKS
    ============================================ */
@@ -551,5 +552,66 @@
     .footer-logo-img {
         border-radius: 10px !important;
         padding: 6px 10px !important;
+    }
+}
+
+/* Extra Small Mobile - 360px */
+@media (max-width: 360px) {
+    .footer {
+        padding: 12px 8px 8px !important;
+    }
+
+    .footer-logo-img {
+        height: 45px !important;
+        padding: 5px 8px !important;
+    }
+
+    .social-link {
+        width: 26px !important;
+        height: 26px !important;
+    }
+
+    .social-link svg {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    .footer-links a {
+        font-size: 0.65rem !important;
+        padding: 2px 6px !important;
+    }
+
+    .footer-links a::after {
+        margin-left: 6px !important;
+    }
+
+    .footer-bottom p {
+        font-size: 0.6rem !important;
+    }
+}
+
+/* Minimum Mobile - 320px */
+@media (max-width: 320px) {
+    .footer {
+        padding: 10px 6px 6px !important;
+    }
+
+    .footer-logo-img {
+        height: 38px !important;
+        padding: 4px 6px !important;
+    }
+
+    .social-link {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .footer-links a {
+        font-size: 0.6rem !important;
+        padding: 2px 5px !important;
+    }
+
+    .footer-bottom p {
+        font-size: 0.55rem !important;
     }
 }

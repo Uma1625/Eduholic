@@ -10,7 +10,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1 Lakh+',
+            students: '1000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -133,9 +133,9 @@ export const programsData = {
         color: '#dc2626',
         gradient: 'linear-gradient(135deg, #dc2626 0%, #991b1b 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -206,7 +206,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -241,9 +241,9 @@ export const programsData = {
         color: '#8b5cf6',
         gradient: 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -322,7 +322,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -357,9 +357,9 @@ export const programsData = {
         color: '#3ddc84',
         gradient: 'linear-gradient(135deg, #3ddc84 0%, #2fa866 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -430,7 +430,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -467,7 +467,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1 Lakh+',
+            students: '1000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -573,9 +573,9 @@ export const programsData = {
         color: '#f97316',
         gradient: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -654,7 +654,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -691,7 +691,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1 Lakh+',
+            students: '1000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -797,9 +797,9 @@ export const programsData = {
         color: '#22c55e',
         gradient: 'linear-gradient(135deg, #22c55e 0%, #16a34a 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -866,7 +866,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -901,9 +901,9 @@ export const programsData = {
         color: '#0ea5e9',
         gradient: 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -970,7 +970,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -1007,7 +1007,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1 Lakh+',
+            students: '1000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -1105,9 +1105,9 @@ export const programsData = {
         color: '#059669',
         gradient: 'linear-gradient(135deg, #059669 0%, #047857 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -1162,7 +1162,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -1197,9 +1197,9 @@ export const programsData = {
         color: '#f59e0b',
         gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -1254,7 +1254,7 @@ export const programsData = {
             {
                 name: 'Mentor Led Training',
                 price: 7000,
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access']
             },
             {
                 name: 'Mentor Led + Placement Guidance',
@@ -1291,7 +1291,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1 Lakh+',
+            students: '1000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -1391,7 +1391,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1 Lakh+',
+            students: '1000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -1491,16 +1491,16 @@ export const programsData = {
         color: '#11998e',
         gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
         stats: {
-            duration: '6 Months',
-            hours: '200+ Hours',
-            students: '5000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '25+',
             interaction: 'Live Batches'
         },
         overview: [
             {
                 question: 'What makes this a Job Guarantee Program?',
-                answer: 'Our Job Guarantee Program offers 100% placement assurance. If you complete the program with satisfactory performance and don\'t get placed within 6 months, we refund your fees. We have tie-ups with 500+ hiring partners actively looking for full-stack developers.'
+                answer: 'Our Job ~`Guarantee Program offers 100% placement assurance. If you complete the program with satisfactory performance and don\'t get placed within 6 months, we refund your fees. We have tie-ups with 500+ hiring partners actively looking for full-stack developers.'
             },
             {
                 question: 'What technologies will I learn?',
@@ -1526,8 +1526,17 @@ export const programsData = {
             { name: 'Video Streaming Platform', description: 'Netflix-like streaming service' }
         ],
         pricing: [
-            { price: '₹75,000', plan: 'Standard', features: ['200+ Hours Training', 'Live Batch Sessions', 'Placement Guarantee', '1:1 Mentorship', 'Resume Building', 'Mock Interviews', 'Lifetime Access'] },
-            { price: '₹99,000', plan: 'Premium', features: ['200+ Hours Training', 'Live Batch Sessions', 'Placement Guarantee', '1:1 Mentorship', 'Resume Building', 'Mock Interviews', 'Lifetime Access', 'Priority Placement', 'Internship Included'], recommended: true }
+            {
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+                recommended: true
+            },
+            {
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
         ],
         faqs: [
             { question: 'What is the Job Guarantee?', answer: 'If you complete the program successfully and don\'t get placed within 6 months of completion, we offer a full refund of your course fees.' },
@@ -1544,9 +1553,9 @@ export const programsData = {
         color: '#ee0979',
         gradient: 'linear-gradient(135deg, #ee0979 0%, #ff6a00 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '120+ Hours',
-            students: '3000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '20+',
             interaction: 'Live Batches'
         },
@@ -1576,8 +1585,17 @@ export const programsData = {
             { name: 'Social Media Calendar', description: 'Develop a comprehensive social media content calendar' }
         ],
         pricing: [
-            { price: '₹45,000', plan: 'Standard', features: ['120+ Hours Training', 'Live Sessions', 'Placement Guarantee', 'Tool Certifications', 'Resume Building', 'Mock Interviews'] },
-            { price: '₹65,000', plan: 'Premium', features: ['120+ Hours Training', 'Live Sessions', 'Placement Guarantee', 'Tool Certifications', 'Resume Building', 'Mock Interviews', 'Google & Meta Certifications', 'Agency Internship'], recommended: true }
+            {
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+                recommended: true
+            },
+            {
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
         ],
         faqs: [
             { question: 'What certifications will I get?', answer: 'Google Ads, Google Analytics, Meta Blueprint, HubSpot, and Eduholic completion certificate.' },
@@ -1592,9 +1610,9 @@ export const programsData = {
         color: '#667eea',
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
         stats: {
-            duration: '4 Months',
-            hours: '100+ Hours',
-            students: '2000+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '15+',
             interaction: 'Live Batches'
         },
@@ -1619,8 +1637,17 @@ export const programsData = {
             { name: 'Drafting Organizational Policy', description: 'Create comprehensive organizational HR policies' }
         ],
         pricing: [
-            { price: '₹40,000', plan: 'Standard', features: ['100+ Hours Training', 'Live Sessions', 'Placement Guarantee', 'HR Tool Training', 'Resume Building'] },
-            { price: '₹55,000', plan: 'Premium', features: ['100+ Hours Training', 'Live Sessions', 'Placement Guarantee', 'HR Tool Training', 'Resume Building', 'SHRM Prep', 'HR Internship'], recommended: true }
+            {
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+                recommended: true
+            },
+            {
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
         ],
         faqs: [
             { question: 'What roles can I apply for?', answer: 'HR Executive, Recruiter, Talent Acquisition Specialist, HR Generalist, HR Operations roles.' },
@@ -1635,9 +1662,9 @@ export const programsData = {
         color: '#4facfe',
         gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
         stats: {
-            duration: '5 Months',
-            hours: '150+ Hours',
-            students: '2500+',
+            duration: '3 Months',
+            hours: '25+ Hours',
+            students: '1000+',
             experts: '20+',
             interaction: 'Live Batches'
         },
@@ -1670,8 +1697,17 @@ export const programsData = {
             { name: 'Netflix Clone', description: 'Create a video streaming application like Netflix' }
         ],
         pricing: [
-            { price: '₹55,000', plan: 'Standard', features: ['150+ Hours Training', 'Live Sessions', 'Placement Guarantee', '10+ App Projects', 'Resume Building'] },
-            { price: '₹75,000', plan: 'Premium', features: ['150+ Hours Training', 'Live Sessions', 'Placement Guarantee', '10+ App Projects', 'Resume Building', '1:1 Mentorship', 'Startup Internship'], recommended: true }
+            {
+                price: '₹7,000',
+                plan: 'Mentor Led Training',
+                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+                recommended: true
+            },
+            {
+                price: '₹10,000',
+                plan: 'Mentor Led + Placement Guidance',
+                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+            }
         ],
         faqs: [
             { question: 'Do I need to know iOS/Android development?', answer: 'No, Flutter is a cross-platform framework. We teach everything from basics.' },

@@ -193,3 +193,145 @@
         padding: 20px;
     }
 }
+
+/* Mobile - 480px */
+@media (max-width: 480px) {
+    .category-hero {
+        padding: 100px 16px 50px;
+    }
+
+    .category-icon-large {
+        font-size: 50px;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .category-description {
+        font-size: 0.95rem;
+    }
+
+    .programs-count {
+        font-size: 0.8rem;
+        padding: 6px 16px;
+    }
+
+    .programs-section {
+        padding: 50px 16px;
+    }
+
+    .programs-section .section-title {
+        font-size: 1.5rem;
+    }
+
+    .program-card {
+        padding: 18px;
+    }
+
+    .program-icon {
+        font-size: 1.75rem;
+        min-width: 45px;
+        height: 45px;
+    }
+
+    .program-name {
+        font-size: 1rem;
+    }
+
+    .program-duration {
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra Small Mobile - 360px */
+@media (max-width: 360px) {
+    .category-hero {
+        padding: 90px 12px 40px;
+    }
+
+    .category-icon-large {
+        font-size: 40px;
+    }
+
+    .category-title {
+        font-size: 1.25rem;
+    }
+
+    .category-description {
+        font-size: 0.85rem;
+    }
+
+    .programs-count {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+
+    .programs-section {
+        padding: 40px 10px;
+    }
+
+    .programs-section .section-title {
+        font-size: 1.25rem;
+    }
+
+    .program-card {
+        padding: 15px;
+    }
+
+    .program-icon {
+        font-size: 1.5rem;
+        min-width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
+
+    .program-name {
+        font-size: 0.95rem;
+    }
+
+    .program-duration {
+        font-size: 0.75rem;
+    }
+
+    .program-arrow {
+        font-size: 1.25rem;
+    }
+}
+
+/* Minimum Mobile - 320px */
+@media (max-width: 320px) {
+    .category-hero {
+        padding: 80px 8px 35px;
+    }
+
+    .category-title {
+        font-size: 1.1rem;
+    }
+
+    .category-description {
+        font-size: 0.8rem;
+    }
+
+    .programs-section {
+        padding: 35px 8px;
+    }
+
+    .program-card {
+        padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .program-icon {
+        margin-right: 0;
+    }
+
+    .program-arrow {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+    }
+}

@@ -2999,10 +2999,12 @@
 }
 
 @media (max-width: 768px) {
+
+  /* Simple sizing adjustments - keep card-front visible (no card-details shown) */
   .categories-carousel-wrapper .premium-category-card {
-    width: 280px;
+    width: 200px;
     height: auto !important;
-    min-height: 350px;
+    min-height: auto !important;
   }
 
   .categories-carousel-track {
@@ -3010,21 +3012,11 @@
     animation-duration: 25s;
   }
 
-  /* On tablets, also show card-details for touch friendliness */
-  .premium-category-card .card-front {
-    display: none !important;
-  }
-
+  /* Hide card-details completely on mobile */
   .premium-category-card .card-details {
-    position: relative !important;
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-    padding: 20px !important;
-    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%) !important;
-    border-radius: 16px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    height: auto !important;
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
   }
 
   .premium-category-card .card-icon {
@@ -3032,100 +3024,35 @@
   }
 
   .premium-category-card .card-title {
-    font-size: 1.1rem;
-  }
-
-  .premium-category-card .details-title {
-    font-size: 1.1rem;
-    color: white !important;
-    margin-bottom: 12px;
-  }
-
-  .premium-category-card .details-courses {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 6px !important;
-  }
-
-  .premium-category-card .detail-course-link {
-    font-size: 0.9rem;
-    padding: 8px 0;
-    color: white !important;
-    display: block !important;
-  }
-
-  .premium-category-card .card-cta {
-    margin-top: 15px;
-    padding: 12px 20px;
-    font-size: 0.9rem;
-    text-align: center;
-    display: block !important;
-    background: linear-gradient(135deg, #00d9ff, #7c3aed);
-    color: white;
-    border-radius: 25px;
-    font-weight: 600;
-    text-decoration: none;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
+
+  /* Mobile sizing - keep card-front visible, simple layout */
   .categories-carousel-wrapper .premium-category-card {
-    width: 280px;
+    width: 160px;
     height: auto !important;
-    min-height: 350px;
+    min-height: auto !important;
   }
 
   .categories-carousel-track {
     animation-duration: 20s;
+    gap: 12px;
   }
 
-  /* On mobile, always show card-details instead of hover effect */
-  .premium-category-card .card-front {
-    display: none !important;
+  .premium-category-card .card-icon {
+    font-size: 32px;
   }
 
-  .premium-category-card .card-details {
-    position: relative !important;
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-    padding: 20px !important;
-    background: linear-gradient(135deg, rgba(0, 204, 255, 0.95) 0%, rgba(102, 126, 234, 0.95) 100%) !important;
-    border-radius: 16px !important;
-    height: auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  .premium-category-card .details-title {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-    color: white !important;
-  }
-
-  .premium-category-card .details-courses {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 6px !important;
-  }
-
-  .premium-category-card .detail-course-link {
+  .premium-category-card .card-title {
     font-size: 0.85rem;
-    padding: 8px 0;
-    color: white !important;
-    display: block !important;
   }
 
-  .premium-category-card .card-cta {
-    margin-top: 15px;
-    padding: 12px 20px;
-    font-size: 0.9rem;
-    text-align: center;
-    display: block !important;
-    background: linear-gradient(135deg, #00d9ff, #7c3aed);
-    color: white;
-    border-radius: 25px;
-    font-weight: 600;
-    text-decoration: none;
+  .premium-category-card .card-count {
+    font-size: 0.7rem;
+    padding: 4px 10px;
   }
 
   /* Navigation buttons spacing */
@@ -5551,12 +5478,12 @@ body,
 /* The hero uses .hero-section class, not .hero */
 @media (max-width: 576px) {
   .hero-section {
-    padding-top: 0 !important;
-    margin-top: -35px !important;
+    padding-top: 100px !important;
+    margin-top: 0 !important;
   }
 
   .hero-section .hero-content {
-    padding-top: 5px !important;
+    padding-top: 10px !important;
   }
 
   .hero-section .hero-title {
@@ -5568,12 +5495,12 @@ body,
 
 @media (max-width: 480px) {
   .hero-section {
-    padding-top: 0 !important;
-    margin-top: -160px !important;
+    padding-top: 95px !important;
+    margin-top: 0 !important;
   }
 
   .hero-section .hero-content {
-    padding-top: 5px !important;
+    padding-top: 10px !important;
   }
 
   .hero-section .hero-title {
@@ -5590,8 +5517,8 @@ body,
 
 @media (max-width: 400px) {
   .hero-section {
-    padding-top: 0 !important;
-    margin-top: -15px !important;
+    padding-top: 90px !important;
+    margin-top: 0 !important;
   }
 
   .hero-section .hero-title {
@@ -5606,11 +5533,157 @@ body,
 
 @media (max-width: 360px) {
   .hero-section {
-    padding-top: 0 !important;
-    margin-top: -10px !important;
+    padding-top: 85px !important;
+    margin-top: 0 !important;
   }
 
   .hero-section .hero-title {
     font-size: 0.95rem !important;
+  }
+}
+
+/* ============================================
+   BROWSE BY CATEGORY - MOBILE REDESIGN
+   Better mobile layout with static grid
+   ============================================ */
+
+/* Mobile: Convert carousel to static grid */
+@media (max-width: 576px) {
+
+  /* Hide carousel navigation on mobile */
+  .categories-section .carousel-nav-btn {
+    display: none !important;
+  }
+
+  /* Convert carousel wrapper to scrollable static container */
+  .categories-section .categories-carousel-wrapper {
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 10px 0 20px !important;
+  }
+
+  .categories-section .categories-carousel-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Stop automatic animation on mobile */
+  .categories-section .categories-carousel-track {
+    animation: none !important;
+    display: flex !important;
+    gap: 16px !important;
+    padding: 0 15px !important;
+    width: max-content !important;
+  }
+
+  /* Hide duplicate cards for infinite scroll on mobile */
+  .categories-section .categories-carousel-track>.premium-category-card:nth-child(n+9) {
+    display: none !important;
+  }
+
+  /* Mobile card redesign - compact and touch-friendly */
+  .categories-section .premium-category-card {
+    width: 150px !important;
+    min-width: 150px !important;
+    height: auto !important;
+    min-height: 180px !important;
+    border-radius: 16px !important;
+    scroll-snap-align: start;
+    flex-shrink: 0 !important;
+  }
+
+  /* Always show front, hide details on mobile */
+  .categories-section .premium-category-card .card-front {
+    display: flex !important;
+    opacity: 1 !important;
+    transform: none !important;
+    padding: 20px 15px !important;
+  }
+
+  .categories-section .premium-category-card .card-details {
+    display: none !important;
+  }
+
+  /* Card icon */
+  .categories-section .premium-category-card .card-icon {
+    font-size: 40px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Card title */
+  .categories-section .premium-category-card .card-title {
+    font-size: 0.85rem !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Card count */
+  .categories-section .premium-category-card .card-count {
+    font-size: 0.7rem !important;
+    padding: 4px 10px !important;
+  }
+
+  /* Add click/tap to navigate */
+  .categories-section .premium-category-card {
+    cursor: pointer;
+  }
+
+  /* Subtle glow on tap */
+  .categories-section .premium-category-card:active {
+    transform: scale(0.95) !important;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.4) !important;
+  }
+}
+
+/* Extra small mobile - even more compact */
+@media (max-width: 400px) {
+  .categories-section .premium-category-card {
+    width: 130px !important;
+    min-width: 130px !important;
+    min-height: 160px !important;
+  }
+
+  .categories-section .premium-category-card .card-icon {
+    font-size: 36px !important;
+  }
+
+  .categories-section .premium-category-card .card-title {
+    font-size: 0.8rem !important;
+  }
+
+  .categories-section .premium-category-card .card-count {
+    font-size: 0.65rem !important;
+  }
+}
+
+/* 320px - minimum mobile */
+@media (max-width: 360px) {
+  .categories-section .premium-category-card {
+    width: 120px !important;
+    min-width: 120px !important;
+    min-height: 150px !important;
+    padding: 15px 10px !important;
+  }
+
+  .categories-section .premium-category-card .card-icon {
+    font-size: 32px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .categories-section .premium-category-card .card-title {
+    font-size: 0.75rem !important;
+  }
+
+  .categories-section .premium-category-card .card-count {
+    font-size: 0.6rem !important;
+    padding: 3px 8px !important;
+  }
+
+  .categories-section .categories-carousel-track {
+    gap: 12px !important;
+    padding: 0 10px !important;
   }
 }

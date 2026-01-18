@@ -463,8 +463,8 @@ function ProgramPage({ program }) {
                             >
                                 {plan.recommended && <div className="recommended-badge">Most Popular</div>}
                                 <div className="plan-content">
-                                    <h3 className="plan-name">{plan.plan}</h3>
-                                    <div className="plan-price">{plan.price}</div>
+                                    <h3 className="plan-name">{plan.plan || plan.name}</h3>
+                                    <div className="plan-price">{typeof plan.price === 'number' ? `₹${plan.price.toLocaleString()}` : plan.price}</div>
                                     <ul className="plan-features">
                                         {plan.features.map((feature, fidx) => (
                                             <li key={fidx}>✓ {feature}</li>
@@ -475,7 +475,8 @@ function ProgramPage({ program }) {
                                     className="btn btn-primary enroll-btn"
                                     onClick={() => {
                                         // Redirect to Razorpay based on plan type
-                                        if (plan.plan.toLowerCase().includes('placement')) {
+                                        const planName = (plan.plan || plan.name || '').toLowerCase()
+                                        if (planName.includes('placement')) {
                                             window.open('https://rzp.io/rzp/T9H3q0OO', '_blank')
                                         } else {
                                             window.open('https://rzp.io/rzp/uZaBHOBo', '_blank')

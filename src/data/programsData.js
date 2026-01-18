@@ -1483,16 +1483,16 @@ export const programsData = {
     },
 
     // Job Guarantee Programs
-    'fullstack-web-development': {
-        id: 'fullstack-web-development',
+    'fullstack-jg': {
+        id: 'fullstack-jg',
         title: 'Full-Stack Web Development',
         category: 'Job Guarantee Program',
         icon: '💻',
         color: '#11998e',
         gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
         stats: {
-            duration: '3 Months',
-            hours: '25+ Hours',
+            duration: '6 Months',
+            hours: '80+ Hours',
             students: '10000+',
             experts: '25+',
             interaction: 'Live Batches'
@@ -1526,16 +1526,16 @@ export const programsData = {
             { name: 'Video Streaming Platform', description: 'Netflix-like streaming service' }
         ],
         pricing: [
+            // {
+            //     price: '₹49999',
+            //     plan: 'Mentor Led Training',
+            //     features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+            //     recommended: true
+            // },
             {
-                price: '₹7,000',
-                plan: 'Mentor Led Training',
-                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
-                recommended: true
-            },
-            {
-                price: '₹10,000',
+                price: '₹49,999',
                 plan: 'Mentor Led + Placement Guidance',
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['Course Duration: 6 Months', 'Live classes: 80+ Hours', 'Video Content: 100 Hours', '3 Major + 2 Minor Projects', 'Program Completion Certificate', 'Co-branded internship Certificate', '100% Job Guarantee(T&C Apply)']
             }
         ],
         faqs: [
@@ -1553,8 +1553,8 @@ export const programsData = {
         color: '#ee0979',
         gradient: 'linear-gradient(135deg, #ee0979 0%, #ff6a00 100%)',
         stats: {
-            duration: '3 Months',
-            hours: '25+ Hours',
+            duration: '6 Months',
+            hours: '80+ Hours',
             students: '10000+',
             experts: '20+',
             interaction: 'Live Batches'
@@ -1585,16 +1585,16 @@ export const programsData = {
             { name: 'Social Media Calendar', description: 'Develop a comprehensive social media content calendar' }
         ],
         pricing: [
+            // {
+            //     price: '₹7,000',
+            //     plan: 'Mentor Led Training',
+            //     features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+            //     recommended: true
+            // },
             {
-                price: '₹7,000',
-                plan: 'Mentor Led Training',
-                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
-                recommended: true
-            },
-            {
-                price: '₹10,000',
+                price: '₹49,999',
                 plan: 'Mentor Led + Placement Guidance',
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['Course Duration: 6 Months', 'Live classes: 80+ Hours', 'Video Content: 100 Hours', '3 Major + 2 Minor Projects', 'Program Completion Certificate', 'Co-branded internship Certificate', '100% Job Guarantee(T&C Apply)']
             }
         ],
         faqs: [
@@ -1610,8 +1610,8 @@ export const programsData = {
         color: '#667eea',
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
         stats: {
-            duration: '3 Months',
-            hours: '25+ Hours',
+            duration: '6 Months',
+            hours: '80+ Hours',
             students: '10000+',
             experts: '15+',
             interaction: 'Live Batches'
@@ -1637,16 +1637,16 @@ export const programsData = {
             { name: 'Drafting Organizational Policy', description: 'Create comprehensive organizational HR policies' }
         ],
         pricing: [
+            // {
+            //     price: '₹7,000',
+            //     plan: 'Mentor Led Training',
+            //     features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+            //     recommended: true
+            // },
             {
-                price: '₹7,000',
-                plan: 'Mentor Led Training',
-                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
-                recommended: true
-            },
-            {
-                price: '₹10,000',
+                price: '₹49,999',
                 plan: 'Mentor Led + Placement Guidance',
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['Course Duration: 6 Months', 'Live classes: 80+ Hours', 'Video Content: 100 Hours', '3 Major + 2 Minor Projects', 'Program Completion Certificate', 'Co-branded internship Certificate', '100% Job Guarantee(T&C Apply)']
             }
         ],
         faqs: [
@@ -1662,8 +1662,8 @@ export const programsData = {
         color: '#4facfe',
         gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
         stats: {
-            duration: '3 Months',
-            hours: '25+ Hours',
+            duration: '6 Months',
+            hours: '80+ Hours',
             students: '10000+',
             experts: '20+',
             interaction: 'Live Batches'
@@ -1697,16 +1697,16 @@ export const programsData = {
             { name: 'Netflix Clone', description: 'Create a video streaming application like Netflix' }
         ],
         pricing: [
+            // {
+            //     price: '₹7,000',
+            //     plan: 'Mentor Led Training',
+            //     features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
+            //     recommended: true
+            // },
             {
-                price: '₹7,000',
-                plan: 'Mentor Led Training',
-                features: ['24+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support', 'LMS Portal Access', 'Internship Portal Access'],
-                recommended: true
-            },
-            {
-                price: '₹10,000',
+                price: '₹49,999',
                 plan: 'Mentor Led + Placement Guidance',
-                features: ['40+ Hours of Live Sessions', 'One on One Doubt Clearing Sessions', 'Recorded Sessions', 'Mentor Support & Placement Guidance', 'LMS Portal Access', 'Internship Portal Access']
+                features: ['Course Duration: 6 Months', 'Live classes: 80+ Hours', 'Video Content: 100 Hours', '3 Major + 2 Minor Projects', 'Program Completion Certificate', 'Co-branded internship Certificate', '100% Job Guarantee(T&C Apply)']
             }
         ],
         faqs: [

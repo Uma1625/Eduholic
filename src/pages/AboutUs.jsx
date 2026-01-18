@@ -1,3 +1,7 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Toast, { useToast } from '../components/Toast'
+import { submitCallbackRequest } from '../utils/formSubmit'
 import './AboutUs.css'
 
 const visionPoints = [
@@ -26,8 +30,42 @@ const countries = [
 ]
 
 function AboutUs() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        program: '',
+        message: ''
+    })
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const { toast, showToast, hideToast } = useToast()
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setIsSubmitting(true)
+
+        const result = await submitCallbackRequest(formData, 'about-page')
+
+        if (result.success) {
+            showToast(result.message, 'success')
+            setFormData({ name: '', email: '', phone: '', program: '', message: '' })
+        } else {
+            showToast(result.message, 'error')
+        }
+
+        setIsSubmitting(false)
+    }
+
     return (
         <div className="about-page">
+            {/* Toast Notification */}
+            <Toast
+                message={toast.message}
+                type={toast.type}
+                isVisible={toast.isVisible}
+                onClose={hideToast}
+            />
+
             {/* Hero Section with Motion Graphics */}
             <section className="about-hero">
                 {/* Video Background */}
@@ -186,20 +224,6 @@ function AboutUs() {
                         <h2 className="section-heading text-center">
                             With a little more than <span className="text-gradient text-underline">one Lakh</span> students turned professionals,
                         </h2>
-                        {/* <p className="global-subtitle text-center">
-                            Eduholic has expanded its reach into more than 15 countries, and is impacting lives across the globe.
-                        </p>
-
-                        <div className="glass-orb-large animate-float"></div>
-
-                        <div className="countries-grid">
-                            {countries.map((country, idx) => (
-                                <div key={idx} className="country-badge" data-aos="fade-up" data-aos-delay={idx * 50}>
-                                    <span className="country-flag">{country.flag}</span>
-                                    <span className="country-name">{country.name}</span>
-                                </div>
-                            ))}
-                        </div> */}
                     </div>
                 </div>
             </section>
@@ -214,45 +238,78 @@ function AboutUs() {
                         </div>
                         <div className="about-contact-form" data-aos="fade-left">
                             <h3>Talk to our experts</h3>
-                            <form>
+                            <form onSubmit={handleSubmit}>
                                 <div className="form-row">
-                                    <input type="text" placeholder="Your Name" required />
-                                    <input type="email" placeholder="Email Address" required />
+                                    <input
+                                        type="text"
+                                        placeholder="Your Name"
+                                        value={formData.name}
+                                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                        required
+                                    />
+                                    <input
+                                        type="email"
+                                        placeholder="Email Address"
+                                        value={formData.email}
+                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                        required
+                                    />
                                 </div>
                                 <div className="form-row">
-                                    <input type="tel" placeholder="Mobile Number" required />
-                                    <select required>
+                                    <input
+                                        type="tel"
+                                        placeholder="Mobile Number"
+                                        value={formData.phone}
+                                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                        required
+                                    />
+                                    <select
+                                        value={formData.program}
+                                        onChange={(e) => setFormData({ ...formData, program: e.target.value })}
+                                        required
+                                    >
                                         <option value="">Select Program</option>
-                                        <option value="ml">Machine Learning with Python</option>
-                                        <option value="web">Web Development</option>
-                                        <option value="ai">Artificial Intelligence(AI)</option>
-                                        <option value="ds">Data Analytics</option>
-                                        <option value="cyber">Cyber Security</option>
-                                        <option value="android">Android Development</option>
-                                        <option value="fullstack">Full Stack Web Development</option>
-                                        <option value="hybrid">Hybrid & Electronic Vehicles</option>
-                                        <option value="iot">Internet of Things</option>
-                                        <option value="embedded">Embedded Systems</option>
-                                        <option value="autocad">AutoCAD</option>
-                                        <option value="building">Building Design and Construction Planning</option>
-                                        <option value="digital">Digital Marketing</option>
-                                        <option value="stock">Stock Market & Cryptocurrency</option>
-                                        <option value="finance">Finance</option>
-                                        <option value="hr">Human Resources (HR)</option>
-                                        <option value="project">Project Management</option>
-                                        <option value="supply">Supply Chain & Logistics</option>
-                                        <option value="business">Business Analytics</option>
-                                        <option value="ui">UI/UX Design</option>
-                                        <option value="graphic">Graphic Designing</option>
-                                        <option value="content">Content Writing</option>
-                                        <option value="medical">Medical Coding</option>
-                                        <option value="other">Other</option>
+                                        <option value="Machine Learning with Python">Machine Learning with Python</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="Artificial Intelligence(AI)">Artificial Intelligence(AI)</option>
+                                        <option value="Data Analytics">Data Analytics</option>
+                                        <option value="Cyber Security">Cyber Security</option>
+                                        <option value="Android Development">Android Development</option>
+                                        <option value="Full Stack Web Development">Full Stack Web Development</option>
+                                        <option value="Hybrid & Electronic Vehicles">Hybrid & Electronic Vehicles</option>
+                                        <option value="Internet of Things">Internet of Things</option>
+                                        <option value="Embedded Systems">Embedded Systems</option>
+                                        <option value="AutoCAD">AutoCAD</option>
+                                        <option value="Building Design and Construction Planning">Building Design and Construction Planning</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Stock Market & Cryptocurrency">Stock Market & Cryptocurrency</option>
+                                        <option value="Finance">Finance</option>
+                                        <option value="Human Resources (HR)">Human Resources (HR)</option>
+                                        <option value="Project Management">Project Management</option>
+                                        <option value="Supply Chain & Logistics">Supply Chain & Logistics</option>
+                                        <option value="Business Analytics">Business Analytics</option>
+                                        <option value="UI/UX Design">UI/UX Design</option>
+                                        <option value="Graphic Designing">Graphic Designing</option>
+                                        <option value="Content Writing">Content Writing</option>
+                                        <option value="Medical Coding">Medical Coding</option>
+                                        <option value="Other">Other</option>
                                     </select>
                                 </div>
-                                <textarea placeholder="Your Message (Optional)" rows="3"></textarea>
-                                <button type="submit" className="btn btn-primary btn-block">Send Message</button>
+                                <textarea
+                                    placeholder="Your Message (Optional)"
+                                    rows="3"
+                                    value={formData.message}
+                                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                ></textarea>
+                                <button
+                                    type="submit"
+                                    className="btn btn-primary btn-block"
+                                    disabled={isSubmitting}
+                                >
+                                    {isSubmitting ? 'Submitting...' : 'Send Message'}
+                                </button>
                                 <p className="form-terms">
-                                    By submitting, I agree to <a href="/terms-and-conditions">terms & conditions</a> and <a href="/privacy-policy">privacy policy</a>
+                                    By submitting, I agree to <Link to="/terms-and-conditions">terms & conditions</Link> and <Link to="/privacy-policy">privacy policy</Link>
                                 </p>
                             </form>
                         </div>

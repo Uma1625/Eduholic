@@ -1,8 +1,47 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Toast, { useToast } from '../components/Toast'
+import { submitCallbackRequest } from '../utils/formSubmit'
 import './ContactUs.css'
 
 function ContactUs() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        institute: '',
+        program: '',
+        message: ''
+    })
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const { toast, showToast, hideToast } = useToast()
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setIsSubmitting(true)
+
+        const result = await submitCallbackRequest(formData, 'contact-page')
+
+        if (result.success) {
+            showToast(result.message, 'success')
+            setFormData({ name: '', email: '', phone: '', institute: '', program: '', message: '' })
+        } else {
+            showToast(result.message, 'error')
+        }
+
+        setIsSubmitting(false)
+    }
+
     return (
         <div className="contact-page">
+            {/* Toast Notification */}
+            <Toast
+                message={toast.message}
+                type={toast.type}
+                isVisible={toast.isVisible}
+                onClose={hideToast}
+            />
+
             {/* Hero Section with Motion Graphics */}
             <section className="contact-hero">
                 <video
@@ -62,56 +101,93 @@ function ContactUs() {
                         <div className="contact-form-container" data-aos="fade-left">
                             <div className="contact-form-card">
                                 <h2>Get In Touch <span>👋</span></h2>
-                                <form className="contact-form">
+                                <form className="contact-form" onSubmit={handleSubmit}>
                                     <div className="form-group">
-                                        <input type="text" placeholder="Name" required />
+                                        <input
+                                            type="text"
+                                            placeholder="Name"
+                                            value={formData.name}
+                                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                            required
+                                        />
                                     </div>
                                     <div className="form-group">
-                                        <input type="email" placeholder="Email" required />
+                                        <input
+                                            type="email"
+                                            placeholder="Email"
+                                            value={formData.email}
+                                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                            required
+                                        />
                                     </div>
                                     <div className="form-group">
-                                        <input type="tel" placeholder="Phone Number" required />
+                                        <input
+                                            type="tel"
+                                            placeholder="Phone Number"
+                                            value={formData.phone}
+                                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                            required
+                                        />
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" placeholder="Institute Name" required />
+                                        <input
+                                            type="text"
+                                            placeholder="Institute Name"
+                                            value={formData.institute}
+                                            onChange={(e) => setFormData({ ...formData, institute: e.target.value })}
+                                            required
+                                        />
                                     </div>
                                     <div className="form-group">
-                                        <select required>
+                                        <select
+                                            value={formData.program}
+                                            onChange={(e) => setFormData({ ...formData, program: e.target.value })}
+                                            required
+                                        >
                                             <option value="">Select Program</option>
-                                            <option value="ml">Machine Learning with Python</option>
-                                            <option value="web">Web Development</option>
-                                            <option value="ai">Artificial Intelligence(AI)</option>
-                                            <option value="ds">Data Analytics</option>
-                                            <option value="cyber">Cyber Security</option>
-                                            <option value="android">Android Development</option>
-                                            <option value="fullstack">Full Stack Web Development</option>
-                                            <option value="hybrid">Hybrid & Electronic Vehicles</option>
-                                            <option value="iot">Internet of Things</option>
-                                            <option value="embedded">Embedded Systems</option>
-                                            <option value="autocad">AutoCAD</option>
-                                            <option value="building">Building Design and Construction Planning</option>
-                                            <option value="digital">Digital Marketing</option>
-                                            <option value="stock">Stock Market & Cryptocurrency</option>
-                                            <option value="finance">Finance</option>
-                                            <option value="hr">Human Resources (HR)</option>
-                                            <option value="project">Project Management</option>
-                                            <option value="supply">Supply Chain & Logistics</option>
-                                            <option value="business">Business Analytics</option>
-                                            <option value="ui">UI/UX Design</option>
-                                            <option value="graphic">Graphic Designing</option>
-                                            <option value="content">Content Writing</option>
-                                            <option value="medical">Medical Coding</option>
-                                            <option value="other">Other</option>
+                                            <option value="Machine Learning with Python">Machine Learning with Python</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Artificial Intelligence(AI)">Artificial Intelligence(AI)</option>
+                                            <option value="Data Analytics">Data Analytics</option>
+                                            <option value="Cyber Security">Cyber Security</option>
+                                            <option value="Android Development">Android Development</option>
+                                            <option value="Full Stack Web Development">Full Stack Web Development</option>
+                                            <option value="Hybrid & Electronic Vehicles">Hybrid & Electronic Vehicles</option>
+                                            <option value="Internet of Things">Internet of Things</option>
+                                            <option value="Embedded Systems">Embedded Systems</option>
+                                            <option value="AutoCAD">AutoCAD</option>
+                                            <option value="Building Design and Construction Planning">Building Design and Construction Planning</option>
+                                            <option value="Digital Marketing">Digital Marketing</option>
+                                            <option value="Stock Market & Cryptocurrency">Stock Market & Cryptocurrency</option>
+                                            <option value="Finance">Finance</option>
+                                            <option value="Human Resources (HR)">Human Resources (HR)</option>
+                                            <option value="Project Management">Project Management</option>
+                                            <option value="Supply Chain & Logistics">Supply Chain & Logistics</option>
+                                            <option value="Business Analytics">Business Analytics</option>
+                                            <option value="UI/UX Design">UI/UX Design</option>
+                                            <option value="Graphic Designing">Graphic Designing</option>
+                                            <option value="Content Writing">Content Writing</option>
+                                            <option value="Medical Coding">Medical Coding</option>
+                                            <option value="Other">Other</option>
                                         </select>
                                     </div>
                                     <div className="form-group">
-                                        <textarea placeholder="Your Message (Optional)" rows="4"></textarea>
+                                        <textarea
+                                            placeholder="Your Message (Optional)"
+                                            rows="4"
+                                            value={formData.message}
+                                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                        ></textarea>
                                     </div>
-                                    <button type="submit" className="btn btn-primary btn-block">
-                                        Request Callback
+                                    <button
+                                        type="submit"
+                                        className="btn btn-primary btn-block"
+                                        disabled={isSubmitting}
+                                    >
+                                        {isSubmitting ? 'Submitting...' : 'Request Callback'}
                                     </button>
                                     <p className="form-terms">
-                                        By submitting, I agree to <a href="/terms-and-conditions">terms & conditions</a> and <a href="/privacy-policy">privacy policy</a>
+                                        By submitting, I agree to <Link to="/terms-and-conditions">terms & conditions</Link> and <Link to="/privacy-policy">privacy policy</Link>
                                     </p>
                                 </form>
                             </div>
@@ -119,16 +195,6 @@ function ContactUs() {
                     </div>
                 </div>
             </section>
-
-            {/* Map Section (Placeholder) */}
-            {/* <section className="map-section">
-                <div className="map-container">
-                    <div className="map-placeholder">
-                        <span>📍</span>
-                        <p>Eduholic Pvt Ltd, HSR Layout, Bengaluru</p>
-                    </div>
-                </div>
-            </section> */}
         </div>
     )
 }

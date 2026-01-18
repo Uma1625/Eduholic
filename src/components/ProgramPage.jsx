@@ -1,5 +1,7 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import Toast, { useToast } from './Toast'
+import { submitCallbackRequest } from '../utils/formSubmit'
 import { alumniCompanies } from '../data/programsData'
 import './ProgramPage.css'
 
@@ -115,7 +117,7 @@ const getProjectImage = (projectName) => {
 
         // Business Analytics
         'Sales Analytics Dashboard': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
-        'Customer Segmentation': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
+        'Business Customer Analysis': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
         'Forecasting Model': 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=300&fit=crop',
 
         // Default/Generic
@@ -158,6 +160,8 @@ function ProgramPage({ program }) {
         email: '',
         institute: ''
     })
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const { toast, showToast, hideToast } = useToast()
 
     // Carousel ref and scroll handler for Why Eduholic
     const whyCarouselRef = useRef(null)
@@ -170,14 +174,35 @@ function ProgramPage({ program }) {
         whyCarouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        alert('Thank you for your interest! Our team will contact you shortly.')
-        setFormData({ name: '', phone: '', email: '', institute: '' })
+        setIsSubmitting(true)
+
+        const result = await submitCallbackRequest({
+            ...formData,
+            program: program.title
+        }, `program-page-${program.id}`)
+
+        if (result.success) {
+            showToast(result.message, 'success')
+            setFormData({ name: '', phone: '', email: '', institute: '' })
+        } else {
+            showToast(result.message, 'error')
+        }
+
+        setIsSubmitting(false)
     }
 
     return (
         <div className="program-page">
+            {/* Toast Notification */}
+            <Toast
+                message={toast.message}
+                type={toast.type}
+                isVisible={toast.isVisible}
+                onClose={hideToast}
+            />
+
             {/* Hero Section with Motion Graphics */}
             <section className="program-hero">
                 {/* Motion Graphics Video Background */}
@@ -453,6 +478,29 @@ function ProgramPage({ program }) {
 
             {/* Pricing Section */}
             <section className="pricing-section">
+                {/* Premium Animated Background */}
+                <div className="pricing-animated-bg">
+                    {/* Floating particles */}
+                    <div className="pricing-particle p1"></div>
+                    <div className="pricing-particle p2"></div>
+                    <div className="pricing-particle p3"></div>
+                    <div className="pricing-particle p4"></div>
+                    <div className="pricing-particle p5"></div>
+                    <div className="pricing-particle p6"></div>
+
+                    {/* Gradient orbs */}
+                    <div className="pricing-orb orb1"></div>
+                    <div className="pricing-orb orb2"></div>
+                    <div className="pricing-orb orb3"></div>
+
+                    {/* Animated rings */}
+                    <div className="pricing-ring ring1"></div>
+                    <div className="pricing-ring ring2"></div>
+
+                    {/* Grid pattern overlay */}
+                    <div className="pricing-grid-pattern"></div>
+                </div>
+
                 <div className="container">
                     <h2 className="section-title">Choose Your <span className="text-gradient">Plan</span></h2>
                     <div className="pricing-grid">
@@ -467,19 +515,31 @@ function ProgramPage({ program }) {
                                     <div className="plan-price">{typeof plan.price === 'number' ? `₹${plan.price.toLocaleString()}` : plan.price}</div>
                                     <ul className="plan-features">
                                         {plan.features.map((feature, fidx) => (
-                                            <li key={fidx}>✓ {feature}</li>
+                                            <li key={fidx}>
+                                                ✓ {feature.includes('T&C Apply') ? (
+                                                    <>
+                                                        {feature.replace('(T&C Apply)', '')}
+                                                        <Link to="/terms-and-conditions" className="tc-link">(T&C Apply)</Link>
+                                                    </>
+                                                ) : feature}
+                                            </li>
                                         ))}
                                     </ul>
                                 </div>
                                 <button
                                     className="btn btn-primary enroll-btn"
                                     onClick={() => {
-                                        // Redirect to Razorpay based on plan type
-                                        const planName = (plan.plan || plan.name || '').toLowerCase()
-                                        if (planName.includes('placement')) {
-                                            window.open('https://rzp.io/rzp/T9H3q0OO', '_blank')
+                                        // Check if it's a Job Guarantee Program
+                                        if (program.category === 'Job Guarantee Program') {
+                                            window.open('https://rzp.io/rzp/Ze6EqpIj', '_blank')
                                         } else {
-                                            window.open('https://rzp.io/rzp/uZaBHOBo', '_blank')
+                                            // Redirect to Razorpay based on plan type
+                                            const planName = (plan.plan || plan.name || '').toLowerCase()
+                                            if (planName.includes('placement')) {
+                                                window.open('https://rzp.io/rzp/T9H3q0OO', '_blank')
+                                            } else {
+                                                window.open('https://rzp.io/rzp/uZaBHOBo', '_blank')
+                                            }
                                         }
                                     }}
                                 >Enroll Now</button>
@@ -591,11 +651,15 @@ function ProgramPage({ program }) {
                                         required
                                     />
                                 </div>
-                                <button type="submit" className="btn btn-primary btn-block">
-                                    Request Callback
+                                <button
+                                    type="submit"
+                                    className="btn btn-primary btn-block"
+                                    disabled={isSubmitting}
+                                >
+                                    {isSubmitting ? 'Submitting...' : 'Request Callback'}
                                 </button>
                                 <p className="form-terms">
-                                    By submitting, I agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                                    By submitting, I agree to <Link to="/terms-and-conditions">Terms & Conditions</Link> and <Link to="/privacy-policy">Privacy Policy</Link>
                                 </p>
                             </form>
                         </div>

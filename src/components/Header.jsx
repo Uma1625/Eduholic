@@ -61,7 +61,7 @@ const programsData = {
             { name: 'Medical Coding', path: '/programs/medical-coding' }
         ],
         jobguarantee: [
-            { name: 'Full-Stack Web Development', path: '/job-guarantee/full-stack-web-development' },
+            { name: 'Full-Stack Web Development', path: '/job-guarantee/fullstack-jg' },
             { name: 'Marketing & Digital Marketing', path: '/job-guarantee/digital-marketing' },
             { name: 'Human Resources', path: '/job-guarantee/human-resources' },
             { name: 'Flutter', path: '/job-guarantee/flutter' }

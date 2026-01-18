@@ -4,7 +4,7 @@ import './PlacementProvision.css'
 // Job Guarantee Programs data
 const jobGuaranteePrograms = [
     {
-        id: 'full-stack-web-development',
+        id: 'fullstack-jg',
         title: 'Full-Stack Web Development',
         icon: '💻',
         description: 'Master frontend and backend development with guaranteed job placement',
@@ -16,7 +16,7 @@ const jobGuaranteePrograms = [
         title: 'Marketing & Digital Marketing',
         icon: '📈',
         description: 'Learn SEO, Social Media, PPC and more with job guarantee',
-        duration: '4 Months',
+        duration: '6 Months',
         features: ['SEO & SEM', 'Social Media', '100% Placement']
     },
     {
@@ -24,7 +24,7 @@ const jobGuaranteePrograms = [
         title: 'Human Resources',
         icon: '👥',
         description: 'Comprehensive HR training with guaranteed placement',
-        duration: '4 Months',
+        duration: '6 Months',
         features: ['HR Analytics', 'Recruitment', '100% Placement']
     },
     {
@@ -32,7 +32,7 @@ const jobGuaranteePrograms = [
         title: 'Flutter',
         icon: '📱',
         description: 'Build cross-platform mobile apps with Flutter',
-        duration: '5 Months',
+        duration: '6 Months',
         features: ['Dart & Flutter', 'iOS & Android', '100% Placement']
     }
 ]

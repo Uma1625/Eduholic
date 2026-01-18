@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import Toast, { useToast } from '../components/Toast'
+import { submitCallbackRequest } from '../utils/formSubmit'
 import './Home.css'
 
 // Data
@@ -285,6 +287,33 @@ function Home() {
     const [categoriesPaused, setCategoriesPaused] = useState(false)
     const [testimonialsPaused, setTestimonialsPaused] = useState(false)
 
+    // Form state
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        institute: '',
+        program: ''
+    })
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const { toast, showToast, hideToast } = useToast()
+
+    // Form submission handler
+    const handleFormSubmit = async (e) => {
+        e.preventDefault()
+        setIsSubmitting(true)
+
+        const result = await submitCallbackRequest(formData, 'home-page')
+
+        if (result.success) {
+            showToast(result.message, 'success')
+            setFormData({ name: '', phone: '', institute: '', program: '' })
+        } else {
+            showToast(result.message, 'error')
+        }
+
+        setIsSubmitting(false)
+    }
+
     // Scroll carousel left/right
     const scrollCarousel = (ref, direction) => {
         if (!ref.current) return
@@ -313,6 +342,14 @@ function Home() {
 
     return (
         <div className="home">
+            {/* Toast Notification */}
+            <Toast
+                message={toast.message}
+                type={toast.type}
+                isVisible={toast.isVisible}
+                onClose={hideToast}
+            />
+
             {/* Hero Section */}
             <section className="hero-section">
                 {/* Motion Graphics Background Video */}
@@ -770,51 +807,77 @@ function Home() {
                             </div>
                         </div>
                         <div className="contact-form-wrapper" data-aos="fade-left">
-                            <form className="contact-form">
+                            <form className="contact-form" onSubmit={handleFormSubmit}>
                                 <h3>Get a Free Consultation</h3>
                                 <div className="form-group">
-                                    <input type="text" placeholder="Your Name" required />
+                                    <input
+                                        type="text"
+                                        placeholder="Your Name"
+                                        value={formData.name}
+                                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                        required
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <input type="tel" placeholder="Contact Number" required />
+                                    <input
+                                        type="tel"
+                                        placeholder="Contact Number"
+                                        value={formData.phone}
+                                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                        required
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <input type="text" placeholder="Institute Name" required />
+                                    <input
+                                        type="text"
+                                        placeholder="Institute Name"
+                                        value={formData.institute}
+                                        onChange={(e) => setFormData({ ...formData, institute: e.target.value })}
+                                        required
+                                    />
                                 </div>
                                 <div className="form-group">
-                                    <select required>
+                                    <select
+                                        value={formData.program}
+                                        onChange={(e) => setFormData({ ...formData, program: e.target.value })}
+                                        required
+                                    >
                                         <option value="">Select Program</option>
-                                        <option value="ml">Machine Learning with Python</option>
-                                        <option value="web">Web Development</option>
-                                        <option value="ai">Artificial Intelligence(AI)</option>
-                                        <option value="ds">Data Analytics</option>
-                                        <option value="cyber">Cyber Security</option>
-                                        <option value="android">Android Development</option>
-                                        <option value="fullstack">Full Stack Web Development</option>
-                                        <option value="hybrid">Hybrid & Electronic Vehicles</option>
-                                        <option value="iot">Internet of Things</option>
-                                        <option value="embedded">Embedded Systems</option>
-                                        <option value="autocad">AutoCAD</option>
-                                        <option value="building">Building Design and Construction Planning</option>
-                                        <option value="digital">Digital Marketing</option>
-                                        <option value="stock">Stock Market & Cryptocurrency</option>
-                                        <option value="finance">Finance</option>
-                                        <option value="hr">Human Resources (HR)</option>
-                                        <option value="project">Project Management</option>
-                                        <option value="supply">Supply Chain & Logistics</option>
-                                        <option value="business">Business Analytics</option>
-                                        <option value="ui">UI/UX Design</option>
-                                        <option value="graphic">Graphic Designing</option>
-                                        <option value="content">Content Writing</option>
-                                        <option value="medical">Medical Coding</option>
-                                        <option value="other">Other</option>
+                                        <option value="Machine Learning with Python">Machine Learning with Python</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="Artificial Intelligence(AI)">Artificial Intelligence(AI)</option>
+                                        <option value="Data Analytics">Data Analytics</option>
+                                        <option value="Cyber Security">Cyber Security</option>
+                                        <option value="Android Development">Android Development</option>
+                                        <option value="Full Stack Web Development">Full Stack Web Development</option>
+                                        <option value="Hybrid & Electronic Vehicles">Hybrid & Electronic Vehicles</option>
+                                        <option value="Internet of Things">Internet of Things</option>
+                                        <option value="Embedded Systems">Embedded Systems</option>
+                                        <option value="AutoCAD">AutoCAD</option>
+                                        <option value="Building Design and Construction Planning">Building Design and Construction Planning</option>
+                                        <option value="Digital Marketing">Digital Marketing</option>
+                                        <option value="Stock Market & Cryptocurrency">Stock Market & Cryptocurrency</option>
+                                        <option value="Finance">Finance</option>
+                                        <option value="Human Resources (HR)">Human Resources (HR)</option>
+                                        <option value="Project Management">Project Management</option>
+                                        <option value="Supply Chain & Logistics">Supply Chain & Logistics</option>
+                                        <option value="Business Analytics">Business Analytics</option>
+                                        <option value="UI/UX Design">UI/UX Design</option>
+                                        <option value="Graphic Designing">Graphic Designing</option>
+                                        <option value="Content Writing">Content Writing</option>
+                                        <option value="Medical Coding">Medical Coding</option>
+                                        <option value="Other">Other</option>
                                     </select>
                                 </div>
-                                <button type="submit" className="btn btn-primary btn-block">
-                                    Request Callback
+                                <button
+                                    type="submit"
+                                    className="btn btn-primary btn-block"
+                                    disabled={isSubmitting}
+                                >
+                                    {isSubmitting ? 'Submitting...' : 'Request Callback'}
                                 </button>
                                 <p className="form-terms">
-                                    By submitting, I agree to <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                                    By submitting, I agree to <Link to="/terms-and-conditions">Terms & Conditions</Link> and <Link to="/privacy-policy">Privacy Policy</Link>
                                 </p>
                             </form>
                         </div>

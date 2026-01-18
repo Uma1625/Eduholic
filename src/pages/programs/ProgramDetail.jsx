@@ -45,7 +45,7 @@ const programIcons = {
     'medical-coding': '🩺',
 
     // Job Guarantee Programs
-    'fullstack-web-development': '💻',
+    'fullstack-jg': '💻',
     'flutter': '📲'
 }
 

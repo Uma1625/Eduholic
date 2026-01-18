@@ -49,11 +49,24 @@ const programIcons = {
     'flutter': '📲'
 }
 
+// Special title mappings for programs that need custom formatting
+const specialTitles = {
+    'ui-ux-designing': 'UI/UX Designing',
+    'iot': 'IoT',
+    'autocad': 'AutoCAD'
+}
+
 // Default program template for programs not in the data file
 const createDefaultProgram = (slug) => {
-    const title = slug.split('-').map(word =>
-        word.charAt(0).toUpperCase() + word.slice(1)
-    ).join(' ')
+    // Check for special title mapping first
+    let title = specialTitles[slug]
+
+    // If no special title, generate from slug
+    if (!title) {
+        title = slug.split('-').map(word =>
+            word.charAt(0).toUpperCase() + word.slice(1)
+        ).join(' ')
+    }
 
     // Get unique icon from mapping or fallback to a category-based default
     const icon = programIcons[slug] || '📚'
@@ -185,7 +198,7 @@ const createDefaultProgram = (slug) => {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1 Lakh+',
+            students: '10000+',
             experts: '50+',
             interaction: '1 on 1'
         },

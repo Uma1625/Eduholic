@@ -10,7 +10,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -135,7 +135,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -243,7 +243,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -359,7 +359,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -467,7 +467,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -575,7 +575,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -691,7 +691,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -799,7 +799,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -903,7 +903,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -1007,7 +1007,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -1107,7 +1107,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -1199,7 +1199,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: '1 on 1'
         },
@@ -1291,7 +1291,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -1391,7 +1391,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '50+',
             interaction: '1 on 1'
         },
@@ -1493,7 +1493,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '25+',
             interaction: 'Live Batches'
         },
@@ -1555,7 +1555,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '20+',
             interaction: 'Live Batches'
         },
@@ -1612,7 +1612,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '15+',
             interaction: 'Live Batches'
         },
@@ -1664,7 +1664,7 @@ export const programsData = {
         stats: {
             duration: '3 Months',
             hours: '25+ Hours',
-            students: '1000+',
+            students: '10000+',
             experts: '20+',
             interaction: 'Live Batches'
         },

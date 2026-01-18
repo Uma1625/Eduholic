@@ -144,6 +144,7 @@
     font-size: 1.4rem;
     opacity: 0.95;
     font-weight: 500;
+    margin-bottom: 30px;
     background: linear-gradient(135deg, #a8dadc 0%, #64b5f6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

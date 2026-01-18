@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Home.css'
 
 // Data
@@ -274,6 +274,7 @@ function StatCounter({ stat, inView }) {
 function Home() {
     const statsRef = useRef(null)
     const [statsInView, setStatsInView] = useState(false)
+    const navigate = useNavigate()
 
     // Carousel refs for navigation
     const categoriesCarouselRef = useRef(null)
@@ -520,6 +521,8 @@ function Home() {
                                     <div
                                         key={cat.id}
                                         className="premium-category-card"
+                                        onClick={() => navigate(`/category/${cat.slug}`)}
+                                        style={{ cursor: 'pointer' }}
                                     >
                                         {/* Card Background */}
                                         <div className="card-bg" style={{ background: cat.gradient }}></div>
@@ -560,6 +563,8 @@ function Home() {
                                     <div
                                         key={`dup-${cat.id}`}
                                         className="premium-category-card"
+                                        onClick={() => navigate(`/category/${cat.slug}`)}
+                                        style={{ cursor: 'pointer' }}
                                     >
                                         <div className="card-bg" style={{ background: cat.gradient }}></div>
                                         <div className="card-glow-border"></div>

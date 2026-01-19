@@ -368,8 +368,8 @@ function Home() {
                 </div>
                 <div className="hero-content">
                     <h1 className="hero-title" data-aos="fade-up">
-                        LEARN BY DOING.<br />
-                        <span className="text-gradient">GROW BY EXPERIENCE.</span>
+                        LEARN BY DOING<br />
+                        <span className="text-gradient">GROW BY EXPERIENCE</span>
                     </h1>
                     <p className="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
                         Bridge the gap between education and industry with hands-on internships and real-world projects
